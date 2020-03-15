@@ -1,0 +1,999 @@
+*{
+	box-sizing: border-box;
+	font-family: 'Seravek Medium', Helvetica, sans-serif, Arial;
+}
+
+a:hover, a:focus, a:active{
+	text-decoration: none !important;
+}
+
+//variables
+$theme-black: #322B2A;
+$theme-green: #649A9E;
+$theme-light-green: #CDE2BC;
+
+//mixsins
+@mixin seperator{
+	position: relative;
+	border-bottom: 2px solid $theme-green;
+	width: 166px;
+	margin: 20px auto 50px;
+	.square{
+		width: 16px;
+		height: 16px;
+		background-color: $theme-green;
+		transform: rotate(45deg);
+		margin: auto;
+		box-shadow: 0px 0px 0px 5px rgba(255,255,255,1);
+		margin-bottom: -9px;
+	}
+}
+@mixin green-button{
+	display: block;
+	width: 100%;
+	background-color: $theme-light-green;
+	text-align: center;
+	color: $theme-black;
+	font-family: Quicksand;
+	font-size: 26px;
+	border-radius: 17px;
+	padding: 8px 0;
+	box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+	cursor: pointer;
+	&:hover{
+		filter: brightness(0.9);
+	}
+	&:active{
+		transform: translateY(4px);
+		box-shadow: none;
+	}
+}
+
+@mixin map{
+	height: 500px;
+	background-image: url(../img/map.png);
+	background-size: cover;
+	@media screen and (min-width: 992px) {
+		height: 40vw;
+	}
+}
+@mixin inquery-form{
+	background-color: white;
+	box-shadow: 3px 6px 12px rgba(0,0,0,0.3);
+	padding: 60px 8%;
+	max-width: 880px;
+	margin: auto;
+	.title{
+		font-size: 35px;
+		text-transform: uppercase;
+		text-align: center;
+	}
+	.seperator{
+		@include seperator;
+	}
+	form{
+		margin-top: 70px;
+		label{
+			font-size: 20px;
+			display: block;
+		}
+		.input-dropdown{
+			margin-top: 35px;
+			.bootstrap-select{
+				width: 100%;
+				.filter-option-inner-inner{
+					font-size: 18px;
+					font-family: 'Seravek';
+				}
+				.dropdown-toggle{
+					border: 1px solid #707070;
+					border-radius: 0;
+					position: relative;
+					&:after{
+						width: 15px;
+						height: 15px;
+						border: 0;
+						border-left: 1px solid black;
+						border-bottom: 1px solid black;
+						transform: rotate(-45deg);
+						margin-top: -9px;
+					}
+					&:before{
+						content: '';
+						height: calc(100% + 2px);
+						width: 40px;
+						position: absolute;
+						right: -1px;
+						background-color: $theme-light-green;
+						border: 1px solid $theme-black;
+					}
+				}
+				.dropdown-menu{
+					border: 1px solid $theme-black;
+					border-radius: 0;
+					.inner{
+						border: 0;
+						.selected, .active{
+							background-color: $theme-green;
+						}
+					}
+					.dropdown-item .text{
+						font-size: 18px;
+						font-family: 'Seravek';
+					}
+				}
+					
+			}//bootstrap-select
+			.select-ppl{
+				width: 120px;
+			}
+		}	
+		.input-text{
+			.question{
+				margin-top: 55px;
+				input[type='text']{
+					width: 100%;
+					border: 0;
+					border-bottom: 1px solid $theme-black;
+					outline: none;
+					font-family: 'Seravek';
+					&::placeholder{
+						font-family: 'Seravek';
+						font-weight: lighter;
+						font-style: italic;
+					}
+				}
+				@media screen and (min-width: 768px) {
+					width: 50%;
+					max-width: 270px;
+					@media screen and (min-width: 992px){
+						max-width: 300px;
+					}
+				}
+			}
+			@media screen and (min-width: 768px){
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+			}
+		}
+		.input-textarea{
+			margin-top: 55px;
+			textarea{
+				width: 100%;
+				padding: 10px 15px;
+				font-family: 'Seravek';
+				&::placeholder{
+					font-family: 'Seravek';
+					font-weight: lighter;
+					font-style: italic;
+				}
+			}
+		}
+		.button{
+			@include green-button;
+			margin: auto;
+			margin-top: 55px;
+			width: 150px;
+			border: none;
+			outline: none;
+			cursor: pointer;
+		}
+	}//form
+	@media screen and (min-width: 1400px) {
+		padding: 60px 102px;
+	}
+}
+
+//public
+html{
+	body{
+		font-size: 18px;
+		color: $theme-black;
+		header{
+			width: 100%;
+			height: 85px;
+			background-color: #322b2a;
+			padding: 10px 20px;
+			.frame{
+				width: 100%;
+				max-width: 1620px;
+				margin: auto;
+				display: flex;
+				justify-content: space-between;
+				align-itmems: center;
+				height: 100%;
+				.logo{
+					display: flex;
+					align-items: center;
+					height: 100%;
+					img{
+						display: block;
+						flex: none;
+						height: 53px;
+					}
+					.text{
+						color: white;
+					}
+				}
+				.menu{
+					display: flex;
+					align-items: center;
+					width: 500px;
+					justify-content: space-between;
+					margin: 0;
+					li{
+						a{
+							color: white;
+							font-size: 15px;
+							i{
+								margin-left: 10px;
+							}
+						}
+					}
+				}
+			}//frame
+		}//header
+		footer{
+			background-color: $theme-black;
+			color: white;
+			font-size: 15px;
+			padding: 50px 0 10px 0;
+			a, a:hover{
+				color: white;
+			}
+			a:hover{
+				opacity: 0.5;
+			}
+			.frame{
+				width: 90%;
+				margin: auto;
+				max-width: 1200px;
+				.columns{
+					.column{
+						.title{
+							text-transform: uppercase;
+							font-style: italic;
+						}
+						ul{
+							@media screen and (min-width: 768px) {
+								margin-top: 25px;	
+							}
+						}
+						
+					}
+					.brand{
+						p.text{
+							font-family: Arsenal, Helvetica, Arial;
+							font-size: 15px;
+							margin-top: 25px;
+						}
+						@media screen and (min-width: 768px){
+							width: 100%;
+							margin-bottom: 50px;
+							@media screen and (min-width: 992px) {
+								width: 305px;
+								@media screen and (min-width: 1200px){
+									width: 360px;
+								}
+							}
+						}
+					}
+					.contact{
+						ul{
+							li, li>a{
+								font-family: Seravek;
+								font-weight: lighter;
+								font-style: italic;
+							}
+						}
+					}
+					.payment{
+						ul{
+							li{
+								padding: 3px 0;
+							}
+							@media screen and (min-width: 768px){
+								margin: 0;
+							}
+						}
+					}
+					@media screen and (min-width: 768px) {
+						display: flex;
+						flex-wrap: wrap;
+						justify-content: space-between;
+					}
+				}//colums
+				.copyright{
+					text-align: center;
+					.text{
+						font-family: 'Seravek';
+					}
+					.links{
+						@media screen and (min-width: 768px){
+							margin-left: 20px;
+						}
+					}
+					@media screen and (min-width: 768px) {
+						padding-top: 15px;
+						&>*{
+							display: inline-block;	
+						}
+						@media screen  and (min-width: 992px){
+							text-align: left;
+						}
+					}
+				}
+			}//frame
+		}//footer
+	}//body
+}//html
+
+html{
+	body#index{
+		section.banner{
+			width: 100%;
+			height: 42vw;
+			.slide{
+				width: 100%;
+				height: 100%;
+				background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_05.jpg);
+				background-size: cover;
+			}
+		}//banner
+		section.get-your{
+			padding: 65px 0;
+			.frame{
+				width: 90%;
+				max-width: 872px;
+				margin: auto;
+				.title{
+					text-align: center;
+					width: 100%;
+					max-width: 630px;
+					margin: auto;
+					h2{
+						font-size: 35px;
+					}
+				}
+				.seperator{
+					@include seperator;
+				}
+				.text{
+					p{
+						font-family: Arsenal, Helvetica;
+						margin: 15px 0;
+						font-size: 20px;
+						line-height: 1.3em;
+					}
+				}
+				.highlights{
+					margin-top: 45px;
+					.title{
+						color: #322B2A;
+						opacity: 0.75;
+						font-size: 25px;
+						text-align: left;
+						width: 100%;
+						max-width: none;
+					}
+					.box-wrap{
+						width: 100%;
+						display: flex;
+						flex-wrap: wrap;
+						.box{
+							display: flex;
+							height: 71px;
+							align-items: center;
+							margin: 20px 60px 20px 0;
+							.text{
+								color: #322B2A;
+								opacity: 75%;
+								margin-left: 15px;
+							}
+							@media screen and (min-width: 768px){
+								&:nth-child(4){
+									margin-left: 35px; 
+								}
+							}
+						}
+					}//box-wrap
+				}//highlights
+			}
+		}//get-your
+		section.event{
+			height: 45vw;
+			background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/front_page_middle_banner_1-copy.jpg);
+			background-size: cover;
+			display: flex;
+			align-items: center;
+			.frame{
+				width: 90%;
+				margin: auto;
+				p{
+					color: white;
+					font-style: oblique;
+					text-align: center;
+					font-size: 36px;
+				}
+				@media screen and (min-width: 768px) {
+					width: 750px;
+					margin: auto;
+					line-height: 77px;
+				}
+				.p1{
+					@media screen and (min-width: 768px){
+						font-size: 100px;
+						text-align: left;
+					}
+				}
+				.p2{
+					@media screen and (min-width: 768px){
+						font-size: 76px;
+						text-align: right;
+					}
+				}
+			}
+		}//event
+		section.workspace{
+			padding: 150px 0;
+			.frame{
+				width: 90%;
+				margin: auto;
+				max-width: 1650px;
+				.title{
+					font-size: 35px;
+					text-align: center;
+				}
+				.subtitle{
+					text-align: center;
+					font-family: 'Seravek';
+					font-weight: lighter;
+					font-style: italic;
+					font-size: 25px;
+				}
+				.card-wrapper{
+					margin-top: 30px;
+					.card{
+						margin: 8px;
+						margin-top: 60px;
+						position: relative;
+						border: 0;
+						.img{
+							width: 100%;
+							height: 230px;
+							background-color: $theme-light-green;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							background-size: cover;
+							.title{
+								color: white;
+								font-size: 44px;
+								text-align: center;
+							}
+						}
+						.head{
+							border-bottom: 1px solid $theme-green;
+							padding: 20px 0;
+							.item{
+								padding: 5px 0;
+							}
+							.size{
+								font-size: 27px;
+								sup{
+									font-size: 12px;
+								}
+							}
+							.function{
+								font-style: italic;
+								font-size: 25px;
+							}
+							.capacity{
+								font-style: italic;
+								font-size: 25px;
+							}
+						}
+						.intro{
+							padding-top: 10px;
+							padding-bottom: 90px;
+							p{
+								font-family: Arsenal, Helvetica, Arial;
+								line-height: 1.3em;
+							}
+						}
+						.button{
+							@include green-button;
+							position: absolute;
+							bottom: 0;
+						}
+						&:first-child{
+							.img{
+								background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_quick_link.jpg);
+							}
+						}
+						&:nth-child(2){
+							.img{
+								background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/meeting_room_quick_link.jpg);
+							}
+						}
+						&:nth-child(3){
+							.img{
+								background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/lobby_quick_link.jpg);
+							}
+						}
+						&:nth-child(4){
+							.img{
+								background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/kitchen_quick_link.jpg);
+							}
+						}
+						@media screen and (min-width: 768px){
+							width: 45%;
+							@media screen and (min-width: 1200px){
+								flex: 1;
+							}
+						}
+					}//card
+					@media screen and (min-width: 768px) {
+						display: flex;
+						justify-content: space-between;
+						flex-wrap: wrap;
+					}
+				}
+			}
+		}//workspace
+		section.map{
+			@include map;
+		}//map
+		section.location{
+			padding: 150px 0;
+			.frame{
+				width: 90%;
+				margin: auto;
+				max-width: 1650px;
+				.left{
+					img.deco{
+						width: 65%;
+						margin: auto;
+						display: block;
+						@media screen and (min-width: 992px) {
+							width: 100%;
+						}
+					}
+					ul{
+						li{
+							display: flex;
+							align-items: center;
+							padding: 20px 0;
+							border-bottom: 1px solid $theme-green;
+							img{
+								width: 77px;
+							}
+							p{
+								font-family: Seravek;
+								font-size: 21px;
+								margin-left: 10px;
+							}
+							&:last-child{
+								border: 0;
+							}
+						}
+					}
+					@media screen and (min-width: 992px){
+						flex: 1;
+					}
+				}//left
+				.right{
+					img{
+						width: 100%;
+						margin-top: 40px;
+					}
+					@media screen and (min-width: 992px){
+						flex: 3;
+						margin-left: 5%;
+					}
+				}
+				@media screen and (min-width: 992px) {
+					display: flex;
+					align-items: center;
+				}
+			}//frame
+		}//location
+		section.inquery{
+			padding: 90px 0 150px 0;
+			background-color: #e6eded;
+			.frame{
+				width: 90%;
+				margin: auto;
+				.inquery-form{
+					@include inquery-form;
+					.seperator{
+						width: 142px;
+					}
+				}
+			}
+		}
+	}//#index
+
+	body#product{
+		section:nth-child(2n+1){
+			background-color: #f7f8f8;
+		}
+		section.banner{
+			height: 40vw;
+			background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/ps_page_banner01.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+		}//section.banner
+		section.section-room{
+			padding: 50px 0;
+			.frame{
+				width: 90%;
+				margin: auto;
+				max-width: 1480px;
+				.right{
+					position: relative;
+					.title{
+						color: white;
+						font-size: 45px;
+						height: 125px;
+						background: linear-gradient(102deg, #DDECFC 0%, #627C97 44%, #313E4C 100%);
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						line-height: 45px;
+						text-align: center;
+					}
+					.info{
+						padding: 5%;
+						padding-bottom: 0;
+						.text{
+							border-bottom: 1px solid $theme-green;
+							padding-bottom: 20px;
+							li{
+								font-size: 25px;
+								font-style: italic;
+								&:first-child{
+									font-size: 27px;
+									font-style: normal;
+								}
+							}
+							@media screen and (min-width: 1200px) {
+								margin-bottom: 40px;
+							}
+						}
+						img{
+							display: block;
+							margin: auto;
+							width: 100%;
+						}
+						.button{
+							@include green-button;
+							margin-top: 25px;
+							@media screen and (min-width: 1200px) {
+								position: absolute;
+								bottom: 0;
+								width: 80%;
+							}
+						}
+						@media screen and (min-width: 1200px){
+							padding: 10%;
+							padding-bottom: 0;
+						}
+					}
+					@media screen and (min-width: 1200px){
+						width: 32%;
+					}
+				}//right
+				.left{
+					margin-top: 50px;
+					.slider{
+						width: 100%;
+						height: 40vw;
+						.slide{
+							display: none;
+							height: 100%;
+							background-position: center;
+							background-size: cover;
+						}
+						.active{
+							display: block;
+						}
+						@media screen and (min-width: 1200px) {
+							height: 639px;
+						}
+					}
+					@media screen and (min-width: 1200px){
+						width: 68%;
+						margin-top: 125px;
+					}
+				}//left
+				@media screen and (min-width: 1200px){
+					display: flex;
+					flex-direction: row-reverse;
+				}
+			}//frame
+			@media screen and (min-width: 1200px) {
+				padding: 110px 0;
+			}
+		}//section.section-room
+
+		section.conference{
+			.frame{
+				.left{
+					.slider{
+						.slide{
+							&:nth-child(1){
+								background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_07.jpg);
+							}
+							&:nth-child(2){
+								background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_07.jpg);
+							}
+							&:nth-child(3){
+								background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_07.jpg);
+							}
+						}
+					}
+				}
+			}	
+		}//section.conference
+
+		section.meeting{
+			.frame{
+				.right{
+					.title{
+						background: linear-gradient(103deg, #FFFFFF 0%, #649A9E 44%, #28575A 100%);
+					}
+				}
+				.left{
+					.slider{
+						.slide{
+							&:nth-child(1){
+								background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_03.jpg);
+							}
+							&:nth-child(2){
+								background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_03.jpg);
+							}
+							&:nth-child(3){
+								background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_03.jpg);
+							}
+						}
+					}
+				}
+			}			
+		}//section.meeting
+
+		section.lobby{
+			.frame{
+				.right{
+					.title{
+						background: linear-gradient(103deg, #F2F2F2 0%, #AFDBDA 45%, #1BA29F 100%);
+					}
+				}
+				.left{
+					.slider{
+						.slide{
+							&:nth-child(1){
+								background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_05.jpg);
+							}
+							&:nth-child(2){
+								background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_05.jpg);
+							}
+							&:nth-child(3){
+								background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_05.jpg);
+							}
+						}
+					}
+				}
+			}			
+		}//section.lobby
+		
+		section.section-two-room{
+			padding: 50px 0;
+			.frame{
+				width: 90%;
+				margin: auto;
+				max-width: 1325px;
+				.room{
+					img.title{
+						width: 100%;
+						@media screen and (min-width: 1200px){
+							margin-bottom: 20px;
+						}
+					}
+					.number{
+						padding: 20px;
+						border-bottom: 1px solid $theme-green;
+						.size{
+							font-size: 27px;
+						}
+						.ppl{
+							font-size: 25px;
+							font-style: italic;
+						}
+						@media screen and (min-width: 1200px){
+							padding: 20px 50px;
+						}
+					}
+					.intro{
+						font-size: 25px;
+						font-style: italic;
+						padding: 10px;
+						border-bottom: 1px solid $theme-green;
+						@media screen and (min-width: 1200px){
+							padding: 20px;
+						}
+					}
+					.blueprint{
+						img{
+							display: block;
+							width: 100%;
+							height: auto;
+							padding: 20px 0;
+						}
+						@media screen and (min-width: 768px){
+							height: 400px;
+							display: flex;
+							align-items: center;
+							@media screen and (min-width: 1200px) {
+								height: 600px;
+							}
+						}
+					}
+					.button{
+						@include green-button;
+						max-width: 375px;
+						margin: auto;
+					}
+					&:first-child{
+						.blue-print{
+							img{
+								@media screen and (min-width: 768px){
+									width: 458px;
+									height: auto;
+								}
+							}
+						}
+						@media screen and (min-width: 768px){
+							width: 46%;
+							max-width: 545px;
+						}
+					}
+					&:nth-child(2){
+						margin-top: 50px;
+						.blue-print{
+							img{
+								@media screen and (min-width: 768px){
+									width: 534px;
+									height: auto;
+								}
+							}
+						}
+						@media screen and (min-width: 768px){
+							margin-top: 0;
+							width: 51%;
+							max-width: 600px;
+						}
+					}
+				}//room
+				@media screen and (min-width: 768px) {
+					display: flex;
+					justify-content: space-between;
+				}
+			}//frame
+			@media screen and (min-width: 1200px) {
+				padding: 110px 0;
+			}
+		}//section.section-two-room
+
+		section.kitchen{
+			.frame{
+				.right{
+					.title{
+						background: linear-gradient(105deg, #FFFFFF 0%, #91988C 92%, #91988C 100%);
+					}
+				}
+				.left{
+					.slider{
+						.slide{
+							&:nth-child(1){
+								background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/kitchen.png);
+							}
+							&:nth-child(2){
+								background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/kitchen.png);
+							}
+							&:nth-child(3){
+								background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/kitchen.png);
+							}
+						}
+					}
+				}
+			}			
+		}//section.kitchen
+
+		section.venue{
+			.frame{
+				.right{
+					.title{
+						background: linear-gradient(103deg, #FFFFFF 0%, #649A9E 44%, #28575A 100%);
+					}
+					.info{
+						@media screen and (min-width: 1200px) {
+							padding-right: 0;
+							img{
+								width: 323px;
+							}
+						}
+					}
+				}
+				.left{
+					.slider{
+						.slide{
+							&:nth-child(1){
+								background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_03.jpg);
+							}
+							&:nth-child(2){
+								background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_03.jpg);
+							}
+							&:nth-child(3){
+								background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_03.jpg);
+							}
+						}
+					}
+				}
+			}			
+		}//section.venue
+
+		section.catering{
+			padding: 40px 0;
+			.frame{
+				width: 80%;
+				margin: auto;
+				max-width: 1100px;
+				.title{
+					font-size: 35px;
+					text-transform: uppercase;
+					text-align: center;
+				}
+				.seperator{
+					@include seperator;
+					.square{
+						box-shadow: 0px 0px 0px 5px rgba(247,248,248,1);
+					}
+				}
+				.options{
+					width: 100%;
+					.option{
+						text-align: center;
+						margin: auto;
+						margin-top: 50px;
+						img{
+							margin-bottom: 20px;
+						}
+						.service{
+							font-size: 25px;
+							font-style: italic;
+						}
+						.content{
+							font-family: Arsenal, Helvetica, Arial;
+						}
+						@media screen and (min-width: 768px){
+							width: 35%;
+							text-align: left;
+							&:nth-child(2n){
+								margin-right: 0;
+							}
+						}
+					}
+					@media screen and (min-width: 768px) {
+						display: flex;
+						flex-wrap: wrap;
+					}
+				}
+			}
+			@media screen and (min-width: 1200px) {
+				padding: 110px 0;
+			}
+		}//section.catering
+	}
+}

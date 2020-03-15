@@ -1,0 +1,41 @@
+/*reset*/
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0; }
+
+br {
+  display: block;
+  margin: 0 0 5px; }
+
+ol, ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+body{
+	padding: 0;
+	margin: 0;
+}
+
+body > img {
+  display: none; }
+
+img {
+  border: none;
+  padding: 0;
+  margin: 0; }
+
+a, a:active, a:visited, a:hover {
+  outline: none;
+  text-decoration: none;
+  background-color: none;
+  -webkit-tap-highlight-color: transparent; 
+}
+
+table, tr, td {
+  padding: 0;
+  border-spacing: 0; }
+
+/*reset end */
