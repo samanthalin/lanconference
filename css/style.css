@@ -1,1027 +1,770 @@
 * {
   box-sizing: border-box;
-  font-family: "Seravek Medium", Helvetica, sans-serif, Arial;
-}
+  font-family: 'Seravek Medium', Helvetica, sans-serif, Arial; }
 
 a:hover, a:focus, a:active {
-  text-decoration: none !important;
-}
+  text-decoration: none !important; }
 
 html body {
   font-size: 18px;
-  color: #322B2A;
-}
-html body header {
-  width: 100%;
-  height: 85px;
-  background-color: #322b2a;
-  padding: 10px 20px;
-}
-html body header .frame {
-  width: 100%;
-  max-width: 1620px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-itmems: center;
-  height: 100%;
-}
-html body header .frame .logo {
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
-html body header .frame .logo img {
-  display: block;
-  flex: none;
-  height: 53px;
-}
-html body header .frame .logo .text {
-  color: white;
-}
-html body header .frame .menu {
-  display: flex;
-  align-items: center;
-  width: 500px;
-  justify-content: space-between;
-  margin: 0;
-}
-html body header .frame .menu li a {
-  color: white;
-  font-size: 15px;
-}
-html body header .frame .menu li a i {
-  margin-left: 10px;
-}
-html body footer {
-  background-color: #322B2A;
-  color: white;
-  font-size: 15px;
-  padding: 50px 0 10px 0;
-}
-html body footer a, html body footer a:hover {
-  color: white;
-}
-html body footer a:hover {
-  opacity: 0.5;
-}
-html body footer .frame {
-  width: 90%;
-  margin: auto;
-  max-width: 1200px;
-}
-html body footer .frame .columns .column .title {
-  text-transform: uppercase;
-  font-style: italic;
-}
-@media screen and (min-width: 768px) {
-  html body footer .frame .columns .column ul {
-    margin-top: 25px;
-  }
-}
-html body footer .frame .columns .brand p.text {
-  font-family: Arsenal, Helvetica, Arial;
-  font-size: 15px;
-  margin-top: 25px;
-}
-@media screen and (min-width: 768px) {
-  html body footer .frame .columns .brand {
+  color: #322B2A; }
+  html body header {
     width: 100%;
-    margin-bottom: 50px;
-  }
-}
-@media screen and (min-width: 768px) and (min-width: 992px) {
-  html body footer .frame .columns .brand {
-    width: 305px;
-  }
-}
-@media screen and (min-width: 768px) and (min-width: 992px) and (min-width: 1200px) {
-  html body footer .frame .columns .brand {
-    width: 360px;
-  }
-}
-html body footer .frame .columns .contact ul li, html body footer .frame .columns .contact ul li > a {
-  font-family: Seravek;
-  font-weight: lighter;
-  font-style: italic;
-}
-html body footer .frame .columns .payment ul li {
-  padding: 3px 0;
-}
-@media screen and (min-width: 768px) {
-  html body footer .frame .columns .payment ul {
-    margin: 0;
-  }
-}
-@media screen and (min-width: 768px) {
-  html body footer .frame .columns {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-}
-html body footer .frame .copyright {
-  text-align: center;
-}
-html body footer .frame .copyright .text {
-  font-family: "Seravek";
-}
-@media screen and (min-width: 768px) {
-  html body footer .frame .copyright .links {
-    margin-left: 20px;
-  }
-}
-@media screen and (min-width: 768px) {
-  html body footer .frame .copyright {
-    padding-top: 15px;
-  }
-  html body footer .frame .copyright > * {
-    display: inline-block;
-  }
-}
-@media screen and (min-width: 768px) and (min-width: 992px) {
-  html body footer .frame .copyright {
-    text-align: left;
-  }
-}
+    height: 85px;
+    background-color: #322b2a;
+    padding: 10px 20px; }
+    html body header .frame {
+      width: 100%;
+      max-width: 1620px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-itmems: center;
+      height: 100%; }
+      html body header .frame .logo {
+        display: flex;
+        align-items: center;
+        height: 100%; }
+        html body header .frame .logo img {
+          display: block;
+          flex: none;
+          height: 53px; }
+        html body header .frame .logo .text {
+          color: white; }
+      html body header .frame .menu {
+        display: flex;
+        align-items: center;
+        width: 500px;
+        justify-content: space-between;
+        margin: 0; }
+        html body header .frame .menu li a {
+          color: white;
+          font-size: 15px; }
+          html body header .frame .menu li a i {
+            margin-left: 10px; }
+  html body footer {
+    background-color: #322B2A;
+    color: white;
+    font-size: 15px;
+    padding: 50px 0 10px 0; }
+    html body footer a, html body footer a:hover {
+      color: white; }
+    html body footer a:hover {
+      opacity: 0.5; }
+    html body footer .frame {
+      width: 90%;
+      margin: auto;
+      max-width: 1200px; }
+      html body footer .frame .columns .column .title {
+        text-transform: uppercase;
+        font-style: italic; }
+      @media screen and (min-width: 768px) {
+        html body footer .frame .columns .column ul {
+          margin-top: 25px; } }
+      html body footer .frame .columns .brand p.text {
+        font-family: Arsenal, Helvetica, Arial;
+        font-size: 15px;
+        margin-top: 25px; }
+      @media screen and (min-width: 768px) {
+        html body footer .frame .columns .brand {
+          width: 100%;
+          margin-bottom: 50px; } }
+  @media screen and (min-width: 768px) and (min-width: 992px) {
+    html body footer .frame .columns .brand {
+      width: 305px; } }
+
+  @media screen and (min-width: 768px) and (min-width: 992px) and (min-width: 1200px) {
+    html body footer .frame .columns .brand {
+      width: 360px; } }
+
+      html body footer .frame .columns .contact ul li, html body footer .frame .columns .contact ul li > a {
+        font-family: Seravek;
+        font-weight: lighter;
+        font-style: italic; }
+      html body footer .frame .columns .payment ul li {
+        padding: 3px 0; }
+      @media screen and (min-width: 768px) {
+        html body footer .frame .columns .payment ul {
+          margin: 0; } }
+      @media screen and (min-width: 768px) {
+        html body footer .frame .columns {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between; } }
+      html body footer .frame .copyright {
+        text-align: center; }
+        html body footer .frame .copyright .text {
+          font-family: 'Seravek'; }
+        @media screen and (min-width: 768px) {
+          html body footer .frame .copyright .links {
+            margin-left: 20px; } }
+        @media screen and (min-width: 768px) {
+          html body footer .frame .copyright {
+            padding-top: 15px; }
+            html body footer .frame .copyright > * {
+              display: inline-block; } }
+  @media screen and (min-width: 768px) and (min-width: 992px) {
+    html body footer .frame .copyright {
+      text-align: left; } }
 
 html body#index section.banner {
   width: 100%;
-  height: 42vw;
-}
-html body#index section.banner .slide {
-  width: 100%;
-  height: 100%;
-  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_05.jpg);
-  background-size: cover;
-}
+  height: 42vw; }
+  html body#index section.banner .slide {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_05.jpg);
+    background-size: cover; }
 html body#index section.get-your {
-  padding: 65px 0;
-}
-html body#index section.get-your .frame {
-  width: 90%;
-  max-width: 872px;
-  margin: auto;
-}
-html body#index section.get-your .frame .title {
-  text-align: center;
-  width: 100%;
-  max-width: 630px;
-  margin: auto;
-}
-html body#index section.get-your .frame .title h2 {
-  font-size: 35px;
-}
-html body#index section.get-your .frame .seperator {
-  position: relative;
-  border-bottom: 2px solid #649A9E;
-  width: 166px;
-  margin: 20px auto 50px;
-}
-html body#index section.get-your .frame .seperator .square {
-  width: 16px;
-  height: 16px;
-  background-color: #649A9E;
-  transform: rotate(45deg);
-  margin: auto;
-  box-shadow: 0px 0px 0px 5px white;
-  margin-bottom: -9px;
-}
-html body#index section.get-your .frame .text p {
-  font-family: Arsenal, Helvetica;
-  margin: 15px 0;
-  font-size: 20px;
-  line-height: 1.3em;
-}
-html body#index section.get-your .frame .highlights {
-  margin-top: 45px;
-}
-html body#index section.get-your .frame .highlights .title {
-  color: #322B2A;
-  opacity: 0.75;
-  font-size: 25px;
-  text-align: left;
-  width: 100%;
-  max-width: none;
-}
-html body#index section.get-your .frame .highlights .box-wrap {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-html body#index section.get-your .frame .highlights .box-wrap .box {
-  display: flex;
-  height: 71px;
-  align-items: center;
-  margin: 20px 60px 20px 0;
-}
-html body#index section.get-your .frame .highlights .box-wrap .box .text {
-  color: #322B2A;
-  opacity: 75%;
-  margin-left: 15px;
-}
-@media screen and (min-width: 768px) {
-  html body#index section.get-your .frame .highlights .box-wrap .box:nth-child(4) {
-    margin-left: 35px;
-  }
-}
+  padding: 65px 0; }
+  html body#index section.get-your .frame {
+    width: 90%;
+    max-width: 872px;
+    margin: auto; }
+    html body#index section.get-your .frame .title {
+      text-align: center;
+      width: 100%;
+      max-width: 630px;
+      margin: auto; }
+      html body#index section.get-your .frame .title h2 {
+        font-size: 35px; }
+    html body#index section.get-your .frame .seperator {
+      position: relative;
+      border-bottom: 2px solid #649A9E;
+      width: 166px;
+      margin: 20px auto 50px; }
+      html body#index section.get-your .frame .seperator .square {
+        width: 16px;
+        height: 16px;
+        background-color: #649A9E;
+        transform: rotate(45deg);
+        margin: auto;
+        box-shadow: 0px 0px 0px 5px white;
+        margin-bottom: -9px; }
+    html body#index section.get-your .frame .text p {
+      font-family: Arsenal, Helvetica;
+      margin: 15px 0;
+      font-size: 20px;
+      line-height: 1.3em; }
+    html body#index section.get-your .frame .highlights {
+      margin-top: 45px; }
+      html body#index section.get-your .frame .highlights .title {
+        color: #322B2A;
+        opacity: 0.75;
+        font-size: 25px;
+        text-align: left;
+        width: 100%;
+        max-width: none; }
+      html body#index section.get-your .frame .highlights .box-wrap {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap; }
+        html body#index section.get-your .frame .highlights .box-wrap .box {
+          display: flex;
+          height: 71px;
+          align-items: center;
+          margin: 20px 60px 20px 0; }
+          html body#index section.get-your .frame .highlights .box-wrap .box .text {
+            color: #322B2A;
+            opacity: 75%;
+            margin-left: 15px; }
+          @media screen and (min-width: 768px) {
+            html body#index section.get-your .frame .highlights .box-wrap .box:nth-child(4) {
+              margin-left: 35px; } }
 html body#index section.event {
   height: 45vw;
   background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/front_page_middle_banner_1-copy.jpg);
   background-size: cover;
   display: flex;
-  align-items: center;
-}
-html body#index section.event .frame {
-  width: 90%;
-  margin: auto;
-}
-html body#index section.event .frame p {
-  color: white;
-  font-style: oblique;
-  text-align: center;
-  font-size: 36px;
-}
-@media screen and (min-width: 768px) {
+  align-items: center; }
   html body#index section.event .frame {
-    width: 750px;
-    margin: auto;
-    line-height: 77px;
-  }
-}
-@media screen and (min-width: 768px) {
-  html body#index section.event .frame .p1 {
-    font-size: 100px;
-    text-align: left;
-  }
-}
-@media screen and (min-width: 768px) {
-  html body#index section.event .frame .p2 {
-    font-size: 76px;
-    text-align: right;
-  }
-}
+    width: 90%;
+    margin: auto; }
+    html body#index section.event .frame p {
+      color: white;
+      font-style: oblique;
+      text-align: center;
+      font-size: 36px; }
+    @media screen and (min-width: 768px) {
+      html body#index section.event .frame {
+        width: 750px;
+        margin: auto;
+        line-height: 77px; } }
+    @media screen and (min-width: 768px) {
+      html body#index section.event .frame .p1 {
+        font-size: 100px;
+        text-align: left; } }
+    @media screen and (min-width: 768px) {
+      html body#index section.event .frame .p2 {
+        font-size: 76px;
+        text-align: right; } }
 html body#index section.workspace {
-  padding: 150px 0;
-}
-html body#index section.workspace .frame {
-  width: 90%;
-  margin: auto;
-  max-width: 1650px;
-}
-html body#index section.workspace .frame .title {
-  font-size: 35px;
-  text-align: center;
-}
-html body#index section.workspace .frame .subtitle {
-  text-align: center;
-  font-family: "Seravek";
-  font-weight: lighter;
-  font-style: italic;
-  font-size: 25px;
-}
-html body#index section.workspace .frame .card-wrapper {
-  margin-top: 30px;
-}
-html body#index section.workspace .frame .card-wrapper .card {
-  margin: 8px;
-  margin-top: 60px;
-  position: relative;
-  border: 0;
-}
-html body#index section.workspace .frame .card-wrapper .card .img {
-  width: 100%;
-  height: 230px;
-  background-color: #CDE2BC;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-}
-html body#index section.workspace .frame .card-wrapper .card .img .title {
-  color: white;
-  font-size: 44px;
-  text-align: center;
-}
-html body#index section.workspace .frame .card-wrapper .card .head {
-  border-bottom: 1px solid #649A9E;
-  padding: 20px 0;
-}
-html body#index section.workspace .frame .card-wrapper .card .head .item {
-  padding: 5px 0;
-}
-html body#index section.workspace .frame .card-wrapper .card .head .size {
-  font-size: 27px;
-}
-html body#index section.workspace .frame .card-wrapper .card .head .size sup {
-  font-size: 12px;
-}
-html body#index section.workspace .frame .card-wrapper .card .head .function {
-  font-style: italic;
-  font-size: 25px;
-}
-html body#index section.workspace .frame .card-wrapper .card .head .capacity {
-  font-style: italic;
-  font-size: 25px;
-}
-html body#index section.workspace .frame .card-wrapper .card .intro {
-  padding-top: 10px;
-  padding-bottom: 90px;
-}
-html body#index section.workspace .frame .card-wrapper .card .intro p {
-  font-family: Arsenal, Helvetica, Arial;
-  line-height: 1.3em;
-}
-html body#index section.workspace .frame .card-wrapper .card .button {
-  display: block;
-  width: 100%;
-  background-color: #CDE2BC;
-  text-align: center;
-  color: #322B2A;
-  font-family: Quicksand;
-  font-size: 26px;
-  border-radius: 17px;
-  padding: 8px 0;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  position: absolute;
-  bottom: 0;
-}
-html body#index section.workspace .frame .card-wrapper .card .button:hover {
-  filter: brightness(0.9);
-}
-html body#index section.workspace .frame .card-wrapper .card .button:active {
-  transform: translateY(4px);
-  box-shadow: none;
-}
-html body#index section.workspace .frame .card-wrapper .card:first-child .img {
-  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_quick_link.jpg);
-}
-html body#index section.workspace .frame .card-wrapper .card:nth-child(2) .img {
-  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/meeting_room_quick_link.jpg);
-}
-html body#index section.workspace .frame .card-wrapper .card:nth-child(3) .img {
-  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/lobby_quick_link.jpg);
-}
-html body#index section.workspace .frame .card-wrapper .card:nth-child(4) .img {
-  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/kitchen_quick_link.jpg);
-}
-@media screen and (min-width: 768px) {
-  html body#index section.workspace .frame .card-wrapper .card {
-    width: 45%;
-  }
-}
-@media screen and (min-width: 768px) and (min-width: 1200px) {
-  html body#index section.workspace .frame .card-wrapper .card {
-    flex: 1;
-  }
-}
-@media screen and (min-width: 768px) {
-  html body#index section.workspace .frame .card-wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-}
+  padding: 150px 0; }
+  html body#index section.workspace .frame {
+    width: 90%;
+    margin: auto;
+    max-width: 1650px; }
+    html body#index section.workspace .frame .title {
+      font-size: 35px;
+      text-align: center; }
+    html body#index section.workspace .frame .subtitle {
+      text-align: center;
+      font-family: 'Seravek';
+      font-weight: lighter;
+      font-style: italic;
+      font-size: 25px; }
+    html body#index section.workspace .frame .card-wrapper {
+      margin-top: 30px; }
+      html body#index section.workspace .frame .card-wrapper .card {
+        margin: 8px;
+        margin-top: 60px;
+        position: relative;
+        border: 0; }
+        html body#index section.workspace .frame .card-wrapper .card .img {
+          width: 100%;
+          height: 230px;
+          background-color: #CDE2BC;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-size: cover; }
+          html body#index section.workspace .frame .card-wrapper .card .img .title {
+            color: white;
+            font-size: 44px;
+            text-align: center; }
+        html body#index section.workspace .frame .card-wrapper .card .head {
+          border-bottom: 1px solid #649A9E;
+          padding: 20px 0; }
+          html body#index section.workspace .frame .card-wrapper .card .head .item {
+            padding: 5px 0; }
+          html body#index section.workspace .frame .card-wrapper .card .head .size {
+            font-size: 27px; }
+            html body#index section.workspace .frame .card-wrapper .card .head .size sup {
+              font-size: 12px; }
+          html body#index section.workspace .frame .card-wrapper .card .head .function {
+            font-style: italic;
+            font-size: 25px; }
+          html body#index section.workspace .frame .card-wrapper .card .head .capacity {
+            font-style: italic;
+            font-size: 25px; }
+        html body#index section.workspace .frame .card-wrapper .card .intro {
+          padding-top: 10px;
+          padding-bottom: 90px; }
+          html body#index section.workspace .frame .card-wrapper .card .intro p {
+            font-family: Arsenal, Helvetica, Arial;
+            line-height: 1.3em; }
+        html body#index section.workspace .frame .card-wrapper .card .button {
+          display: block;
+          width: 100%;
+          background-color: #CDE2BC;
+          text-align: center;
+          color: #322B2A;
+          font-family: Quicksand;
+          font-size: 26px;
+          border-radius: 17px;
+          padding: 8px 0;
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+          cursor: pointer;
+          position: absolute;
+          bottom: 0; }
+          html body#index section.workspace .frame .card-wrapper .card .button:hover {
+            filter: brightness(0.9); }
+          html body#index section.workspace .frame .card-wrapper .card .button:active {
+            transform: translateY(4px);
+            box-shadow: none; }
+        html body#index section.workspace .frame .card-wrapper .card:first-child .img {
+          background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_quick_link.jpg); }
+        html body#index section.workspace .frame .card-wrapper .card:nth-child(2) .img {
+          background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/meeting_room_quick_link.jpg); }
+        html body#index section.workspace .frame .card-wrapper .card:nth-child(3) .img {
+          background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/lobby_quick_link.jpg); }
+        html body#index section.workspace .frame .card-wrapper .card:nth-child(4) .img {
+          background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/kitchen_quick_link.jpg); }
+        @media screen and (min-width: 768px) {
+          html body#index section.workspace .frame .card-wrapper .card {
+            width: 45%; } }
+  @media screen and (min-width: 768px) and (min-width: 1200px) {
+    html body#index section.workspace .frame .card-wrapper .card {
+      flex: 1; } }
+
+      @media screen and (min-width: 768px) {
+        html body#index section.workspace .frame .card-wrapper {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap; } }
 html body#index section.map {
   height: 500px;
   background-image: url(../img/map.png);
-  background-size: cover;
-}
-@media screen and (min-width: 992px) {
-  html body#index section.map {
-    height: 40vw;
-  }
-}
+  background-size: cover; }
+  @media screen and (min-width: 992px) {
+    html body#index section.map {
+      height: 40vw; } }
 html body#index section.location {
-  padding: 150px 0;
-}
-html body#index section.location .frame {
-  width: 90%;
-  margin: auto;
-  max-width: 1650px;
-}
-html body#index section.location .frame .left img.deco {
-  width: 65%;
-  margin: auto;
-  display: block;
-}
-@media screen and (min-width: 992px) {
-  html body#index section.location .frame .left img.deco {
-    width: 100%;
-  }
-}
-html body#index section.location .frame .left ul li {
-  display: flex;
-  align-items: center;
-  padding: 20px 0;
-  border-bottom: 1px solid #649A9E;
-}
-html body#index section.location .frame .left ul li img {
-  width: 77px;
-}
-html body#index section.location .frame .left ul li p {
-  font-family: Seravek;
-  font-size: 21px;
-  margin-left: 10px;
-}
-html body#index section.location .frame .left ul li:last-child {
-  border: 0;
-}
-@media screen and (min-width: 992px) {
-  html body#index section.location .frame .left {
-    flex: 1;
-  }
-}
-html body#index section.location .frame .right img {
-  width: 100%;
-  margin-top: 40px;
-}
-@media screen and (min-width: 992px) {
-  html body#index section.location .frame .right {
-    flex: 3;
-    margin-left: 5%;
-  }
-}
-@media screen and (min-width: 992px) {
+  padding: 150px 0; }
   html body#index section.location .frame {
-    display: flex;
-    align-items: center;
-  }
-}
+    width: 90%;
+    margin: auto;
+    max-width: 1650px; }
+    html body#index section.location .frame .left img.deco {
+      width: 65%;
+      margin: auto;
+      display: block; }
+      @media screen and (min-width: 992px) {
+        html body#index section.location .frame .left img.deco {
+          width: 100%; } }
+    html body#index section.location .frame .left ul li {
+      display: flex;
+      align-items: center;
+      padding: 20px 0;
+      border-bottom: 1px solid #649A9E; }
+      html body#index section.location .frame .left ul li img {
+        width: 77px; }
+      html body#index section.location .frame .left ul li p {
+        font-family: Seravek;
+        font-size: 21px;
+        margin-left: 10px; }
+      html body#index section.location .frame .left ul li:last-child {
+        border: 0; }
+    @media screen and (min-width: 992px) {
+      html body#index section.location .frame .left {
+        flex: 1; } }
+    html body#index section.location .frame .right img {
+      width: 100%;
+      margin-top: 40px; }
+    @media screen and (min-width: 992px) {
+      html body#index section.location .frame .right {
+        flex: 3;
+        margin-left: 5%; } }
+    @media screen and (min-width: 992px) {
+      html body#index section.location .frame {
+        display: flex;
+        align-items: center; } }
 html body#index section.inquery {
   padding: 90px 0 150px 0;
-  background-color: #e6eded;
-}
-html body#index section.inquery .frame {
-  width: 90%;
-  margin: auto;
-}
-html body#index section.inquery .frame .inquery-form {
-  background-color: white;
-  box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.3);
-  padding: 60px 8%;
-  max-width: 880px;
-  margin: auto;
-}
-html body#index section.inquery .frame .inquery-form .title {
-  font-size: 35px;
-  text-transform: uppercase;
-  text-align: center;
-}
-html body#index section.inquery .frame .inquery-form .seperator {
-  position: relative;
-  border-bottom: 2px solid #649A9E;
-  width: 166px;
-  margin: 20px auto 50px;
-}
-html body#index section.inquery .frame .inquery-form .seperator .square {
-  width: 16px;
-  height: 16px;
-  background-color: #649A9E;
-  transform: rotate(45deg);
-  margin: auto;
-  box-shadow: 0px 0px 0px 5px white;
-  margin-bottom: -9px;
-}
-html body#index section.inquery .frame .inquery-form form {
-  margin-top: 70px;
-}
-html body#index section.inquery .frame .inquery-form form label {
-  font-size: 20px;
-  display: block;
-}
-html body#index section.inquery .frame .inquery-form form .input-dropdown {
-  margin-top: 35px;
-}
-html body#index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select {
-  width: 100%;
-}
-html body#index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .filter-option-inner-inner {
-  font-size: 18px;
-  font-family: "Seravek";
-}
-html body#index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-toggle {
-  border: 1px solid #707070;
-  border-radius: 0;
-  position: relative;
-}
-html body#index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-toggle:after {
-  width: 15px;
-  height: 15px;
-  border: 0;
-  border-left: 1px solid black;
-  border-bottom: 1px solid black;
-  transform: rotate(-45deg);
-  margin-top: -9px;
-}
-html body#index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-toggle:before {
-  content: "";
-  height: calc(100% + 2px);
-  width: 40px;
-  position: absolute;
-  right: -1px;
-  background-color: #CDE2BC;
-  border: 1px solid #322B2A;
-}
-html body#index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu {
-  border: 1px solid #322B2A;
-  border-radius: 0;
-}
-html body#index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu .inner {
-  border: 0;
-}
-html body#index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu .inner .selected, html body#index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu .inner .active {
-  background-color: #649A9E;
-}
-html body#index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu .dropdown-item .text {
-  font-size: 18px;
-  font-family: "Seravek";
-}
-html body#index section.inquery .frame .inquery-form form .input-dropdown .select-ppl {
-  width: 120px;
-}
-html body#index section.inquery .frame .inquery-form form .input-text .question {
-  margin-top: 55px;
-}
-html body#index section.inquery .frame .inquery-form form .input-text .question input[type=text] {
-  width: 100%;
-  border: 0;
-  border-bottom: 1px solid #322B2A;
-  outline: none;
-  font-family: "Seravek";
-}
-html body#index section.inquery .frame .inquery-form form .input-text .question input[type=text]::placeholder {
-  font-family: "Seravek";
-  font-weight: lighter;
-  font-style: italic;
-}
-@media screen and (min-width: 768px) {
-  html body#index section.inquery .frame .inquery-form form .input-text .question {
-    width: 50%;
-    max-width: 270px;
-  }
-}
-@media screen and (min-width: 768px) and (min-width: 992px) {
-  html body#index section.inquery .frame .inquery-form form .input-text .question {
-    max-width: 300px;
-  }
-}
-@media screen and (min-width: 768px) {
-  html body#index section.inquery .frame .inquery-form form .input-text {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-}
-html body#index section.inquery .frame .inquery-form form .input-textarea {
-  margin-top: 55px;
-}
-html body#index section.inquery .frame .inquery-form form .input-textarea textarea {
-  width: 100%;
-  padding: 10px 15px;
-  font-family: "Seravek";
-}
-html body#index section.inquery .frame .inquery-form form .input-textarea textarea::placeholder {
-  font-family: "Seravek";
-  font-weight: lighter;
-  font-style: italic;
-}
-html body#index section.inquery .frame .inquery-form form .button {
-  display: block;
-  width: 100%;
-  background-color: #CDE2BC;
-  text-align: center;
-  color: #322B2A;
-  font-family: Quicksand;
-  font-size: 26px;
-  border-radius: 17px;
-  padding: 8px 0;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  margin: auto;
-  margin-top: 55px;
-  width: 150px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-html body#index section.inquery .frame .inquery-form form .button:hover {
-  filter: brightness(0.9);
-}
-html body#index section.inquery .frame .inquery-form form .button:active {
-  transform: translateY(4px);
-  box-shadow: none;
-}
-@media screen and (min-width: 1400px) {
-  html body#index section.inquery .frame .inquery-form {
-    padding: 60px 102px;
-  }
-}
-html body#index section.inquery .frame .inquery-form .seperator {
-  width: 142px;
-}
+  background-color: #e6eded; }
+  html body#index section.inquery .frame {
+    width: 90%;
+    margin: auto; }
+    html body#index section.inquery .frame .inquery-form {
+      background-color: white;
+      box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.3);
+      padding: 60px 8%;
+      max-width: 880px;
+      margin: auto; }
+      html body#index section.inquery .frame .inquery-form .title {
+        font-size: 35px;
+        text-transform: uppercase;
+        text-align: center; }
+      html body#index section.inquery .frame .inquery-form .seperator {
+        position: relative;
+        border-bottom: 2px solid #649A9E;
+        width: 166px;
+        margin: 20px auto 50px; }
+        html body#index section.inquery .frame .inquery-form .seperator .square {
+          width: 16px;
+          height: 16px;
+          background-color: #649A9E;
+          transform: rotate(45deg);
+          margin: auto;
+          box-shadow: 0px 0px 0px 5px white;
+          margin-bottom: -9px; }
+      html body#index section.inquery .frame .inquery-form form {
+        margin-top: 70px; }
+        html body#index section.inquery .frame .inquery-form form label {
+          font-size: 20px;
+          display: block; }
+        html body#index section.inquery .frame .inquery-form form .input-dropdown {
+          margin-top: 35px; }
+          html body#index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select {
+            width: 100%; }
+            html body#index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .filter-option-inner-inner {
+              font-size: 18px;
+              font-family: 'Seravek'; }
+            html body#index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-toggle {
+              border: 1px solid #707070;
+              border-radius: 0;
+              position: relative; }
+              html body#index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-toggle:after {
+                width: 15px;
+                height: 15px;
+                border: 0;
+                border-left: 1px solid black;
+                border-bottom: 1px solid black;
+                transform: rotate(-45deg);
+                margin-top: -9px; }
+              html body#index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-toggle:before {
+                content: '';
+                height: calc(100% + 2px);
+                width: 40px;
+                position: absolute;
+                right: -1px;
+                background-color: #CDE2BC;
+                border: 1px solid #322B2A; }
+            html body#index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu {
+              border: 1px solid #322B2A;
+              border-radius: 0; }
+              html body#index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu .inner {
+                border: 0; }
+                html body#index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu .inner .selected, html body#index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu .inner .active {
+                  background-color: #649A9E; }
+              html body#index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu .dropdown-item .text {
+                font-size: 18px;
+                font-family: 'Seravek'; }
+          html body#index section.inquery .frame .inquery-form form .input-dropdown .select-ppl {
+            width: 120px; }
+        html body#index section.inquery .frame .inquery-form form .input-text .question {
+          margin-top: 55px; }
+          html body#index section.inquery .frame .inquery-form form .input-text .question input[type='text'] {
+            width: 100%;
+            border: 0;
+            border-bottom: 1px solid #322B2A;
+            outline: none;
+            font-family: 'Seravek'; }
+            html body#index section.inquery .frame .inquery-form form .input-text .question input[type='text']::placeholder {
+              font-family: 'Seravek';
+              font-weight: lighter;
+              font-style: italic; }
+          @media screen and (min-width: 768px) {
+            html body#index section.inquery .frame .inquery-form form .input-text .question {
+              width: 50%;
+              max-width: 270px; } }
+  @media screen and (min-width: 768px) and (min-width: 992px) {
+    html body#index section.inquery .frame .inquery-form form .input-text .question {
+      max-width: 300px; } }
+
+        @media screen and (min-width: 768px) {
+          html body#index section.inquery .frame .inquery-form form .input-text {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap; } }
+        html body#index section.inquery .frame .inquery-form form .input-textarea {
+          margin-top: 55px; }
+          html body#index section.inquery .frame .inquery-form form .input-textarea textarea {
+            width: 100%;
+            padding: 10px 15px;
+            font-family: 'Seravek'; }
+            html body#index section.inquery .frame .inquery-form form .input-textarea textarea::placeholder {
+              font-family: 'Seravek';
+              font-weight: lighter;
+              font-style: italic; }
+        html body#index section.inquery .frame .inquery-form form .button {
+          display: block;
+          width: 100%;
+          background-color: #CDE2BC;
+          text-align: center;
+          color: #322B2A;
+          font-family: Quicksand;
+          font-size: 26px;
+          border-radius: 17px;
+          padding: 8px 0;
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+          cursor: pointer;
+          margin: auto;
+          margin-top: 55px;
+          width: 150px;
+          border: none;
+          outline: none;
+          cursor: pointer; }
+          html body#index section.inquery .frame .inquery-form form .button:hover {
+            filter: brightness(0.9); }
+          html body#index section.inquery .frame .inquery-form form .button:active {
+            transform: translateY(4px);
+            box-shadow: none; }
+      @media screen and (min-width: 1400px) {
+        html body#index section.inquery .frame .inquery-form {
+          padding: 60px 102px; } }
+      html body#index section.inquery .frame .inquery-form .seperator {
+        width: 142px; }
 html body#product section:nth-child(2n+1) {
-  background-color: #f7f8f8;
-}
+  background-color: #f7f8f8; }
 html body#product section.banner {
   height: 40vw;
   background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/ps_page_banner01.png);
   background-size: contain;
-  background-repeat: no-repeat;
-}
+  background-repeat: no-repeat; }
 html body#product section.section-room {
-  padding: 50px 0;
-}
-html body#product section.section-room .frame {
-  width: 90%;
-  margin: auto;
-  max-width: 1480px;
-}
-html body#product section.section-room .frame .right {
-  position: relative;
-}
-html body#product section.section-room .frame .right .title {
-  color: white;
-  font-size: 45px;
-  height: 125px;
-  background: linear-gradient(102deg, #DDECFC 0%, #627C97 44%, #313E4C 100%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  line-height: 45px;
-  text-align: center;
-}
-html body#product section.section-room .frame .right .info {
-  padding: 5%;
-  padding-bottom: 0;
-}
-html body#product section.section-room .frame .right .info .text {
-  border-bottom: 1px solid #649A9E;
-  padding-bottom: 20px;
-}
-html body#product section.section-room .frame .right .info .text li {
-  font-size: 25px;
-  font-style: italic;
-}
-html body#product section.section-room .frame .right .info .text li:first-child {
-  font-size: 27px;
-  font-style: normal;
-}
-@media screen and (min-width: 1200px) {
-  html body#product section.section-room .frame .right .info .text {
-    margin-bottom: 40px;
-  }
-}
-html body#product section.section-room .frame .right .info img {
-  display: block;
-  margin: auto;
-  width: 100%;
-}
-html body#product section.section-room .frame .right .info .button {
-  display: block;
-  width: 100%;
-  background-color: #CDE2BC;
-  text-align: center;
-  color: #322B2A;
-  font-family: Quicksand;
-  font-size: 26px;
-  border-radius: 17px;
-  padding: 8px 0;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  margin-top: 25px;
-}
-html body#product section.section-room .frame .right .info .button:hover {
-  filter: brightness(0.9);
-}
-html body#product section.section-room .frame .right .info .button:active {
-  transform: translateY(4px);
-  box-shadow: none;
-}
-@media screen and (min-width: 1200px) {
-  html body#product section.section-room .frame .right .info .button {
-    position: absolute;
-    bottom: 0;
-    width: 80%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  html body#product section.section-room .frame .right .info {
-    padding: 10%;
-    padding-bottom: 0;
-  }
-}
-@media screen and (min-width: 1200px) {
-  html body#product section.section-room .frame .right {
-    width: 32%;
-  }
-}
-html body#product section.section-room .frame .left {
-  margin-top: 50px;
-}
-html body#product section.section-room .frame .left .slider {
-  width: 100%;
-  height: 40vw;
-}
-html body#product section.section-room .frame .left .slider .slide {
-  display: none;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-}
-html body#product section.section-room .frame .left .slider .active {
-  display: block;
-}
-@media screen and (min-width: 1200px) {
-  html body#product section.section-room .frame .left .slider {
-    height: 639px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  html body#product section.section-room .frame .left {
-    width: 68%;
-    margin-top: 125px;
-  }
-}
-@media screen and (min-width: 1200px) {
+  padding: 50px 0; }
   html body#product section.section-room .frame {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-}
-@media screen and (min-width: 1200px) {
-  html body#product section.section-room {
-    padding: 110px 0;
-  }
-}
+    width: 90%;
+    margin: auto;
+    max-width: 1480px; }
+    html body#product section.section-room .frame .right {
+      position: relative; }
+      html body#product section.section-room .frame .right .title {
+        color: white;
+        font-size: 45px;
+        height: 125px;
+        background: linear-gradient(102deg, #DDECFC 0%, #627C97 44%, #313E4C 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 45px;
+        text-align: center; }
+      html body#product section.section-room .frame .right .info {
+        padding: 5%;
+        padding-bottom: 0; }
+        html body#product section.section-room .frame .right .info .text {
+          border-bottom: 1px solid #649A9E;
+          padding-bottom: 20px; }
+          html body#product section.section-room .frame .right .info .text li {
+            font-size: 25px;
+            font-style: italic; }
+            html body#product section.section-room .frame .right .info .text li:first-child {
+              font-size: 27px;
+              font-style: normal; }
+          @media screen and (min-width: 1200px) {
+            html body#product section.section-room .frame .right .info .text {
+              margin-bottom: 40px; } }
+        html body#product section.section-room .frame .right .info img {
+          display: block;
+          margin: auto;
+          width: 100%; }
+        html body#product section.section-room .frame .right .info .button {
+          display: block;
+          width: 100%;
+          background-color: #CDE2BC;
+          text-align: center;
+          color: #322B2A;
+          font-family: Quicksand;
+          font-size: 26px;
+          border-radius: 17px;
+          padding: 8px 0;
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+          cursor: pointer;
+          margin-top: 25px; }
+          html body#product section.section-room .frame .right .info .button:hover {
+            filter: brightness(0.9); }
+          html body#product section.section-room .frame .right .info .button:active {
+            transform: translateY(4px);
+            box-shadow: none; }
+          @media screen and (min-width: 1200px) {
+            html body#product section.section-room .frame .right .info .button {
+              position: absolute;
+              bottom: 0;
+              width: 80%; } }
+        @media screen and (min-width: 1200px) {
+          html body#product section.section-room .frame .right .info {
+            padding: 10%;
+            padding-bottom: 0; } }
+      @media screen and (min-width: 1200px) {
+        html body#product section.section-room .frame .right {
+          width: 32%; } }
+    html body#product section.section-room .frame .left {
+      margin-top: 50px; }
+      html body#product section.section-room .frame .left .slider {
+        width: 100%;
+        height: 40vw; }
+        html body#product section.section-room .frame .left .slider .slide {
+          display: none;
+          height: 100%;
+          background-position: center;
+          background-size: cover; }
+        html body#product section.section-room .frame .left .slider .active {
+          display: block; }
+        @media screen and (min-width: 1200px) {
+          html body#product section.section-room .frame .left .slider {
+            height: 639px; } }
+      @media screen and (min-width: 1200px) {
+        html body#product section.section-room .frame .left {
+          width: 68%;
+          margin-top: 125px; } }
+    @media screen and (min-width: 1200px) {
+      html body#product section.section-room .frame {
+        display: flex;
+        flex-direction: row-reverse; } }
+  @media screen and (min-width: 1200px) {
+    html body#product section.section-room {
+      padding: 110px 0; } }
 html body#product section.conference .frame .right .info img {
-  max-width: 255px;
-}
+  max-width: 255px; }
 html body#product section.conference .frame .left .slider .slide:nth-child(1) {
-  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_07.jpg);
-}
+  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_07.jpg); }
 html body#product section.conference .frame .left .slider .slide:nth-child(2) {
-  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_07.jpg);
-}
+  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_07.jpg); }
 html body#product section.conference .frame .left .slider .slide:nth-child(3) {
-  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_07.jpg);
-}
+  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_07.jpg); }
 html body#product section.meeting .frame .right .title {
-  background: linear-gradient(103deg, #FFFFFF 0%, #649A9E 44%, #28575A 100%);
-}
+  background: linear-gradient(103deg, #FFFFFF 0%, #649A9E 44%, #28575A 100%); }
 html body#product section.meeting .frame .right .info img {
-  max-width: 320px;
-}
+  max-width: 320px; }
 html body#product section.meeting .frame .left .slider .slide:nth-child(1) {
-  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_03.jpg);
-}
+  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_03.jpg); }
 html body#product section.meeting .frame .left .slider .slide:nth-child(2) {
-  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_03.jpg);
-}
+  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_03.jpg); }
 html body#product section.meeting .frame .left .slider .slide:nth-child(3) {
-  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_03.jpg);
-}
+  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_03.jpg); }
 html body#product section.lobby .frame .right .title {
-  background: linear-gradient(103deg, #F2F2F2 0%, #AFDBDA 45%, #1BA29F 100%);
-}
+  background: linear-gradient(103deg, #F2F2F2 0%, #AFDBDA 45%, #1BA29F 100%); }
 html body#product section.lobby .frame .right .info img {
-  max-width: 310px;
-}
+  max-width: 310px; }
 html body#product section.lobby .frame .left .slider .slide:nth-child(1) {
-  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_05.jpg);
-}
+  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_05.jpg); }
 html body#product section.lobby .frame .left .slider .slide:nth-child(2) {
-  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_05.jpg);
-}
+  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_05.jpg); }
 html body#product section.lobby .frame .left .slider .slide:nth-child(3) {
-  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_05.jpg);
-}
+  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_05.jpg); }
 html body#product section.section-two-room {
-  padding: 50px 0;
-}
-html body#product section.section-two-room .frame {
-  width: 90%;
-  margin: auto;
-  max-width: 1325px;
-}
-html body#product section.section-two-room .frame .room img.title {
-  width: 100%;
-}
-@media screen and (min-width: 1200px) {
-  html body#product section.section-two-room .frame .room img.title {
-    margin-bottom: 20px;
-  }
-}
-html body#product section.section-two-room .frame .room .number {
-  padding: 20px;
-  border-bottom: 1px solid #649A9E;
-}
-html body#product section.section-two-room .frame .room .number .size {
-  font-size: 27px;
-}
-html body#product section.section-two-room .frame .room .number .ppl {
-  font-size: 25px;
-  font-style: italic;
-}
-@media screen and (min-width: 1200px) {
-  html body#product section.section-two-room .frame .room .number {
-    padding: 20px 50px;
-  }
-}
-html body#product section.section-two-room .frame .room .intro {
-  font-size: 25px;
-  font-style: italic;
-  padding: 10px;
-  border-bottom: 1px solid #649A9E;
-}
-@media screen and (min-width: 1200px) {
-  html body#product section.section-two-room .frame .room .intro {
-    padding: 20px;
-  }
-}
-html body#product section.section-two-room .frame .room .blueprint img {
-  display: block;
-  width: 100%;
-  height: auto;
-  padding: 20px 0;
-}
-@media screen and (min-width: 768px) {
-  html body#product section.section-two-room .frame .room .blueprint {
-    height: 400px;
-    display: flex;
-    align-items: center;
-  }
-}
-@media screen and (min-width: 768px) and (min-width: 1200px) {
-  html body#product section.section-two-room .frame .room .blueprint {
-    height: 600px;
-  }
-}
-html body#product section.section-two-room .frame .room .button {
-  display: block;
-  width: 100%;
-  background-color: #CDE2BC;
-  text-align: center;
-  color: #322B2A;
-  font-family: Quicksand;
-  font-size: 26px;
-  border-radius: 17px;
-  padding: 8px 0;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  max-width: 375px;
-  margin: auto;
-}
-html body#product section.section-two-room .frame .room .button:hover {
-  filter: brightness(0.9);
-}
-html body#product section.section-two-room .frame .room .button:active {
-  transform: translateY(4px);
-  box-shadow: none;
-}
-@media screen and (min-width: 768px) {
-  html body#product section.section-two-room .frame .room:first-child .blue-print img {
-    width: 458px;
-    height: auto;
-  }
-}
-@media screen and (min-width: 768px) {
-  html body#product section.section-two-room .frame .room:first-child {
-    width: 46%;
-    max-width: 545px;
-  }
-}
-html body#product section.section-two-room .frame .room:nth-child(2) {
-  margin-top: 50px;
-}
-@media screen and (min-width: 768px) {
-  html body#product section.section-two-room .frame .room:nth-child(2) .blue-print img {
-    width: 534px;
-    height: auto;
-  }
-}
-@media screen and (min-width: 768px) {
-  html body#product section.section-two-room .frame .room:nth-child(2) {
-    margin-top: 0;
-    width: 51%;
-    max-width: 600px;
-  }
-}
-@media screen and (min-width: 768px) {
+  padding: 50px 0; }
   html body#product section.section-two-room .frame {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-@media screen and (min-width: 1200px) {
-  html body#product section.section-two-room {
-    padding: 110px 0;
-  }
-}
+    width: 90%;
+    margin: auto;
+    max-width: 1325px; }
+    html body#product section.section-two-room .frame .room img.title {
+      width: 100%; }
+      @media screen and (min-width: 1200px) {
+        html body#product section.section-two-room .frame .room img.title {
+          margin-bottom: 20px; } }
+    html body#product section.section-two-room .frame .room .number {
+      padding: 20px;
+      border-bottom: 1px solid #649A9E; }
+      html body#product section.section-two-room .frame .room .number .size {
+        font-size: 27px; }
+      html body#product section.section-two-room .frame .room .number .ppl {
+        font-size: 25px;
+        font-style: italic; }
+      @media screen and (min-width: 1200px) {
+        html body#product section.section-two-room .frame .room .number {
+          padding: 20px 50px; } }
+    html body#product section.section-two-room .frame .room .intro {
+      font-size: 25px;
+      font-style: italic;
+      padding: 10px;
+      border-bottom: 1px solid #649A9E; }
+      @media screen and (min-width: 1200px) {
+        html body#product section.section-two-room .frame .room .intro {
+          padding: 20px; } }
+    html body#product section.section-two-room .frame .room .blueprint img {
+      display: block;
+      width: 100%;
+      height: auto;
+      padding: 20px 0; }
+    @media screen and (min-width: 768px) {
+      html body#product section.section-two-room .frame .room .blueprint {
+        height: 400px;
+        display: flex;
+        align-items: center; } }
+  @media screen and (min-width: 768px) and (min-width: 1200px) {
+    html body#product section.section-two-room .frame .room .blueprint {
+      height: 600px; } }
+
+    html body#product section.section-two-room .frame .room .button {
+      display: block;
+      width: 100%;
+      background-color: #CDE2BC;
+      text-align: center;
+      color: #322B2A;
+      font-family: Quicksand;
+      font-size: 26px;
+      border-radius: 17px;
+      padding: 8px 0;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      max-width: 375px;
+      margin: auto; }
+      html body#product section.section-two-room .frame .room .button:hover {
+        filter: brightness(0.9); }
+      html body#product section.section-two-room .frame .room .button:active {
+        transform: translateY(4px);
+        box-shadow: none; }
+    @media screen and (min-width: 768px) {
+      html body#product section.section-two-room .frame .room:first-child .blue-print img {
+        width: 458px;
+        height: auto; } }
+    @media screen and (min-width: 768px) {
+      html body#product section.section-two-room .frame .room:first-child {
+        width: 46%;
+        max-width: 545px; } }
+    html body#product section.section-two-room .frame .room:nth-child(2) {
+      margin-top: 50px; }
+      @media screen and (min-width: 768px) {
+        html body#product section.section-two-room .frame .room:nth-child(2) .blue-print img {
+          width: 534px;
+          height: auto; } }
+      @media screen and (min-width: 768px) {
+        html body#product section.section-two-room .frame .room:nth-child(2) {
+          margin-top: 0;
+          width: 51%;
+          max-width: 600px; } }
+    @media screen and (min-width: 768px) {
+      html body#product section.section-two-room .frame {
+        display: flex;
+        justify-content: space-between; } }
+  @media screen and (min-width: 1200px) {
+    html body#product section.section-two-room {
+      padding: 110px 0; } }
 html body#product section.kitchen .frame .right .title {
-  background: linear-gradient(105deg, #FFFFFF 0%, #91988C 92%, #91988C 100%);
-}
+  background: linear-gradient(105deg, #FFFFFF 0%, #91988C 92%, #91988C 100%); }
 html body#product section.kitchen .frame .right .info img {
-  max-width: 242px;
-}
+  max-width: 242px; }
 html body#product section.kitchen .frame .left .slider .slide:nth-child(1) {
-  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/kitchen.png);
-}
+  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/kitchen.png); }
 html body#product section.kitchen .frame .left .slider .slide:nth-child(2) {
-  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/kitchen.png);
-}
+  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/kitchen.png); }
 html body#product section.kitchen .frame .left .slider .slide:nth-child(3) {
-  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/kitchen.png);
-}
+  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/kitchen.png); }
 html body#product section.venue .frame .right .title {
-  background: linear-gradient(103deg, #FFFFFF 0%, #649A9E 44%, #28575A 100%);
-}
+  background: linear-gradient(103deg, #FFFFFF 0%, #649A9E 44%, #28575A 100%); }
 @media screen and (min-width: 1200px) {
   html body#product section.venue .frame .right .info {
-    padding-right: 0;
-  }
-  html body#product section.venue .frame .right .info img {
-    width: 323px;
-  }
-}
+    padding-right: 0; }
+    html body#product section.venue .frame .right .info img {
+      width: 323px; } }
 html body#product section.venue .frame .left .slider .slide:nth-child(1) {
-  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_03.jpg);
-}
+  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_03.jpg); }
 html body#product section.venue .frame .left .slider .slide:nth-child(2) {
-  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_03.jpg);
-}
+  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_03.jpg); }
 html body#product section.venue .frame .left .slider .slide:nth-child(3) {
-  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_03.jpg);
-}
+  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_03.jpg); }
 html body#product section.catering {
-  padding: 40px 0;
-}
-html body#product section.catering .frame {
-  width: 80%;
-  margin: auto;
-  max-width: 1100px;
-}
-html body#product section.catering .frame .title {
-  font-size: 35px;
-  text-transform: uppercase;
-  text-align: center;
-}
-html body#product section.catering .frame .seperator {
-  position: relative;
-  border-bottom: 2px solid #649A9E;
-  width: 166px;
-  margin: 20px auto 50px;
-}
-html body#product section.catering .frame .seperator .square {
-  width: 16px;
-  height: 16px;
-  background-color: #649A9E;
-  transform: rotate(45deg);
-  margin: auto;
-  box-shadow: 0px 0px 0px 5px white;
-  margin-bottom: -9px;
-}
-html body#product section.catering .frame .seperator .square {
-  box-shadow: 0px 0px 0px 5px #f7f8f8;
-}
-html body#product section.catering .frame .options {
-  width: 100%;
-}
-html body#product section.catering .frame .options .option {
-  text-align: center;
-  margin: auto;
-  margin-top: 50px;
-}
-html body#product section.catering .frame .options .option img {
-  margin-bottom: 20px;
-}
-html body#product section.catering .frame .options .option .service {
-  font-size: 25px;
-  font-style: italic;
-}
-html body#product section.catering .frame .options .option .content {
-  font-family: Arsenal, Helvetica, Arial;
-}
-@media screen and (min-width: 768px) {
-  html body#product section.catering .frame .options .option {
-    width: 35%;
-    text-align: left;
-  }
-  html body#product section.catering .frame .options .option:nth-child(2n) {
-    margin-right: 0;
-  }
-}
-@media screen and (min-width: 768px) {
-  html body#product section.catering .frame .options {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 1200px) {
-  html body#product section.catering {
-    padding: 110px 0;
-  }
-}
+  padding: 40px 0; }
+  html body#product section.catering .frame {
+    width: 80%;
+    margin: auto;
+    max-width: 1100px; }
+    html body#product section.catering .frame .title {
+      font-size: 35px;
+      text-transform: uppercase;
+      text-align: center; }
+    html body#product section.catering .frame .seperator {
+      position: relative;
+      border-bottom: 2px solid #649A9E;
+      width: 166px;
+      margin: 20px auto 50px; }
+      html body#product section.catering .frame .seperator .square {
+        width: 16px;
+        height: 16px;
+        background-color: #649A9E;
+        transform: rotate(45deg);
+        margin: auto;
+        box-shadow: 0px 0px 0px 5px white;
+        margin-bottom: -9px; }
+      html body#product section.catering .frame .seperator .square {
+        box-shadow: 0px 0px 0px 5px #f7f8f8; }
+    html body#product section.catering .frame .options {
+      width: 100%; }
+      html body#product section.catering .frame .options .option {
+        text-align: center;
+        margin: auto;
+        margin-top: 50px; }
+        html body#product section.catering .frame .options .option img {
+          margin-bottom: 20px; }
+        html body#product section.catering .frame .options .option .service {
+          font-size: 25px;
+          font-style: italic; }
+        html body#product section.catering .frame .options .option .content {
+          font-family: Arsenal, Helvetica, Arial; }
+        @media screen and (min-width: 768px) {
+          html body#product section.catering .frame .options .option {
+            width: 35%;
+            text-align: left; }
+            html body#product section.catering .frame .options .option:nth-child(2n) {
+              margin-right: 0; } }
+      @media screen and (min-width: 768px) {
+        html body#product section.catering .frame .options {
+          display: flex;
+          flex-wrap: wrap; } }
+  @media screen and (min-width: 1200px) {
+    html body#product section.catering {
+      padding: 110px 0; } }
 
 /*# sourceMappingURL=style.css.map */
