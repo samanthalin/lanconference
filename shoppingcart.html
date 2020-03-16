@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Lan Conference</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-select.min.css">
+	<script src="script/jquery-3.3.1.slim.min.js"></script>
+	<script src="script/popper.min.js"></script>
+	<script src="script/bootstrap.min.js"></script>
+	<script src="script/bootstrap-select.min.js"></script>
+	<script src="script/style.js"></script>
+</head>
+<body id="shoppingCart">
+	<!-- <header>
+		<div class="frame">
+			<div class="logo">
+				<a href="index.html"><img src="img/logo.png" alt=""></a>
+			</div>
+			<ul class="menu">
+				<li><a href="product.html">Product & Service<i class="fa fa-angle-down"></i></a></li>
+				<li><a href="">Gallery</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="inquery.html">Inquiry</a></li>
+				<li><a href="">EN<i class="fa fa-angle-down"></i></a></li>
+			</ul>
+		</div>
+	</header> -->
+	
+	<section class="main">
+		<div class="frame">
+			<div class="information">
+				<h2 class="title">Information</h2>
+				<div class="seperator">
+					<div class="square"></div>
+				</div>
+				<div class="form">
+					<div class="quiz q1">
+						<div class="title">Room details<sup>*</sup></div>
+						<div class="content">
+							<div class="option">
+								<div class="room">
+									Conference room<br>1/4
+								</div>
+								<div class="price">
+									<p>24 Euro/Hour</p>
+									<p>83 Eurp/Half day</p>
+									<p>165 Euro/Day</p>
+								</div>
+							</div>
+							<div class="option">
+								<div class="room">
+									Conference room<br>2/4
+								</div>
+								<div class="price">
+									<p>48 Euro/Hour</p>
+									<p>165 Eurp/Half day</p>
+									<p>330 Euro/Day</p>
+								</div>	
+							</div>
+							<div class="option">
+								<div class="room">
+									Conference room
+								</div>
+								<div class="price">
+									<p>94 Euro/Hour</p>
+									<p>330 Eurp/Half day</p>
+									<p>660 Euro/Day</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="quiz q2">
+						<div class="title">
+							Event details<sup>*</sup>
+						</div>
+						<div class="content">
+							<div class="date">
+								<div class="date-option check-in">
+									<div class="text">Check in:</div>
+									<div class="date-select default">Check-in</div>
+								</div>
+								<div class="date-option check-out">
+									<div class="text">Check out:</div>
+									<div class="date-select default">Check-out</div>
+								</div>
+							</div>
+							<div class="number">
+								<div class="text">Guest number:</div>
+								<input type="text" placeholder="0">
+							</div>
+						</div>
+					</div>
+					<div class="quiz q3">
+						<div class="title">Extras</div>
+						<div class="content">
+							<div class="extra-type catering">
+								<div class="type-name">Catering:</div>
+								<div class="type-options">
+									<div class="option">
+										<div class="img">
+											<img src="img/shoppingcart/extra_1.png" alt="">
+										</div>
+										<div class="service">
+											<div class="name">Water</div>
+											<div class="price">Free</div>
+										</div>
+									</div>
+									<div class="option">
+										<div class="img">
+											<img src="img/shoppingcart/extra_2.png" alt="">
+										</div>
+										<div class="service">
+											<div class="name">Kafee and tea</div>
+											<div class="price">€ 3</div>
+										</div>
+									</div>
+									<div class="option">
+										<div class="img">
+											<img src="img/shoppingcart/extra_3.png" alt="">
+										</div>
+										<div class="service">
+											<div class="name">Drink package</div>
+											<div class="price">€ 6</div>
+										</div>
+									</div>
+									<div class="option">
+										<div class="img">
+											<img src="img/shoppingcart/extra_4.png" alt="">
+										</div>
+										<div class="service">
+											<div class="name">Breakfast</div>
+											<div class="price">€ 5</div>
+										</div>
+									</div>
+									<div class="option">
+										<div class="img">
+											<img src="img/shoppingcart/extra_5.png" alt="">
+										</div>
+										<div class="service">
+											<div class="name">Lunch budget</div>
+											<div class="price">€ 12</div>
+										</div>
+									</div>
+									<div class="option">
+										<div class="img">
+											<img src="img/shoppingcart/extra_6.png" alt="">
+										</div>
+										<div class="service">
+											<div class="name">Lunch standard</div>
+											<div class="price">€ 18</div>
+										</div>
+									</div>
+									<div class="option">
+										<div class="img">
+											<img src="img/shoppingcart/extra_7.png" alt="">
+										</div>
+										<div class="service">
+											<div class="name">Afternoon snack</div>
+											<div class="price">€ 6</div>
+										</div>
+									</div>
+									<div class="option">
+										<div class="img">
+											<img src="img/shoppingcart/extra_8.png" alt="">
+										</div>
+										<div class="service">
+											<div class="name">Dinner</div>
+											<div class="price">€ 35</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="extra-type equipment">
+								<div class="type-name">Equipment:</div>
+								<div class="type-options">
+									<div class="option">
+										<div class="img">
+											<img src="img/shoppingcart/extra_9.png" alt="">
+										</div>
+										<div class="service">
+											<div class="name">Extra table</div>
+											<div class="price">Free</div>
+										</div>
+									</div>
+									<div class="option">
+										<div class="img">
+											<img src="img/shoppingcart/extra_10.png" alt="">
+										</div>
+										<div class="service">
+											<div class="name">Extra chair</div>
+											<div class="price">Free</div>
+										</div>
+									</div>
+									<div class="option">
+										<div class="img">
+											<img src="img/shoppingcart/extra_11.png" alt="">
+										</div>
+										<div class="service">
+											<div class="name">Pens and papers</div>
+											<div class="price">Free</div>
+										</div>
+									</div>
+									<div class="option">
+										<div class="img">
+											<img src="img/shoppingcart/extra_12.png" alt="">
+										</div>
+										<div class="service">
+											<div class="name">Flipchart</div>
+											<div class="price">€ 6</div>
+										</div>
+									</div>
+									<div class="option">
+										<div class="img">
+											<img src="img/shoppingcart/extra_13.png" alt="">
+										</div>
+										<div class="service">
+											<div class="name">Projector and screen</div>
+											<div class="price">€ 6</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="quiz q4">
+						<div class="title">Contact details<sup>*</sup></div>
+						<div class="content">
+							<div class="contact-info">
+								<div class="info-name">First name:</div>
+								<input type="text" placeholder="Type your first name">
+							</div>
+							<div class="contact-info">
+								<div class="info-name">Last name:</div>
+								<input type="text" placeholder="Type your last name">
+							</div>
+							<div class="contact-info">
+								<div class="info-name">Email address:</div>
+								<input type="text" placeholder="Type your mail">
+							</div>
+							<div class="contact-info">
+								<div class="info-name">Phone number:</div>
+								<input type="text" placeholder="Type your phone number">
+							</div>
+						</div>
+					</div>
+					<div class="quiz q5">
+						<div class="title">Invoice address</div>
+						<div class="content">
+							<div class="invoice-info">
+								<div class="info-name">Company name<sup>*</sup>:</div>
+								<input type="text" placeholder="Bill to this company/person">
+							</div>
+							<div class="invoice-info">
+								<div class="info-name">Contact person:</div>
+								<input type="text" placeholder="Type the person’s name">
+							</div>
+							<div class="invoice-info">
+								<div class="info-name">Full invoicing address<sup>*</sup>:</div>
+								<input type="text" placeholder="Type your full invoicing address">
+							</div>
+							<div class="invoice-info">
+								<div class="info-name">VAT Identification Number (required for payment with invoice):</div>
+								<input type="text" placeholder="Type your identification number">
+							</div>
+							<div class="invoice-info">
+								<div class="info-name">Special notes on invoice (e.g. PO) :</div>
+								<input type="text" placeholder="Type special notes">
+							</div>
+						</div>
+					</div>
+					<div class="quiz q6">
+						<div class="title">Add a message to Lan conference</div>
+						<div class="content">
+							<input type="text" placeholder="Type your message">
+						</div>
+					</div>
+					<div class="agree">
+						<input type="checkbox">
+						Agree to Lan conference’s Terms of Service and Privacy Policy.
+					</div>
+					<a href="" class="button">Confirm booking</a>
+				</div>
+			</div>
+			<div class="recap">
+				<h2 class="title">Recap</h2>
+				<div class="seperator">
+					<div class="square"></div>
+				</div>
+				<div class="form">
+					<div class="quiz"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+	<footer>
+		<div class="frame">
+			<div class="columns">
+				<div class="column brand">
+					<img src="img/logo_text.png" class="logo" alt="">
+					<p class="text">We provide you certainty and we make rooms for you. Just come and enjoy your event.</p>
+				</div>
+				<div class="column intro">
+					<div class="title">intro links</div>
+					<ul>
+						<li><a href="">Gallery</a></li>
+						<li><a href="">About</a></li>
+						<li><a href="">Inquiry</a></li>
+					</ul>
+				</div>
+				<div class="column product">
+					<div class="title">product links</div>
+					<ul>
+						<li><a href="">Product & Service</a></li>
+						<li><a href="">Conference room</a></li>
+						<li><a href="">Meeting room</a></li>
+						<li><a href="">Lobby</a></li>
+						<li><a href="">Kitchen</a></li>
+					</ul>
+				</div>
+				<div class="column contact">
+					<div class="title">Contact info</div>
+					<ul>
+						<li><a href="mailto:info@lanconference.de">info@lanconference.de</a></li>
+						<li>030-91560011</li>
+						<li>Rathenburgstr.41, 12163 Berlin</li>
+					</ul>
+				</div>
+				<div class="column payment">
+					<div class="title">Payment Methods</div>
+					<ul>
+						<li><a href=""><img src="https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/footer_06.png" alt=""></a></li>
+						<li><a href=""><img src="https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/footer_01.png" alt=""></a></li>
+						<li><a href=""><img src="https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/footer_02.png" alt=""></a></li>
+						<li><a href=""><img src="https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/footer_03.png" alt=""></a></li>
+						<li><a href=""><img src="https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/footer_04.png" alt=""></a></li>
+						<li><a href=""><img src="https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/footer_05.png" alt=""></a></li>
+					</ul>
+				</div>
+			</div>	
+			<div class="copyright">
+				<div class="text">
+					Copyright @<span class="current-year">2000</span>, lanconference.de
+				</div>
+				<div class="links">
+					<a href="">AGB</a><span> | </span>
+					<a href="">Impressum</a><span> | </span>
+					<a href="">Datenschutzerklärung</a>
+				</div>
+			</div>
+		</div><!-- frame -->
+	</footer>
+</body>
+</html>
