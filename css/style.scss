@@ -1017,5 +1017,25 @@ html{
 				padding: 110px 0;
 			}
 		}//section.catering
-	}
+	}//#produc
+
+	body#inquery{
+		section.inquery{
+			padding: 90px 0 150px 0;
+			background-color: #e6eded;
+			.frame{
+				width: 90%;
+				margin: auto;
+				.inquery-form{
+					@include inquery-form;
+					.seperator{
+						width: 142px;
+					}
+				}
+			}
+		}
+		section.map{
+			@include map;
+		}
+	}//#inquery
 }
