@@ -720,6 +720,13 @@ html{
 
 		section.conference{
 			.frame{
+				.right{
+					.info{
+						img{
+							max-width: 255px;
+						}
+					}
+				}
 				.left{
 					.slider{
 						.slide{
@@ -743,6 +750,11 @@ html{
 				.right{
 					.title{
 						background: linear-gradient(103deg, #FFFFFF 0%, #649A9E 44%, #28575A 100%);
+					}
+					.info{
+						img{
+							max-width: 320px;
+						}
 					}
 				}
 				.left{
@@ -768,6 +780,11 @@ html{
 				.right{
 					.title{
 						background: linear-gradient(103deg, #F2F2F2 0%, #AFDBDA 45%, #1BA29F 100%);
+					}
+					.info{
+						img{
+							max-width: 310px;
+						}
 					}
 				}
 				.left{
@@ -891,6 +908,11 @@ html{
 				.right{
 					.title{
 						background: linear-gradient(105deg, #FFFFFF 0%, #91988C 92%, #91988C 100%);
+					}
+					.info{
+						img{
+							max-width: 242px;
+						}
 					}
 				}
 				.left{
