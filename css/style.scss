@@ -61,7 +61,7 @@ $theme-light-green: #CDE2BC;
 	font-family: 'Seravek';
 	font-style: italic;
 	font-weight: lighter;
-	color: #dad9db;
+	color: #a39f9e;
 }
 @mixin inquery-form{
 	background-color: white;
@@ -206,8 +206,9 @@ html{
 		font-size: 18px;
 		color: $theme-black;
 		zoom: 0.9; 
-    	-moz-transform: scale(0.9); 
-    	-moz-transform-origin: 0 0;
+    	// -moz-transform: scale(0.9); 
+    	// -moz-transform-origin: 0 0;
+    	-moz-zoom: none;
     	font-family: 'Seravek Medium', Helvetica, sans-serif, Arial;
 		header{
 			width: 100%;
@@ -1145,6 +1146,7 @@ html{
 									text-align: center;
 									margin: auto;
 									margin-bottom: 10px;
+									cursor: pointer;
 									.room{
 										height: 62px;
 										border-bottom: 1px solid $theme-black;
@@ -1538,6 +1540,7 @@ html{
 						margin-top: 0;
 						margin-left: 15px;
 						height: fit-content;
+						height: -moz-fit-content;
 						min-width: 268px;
 						padding-top: 60px;
 						@media screen and (min-width: 992px) {
