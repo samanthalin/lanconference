@@ -18,7 +18,7 @@
 	<script src="script/style.js"></script>
 </head>
 <body id="shoppingCart">
-	<!-- <header>
+	<header>
 		<div class="frame">
 			<div class="logo">
 				<a href="index.html"><img src="img/logo.png" alt=""></a>
@@ -31,10 +31,11 @@
 				<li><a href="">EN<i class="fa fa-angle-down"></i></a></li>
 			</ul>
 		</div>
-	</header> -->
+	</header>
 	
 	<section class="main">
 		<div class="frame">
+
 			<div class="information">
 				<h2 class="title">Information</h2>
 				<div class="seperator">
@@ -287,16 +288,54 @@
 					</div>
 					<a href="" class="button">Confirm booking</a>
 				</div>
-			</div>
+			</div><!--infromation-->
+
 			<div class="recap">
 				<h2 class="title">Recap</h2>
 				<div class="seperator">
 					<div class="square"></div>
 				</div>
-				<div class="form">
-					<div class="quiz"></div>
+				<ul class="form">
+					<li class="project">
+						<div class="project-name">Space :</div>
+						<div class="price">
+							€<span class="number">0.00</span>
+						</div>
+					</li>
+					<li class="project">
+						<div class="project-name">Extra :</div>
+						<div class="price">
+							€<span class="number">0.00</span>
+						</div>
+					</li>
+					<li class="project exclude-tax total">
+						<ul>
+							<li>
+								<div class="project-name">Total（excl. Tax)</div>
+								<div class="price">
+									€<span class="number">0.00</span>
+								</div>
+							</li>
+							<li class="tax">
+								<div class="project-name">Tax(19.00%)</div>
+								<div class="price">
+									€<span class="number">0.00</span>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li class="project total">
+						<div class="project-name">Total（incl. Tax)</div>
+						<div class="price">
+							€<span class="number">0.00</span>
+						</div>
+					</li>
+				</ul>
+				<div class="cancel">
+					<div class="cancel-title">CANCELLATION POLICY：</div>
+					<div class="rule"></div>
 				</div>
-			</div>
+			</div><!-- recap -->
 		</div>
 	</section>
 	
