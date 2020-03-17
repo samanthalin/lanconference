@@ -34,7 +34,7 @@ $theme-light-green: #CDE2BC;
 	text-align: center;
 	color: $theme-black;
 	font-family: Quicksand;
-	font-size: 26px;
+	font-size: 22px;
 	border-radius: 17px;
 	padding: 8px 0;
 	box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
@@ -1053,7 +1053,27 @@ html{
 					.seperator{
 						width: 142px;
 					}
-				}
+					.message{
+						text-align: center;
+						padding: 50px 0;
+						img{
+							width: 60px;
+							@media screen and (min-width: 768px){
+								width: 84px;
+							}
+						}
+						p{
+							font-size: 20px;
+							margin-top: 30px;
+							@media screen and (min-width: 768px){
+								font-size: 30px;
+							}
+						}
+						@media screen and (min-width: 768px) {
+							padding: 10% 0 30% 0;
+						}
+					}
+				}//inquery-form
 			}
 		}
 		section.map{
@@ -1513,5 +1533,5 @@ html{
 				}
 			}//frame
 		}
-	}
+	}//shoppingCart
 }
