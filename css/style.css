@@ -1194,15 +1194,30 @@ html body#shoppingCart section.main {
           display: flex;
           justify-content: center; }
           html body#shoppingCart section.main .frame .information .form .agree input[type="checkbox"] {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -ms-appearance: none;
             border-radius: 0;
-            width: 40px;
-            height: 22px;
+            border: 1px solid #322B2A;
+            width: 21px;
+            height: 21px;
             display: block;
-            margin-right: 10px; }
-            @media screen and (min-width: 768px) {
-              html body#shoppingCart section.main .frame .information .form .agree input[type="checkbox"] {
-                width: 18px;
-                height: 22px; } }
+            margin-right: 10px;
+            outline: none;
+            cursor: pointer;
+            position: relative;
+            flex: none; }
+            html body#shoppingCart section.main .frame .information .form .agree input[type="checkbox"]:hover {
+              background-color: #dddddd; }
+            html body#shoppingCart section.main .frame .information .form .agree input[type="checkbox"]:checked {
+              background-color: #CDE2BC; }
+              html body#shoppingCart section.main .frame .information .form .agree input[type="checkbox"]:checked:after {
+                content: '\f00c';
+                font-family: 'FontAwesome';
+                position: absolute;
+                top: -2px;
+                left: 2px; }
           @media screen and (min-width: 768px) {
             html body#shoppingCart section.main .frame .information .form .agree {
               position: absolute;
@@ -1212,7 +1227,7 @@ html body#shoppingCart section.main {
               margin-top: -17px; } }
   @media screen and (min-width: 768px) and (min-width: 992px) {
     html body#shoppingCart section.main .frame .information .form .agree {
-      width: 420px;
+      width: 425px;
       margin-left: -210px;
       margin-top: -5px; } }
 
