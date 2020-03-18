@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
 	//inquery
 	$('#inquery form .submit').click(function(){
 		$('#inquery form').hide();
@@ -16,6 +17,14 @@ $(document).ready(function(){
 	$('#shoppingCart .q3 .option').click(function(){
 		$(this).toggleClass('selected');
 	});
+	//--submit
+	$('#shoppingCart .information .button').click(function(){
+		$('#shoppingCart .main').hide();
+		$('#shoppingCart .message').show();
+		window.scrollTo(0, 0);
+		return false;
+	});
+
 	//footer
 	var currentYear = (new Date).getFullYear();
 	$(".current-year").text( (new Date).getFullYear() );

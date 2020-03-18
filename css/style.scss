@@ -1083,9 +1083,9 @@ html{
 	}//#inquery
 
 	body#shoppingCart{
+		background-color: #e6eded;
 		section.main{
 			padding: 20px 0 75px 0;
-			background-color: #e6eded;
 			.frame{
 				width: 90%;
 				margin: auto;
@@ -1553,6 +1553,81 @@ html{
 					width: 96%;
 				}
 			}//frame
-		}
+		}//seciton.main
+		section.message{
+			background-color: #e6eded;
+			.frame{
+				width: 90%;
+				margin: auto;
+				max-width: 1255px;
+				display: block;
+				background-color: white;
+				padding: 40px;
+				text-align: center;
+				position: relative;
+				padding-bottom: 0;
+				.title{
+					font-size: 35px;
+					text-transform: uppercase;
+					text-align: center;
+				}
+				.seperator{
+					@include seperator;
+					margin-top: 10px;
+				}
+				img.img-yes{
+					width: 60px;
+					@media screen and (min-width: 768px){
+						width: 84px;
+						margin-top: 55px;
+					}
+				}
+				p{
+					font-size: 20px;
+					margin: auto;
+					margin-top: 30px;
+					max-width: 690px;
+					@media screen and (min-width: 768px){
+						font-size: 30px;
+						margin-top: 55px;
+					}
+				}
+				@media screen and (min-width: 768px){
+					padding: 65px;
+					padding-bottom: 0;
+					@media screen and (min-width: 1255px){
+						padding-bottom: 527px;
+					}
+				}
+			}
+			.decoration{
+				width: 90%;
+				max-width: 1255px;
+				margin: auto;
+				background-color: white;
+				height: 50vw;
+				background-image: url(../img/shoppingcart/message_bg.png);
+				background-size: 116%;
+				background-repeat: no-repeat;
+				background-position-y: 4vw;
+				position: relative;
+				.logo{
+					width: 34vw;
+				    position: absolute;
+				    right: -3vw;
+				    top: 11vw;
+				    @media screen and (min-width: 1255px){
+				    	width: 426px;
+				    	right: -38px;
+    					top: 140px;
+				    }
+				}
+				@media screen and (min-width: 1255px) {
+					height: 627px;
+					background-color: unset;
+					margin-top: -627px;
+				}
+			}
+		}//section.message
 	}//shoppingCart
 }
