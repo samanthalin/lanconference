@@ -1998,5 +1998,39 @@ html body.product-page section.banner .frame .information .button-wrap .inquery 
   background-color: #649A9E;
   color: white;
 }
+html body.product-page section.introduction .frame {
+  width: 90%;
+  margin: auto;
+  max-width: 1182px;
+}
+html body.product-page section.introduction .frame .overview-mobile p.table-name {
+  font-family: "Seravek";
+  font-size: 30px;
+}
+html body.product-page section.introduction .frame .overview-mobile .table {
+  box-shadow: 0px 3px 6px #00000029;
+}
+html body.product-page section.introduction .frame .overview-mobile .table .table-row {
+  padding: 10px;
+}
+html body.product-page section.introduction .frame .overview-mobile .table .table-row:nth-child(2n-1) {
+  background-color: #627C9724;
+}
+html body.product-page section.introduction .frame .overview-mobile .table .table-row .title {
+  color: #322b2acf;
+  font-size: 25px;
+}
+html body.product-page section.introduction .frame .overview-mobile .table .table-row .content {
+  color: #322b2acf;
+}
+html body.product-page section.introduction .frame .overview-mobile .table .table-row .content p {
+  margin: 0;
+}
+html body.product-page section.introduction .frame .overview-mobile .table .facility .content .item {
+  display: flex;
+}
+html body.product-page section.introduction .frame .overview-mobile .table .facility .content .item .text {
+  margin-left: 15px;
+}
 
 /*# sourceMappingURL=style.css.map */
