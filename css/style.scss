@@ -1644,6 +1644,9 @@ html{
 					width: 100%;
 					overflow: hidden;
 					background-color: $theme-green;
+					@media screen and (min-width: 1200px){
+						height: auto;
+					}
 				}//gallery
 				.slider{
 					.slide{
@@ -1651,6 +1654,10 @@ html{
 						height: 100%;
 						img{
 							width: 100%;
+							@media screen and (min-width: 1200px){
+								height: 100%;
+								width: auto;
+							}
 						}
 					}
 				}
@@ -1664,6 +1671,9 @@ html{
 					padding-bottom: 72px;
 					.name{
 						font-size: 32px;
+						@media screen and (min-width: 768px){
+							font-size: 40px;
+						}
 					}
 					.info{
 						font-style: italic;
@@ -1672,6 +1682,9 @@ html{
 						.size{
 							font-style: normal;
 							font-style: 20px;
+						}
+						@media screen and (min-width: 768px){
+							font-size: 25px;
 						}
 					}//info
 					.price{
@@ -1725,6 +1738,9 @@ html{
 							font-family: 'Quicksand';
 							text-align: center;
 							line-height: 72px;
+							@media screen and (min-width: 768px){
+								font-size: 26px;
+							}
 						}
 						.book{
 							background-color: $theme-light-green;
@@ -1734,11 +1750,26 @@ html{
 							background-color: $theme-green;
 							color: white;
 						}
+						@media screen and (min-width: 1200px){
+							bottom: 0;
+						}
 					}//button-wrap
+					@media screen and (min-width: 1200px){
+						width: 422px;
+						height: 639px;
+						flex: none;
+					}
 				}//information
+				@media screen and (min-width: 1200px) {
+					display: flex;
+				}
+			}//frame
+			@media screen and (min-width: 1200px){
+				padding: 150px 0 205px 0;
 			}
 		}//banner
 		section.introduction{
+			padding: 40px 0 30px 0;
 			.frame{
 				width: 90%;
 				margin: auto;
@@ -1751,13 +1782,14 @@ html{
 					.table{
 						box-shadow: 0px 3px 6px #00000029;
 						.table-row{
-							padding: 10px;
+							padding: 20px;
 							&:nth-child(2n-1){
 								background-color: #627C9724;
 							}
 							.title{
 								color: #322b2acf;
 								font-size: 25px;
+								margin-bottom: 10px;
 							}
 							.content{
 								color: #322b2acf;
@@ -1771,16 +1803,219 @@ html{
 							.content{
 								.item{
 									display: flex;
+									margin-bottom: 20px;
+									align-items: center;
 									.text{
 										margin-left: 15px;
+										line-height: 20px;
+										@media screen and (min-width: 768px){
+											margin-left: 25px;
+										}
 									}
+									&:last-child{
+										img{
+											margin: 0 15px;
+										}
+									}
+								}
+							}
+						}//facilities
+						.price{
+							padding-bottom: 0;
+							.content{
+								table{
+									width: calc(100% + 40px);
+									margin-left: -20px;
+									font-size: 16px;
+									tr{
+										th{
+											color: $theme-black;
+											border: 0;
+											background-color: #E0E1E3;
+											padding-left: 20px;
+										}
+										td{
+											font-family: 'Seravek';
+											border: 0;
+											text-align: center;
+										}
+									}
+									@media screen and (min-width: 768px){
+										font-size: 18px;
+									}
+								}//table
+							}
+						}
+						.service{
+							.content{
+								p{
+									font-family: 'Seravek';
+								}
+								hr{
+									border-top-color: gray;
 								}
 							}
 						}
 					}//table
+				}//overview-mobiles
+				.overview{
+					
+				}//overview
+				.impression{
+					margin-top: 50px;
+					.name{
+						font-family: 'Seravek';
+						font-size: 30px;
+					}
+					.gallery{
+						display: flex;
+						flex-wrap: wrap;
+						justify-content: space-between;
+						.thumbnail{
+							width: calc(50% - 7px);
+							background-color: $theme-green;
+							height: 45vw;
+							margin: 7px 0;
+							background-size: cover;
+							background-position: center;
+							background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/Gallery_page_11.jpg);
+							&:last-child{
+								background-color: $theme-light-green;
+							}
+							@media screen and (min-width: 992px){
+								width: calc((100% - 32px) / 4);
+								height: 24vw;
+								@media screen and (min-width: 1200px){
+									height: 287px;
+								}
+							}
+						}
+					}
+				}//impression
+				.map-title{
+					font-family: 'Seravek';
+					font-size: 30px;
+					margin: 0;
+					margin-top: 50px;
+				}
+			}//frame
+			@media screen and (min-width: 768px){
+				padding-top: 65px;
+			}
+		}//introduction
+		section.map{
+			@include map;
+		}//section.map
+
+		section.options{
+			padding: 40px 0;
+			background-color: #f8fafb;
+			.frame{
+				width: 90%;
+				margin: auto;
+				max-width: 1182px;
+				.title{
+					font-size: 35px;
+					text-transform: uppercase;
+					text-align: center;
+					line-height: 1.3em;
+				}
+				.box-wrap{
+					margin-top: 30px;
+					.box{
+						width: 100%;
+						padding: 25px;
+						background-color: white;
+						margin-bottom: 15px;
+						.img{
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							text-align: center;
+							color: white;
+							background-color: $theme-green;
+							background-size: cover;
+							height: 48vw;
+							font-size: 32px;
+							line-height: 1.1em;
+							@media screen and (min-width: 768px){
+								height: 25vw;
+								font-size: 35px;
+								@media screen and (min-width: 992px){
+									height: 17vw;
+									@media screen and (min-width: 1200px){
+										height: 200px;
+									}
+								}
+							}
+						}
+						.info{
+							padding: 20px 0;
+							p{
+								line-height: 1.3em;
+								margin: 0;
+								font-style: italic;
+								font-size: 20px;
+								@media screen and (min-width: 768px){
+									font-size: 25px;
+								}
+							}
+							p.size{
+								font-style: normal;
+								font-size: 22px;
+								@media screen and (min-width: 768px){
+									font-size: 27px;
+								}
+							}
+						}
+						.button{
+							@include green-button;
+							box-shadow: none;
+							@media screen and (min-width: 768px){
+								font-size: 26px;
+								margin-top: 15px;
+							}
+						}
+						&:nth-child(1) .img{
+							background-image: url(../img/box_img.png);
+						}
+						&:nth-child(2) .img{
+							background-image: url(../img/box_img2.png);
+						};
+						&:nth-child(3) .img{
+							background-image: url(../img/box_img3.png);
+						};
+						&:nth-child(4) .img{
+							background-image: url(../img/box_img4.png);
+						};
+						&:nth-child(5) .img{
+							background-image: url(../img/box_img5.png);
+						};
+						&:nth-child(6) .img{
+							background-image: url(../img/box_img6.png);
+						}
+						@media screen and (min-width: 768px){
+							width: calc(50% - 10px);
+							@media screen and (min-width: 992px){
+								width: calc((100% - 20px) / 3);
+							}
+						}
+					}//box
+					@media screen and (min-width: 768px) {
+						display: flex;
+						flex-wrap: wrap;
+						@media screen and (min-width: 1200px){
+							margin-top: 50px;
+						}
+					}
+				}//box-wrap
+			}//frame
+			@media screen and (min-width: 768px){
+				padding: 65px 0;
+				@media screen and (min-width: 1200px){
+					padding: 150px 0;
 				}
 			}
-
-		}
+		}//section.options
 	}
 }

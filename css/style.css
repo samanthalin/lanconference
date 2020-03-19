@@ -1456,11 +1456,18 @@ html body.product-page section.banner {
       width: 100%;
       overflow: hidden;
       background-color: #649A9E; }
+      @media screen and (min-width: 1200px) {
+        html body.product-page section.banner .frame .gallery {
+          height: auto; } }
     html body.product-page section.banner .frame .slider .slide {
       width: 100%;
       height: 100%; }
       html body.product-page section.banner .frame .slider .slide img {
         width: 100%; }
+        @media screen and (min-width: 1200px) {
+          html body.product-page section.banner .frame .slider .slide img {
+            height: 100%;
+            width: auto; } }
     html body.product-page section.banner .frame .information {
       width: 100%;
       background-color: white;
@@ -1471,6 +1478,9 @@ html body.product-page section.banner {
       padding-bottom: 72px; }
       html body.product-page section.banner .frame .information .name {
         font-size: 32px; }
+        @media screen and (min-width: 768px) {
+          html body.product-page section.banner .frame .information .name {
+            font-size: 40px; } }
       html body.product-page section.banner .frame .information .info {
         font-style: italic;
         border-bottom: 1px solid #649A9E;
@@ -1478,6 +1488,9 @@ html body.product-page section.banner {
         html body.product-page section.banner .frame .information .info .size {
           font-style: normal;
           font-style: 20px; }
+        @media screen and (min-width: 768px) {
+          html body.product-page section.banner .frame .information .info {
+            font-size: 25px; } }
       html body.product-page section.banner .frame .information .price {
         padding: 15px 0;
         border-bottom: 1px solid #649A9E;
@@ -1519,35 +1532,240 @@ html body.product-page section.banner {
           font-family: 'Quicksand';
           text-align: center;
           line-height: 72px; }
+          @media screen and (min-width: 768px) {
+            html body.product-page section.banner .frame .information .button-wrap .button {
+              font-size: 26px; } }
         html body.product-page section.banner .frame .information .button-wrap .book {
           background-color: #CDE2BC;
           color: #322B2A; }
         html body.product-page section.banner .frame .information .button-wrap .inquery {
           background-color: #649A9E;
           color: white; }
-html body.product-page section.introduction .frame {
-  width: 90%;
-  margin: auto;
-  max-width: 1182px; }
-  html body.product-page section.introduction .frame .overview-mobile p.table-name {
-    font-family: 'Seravek';
-    font-size: 30px; }
-  html body.product-page section.introduction .frame .overview-mobile .table {
-    box-shadow: 0px 3px 6px #00000029; }
-    html body.product-page section.introduction .frame .overview-mobile .table .table-row {
-      padding: 10px; }
-      html body.product-page section.introduction .frame .overview-mobile .table .table-row:nth-child(2n-1) {
-        background-color: #627C9724; }
-      html body.product-page section.introduction .frame .overview-mobile .table .table-row .title {
-        color: #322b2acf;
-        font-size: 25px; }
-      html body.product-page section.introduction .frame .overview-mobile .table .table-row .content {
-        color: #322b2acf; }
-        html body.product-page section.introduction .frame .overview-mobile .table .table-row .content p {
-          margin: 0; }
-    html body.product-page section.introduction .frame .overview-mobile .table .facility .content .item {
-      display: flex; }
-      html body.product-page section.introduction .frame .overview-mobile .table .facility .content .item .text {
-        margin-left: 15px; }
+        @media screen and (min-width: 1200px) {
+          html body.product-page section.banner .frame .information .button-wrap {
+            bottom: 0; } }
+      @media screen and (min-width: 1200px) {
+        html body.product-page section.banner .frame .information {
+          width: 422px;
+          height: 639px;
+          flex: none; } }
+    @media screen and (min-width: 1200px) {
+      html body.product-page section.banner .frame {
+        display: flex; } }
+  @media screen and (min-width: 1200px) {
+    html body.product-page section.banner {
+      padding: 150px 0 205px 0; } }
+html body.product-page section.introduction {
+  padding: 40px 0 30px 0; }
+  html body.product-page section.introduction .frame {
+    width: 90%;
+    margin: auto;
+    max-width: 1182px; }
+    html body.product-page section.introduction .frame .overview-mobile p.table-name {
+      font-family: 'Seravek';
+      font-size: 30px; }
+    html body.product-page section.introduction .frame .overview-mobile .table {
+      box-shadow: 0px 3px 6px #00000029; }
+      html body.product-page section.introduction .frame .overview-mobile .table .table-row {
+        padding: 20px; }
+        html body.product-page section.introduction .frame .overview-mobile .table .table-row:nth-child(2n-1) {
+          background-color: #627C9724; }
+        html body.product-page section.introduction .frame .overview-mobile .table .table-row .title {
+          color: #322b2acf;
+          font-size: 25px;
+          margin-bottom: 10px; }
+        html body.product-page section.introduction .frame .overview-mobile .table .table-row .content {
+          color: #322b2acf; }
+          html body.product-page section.introduction .frame .overview-mobile .table .table-row .content p {
+            margin: 0; }
+      html body.product-page section.introduction .frame .overview-mobile .table .facility .content .item {
+        display: flex;
+        margin-bottom: 20px;
+        align-items: center; }
+        html body.product-page section.introduction .frame .overview-mobile .table .facility .content .item .text {
+          margin-left: 15px;
+          line-height: 20px; }
+          @media screen and (min-width: 768px) {
+            html body.product-page section.introduction .frame .overview-mobile .table .facility .content .item .text {
+              margin-left: 25px; } }
+        html body.product-page section.introduction .frame .overview-mobile .table .facility .content .item:last-child img {
+          margin: 0 15px; }
+      html body.product-page section.introduction .frame .overview-mobile .table .price {
+        padding-bottom: 0; }
+        html body.product-page section.introduction .frame .overview-mobile .table .price .content table {
+          width: calc(100% + 40px);
+          margin-left: -20px;
+          font-size: 16px; }
+          html body.product-page section.introduction .frame .overview-mobile .table .price .content table tr th {
+            color: #322B2A;
+            border: 0;
+            background-color: #E0E1E3;
+            padding-left: 20px; }
+          html body.product-page section.introduction .frame .overview-mobile .table .price .content table tr td {
+            font-family: 'Seravek';
+            border: 0;
+            text-align: center; }
+          @media screen and (min-width: 768px) {
+            html body.product-page section.introduction .frame .overview-mobile .table .price .content table {
+              font-size: 18px; } }
+      html body.product-page section.introduction .frame .overview-mobile .table .service .content p {
+        font-family: 'Seravek'; }
+      html body.product-page section.introduction .frame .overview-mobile .table .service .content hr {
+        border-top-color: gray; }
+    html body.product-page section.introduction .frame .impression {
+      margin-top: 50px; }
+      html body.product-page section.introduction .frame .impression .name {
+        font-family: 'Seravek';
+        font-size: 30px; }
+      html body.product-page section.introduction .frame .impression .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; }
+        html body.product-page section.introduction .frame .impression .gallery .thumbnail {
+          width: calc(50% - 7px);
+          background-color: #649A9E;
+          height: 45vw;
+          margin: 7px 0;
+          background-size: cover;
+          background-position: center;
+          background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/Gallery_page_11.jpg); }
+          html body.product-page section.introduction .frame .impression .gallery .thumbnail:last-child {
+            background-color: #CDE2BC; }
+          @media screen and (min-width: 992px) {
+            html body.product-page section.introduction .frame .impression .gallery .thumbnail {
+              width: calc((100% - 32px) / 4);
+              height: 24vw; } }
+  @media screen and (min-width: 992px) and (min-width: 1200px) {
+    html body.product-page section.introduction .frame .impression .gallery .thumbnail {
+      height: 287px; } }
+
+    html body.product-page section.introduction .frame .map-title {
+      font-family: 'Seravek';
+      font-size: 30px;
+      margin: 0;
+      margin-top: 50px; }
+  @media screen and (min-width: 768px) {
+    html body.product-page section.introduction {
+      padding-top: 65px; } }
+html body.product-page section.map {
+  height: 500px;
+  background-image: url(../img/map.png);
+  background-size: cover; }
+  @media screen and (min-width: 992px) {
+    html body.product-page section.map {
+      height: 40vw; } }
+html body.product-page section.options {
+  padding: 40px 0;
+  background-color: #f8fafb; }
+  html body.product-page section.options .frame {
+    width: 90%;
+    margin: auto;
+    max-width: 1182px; }
+    html body.product-page section.options .frame .title {
+      font-size: 35px;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 1.3em; }
+    html body.product-page section.options .frame .box-wrap {
+      margin-top: 30px; }
+      html body.product-page section.options .frame .box-wrap .box {
+        width: 100%;
+        padding: 25px;
+        background-color: white;
+        margin-bottom: 15px; }
+        html body.product-page section.options .frame .box-wrap .box .img {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          color: white;
+          background-color: #649A9E;
+          background-size: cover;
+          height: 48vw;
+          font-size: 32px;
+          line-height: 1.1em; }
+          @media screen and (min-width: 768px) {
+            html body.product-page section.options .frame .box-wrap .box .img {
+              height: 25vw;
+              font-size: 35px; } }
+  @media screen and (min-width: 768px) and (min-width: 992px) {
+    html body.product-page section.options .frame .box-wrap .box .img {
+      height: 17vw; } }
+
+  @media screen and (min-width: 768px) and (min-width: 992px) and (min-width: 1200px) {
+    html body.product-page section.options .frame .box-wrap .box .img {
+      height: 200px; } }
+
+        html body.product-page section.options .frame .box-wrap .box .info {
+          padding: 20px 0; }
+          html body.product-page section.options .frame .box-wrap .box .info p {
+            line-height: 1.3em;
+            margin: 0;
+            font-style: italic;
+            font-size: 20px; }
+            @media screen and (min-width: 768px) {
+              html body.product-page section.options .frame .box-wrap .box .info p {
+                font-size: 25px; } }
+          html body.product-page section.options .frame .box-wrap .box .info p.size {
+            font-style: normal;
+            font-size: 22px; }
+            @media screen and (min-width: 768px) {
+              html body.product-page section.options .frame .box-wrap .box .info p.size {
+                font-size: 27px; } }
+        html body.product-page section.options .frame .box-wrap .box .button {
+          display: block;
+          width: 100%;
+          background-color: #CDE2BC;
+          text-align: center;
+          color: #322B2A;
+          font-family: Quicksand;
+          font-size: 22px;
+          border-radius: 17px;
+          padding: 8px 0;
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+          cursor: pointer;
+          box-shadow: none; }
+          html body.product-page section.options .frame .box-wrap .box .button:hover {
+            filter: brightness(0.9); }
+          html body.product-page section.options .frame .box-wrap .box .button:active {
+            transform: translateY(4px);
+            box-shadow: none; }
+          @media screen and (min-width: 768px) {
+            html body.product-page section.options .frame .box-wrap .box .button {
+              font-size: 26px;
+              margin-top: 15px; } }
+        html body.product-page section.options .frame .box-wrap .box:nth-child(1) .img {
+          background-image: url(../img/box_img.png); }
+        html body.product-page section.options .frame .box-wrap .box:nth-child(2) .img {
+          background-image: url(../img/box_img2.png); }
+        html body.product-page section.options .frame .box-wrap .box:nth-child(3) .img {
+          background-image: url(../img/box_img3.png); }
+        html body.product-page section.options .frame .box-wrap .box:nth-child(4) .img {
+          background-image: url(../img/box_img4.png); }
+        html body.product-page section.options .frame .box-wrap .box:nth-child(5) .img {
+          background-image: url(../img/box_img5.png); }
+        html body.product-page section.options .frame .box-wrap .box:nth-child(6) .img {
+          background-image: url(../img/box_img6.png); }
+        @media screen and (min-width: 768px) {
+          html body.product-page section.options .frame .box-wrap .box {
+            width: calc(50% - 10px); } }
+  @media screen and (min-width: 768px) and (min-width: 992px) {
+    html body.product-page section.options .frame .box-wrap .box {
+      width: calc((100% - 20px) / 3); } }
+
+      @media screen and (min-width: 768px) {
+        html body.product-page section.options .frame .box-wrap {
+          display: flex;
+          flex-wrap: wrap; } }
+  @media screen and (min-width: 768px) and (min-width: 1200px) {
+    html body.product-page section.options .frame .box-wrap {
+      margin-top: 50px; } }
+
+  @media screen and (min-width: 768px) {
+    html body.product-page section.options {
+      padding: 65px 0; } }
+  @media screen and (min-width: 768px) and (min-width: 1200px) {
+    html body.product-page section.options {
+      padding: 150px 0; } }
 
 /*# sourceMappingURL=style.css.map */
