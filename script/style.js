@@ -1,5 +1,12 @@
 $(document).ready(function(){
+	//menu
 
+	//index-inquery
+	$('#index .inquery form .submit').click(function(){
+		$('#index .inquery form').hide();
+		$('#index .inquery .message').show()
+		$('html, body').scrollTop( $('#index .inquery').offset().top );
+	});
 	//inquery
 	$('#inquery form .submit').click(function(){
 		$('#inquery form').hide();

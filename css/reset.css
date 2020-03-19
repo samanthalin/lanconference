@@ -23,6 +23,7 @@ body > img {
   display: none; }
 
 img {
+  display: block;
   border: none;
   padding: 0;
   margin: 0; }
