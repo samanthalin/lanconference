@@ -1794,6 +1794,9 @@ html{
 									width: 197px;
 									flex: none;
 									margin: 0;
+									display: flex;
+									align-items: center;
+									padding-left: 35px;
 								}
 							}
 							.content{
@@ -1815,6 +1818,9 @@ html{
 								@media screen and (min-width: 992px) {
 									display: flex;
 								}
+							}
+							@media screen and (min-width: 992px){
+								padding: 40px 20px;
 							}
 						}
 						.facility{
@@ -1862,6 +1868,11 @@ html{
 						}//facilities
 						.price{
 							padding-bottom: 0;
+							.title{
+								@media screen and (min-width: 992px){
+									padding-top: 40px;
+								}
+							}
 							.content{
 								width: 100%;
 								table{
@@ -1881,16 +1892,18 @@ html{
 													flex: 2;
 													text-align: center;
 													width: auto;
+													margin-bottom: 15px;
 												}
-											}
+											}//th
 											td{
 												font-family: 'Seravek';
 												border: 0;
 												text-align: center;
 												@media screen and (min-width: 992px){
 													display: block;
+													height: 35px;
 												}
-											}
+											}//td
 											@media screen and (min-width: 992px) {
 												flex: 1;
 												&:first-child{
@@ -1921,7 +1934,7 @@ html{
 								}//table
 							}//content
 							@media screen and (min-width: 992px){
-								padding: 0 0 20px 20px;
+								padding: 0 0 40px 20px;
 							}
 						}//proce
 						.service{
@@ -1941,30 +1954,44 @@ html{
 									padding-bottom: 20px;
 									border-bottom: 1px solid $theme-black;
 									position: relative;
-									@media screen and (min-width: 768px){
+									@media screen and (min-width: 992px){
 										padding: 0;
+										padding-right: 15px;
 										border: 0;
+										border-right: 1px solid $theme-black;
 										flex: 1;
-										p:nth-child(4), p:nth-child(5){
-											float: right;
-											clear: both;
+										display: flex;
+										flex-wrap: wrap;
+										align-content: center;
+										p{
+											width: 50%;
+											margin: 5px 0;
 										}
 									}
 								}//left
 								.right{
 									padding-top: 20px;
-									@media screen and (min-width: 768px){
+									@media screen and (min-width: 992px){
 										padding: 0;
+										padding-left: 65px;
 										flex: 1;
+										display: flex;
+										flex-wrap: wrap;
+										align-content: center;
+										p{
+											width: 50%;
+											margin: 5px 0;
+										}
 									}
 								}//right
-								@media screen and (min-width: 768px) {
+								@media screen and (min-width: 992px) {
 									display: flex;
 									flex: 1;
 								}
 							}//content
 							@media screen and (min-width: 768px) {
 								display: flex;
+								padding: 40px 20px;
 							}
 						}//service
 					}//table
