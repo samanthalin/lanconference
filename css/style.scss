@@ -1774,7 +1774,7 @@ html{
 				width: 90%;
 				margin: auto;
 				max-width: 1182px;
-				.overview-mobile{
+				.overview{
 					p.table-name{
 						font-family: 'Seravek';
 						font-size: 30px;
@@ -1790,14 +1790,33 @@ html{
 								color: #322b2acf;
 								font-size: 25px;
 								margin-bottom: 10px;
+								@media screen and (min-width: 992px){
+									width: 197px;
+									flex: none;
+									margin: 0;
+								}
 							}
 							.content{
 								color: #322b2acf;
 								p{
 									margin: 0;
+									@media screen and (min-width: 992px){
+										margin: auto;
+										margin-right: 50px;
+									}
 								}
 							}
+							@media screen and (min-width: 992px) {
+								display: flex;
+							}
 						}//rable-row
+						.capacity{
+							.content{
+								@media screen and (min-width: 992px) {
+									display: flex;
+								}
+							}
+						}
 						.facility{
 							.title{}
 							.content{
@@ -1817,45 +1836,137 @@ html{
 											margin: 0 15px;
 										}
 									}
+									@media screen and (min-width: 992px){
+										margin-bottom: 0;
+										margin-right: 15px;
+										&:first-child{
+											width: 260px;
+										}
+										&:nth-child(2){
+											width: 335px;
+											.text{
+												margin-left: 0;
+											}
+										}
+										&:last-child{
+											img{
+												margin-right: 0;
+											}
+										}
+									}
+								}
+								@media screen and (min-width: 992px){
+									display: flex;
 								}
 							}
 						}//facilities
 						.price{
 							padding-bottom: 0;
 							.content{
+								width: 100%;
 								table{
 									width: calc(100% + 40px);
 									margin-left: -20px;
 									font-size: 16px;
-									tr{
-										th{
-											color: $theme-black;
-											border: 0;
-											background-color: #E0E1E3;
-											padding-left: 20px;
-										}
-										td{
-											font-family: 'Seravek';
-											border: 0;
-											text-align: center;
+									tbody{
+										tr{
+											th{
+												color: $theme-black;
+												border: 0;
+												background-color: #E0E1E3;
+												padding-left: 20px;
+												width: 192px;
+												@media screen and (min-width: 992px){
+													display: block;
+													flex: 2;
+													text-align: center;
+													width: auto;
+												}
+											}
+											td{
+												font-family: 'Seravek';
+												border: 0;
+												text-align: center;
+												@media screen and (min-width: 992px){
+													display: block;
+												}
+											}
+											@media screen and (min-width: 992px) {
+												flex: 1;
+												&:first-child{
+													flex: none;
+												}
+												&:first-child td, &:first-child th{
+													text-align: left;
+													padding-left: 20px;
+												}
+												&:nth-child(5) th{
+													padding-left: 0;
+													padding-right: 0;
+												}
+											}
+										}//tr
+										@media screen and (min-width: 992px){
+											display: flex;
 										}
 									}
 									@media screen and (min-width: 768px){
 										font-size: 18px;
+										@media screen and (min-width: 992px) {
+											width: calc(100% + 20px);
+											margin: 0;
+											margin-left: -20px;
+										}
 									}
 								}//table
+							}//content
+							@media screen and (min-width: 992px){
+								padding: 0 0 20px 20px;
 							}
-						}
+						}//proce
 						.service{
-							.content{
-								p{
-									font-family: 'Seravek';
-								}
-								hr{
-									border-top-color: gray;
+							.title{
+								@media screen and (min-width: 768px){
+									width: 192px;
+									flex: none;
 								}
 							}
-						}
+							.content{
+								.left, .right{
+									p{
+										font-family: 'Seravek';
+									}
+								}
+								.left{
+									padding-bottom: 20px;
+									border-bottom: 1px solid $theme-black;
+									position: relative;
+									@media screen and (min-width: 768px){
+										padding: 0;
+										border: 0;
+										flex: 1;
+										p:nth-child(4), p:nth-child(5){
+											float: right;
+											clear: both;
+										}
+									}
+								}//left
+								.right{
+									padding-top: 20px;
+									@media screen and (min-width: 768px){
+										padding: 0;
+										flex: 1;
+									}
+								}//right
+								@media screen and (min-width: 768px) {
+									display: flex;
+									flex: 1;
+								}
+							}//content
+							@media screen and (min-width: 768px) {
+								display: flex;
+							}
+						}//service
 					}//table
 				}//overview-mobiles
 				.overview{
@@ -1997,13 +2108,14 @@ html{
 						@media screen and (min-width: 768px){
 							width: calc(50% - 10px);
 							@media screen and (min-width: 992px){
-								width: calc((100% - 20px) / 3);
+								width: calc((100% - 30px) / 3);
 							}
 						}
 					}//box
 					@media screen and (min-width: 768px) {
 						display: flex;
 						flex-wrap: wrap;
+						justify-content: space-between;
 						@media screen and (min-width: 1200px){
 							margin-top: 50px;
 						}
