@@ -477,7 +477,8 @@ html body#index section.inquery {
         text-align: center;
         padding: 50px 0; }
         html body#index section.inquery .frame .inquery-form .message img {
-          width: 60px; }
+          width: 60px;
+          margin: auto; }
           @media screen and (min-width: 768px) {
             html body#index section.inquery .frame .inquery-form .message img {
               width: 84px; } }
@@ -922,7 +923,8 @@ html body#inquery section.inquery {
         text-align: center;
         padding: 50px 0; }
         html body#inquery section.inquery .frame .inquery-form .message img {
-          width: 60px; }
+          width: 60px;
+          margin: auto; }
           @media screen and (min-width: 768px) {
             html body#inquery section.inquery .frame .inquery-form .message img {
               width: 84px; } }

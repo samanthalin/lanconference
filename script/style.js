@@ -1,5 +1,10 @@
 $(document).ready(function(){
-
+	//homepage
+	$('#index form .submit').click(function(){
+		$('#index form').hide();
+		$('#index .message').show()
+		$('html, body').scrollTop($('#index .inquery').offset().top);
+	});
 	//inquery
 	$('#inquery form .submit').click(function(){
 		$('#inquery form').hide();
