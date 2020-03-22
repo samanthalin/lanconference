@@ -2157,5 +2157,83 @@ html{
 				}
 			}
 		}//section.options
-	}
+	}//.product-page
+	
+	body#lobby{
+		section.introduction{
+			.frame{
+				.overview{
+					.table{
+						.facility{
+							.item{
+								&:first-child{
+									width: 230px;
+								}
+								&:nth-child(2){
+									width: 200px;
+									img{
+										margin: 0 15px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		section.options{
+			.frame{
+				.box-wrap{
+					.box{
+						&:nth-child(3){
+							.img{
+								background-image: url(../img/box_img5.png);
+							}
+						}
+						&:nth-child(4){
+							.img{
+								background-image: url(../img/box_img.png);
+							}
+						}
+						&:nth-child(5){
+							.img{
+								background-image: url(../img/box_img4.png);
+							}
+						}
+					}
+				}
+			}
+		}
+	}//#lobby
+
+	body#meeting{
+		section.options{
+			.frame{
+				.box-wrap{
+					.box{
+						&:nth-child(1){
+							.img{
+								background-image: url(../img/box_img4.png);
+							}
+						}
+						&:nth-child(2){
+							.img{
+								background-image: url(../img/box_img3.png);
+							}
+						}
+						&:nth-child(3){
+							.img{
+								background-image: url(../img/box_img.png);
+							}
+						}
+						&:nth-child(4){
+							.img{
+								background-image: url(../img/box_img.png);
+							}
+						}
+					}
+				}
+			}
+		}
+	}//#meeting
 }
