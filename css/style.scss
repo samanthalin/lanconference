@@ -2388,7 +2388,7 @@ html{
 		}
 	}//#kitchen
 
-	#meeting-room-lobby, #conference-room-lobby{
+	#meeting-room-lobby, #conference-room-lobby, #venue{
 		.banner{
 			.frame{
 				.information{
@@ -2421,6 +2421,23 @@ html{
 			.frame{
 				.overview{
 					.table{
+						.price{
+							.content{
+								table{
+									tbody{
+										tr:nth-child(2), tr:nth-child(3){
+											@media screen and (min-width: 992px){
+												width: 95px;
+												flex: none;
+												@media screen and (min-width: 1200px) {
+													width: 150px;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
 						.facility{
 							.content{	
 								.item{
@@ -2506,4 +2523,44 @@ html{
 			}
 		}//options
 	}//#conference-room-lobby
+	#venue{
+		section.options{
+			.frame{
+				.box-wrap{
+					.box{
+						&:nth-child(1){
+							.img{
+								background-image: url(../img/box_img4.png);
+							}
+						}
+						&:nth-child(2){
+							.img{
+								background-image: url(../img/box_img.png);
+							}
+						}
+						&:nth-child(3){
+							.img{
+								background-image: url(../img/box_img.png);
+							}
+						}
+						&:nth-child(4){
+							.img{
+								background-image: url(../img/box_img4.png);
+							}
+						}
+						&:nth-child(5){
+							.img{
+								background-image: url(../img/box_img3.png);
+							}
+						}
+						&:nth-child(6){
+							.img{
+								background-image: url(../img/box_img5.png);
+							}
+						}
+					}
+				}
+			}
+		}//options
+	}
 }

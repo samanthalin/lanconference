@@ -1998,35 +1998,43 @@ html body#kitchen section.options .frame .box-wrap .box:nth-child(4) .img {
   background-image: url(../img/box_img.png); }
 html body#kitchen section.options .frame .box-wrap .box:nth-child(5) .img {
   background-image: url(../img/box_img4.png); }
-html #meeting-room-lobby .banner .frame .information .name, html #conference-room-lobby .banner .frame .information .name {
+html #meeting-room-lobby .banner .frame .information .name, html #conference-room-lobby .banner .frame .information .name, html #venue .banner .frame .information .name {
   line-height: 1em; }
-html #meeting-room-lobby .banner .frame .information .info, html #conference-room-lobby .banner .frame .information .info {
+html #meeting-room-lobby .banner .frame .information .info, html #conference-room-lobby .banner .frame .information .info, html #venue .banner .frame .information .info {
   border: 0;
   padding: 60px 0; }
-html #meeting-room-lobby .banner .frame .information .brief, html #conference-room-lobby .banner .frame .information .brief {
+html #meeting-room-lobby .banner .frame .information .brief, html #conference-room-lobby .banner .frame .information .brief, html #venue .banner .frame .information .brief {
   font-family: 'Seravek'; }
-html #meeting-room-lobby .banner .frame .information .button-wrap .button, html #conference-room-lobby .banner .frame .information .button-wrap .button {
+html #meeting-room-lobby .banner .frame .information .button-wrap .button, html #conference-room-lobby .banner .frame .information .button-wrap .button, html #venue .banner .frame .information .button-wrap .button {
   width: 100%; }
-html #meeting-room-lobby .banner .frame .information .button-wrap:before, html #conference-room-lobby .banner .frame .information .button-wrap:before {
+html #meeting-room-lobby .banner .frame .information .button-wrap:before, html #conference-room-lobby .banner .frame .information .button-wrap:before, html #venue .banner .frame .information .button-wrap:before {
   content: 'Please contact us for pricing details';
   position: absolute;
   font-family: 'Seravek';
   left: 20px;
   top: -45px; }
-html #meeting-room-lobby .introduction .frame .overview .table .facility .content .item:nth-child(3) .text, html #conference-room-lobby .introduction .frame .overview .table .facility .content .item:nth-child(3) .text {
+@media screen and (min-width: 992px) {
+  html #meeting-room-lobby .introduction .frame .overview .table .price .content table tbody tr:nth-child(2), html #meeting-room-lobby .introduction .frame .overview .table .price .content table tbody tr:nth-child(3), html #conference-room-lobby .introduction .frame .overview .table .price .content table tbody tr:nth-child(2), html #conference-room-lobby .introduction .frame .overview .table .price .content table tbody tr:nth-child(3), html #venue .introduction .frame .overview .table .price .content table tbody tr:nth-child(2), html #venue .introduction .frame .overview .table .price .content table tbody tr:nth-child(3) {
+    width: 95px;
+    flex: none; } }
+  @media screen and (min-width: 992px) and (min-width: 1200px) {
+    html #meeting-room-lobby .introduction .frame .overview .table .price .content table tbody tr:nth-child(2), html #meeting-room-lobby .introduction .frame .overview .table .price .content table tbody tr:nth-child(3), html #conference-room-lobby .introduction .frame .overview .table .price .content table tbody tr:nth-child(2), html #conference-room-lobby .introduction .frame .overview .table .price .content table tbody tr:nth-child(3), html #venue .introduction .frame .overview .table .price .content table tbody tr:nth-child(2), html #venue .introduction .frame .overview .table .price .content table tbody tr:nth-child(3) {
+      width: 150px; } }
+
+html #meeting-room-lobby .introduction .frame .overview .table .facility .content .item:nth-child(3) .text, html #conference-room-lobby .introduction .frame .overview .table .facility .content .item:nth-child(3) .text, html #venue .introduction .frame .overview .table .facility .content .item:nth-child(3) .text {
   margin-left: 8px; }
-html #meeting-room-lobby .introduction .frame .overview .table .facility .content .item:last-child img, html #conference-room-lobby .introduction .frame .overview .table .facility .content .item:last-child img {
+html #meeting-room-lobby .introduction .frame .overview .table .facility .content .item:last-child img, html #conference-room-lobby .introduction .frame .overview .table .facility .content .item:last-child img, html #venue .introduction .frame .overview .table .facility .content .item:last-child img {
   margin-left: 0; }
-html #meeting-room-lobby .introduction .frame .overview .table .facility .content .item:last-child .text, html #conference-room-lobby .introduction .frame .overview .table .facility .content .item:last-child .text {
+html #meeting-room-lobby .introduction .frame .overview .table .facility .content .item:last-child .text, html #conference-room-lobby .introduction .frame .overview .table .facility .content .item:last-child .text, html #venue .introduction .frame .overview .table .facility .content .item:last-child .text {
   margin-left: 8px; }
 @media screen and (min-width: 992px) {
-  html #meeting-room-lobby .introduction .frame .overview .table .facility .content, html #conference-room-lobby .introduction .frame .overview .table .facility .content {
+  html #meeting-room-lobby .introduction .frame .overview .table .facility .content, html #conference-room-lobby .introduction .frame .overview .table .facility .content, html #venue .introduction .frame .overview .table .facility .content {
     margin-left: -20px; } }
-html #meeting-room-lobby section.options .frame .box-wrap .box:nth-child(2) .img, html #conference-room-lobby section.options .frame .box-wrap .box:nth-child(2) .img {
+html #meeting-room-lobby section.options .frame .box-wrap .box:nth-child(2) .img, html #conference-room-lobby section.options .frame .box-wrap .box:nth-child(2) .img, html #venue section.options .frame .box-wrap .box:nth-child(2) .img {
   background-image: url(../img/box_img4.png); }
-html #meeting-room-lobby section.options .frame .box-wrap .box:nth-child(3) .img, html #conference-room-lobby section.options .frame .box-wrap .box:nth-child(3) .img {
+html #meeting-room-lobby section.options .frame .box-wrap .box:nth-child(3) .img, html #conference-room-lobby section.options .frame .box-wrap .box:nth-child(3) .img, html #venue section.options .frame .box-wrap .box:nth-child(3) .img {
   background-image: url(../img/box_img3.png); }
-html #meeting-room-lobby section.options .frame .box-wrap .box:nth-child(4) .img, html #conference-room-lobby section.options .frame .box-wrap .box:nth-child(4) .img {
+html #meeting-room-lobby section.options .frame .box-wrap .box:nth-child(4) .img, html #conference-room-lobby section.options .frame .box-wrap .box:nth-child(4) .img, html #venue section.options .frame .box-wrap .box:nth-child(4) .img {
   background-image: url(../img/box_img.png); }
 html #conference-room-lobby section.options .frame .box-wrap .box:nth-child(1) .img {
   background-image: url(../img/box_img4.png); }
@@ -2036,5 +2044,17 @@ html #conference-room-lobby section.options .frame .box-wrap .box:nth-child(3) .
   background-image: url(../img/box_img3.png); }
 html #conference-room-lobby section.options .frame .box-wrap .box:nth-child(4) .img {
   background-image: url(../img/box_img4.png); }
+html #venue section.options .frame .box-wrap .box:nth-child(1) .img {
+  background-image: url(../img/box_img4.png); }
+html #venue section.options .frame .box-wrap .box:nth-child(2) .img {
+  background-image: url(../img/box_img.png); }
+html #venue section.options .frame .box-wrap .box:nth-child(3) .img {
+  background-image: url(../img/box_img.png); }
+html #venue section.options .frame .box-wrap .box:nth-child(4) .img {
+  background-image: url(../img/box_img4.png); }
+html #venue section.options .frame .box-wrap .box:nth-child(5) .img {
+  background-image: url(../img/box_img3.png); }
+html #venue section.options .frame .box-wrap .box:nth-child(6) .img {
+  background-image: url(../img/box_img5.png); }
 
 /*# sourceMappingURL=style.css.map */
