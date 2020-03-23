@@ -2387,4 +2387,93 @@ html{
 			}
 		}
 	}//#kitchen
+
+	#meeting-room-lobby{
+		.banner{
+			.frame{
+				.information{
+					.name{
+						line-height: 1em;
+					}
+					.info{
+						border: 0;
+						padding: 60px 0;
+					}
+					.brief{
+						font-family: 'Seravek';
+					}
+					.button-wrap{					
+						.button{
+							width: 100%;
+						}
+						&:before{
+							content: 'Please contact us for pricing details';
+							position: absolute;
+							font-family: 'Seravek';
+							left: 20px;
+							top: -45px;
+						}
+					}
+				}
+			}
+		}//banner
+		.introduction{
+			.frame{
+				.overview{
+					.table{
+						.facility{
+							.content{	
+								.item{
+									&:nth-child(3){
+										.text{
+											margin-left: 8px;
+										}
+									}
+									&:last-child{
+										img{
+											margin-left: 0;
+										}
+										.text{
+											margin-left: 8px;
+										}
+									}
+								}
+								@media screen and (min-width: 992px) {
+									margin-left: -20px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}//introduction
+		section.options{
+			.frame{
+				.box-wrap{
+					.box{
+						&:nth-child(1){
+							.img{
+								//background-image: url(../img/box_img4.png);
+							}
+						}
+						&:nth-child(2){
+							.img{
+								background-image: url(../img/box_img4.png);
+							}
+						}
+						&:nth-child(3){
+							.img{
+								background-image: url(../img/box_img3.png);
+							}
+						}
+						&:nth-child(4){
+							.img{
+								background-image: url(../img/box_img.png);
+							}
+						}
+					}
+				}
+			}
+		}//options
+	}
 }
