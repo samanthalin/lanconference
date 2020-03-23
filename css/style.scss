@@ -2236,4 +2236,155 @@ html{
 			}
 		}
 	}//#meeting
+
+	body#kitchen{
+		section.introduction{
+			.frame{
+				.overview{
+					.table{
+						.facility{
+							.content{
+								.item{
+									&:first-child{
+										width: 370px;
+									}
+									&:last-child{
+										width: 390px;
+										.text{
+											margin-left: 15px;
+										}
+									}
+								}
+							}
+						}//facility
+						.cooking-equipment{
+							padding-left: 30px;
+							padding-bottom: 20px;
+							.item{
+								display: flex;
+								align-items: center;
+								color: #322b2acf;
+								margin-bottom: 20px;
+								.text{
+									margin-left: 15px;
+								}
+								&:last-child{
+									width: 305px;
+								}
+								@media screen and (min-width: 992px) {
+									margin-left: 65px;
+								}
+							}
+							@media screen and (min-width: 992px){
+								display: flex;
+								padding: 30px 20px 60px 0px;
+								@media screen and (min-width: 1200px) {
+									padding: 30px 80px 60px 75px;
+								}
+							}
+						}//cooking-equipment
+						.food-operation{
+							width: 90%;
+							margin: auto;
+							border-top: 1px solid $theme-black;
+							padding: 15px 0;
+							.title{
+								color: #322b2acf;
+    							font-size: 25px;
+    							margin-bottom: 10px;
+    							@media screen and (min-width: 992px){
+    								width: 190px;
+    							}
+							}
+							p{
+								color: #322b2acf;
+								margin: 0;
+								@media screen and (min-width: 992px){
+									margin-left: 20px;
+								}
+							}
+							@media screen and (min-width: 992px) {
+								display: flex;
+								align-items: center;
+							}
+						}//food-operation
+						.washing-equipment{
+							width: 90%;
+							margin: auto;
+							border-top: 1px solid $theme-black;
+							padding: 15px 0;
+							.title{
+								color: #322b2acf;
+    							font-size: 25px;
+    							margin-bottom: 10px;
+    							@media screen and (min-width: 992px){
+    								width: 190px;
+    							}
+							}
+							.content{
+								width: 100%;
+								p{
+									margin: 0;
+									color: #322b2acf;
+									@media screen and (min-width: 992px){
+										
+									}
+								}
+								@media screen and (min-width: 992px){
+									margin-left: 20px;
+									display: flex;
+									justify-content: space-between;
+									flex-wrap: wrap;
+									align-items: center;
+									padding-left: 30px;
+								}
+							}
+							@media screen and (min-width: 992px){
+								display: flex;
+							}
+						}
+						.price{
+							background-color: #627C9724;
+						}
+						.service{
+							background-color: white;
+						}
+					}
+				}
+			}
+		}
+		section.options{
+			.frame{
+				.box-wrap{
+					.box{
+						&:nth-child(1){
+							.img{
+								//background-image: url(../img/box_img4.png);
+							}
+						}
+						&:nth-child(2){
+							.img{
+								background-image: url(../img/box_img4.png);
+							}
+						}
+						&:nth-child(3){
+							.img{
+								background-image: url(../img/box_img3.png);
+							}
+						}
+						&:nth-child(4){
+							.img{
+								background-image: url(../img/box_img.png);
+							}
+						}
+						&:nth-child(5){
+							.img{
+								background-image: url(../img/box_img4.png);
+							}
+						}
+					}
+				}
+			}
+		}
+	}//#kitchen
 }

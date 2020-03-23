@@ -1907,5 +1907,96 @@ html body#meeting section.options .frame .box-wrap .box:nth-child(3) .img {
   background-image: url(../img/box_img.png); }
 html body#meeting section.options .frame .box-wrap .box:nth-child(4) .img {
   background-image: url(../img/box_img.png); }
+html body#kitchen section.introduction .frame .overview .table .facility .content .item:first-child {
+  width: 370px; }
+html body#kitchen section.introduction .frame .overview .table .facility .content .item:last-child {
+  width: 390px; }
+  html body#kitchen section.introduction .frame .overview .table .facility .content .item:last-child .text {
+    margin-left: 15px; }
+html body#kitchen section.introduction .frame .overview .table .cooking-equipment {
+  padding-left: 30px;
+  padding-bottom: 20px; }
+  html body#kitchen section.introduction .frame .overview .table .cooking-equipment .item {
+    display: flex;
+    align-items: center;
+    color: #322b2acf;
+    margin-bottom: 20px; }
+    html body#kitchen section.introduction .frame .overview .table .cooking-equipment .item .text {
+      margin-left: 15px; }
+    html body#kitchen section.introduction .frame .overview .table .cooking-equipment .item:last-child {
+      width: 305px; }
+    @media screen and (min-width: 992px) {
+      html body#kitchen section.introduction .frame .overview .table .cooking-equipment .item {
+        margin-left: 65px; } }
+  @media screen and (min-width: 992px) {
+    html body#kitchen section.introduction .frame .overview .table .cooking-equipment {
+      display: flex;
+      padding: 30px 20px 60px 0px; } }
+  @media screen and (min-width: 992px) and (min-width: 1200px) {
+    html body#kitchen section.introduction .frame .overview .table .cooking-equipment {
+      padding: 30px 80px 60px 75px; } }
+
+html body#kitchen section.introduction .frame .overview .table .food-operation {
+  width: 90%;
+  margin: auto;
+  border-top: 1px solid #322B2A;
+  padding: 15px 0; }
+  html body#kitchen section.introduction .frame .overview .table .food-operation .title {
+    color: #322b2acf;
+    font-size: 25px;
+    margin-bottom: 10px; }
+    @media screen and (min-width: 992px) {
+      html body#kitchen section.introduction .frame .overview .table .food-operation .title {
+        width: 190px; } }
+  html body#kitchen section.introduction .frame .overview .table .food-operation p {
+    color: #322b2acf;
+    margin: 0; }
+    @media screen and (min-width: 992px) {
+      html body#kitchen section.introduction .frame .overview .table .food-operation p {
+        margin-left: 20px; } }
+  @media screen and (min-width: 992px) {
+    html body#kitchen section.introduction .frame .overview .table .food-operation {
+      display: flex;
+      align-items: center; } }
+html body#kitchen section.introduction .frame .overview .table .washing-equipment {
+  width: 90%;
+  margin: auto;
+  border-top: 1px solid #322B2A;
+  padding: 15px 0; }
+  html body#kitchen section.introduction .frame .overview .table .washing-equipment .title {
+    color: #322b2acf;
+    font-size: 25px;
+    margin-bottom: 10px; }
+    @media screen and (min-width: 992px) {
+      html body#kitchen section.introduction .frame .overview .table .washing-equipment .title {
+        width: 190px; } }
+  html body#kitchen section.introduction .frame .overview .table .washing-equipment .content {
+    width: 100%; }
+    html body#kitchen section.introduction .frame .overview .table .washing-equipment .content p {
+      margin: 0;
+      color: #322b2acf; }
+    @media screen and (min-width: 992px) {
+      html body#kitchen section.introduction .frame .overview .table .washing-equipment .content {
+        margin-left: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-left: 30px; } }
+  @media screen and (min-width: 992px) {
+    html body#kitchen section.introduction .frame .overview .table .washing-equipment {
+      display: flex; } }
+html body#kitchen section.introduction .frame .overview .table .price {
+  background-color: #627C9724; }
+html body#kitchen section.introduction .frame .overview .table .service {
+  background-color: white; }
+html body#kitchen section.options .frame .box-wrap .box:nth-child(2) .img {
+  background-image: url(../img/box_img4.png); }
+html body#kitchen section.options .frame .box-wrap .box:nth-child(3) .img {
+  background-image: url(../img/box_img3.png); }
+html body#kitchen section.options .frame .box-wrap .box:nth-child(4) .img {
+  background-image: url(../img/box_img.png); }
+html body#kitchen section.options .frame .box-wrap .box:nth-child(5) .img {
+  background-image: url(../img/box_img4.png); }
 
 /*# sourceMappingURL=style.css.map */
