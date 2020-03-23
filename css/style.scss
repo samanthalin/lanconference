@@ -2388,7 +2388,7 @@ html{
 		}
 	}//#kitchen
 
-	#meeting-room-lobby{
+	#meeting-room-lobby, #conference-room-lobby{
 		.banner{
 			.frame{
 				.information{
@@ -2475,5 +2475,35 @@ html{
 				}
 			}
 		}//options
-	}
+	}//#meeting-room-lobby, #conference-room-lobby
+	#conference-room-lobby{
+		section.options{
+			.frame{
+				.box-wrap{
+					.box{
+						&:nth-child(1){
+							.img{
+								background-image: url(../img/box_img4.png);
+							}
+						}
+						&:nth-child(2){
+							.img{
+								background-image: url(../img/box_img.png);
+							}
+						}
+						&:nth-child(3){
+							.img{
+								background-image: url(../img/box_img3.png);
+							}
+						}
+						&:nth-child(4){
+							.img{
+								background-image: url(../img/box_img4.png);
+							}
+						}
+					}
+				}
+			}
+		}//options
+	}//#conference-room-lobby
 }
