@@ -109,33 +109,33 @@ html body {
     html body footer .frame .copyright {
       text-align: left; } }
 
-html body#index section.banner {
+html #index section.banner {
   width: 100%;
   height: 42vw; }
-  html body#index section.banner .slide {
+  html #index section.banner .slide {
     width: 100%;
     height: 100%;
     background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_05.jpg);
     background-size: cover; }
-html body#index section.get-your {
+html #index section.get-your {
   padding: 65px 0; }
-  html body#index section.get-your .frame {
+  html #index section.get-your .frame {
     width: 90%;
     max-width: 872px;
     margin: auto; }
-    html body#index section.get-your .frame .title {
+    html #index section.get-your .frame .title {
       text-align: center;
       width: 100%;
       max-width: 630px;
       margin: auto; }
-      html body#index section.get-your .frame .title h2 {
+      html #index section.get-your .frame .title h2 {
         font-size: 35px; }
-    html body#index section.get-your .frame .seperator {
+    html #index section.get-your .frame .seperator {
       position: relative;
       border-bottom: 2px solid #649A9E;
       width: 166px;
       margin: 20px auto 50px; }
-      html body#index section.get-your .frame .seperator .square {
+      html #index section.get-your .frame .seperator .square {
         width: 16px;
         height: 16px;
         background-color: #649A9E;
@@ -143,86 +143,86 @@ html body#index section.get-your {
         margin: auto;
         box-shadow: 0px 0px 0px 5px white;
         margin-bottom: -9px; }
-    html body#index section.get-your .frame .text p {
+    html #index section.get-your .frame .text p {
       font-family: Arsenal, Helvetica;
       margin: 15px 0;
       font-size: 20px;
       line-height: 1.3em; }
-    html body#index section.get-your .frame .highlights {
+    html #index section.get-your .frame .highlights {
       margin-top: 45px; }
-      html body#index section.get-your .frame .highlights .title {
+      html #index section.get-your .frame .highlights .title {
         color: #322B2A;
         opacity: 0.75;
         font-size: 25px;
         text-align: left;
         width: 100%;
         max-width: none; }
-      html body#index section.get-your .frame .highlights .box-wrap {
+      html #index section.get-your .frame .highlights .box-wrap {
         width: 100%;
         display: flex;
         flex-wrap: wrap; }
-        html body#index section.get-your .frame .highlights .box-wrap .box {
+        html #index section.get-your .frame .highlights .box-wrap .box {
           display: flex;
           height: 71px;
           align-items: center;
           margin: 20px 60px 20px 0; }
-          html body#index section.get-your .frame .highlights .box-wrap .box .text {
+          html #index section.get-your .frame .highlights .box-wrap .box .text {
             color: #322B2A;
             opacity: 75%;
             margin-left: 15px; }
           @media screen and (min-width: 768px) {
-            html body#index section.get-your .frame .highlights .box-wrap .box:nth-child(4) {
+            html #index section.get-your .frame .highlights .box-wrap .box:nth-child(4) {
               margin-left: 35px; } }
-html body#index section.event {
+html #index section.event {
   height: 45vw;
   background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/front_page_middle_banner_1-copy.jpg);
   background-size: cover;
   display: flex;
   align-items: center; }
-  html body#index section.event .frame {
+  html #index section.event .frame {
     width: 90%;
     margin: auto; }
-    html body#index section.event .frame p {
+    html #index section.event .frame p {
       color: white;
       font-style: oblique;
       text-align: center;
       font-size: 36px; }
     @media screen and (min-width: 768px) {
-      html body#index section.event .frame {
+      html #index section.event .frame {
         width: 750px;
         margin: auto;
         line-height: 77px; } }
     @media screen and (min-width: 768px) {
-      html body#index section.event .frame .p1 {
+      html #index section.event .frame .p1 {
         font-size: 100px;
         text-align: left; } }
     @media screen and (min-width: 768px) {
-      html body#index section.event .frame .p2 {
+      html #index section.event .frame .p2 {
         font-size: 76px;
         text-align: right; } }
-html body#index section.workspace {
+html #index section.workspace {
   padding: 150px 0; }
-  html body#index section.workspace .frame {
+  html #index section.workspace .frame {
     width: 90%;
     margin: auto;
     max-width: 1650px; }
-    html body#index section.workspace .frame .title {
+    html #index section.workspace .frame .title {
       font-size: 35px;
       text-align: center; }
-    html body#index section.workspace .frame .subtitle {
+    html #index section.workspace .frame .subtitle {
       text-align: center;
       font-family: 'Seravek';
       font-weight: lighter;
       font-style: italic;
       font-size: 25px; }
-    html body#index section.workspace .frame .card-wrapper {
+    html #index section.workspace .frame .card-wrapper {
       margin-top: 30px; }
-      html body#index section.workspace .frame .card-wrapper .card {
+      html #index section.workspace .frame .card-wrapper .card {
         margin: 8px;
         margin-top: 60px;
         position: relative;
         border: 0; }
-        html body#index section.workspace .frame .card-wrapper .card .img {
+        html #index section.workspace .frame .card-wrapper .card .img {
           width: 100%;
           height: 230px;
           background-color: #CDE2BC;
@@ -230,32 +230,32 @@ html body#index section.workspace {
           align-items: center;
           justify-content: center;
           background-size: cover; }
-          html body#index section.workspace .frame .card-wrapper .card .img .title {
+          html #index section.workspace .frame .card-wrapper .card .img .title {
             color: white;
             font-size: 44px;
             text-align: center; }
-        html body#index section.workspace .frame .card-wrapper .card .head {
+        html #index section.workspace .frame .card-wrapper .card .head {
           border-bottom: 1px solid #649A9E;
           padding: 20px 0; }
-          html body#index section.workspace .frame .card-wrapper .card .head .item {
+          html #index section.workspace .frame .card-wrapper .card .head .item {
             padding: 5px 0; }
-          html body#index section.workspace .frame .card-wrapper .card .head .size {
+          html #index section.workspace .frame .card-wrapper .card .head .size {
             font-size: 27px; }
-            html body#index section.workspace .frame .card-wrapper .card .head .size sup {
+            html #index section.workspace .frame .card-wrapper .card .head .size sup {
               font-size: 12px; }
-          html body#index section.workspace .frame .card-wrapper .card .head .function {
+          html #index section.workspace .frame .card-wrapper .card .head .function {
             font-style: italic;
             font-size: 25px; }
-          html body#index section.workspace .frame .card-wrapper .card .head .capacity {
+          html #index section.workspace .frame .card-wrapper .card .head .capacity {
             font-style: italic;
             font-size: 25px; }
-        html body#index section.workspace .frame .card-wrapper .card .intro {
+        html #index section.workspace .frame .card-wrapper .card .intro {
           padding-top: 10px;
           padding-bottom: 90px; }
-          html body#index section.workspace .frame .card-wrapper .card .intro p {
+          html #index section.workspace .frame .card-wrapper .card .intro p {
             font-family: Arsenal, Helvetica, Arial;
             line-height: 1.3em; }
-        html body#index section.workspace .frame .card-wrapper .card .button {
+        html #index section.workspace .frame .card-wrapper .card .button {
           display: block;
           width: 100%;
           background-color: #CDE2BC;
@@ -269,100 +269,100 @@ html body#index section.workspace {
           cursor: pointer;
           position: absolute;
           bottom: 0; }
-          html body#index section.workspace .frame .card-wrapper .card .button:hover {
+          html #index section.workspace .frame .card-wrapper .card .button:hover {
             filter: brightness(0.9); }
-          html body#index section.workspace .frame .card-wrapper .card .button:active {
+          html #index section.workspace .frame .card-wrapper .card .button:active {
             transform: translateY(4px);
             box-shadow: none; }
-        html body#index section.workspace .frame .card-wrapper .card:first-child .img {
+        html #index section.workspace .frame .card-wrapper .card:first-child .img {
           background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_quick_link.jpg); }
-        html body#index section.workspace .frame .card-wrapper .card:nth-child(2) .img {
+        html #index section.workspace .frame .card-wrapper .card:nth-child(2) .img {
           background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/meeting_room_quick_link.jpg); }
-        html body#index section.workspace .frame .card-wrapper .card:nth-child(3) .img {
+        html #index section.workspace .frame .card-wrapper .card:nth-child(3) .img {
           background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/lobby_quick_link.jpg); }
-        html body#index section.workspace .frame .card-wrapper .card:nth-child(4) .img {
+        html #index section.workspace .frame .card-wrapper .card:nth-child(4) .img {
           background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/kitchen_quick_link.jpg); }
         @media screen and (min-width: 768px) {
-          html body#index section.workspace .frame .card-wrapper .card {
+          html #index section.workspace .frame .card-wrapper .card {
             width: 45%; } }
   @media screen and (min-width: 768px) and (min-width: 1200px) {
-    html body#index section.workspace .frame .card-wrapper .card {
+    html #index section.workspace .frame .card-wrapper .card {
       flex: 1; } }
 
       @media screen and (min-width: 768px) {
-        html body#index section.workspace .frame .card-wrapper {
+        html #index section.workspace .frame .card-wrapper {
           display: flex;
           justify-content: space-between;
           flex-wrap: wrap; } }
-html body#index section.map {
+html #index section.map {
   height: 500px;
   background-image: url(../img/map.png);
   background-size: cover; }
   @media screen and (min-width: 992px) {
-    html body#index section.map {
+    html #index section.map {
       height: 40vw; } }
-html body#index section.location {
+html #index section.location {
   padding: 150px 0; }
-  html body#index section.location .frame {
+  html #index section.location .frame {
     width: 90%;
     margin: auto;
     max-width: 1650px; }
-    html body#index section.location .frame .left img.deco {
+    html #index section.location .frame .left img.deco {
       width: 65%;
       margin: auto;
       display: block; }
       @media screen and (min-width: 992px) {
-        html body#index section.location .frame .left img.deco {
+        html #index section.location .frame .left img.deco {
           width: 100%; } }
-    html body#index section.location .frame .left ul li {
+    html #index section.location .frame .left ul li {
       display: flex;
       align-items: center;
       padding: 20px 0;
       border-bottom: 1px solid #649A9E; }
-      html body#index section.location .frame .left ul li img {
+      html #index section.location .frame .left ul li img {
         width: 77px; }
-      html body#index section.location .frame .left ul li p {
+      html #index section.location .frame .left ul li p {
         font-family: Seravek;
         font-size: 21px;
         margin-left: 10px; }
-      html body#index section.location .frame .left ul li:last-child {
+      html #index section.location .frame .left ul li:last-child {
         border: 0; }
     @media screen and (min-width: 992px) {
-      html body#index section.location .frame .left {
+      html #index section.location .frame .left {
         flex: 1; } }
-    html body#index section.location .frame .right img {
+    html #index section.location .frame .right img {
       width: 100%;
       margin-top: 40px; }
     @media screen and (min-width: 992px) {
-      html body#index section.location .frame .right {
+      html #index section.location .frame .right {
         flex: 3;
         margin-left: 5%; } }
     @media screen and (min-width: 992px) {
-      html body#index section.location .frame {
+      html #index section.location .frame {
         display: flex;
         align-items: center; } }
-html body#index section.inquery {
+html #index section.inquery {
   padding: 90px 0 150px 0;
   background-color: #e6eded; }
-  html body#index section.inquery .frame {
+  html #index section.inquery .frame {
     width: 90%;
     margin: auto; }
-    html body#index section.inquery .frame .inquery-form {
+    html #index section.inquery .frame .inquery-form {
       background-color: white;
       box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.3);
       padding: 60px 8%;
       max-width: 880px;
       margin: auto; }
-      html body#index section.inquery .frame .inquery-form .title {
+      html #index section.inquery .frame .inquery-form .title {
         font-size: 35px;
         text-transform: uppercase;
         text-align: center; }
-      html body#index section.inquery .frame .inquery-form .seperator {
+      html #index section.inquery .frame .inquery-form .seperator {
         position: relative;
         border-bottom: 2px solid #649A9E;
         width: 166px;
         margin: 20px auto 50px; }
-        html body#index section.inquery .frame .inquery-form .seperator .square {
+        html #index section.inquery .frame .inquery-form .seperator .square {
           width: 16px;
           height: 16px;
           background-color: #649A9E;
@@ -370,23 +370,23 @@ html body#index section.inquery {
           margin: auto;
           box-shadow: 0px 0px 0px 5px white;
           margin-bottom: -9px; }
-      html body#index section.inquery .frame .inquery-form form {
+      html #index section.inquery .frame .inquery-form form {
         margin-top: 70px; }
-        html body#index section.inquery .frame .inquery-form form label {
+        html #index section.inquery .frame .inquery-form form label {
           font-size: 20px;
           display: block; }
-        html body#index section.inquery .frame .inquery-form form .input-dropdown {
+        html #index section.inquery .frame .inquery-form form .input-dropdown {
           margin-top: 35px; }
-          html body#index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select {
+          html #index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select {
             width: 100%; }
-            html body#index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .filter-option-inner-inner {
+            html #index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .filter-option-inner-inner {
               font-size: 18px;
               font-family: 'Seravek'; }
-            html body#index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-toggle {
+            html #index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-toggle {
               border: 1px solid #707070;
               border-radius: 0;
               position: relative; }
-              html body#index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-toggle:after {
+              html #index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-toggle:after {
                 width: 15px;
                 height: 15px;
                 border: 0;
@@ -394,7 +394,7 @@ html body#index section.inquery {
                 border-bottom: 1px solid black;
                 transform: rotate(-45deg);
                 margin-top: -9px; }
-              html body#index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-toggle:before {
+              html #index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-toggle:before {
                 content: '';
                 height: calc(100% + 2px);
                 width: 40px;
@@ -402,55 +402,55 @@ html body#index section.inquery {
                 right: -1px;
                 background-color: #CDE2BC;
                 border: 1px solid #322B2A; }
-            html body#index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu {
+            html #index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu {
               border: 1px solid #322B2A;
               border-radius: 0; }
-              html body#index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu .inner {
+              html #index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu .inner {
                 border: 0; }
-                html body#index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu .inner .selected, html body#index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu .inner .active {
+                html #index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu .inner .selected, html #index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu .inner .active {
                   background-color: #649A9E; }
-              html body#index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu .dropdown-item .text {
+              html #index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu .dropdown-item .text {
                 font-size: 18px;
                 font-family: 'Seravek'; }
-          html body#index section.inquery .frame .inquery-form form .input-dropdown .select-ppl {
+          html #index section.inquery .frame .inquery-form form .input-dropdown .select-ppl {
             width: 120px; }
-        html body#index section.inquery .frame .inquery-form form .input-text .question {
+        html #index section.inquery .frame .inquery-form form .input-text .question {
           margin-top: 55px; }
-          html body#index section.inquery .frame .inquery-form form .input-text .question input[type='text'] {
+          html #index section.inquery .frame .inquery-form form .input-text .question input[type='text'] {
             width: 100%;
             border: 0;
             border-bottom: 1px solid #322B2A;
             outline: none;
             font-family: 'Seravek'; }
-            html body#index section.inquery .frame .inquery-form form .input-text .question input[type='text']::placeholder {
+            html #index section.inquery .frame .inquery-form form .input-text .question input[type='text']::placeholder {
               font-family: 'Seravek';
               font-style: italic;
               font-weight: lighter;
               color: #a39f9e; }
           @media screen and (min-width: 768px) {
-            html body#index section.inquery .frame .inquery-form form .input-text .question {
+            html #index section.inquery .frame .inquery-form form .input-text .question {
               width: 50%;
               max-width: 270px; } }
   @media screen and (min-width: 768px) and (min-width: 992px) {
-    html body#index section.inquery .frame .inquery-form form .input-text .question {
+    html #index section.inquery .frame .inquery-form form .input-text .question {
       max-width: 300px; } }
 
         @media screen and (min-width: 768px) {
-          html body#index section.inquery .frame .inquery-form form .input-text {
+          html #index section.inquery .frame .inquery-form form .input-text {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap; } }
-        html body#index section.inquery .frame .inquery-form form .input-textarea {
+        html #index section.inquery .frame .inquery-form form .input-textarea {
           margin-top: 55px; }
-          html body#index section.inquery .frame .inquery-form form .input-textarea textarea {
+          html #index section.inquery .frame .inquery-form form .input-textarea textarea {
             width: 100%;
             padding: 10px 15px;
             font-family: 'Seravek'; }
-            html body#index section.inquery .frame .inquery-form form .input-textarea textarea::placeholder {
+            html #index section.inquery .frame .inquery-form form .input-textarea textarea::placeholder {
               font-family: 'Seravek';
               font-weight: lighter;
               font-style: italic; }
-        html body#index section.inquery .frame .inquery-form form .button {
+        html #index section.inquery .frame .inquery-form form .button {
           display: block;
           width: 100%;
           background-color: #CDE2BC;
@@ -468,50 +468,50 @@ html body#index section.inquery {
           border: none;
           outline: none;
           cursor: pointer; }
-          html body#index section.inquery .frame .inquery-form form .button:hover {
+          html #index section.inquery .frame .inquery-form form .button:hover {
             filter: brightness(0.9); }
-          html body#index section.inquery .frame .inquery-form form .button:active {
+          html #index section.inquery .frame .inquery-form form .button:active {
             transform: translateY(4px);
             box-shadow: none; }
-      html body#index section.inquery .frame .inquery-form .message {
+      html #index section.inquery .frame .inquery-form .message {
         text-align: center;
         padding: 50px 0; }
-        html body#index section.inquery .frame .inquery-form .message img {
+        html #index section.inquery .frame .inquery-form .message img {
           width: 60px;
           margin: auto; }
           @media screen and (min-width: 768px) {
-            html body#index section.inquery .frame .inquery-form .message img {
+            html #index section.inquery .frame .inquery-form .message img {
               width: 84px; } }
-        html body#index section.inquery .frame .inquery-form .message p {
+        html #index section.inquery .frame .inquery-form .message p {
           font-size: 20px;
           margin-top: 30px; }
           @media screen and (min-width: 768px) {
-            html body#index section.inquery .frame .inquery-form .message p {
+            html #index section.inquery .frame .inquery-form .message p {
               font-size: 30px; } }
         @media screen and (min-width: 768px) {
-          html body#index section.inquery .frame .inquery-form .message {
+          html #index section.inquery .frame .inquery-form .message {
             padding: 10% 0 30% 0; } }
       @media screen and (min-width: 1400px) {
-        html body#index section.inquery .frame .inquery-form {
+        html #index section.inquery .frame .inquery-form {
           padding: 60px 102px; } }
-      html body#index section.inquery .frame .inquery-form .seperator {
+      html #index section.inquery .frame .inquery-form .seperator {
         width: 142px; }
-html body#product section:nth-child(2n+1) {
+html #product section:nth-child(2n+1) {
   background-color: #f7f8f8; }
-html body#product section.banner {
+html #product section.banner {
   height: 40vw;
   background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/ps_page_banner01.png);
   background-size: contain;
   background-repeat: no-repeat; }
-html body#product section.section-room {
+html #product section.section-room {
   padding: 50px 0; }
-  html body#product section.section-room .frame {
+  html #product section.section-room .frame {
     width: 90%;
     margin: auto;
     max-width: 1480px; }
-    html body#product section.section-room .frame .right {
+    html #product section.section-room .frame .right {
       position: relative; }
-      html body#product section.section-room .frame .right .title {
+      html #product section.section-room .frame .right .title {
         color: white;
         font-size: 45px;
         height: 125px;
@@ -521,26 +521,26 @@ html body#product section.section-room {
         align-items: center;
         line-height: 45px;
         text-align: center; }
-      html body#product section.section-room .frame .right .info {
+      html #product section.section-room .frame .right .info {
         padding: 5%;
         padding-bottom: 0; }
-        html body#product section.section-room .frame .right .info .text {
+        html #product section.section-room .frame .right .info .text {
           border-bottom: 1px solid #649A9E;
           padding-bottom: 20px; }
-          html body#product section.section-room .frame .right .info .text li {
+          html #product section.section-room .frame .right .info .text li {
             font-size: 25px;
             font-style: italic; }
-            html body#product section.section-room .frame .right .info .text li:first-child {
+            html #product section.section-room .frame .right .info .text li:first-child {
               font-size: 27px;
               font-style: normal; }
           @media screen and (min-width: 1200px) {
-            html body#product section.section-room .frame .right .info .text {
+            html #product section.section-room .frame .right .info .text {
               margin-bottom: 40px; } }
-        html body#product section.section-room .frame .right .info img {
+        html #product section.section-room .frame .right .info img {
           display: block;
           margin: auto;
           width: 100%; }
-        html body#product section.section-room .frame .right .info .button {
+        html #product section.section-room .frame .right .info .button {
           display: block;
           width: 100%;
           background-color: #CDE2BC;
@@ -553,122 +553,122 @@ html body#product section.section-room {
           box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
           cursor: pointer;
           margin-top: 25px; }
-          html body#product section.section-room .frame .right .info .button:hover {
+          html #product section.section-room .frame .right .info .button:hover {
             filter: brightness(0.9); }
-          html body#product section.section-room .frame .right .info .button:active {
+          html #product section.section-room .frame .right .info .button:active {
             transform: translateY(4px);
             box-shadow: none; }
           @media screen and (min-width: 1200px) {
-            html body#product section.section-room .frame .right .info .button {
+            html #product section.section-room .frame .right .info .button {
               position: absolute;
               bottom: 0;
               width: 80%; } }
         @media screen and (min-width: 1200px) {
-          html body#product section.section-room .frame .right .info {
+          html #product section.section-room .frame .right .info {
             padding: 10%;
             padding-bottom: 0; } }
       @media screen and (min-width: 1200px) {
-        html body#product section.section-room .frame .right {
+        html #product section.section-room .frame .right {
           width: 32%; } }
-    html body#product section.section-room .frame .left {
+    html #product section.section-room .frame .left {
       margin-top: 50px; }
-      html body#product section.section-room .frame .left .slider {
+      html #product section.section-room .frame .left .slider {
         width: 100%;
         height: 40vw; }
-        html body#product section.section-room .frame .left .slider .slide {
+        html #product section.section-room .frame .left .slider .slide {
           display: none;
           height: 100%;
           background-position: center;
           background-size: cover; }
-        html body#product section.section-room .frame .left .slider .active {
+        html #product section.section-room .frame .left .slider .active {
           display: block; }
         @media screen and (min-width: 1200px) {
-          html body#product section.section-room .frame .left .slider {
+          html #product section.section-room .frame .left .slider {
             height: 639px; } }
       @media screen and (min-width: 1200px) {
-        html body#product section.section-room .frame .left {
+        html #product section.section-room .frame .left {
           width: 68%;
           margin-top: 125px; } }
     @media screen and (min-width: 1200px) {
-      html body#product section.section-room .frame {
+      html #product section.section-room .frame {
         display: flex;
         flex-direction: row-reverse; } }
   @media screen and (min-width: 1200px) {
-    html body#product section.section-room {
+    html #product section.section-room {
       padding: 110px 0; } }
-html body#product section.conference .frame .right .info img {
+html #product section.conference .frame .right .info img {
   max-width: 255px; }
-html body#product section.conference .frame .left .slider .slide:nth-child(1) {
+html #product section.conference .frame .left .slider .slide:nth-child(1) {
   background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_07.jpg); }
-html body#product section.conference .frame .left .slider .slide:nth-child(2) {
+html #product section.conference .frame .left .slider .slide:nth-child(2) {
   background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_07.jpg); }
-html body#product section.conference .frame .left .slider .slide:nth-child(3) {
+html #product section.conference .frame .left .slider .slide:nth-child(3) {
   background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_07.jpg); }
-html body#product section.meeting .frame .right .title {
+html #product section.meeting .frame .right .title {
   background: linear-gradient(103deg, #FFFFFF 0%, #649A9E 44%, #28575A 100%); }
-html body#product section.meeting .frame .right .info img {
+html #product section.meeting .frame .right .info img {
   max-width: 320px; }
-html body#product section.meeting .frame .left .slider .slide:nth-child(1) {
+html #product section.meeting .frame .left .slider .slide:nth-child(1) {
   background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_03.jpg); }
-html body#product section.meeting .frame .left .slider .slide:nth-child(2) {
+html #product section.meeting .frame .left .slider .slide:nth-child(2) {
   background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_03.jpg); }
-html body#product section.meeting .frame .left .slider .slide:nth-child(3) {
+html #product section.meeting .frame .left .slider .slide:nth-child(3) {
   background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_03.jpg); }
-html body#product section.lobby .frame .right .title {
+html #product section.lobby .frame .right .title {
   background: linear-gradient(103deg, #F2F2F2 0%, #AFDBDA 45%, #1BA29F 100%); }
-html body#product section.lobby .frame .right .info img {
+html #product section.lobby .frame .right .info img {
   max-width: 310px; }
-html body#product section.lobby .frame .left .slider .slide:nth-child(1) {
+html #product section.lobby .frame .left .slider .slide:nth-child(1) {
   background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_05.jpg); }
-html body#product section.lobby .frame .left .slider .slide:nth-child(2) {
+html #product section.lobby .frame .left .slider .slide:nth-child(2) {
   background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_05.jpg); }
-html body#product section.lobby .frame .left .slider .slide:nth-child(3) {
+html #product section.lobby .frame .left .slider .slide:nth-child(3) {
   background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_05.jpg); }
-html body#product section.section-two-room {
+html #product section.section-two-room {
   padding: 50px 0; }
-  html body#product section.section-two-room .frame {
+  html #product section.section-two-room .frame {
     width: 90%;
     margin: auto;
     max-width: 1325px; }
-    html body#product section.section-two-room .frame .room img.title {
+    html #product section.section-two-room .frame .room img.title {
       width: 100%; }
       @media screen and (min-width: 1200px) {
-        html body#product section.section-two-room .frame .room img.title {
+        html #product section.section-two-room .frame .room img.title {
           margin-bottom: 20px; } }
-    html body#product section.section-two-room .frame .room .number {
+    html #product section.section-two-room .frame .room .number {
       padding: 20px;
       border-bottom: 1px solid #649A9E; }
-      html body#product section.section-two-room .frame .room .number .size {
+      html #product section.section-two-room .frame .room .number .size {
         font-size: 27px; }
-      html body#product section.section-two-room .frame .room .number .ppl {
+      html #product section.section-two-room .frame .room .number .ppl {
         font-size: 25px;
         font-style: italic; }
       @media screen and (min-width: 1200px) {
-        html body#product section.section-two-room .frame .room .number {
+        html #product section.section-two-room .frame .room .number {
           padding: 20px 50px; } }
-    html body#product section.section-two-room .frame .room .intro {
+    html #product section.section-two-room .frame .room .intro {
       font-size: 25px;
       font-style: italic;
       padding: 10px;
       border-bottom: 1px solid #649A9E; }
       @media screen and (min-width: 1200px) {
-        html body#product section.section-two-room .frame .room .intro {
+        html #product section.section-two-room .frame .room .intro {
           padding: 20px; } }
-    html body#product section.section-two-room .frame .room .blueprint img {
+    html #product section.section-two-room .frame .room .blueprint img {
       display: block;
       width: 100%;
       height: auto;
       padding: 20px 0; }
     @media screen and (min-width: 768px) {
-      html body#product section.section-two-room .frame .room .blueprint {
+      html #product section.section-two-room .frame .room .blueprint {
         height: 400px;
         display: flex;
         align-items: center; } }
   @media screen and (min-width: 768px) and (min-width: 1200px) {
-    html body#product section.section-two-room .frame .room .blueprint {
+    html #product section.section-two-room .frame .room .blueprint {
       height: 600px; } }
 
-    html body#product section.section-two-room .frame .room .button {
+    html #product section.section-two-room .frame .room .button {
       display: block;
       width: 100%;
       background-color: #CDE2BC;
@@ -682,76 +682,76 @@ html body#product section.section-two-room {
       cursor: pointer;
       max-width: 375px;
       margin: auto; }
-      html body#product section.section-two-room .frame .room .button:hover {
+      html #product section.section-two-room .frame .room .button:hover {
         filter: brightness(0.9); }
-      html body#product section.section-two-room .frame .room .button:active {
+      html #product section.section-two-room .frame .room .button:active {
         transform: translateY(4px);
         box-shadow: none; }
     @media screen and (min-width: 768px) {
-      html body#product section.section-two-room .frame .room:first-child .blue-print img {
+      html #product section.section-two-room .frame .room:first-child .blue-print img {
         width: 458px;
         height: auto; } }
     @media screen and (min-width: 768px) {
-      html body#product section.section-two-room .frame .room:first-child {
+      html #product section.section-two-room .frame .room:first-child {
         width: 46%;
         max-width: 545px; } }
-    html body#product section.section-two-room .frame .room:nth-child(2) {
+    html #product section.section-two-room .frame .room:nth-child(2) {
       margin-top: 50px; }
       @media screen and (min-width: 768px) {
-        html body#product section.section-two-room .frame .room:nth-child(2) .blue-print img {
+        html #product section.section-two-room .frame .room:nth-child(2) .blue-print img {
           width: 534px;
           height: auto; } }
       @media screen and (min-width: 768px) {
-        html body#product section.section-two-room .frame .room:nth-child(2) {
+        html #product section.section-two-room .frame .room:nth-child(2) {
           margin-top: 0;
           width: 51%;
           max-width: 600px; } }
     @media screen and (min-width: 768px) {
-      html body#product section.section-two-room .frame {
+      html #product section.section-two-room .frame {
         display: flex;
         justify-content: space-between; } }
   @media screen and (min-width: 1200px) {
-    html body#product section.section-two-room {
+    html #product section.section-two-room {
       padding: 110px 0; } }
-html body#product section.kitchen .frame .right .title {
+html #product section.kitchen .frame .right .title {
   background: linear-gradient(105deg, #FFFFFF 0%, #91988C 92%, #91988C 100%); }
-html body#product section.kitchen .frame .right .info img {
+html #product section.kitchen .frame .right .info img {
   max-width: 242px; }
-html body#product section.kitchen .frame .left .slider .slide:nth-child(1) {
+html #product section.kitchen .frame .left .slider .slide:nth-child(1) {
   background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/kitchen.png); }
-html body#product section.kitchen .frame .left .slider .slide:nth-child(2) {
+html #product section.kitchen .frame .left .slider .slide:nth-child(2) {
   background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/kitchen.png); }
-html body#product section.kitchen .frame .left .slider .slide:nth-child(3) {
+html #product section.kitchen .frame .left .slider .slide:nth-child(3) {
   background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/kitchen.png); }
-html body#product section.venue .frame .right .title {
+html #product section.venue .frame .right .title {
   background: linear-gradient(103deg, #FFFFFF 0%, #649A9E 44%, #28575A 100%); }
 @media screen and (min-width: 1200px) {
-  html body#product section.venue .frame .right .info {
+  html #product section.venue .frame .right .info {
     padding-right: 0; }
-    html body#product section.venue .frame .right .info img {
+    html #product section.venue .frame .right .info img {
       width: 323px; } }
-html body#product section.venue .frame .left .slider .slide:nth-child(1) {
+html #product section.venue .frame .left .slider .slide:nth-child(1) {
   background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_03.jpg); }
-html body#product section.venue .frame .left .slider .slide:nth-child(2) {
+html #product section.venue .frame .left .slider .slide:nth-child(2) {
   background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_03.jpg); }
-html body#product section.venue .frame .left .slider .slide:nth-child(3) {
+html #product section.venue .frame .left .slider .slide:nth-child(3) {
   background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_03.jpg); }
-html body#product section.catering {
+html #product section.catering {
   padding: 40px 0; }
-  html body#product section.catering .frame {
+  html #product section.catering .frame {
     width: 80%;
     margin: auto;
     max-width: 1100px; }
-    html body#product section.catering .frame .title {
+    html #product section.catering .frame .title {
       font-size: 35px;
       text-transform: uppercase;
       text-align: center; }
-    html body#product section.catering .frame .seperator {
+    html #product section.catering .frame .seperator {
       position: relative;
       border-bottom: 2px solid #649A9E;
       width: 166px;
       margin: 20px auto 50px; }
-      html body#product section.catering .frame .seperator .square {
+      html #product section.catering .frame .seperator .square {
         width: 16px;
         height: 16px;
         background-color: #649A9E;
@@ -759,56 +759,56 @@ html body#product section.catering {
         margin: auto;
         box-shadow: 0px 0px 0px 5px white;
         margin-bottom: -9px; }
-      html body#product section.catering .frame .seperator .square {
+      html #product section.catering .frame .seperator .square {
         box-shadow: 0px 0px 0px 5px #f7f8f8; }
-    html body#product section.catering .frame .options {
+    html #product section.catering .frame .options {
       width: 100%; }
-      html body#product section.catering .frame .options .option {
+      html #product section.catering .frame .options .option {
         text-align: center;
         margin: auto;
         margin-top: 50px; }
-        html body#product section.catering .frame .options .option img {
+        html #product section.catering .frame .options .option img {
           margin-bottom: 20px; }
-        html body#product section.catering .frame .options .option .service {
+        html #product section.catering .frame .options .option .service {
           font-size: 25px;
           font-style: italic; }
-        html body#product section.catering .frame .options .option .content {
+        html #product section.catering .frame .options .option .content {
           font-family: Arsenal, Helvetica, Arial; }
         @media screen and (min-width: 768px) {
-          html body#product section.catering .frame .options .option {
+          html #product section.catering .frame .options .option {
             width: 35%;
             text-align: left; }
-            html body#product section.catering .frame .options .option:nth-child(2n) {
+            html #product section.catering .frame .options .option:nth-child(2n) {
               margin-right: 0; } }
       @media screen and (min-width: 768px) {
-        html body#product section.catering .frame .options {
+        html #product section.catering .frame .options {
           display: flex;
           flex-wrap: wrap; } }
   @media screen and (min-width: 1200px) {
-    html body#product section.catering {
+    html #product section.catering {
       padding: 110px 0; } }
-html body#inquery section.inquery {
+html #inquery section.inquery {
   padding: 20px 0 75px 0;
   background-color: #e6eded; }
-  html body#inquery section.inquery .frame {
+  html #inquery section.inquery .frame {
     width: 90%;
     margin: auto; }
-    html body#inquery section.inquery .frame .inquery-form {
+    html #inquery section.inquery .frame .inquery-form {
       background-color: white;
       box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.3);
       padding: 60px 8%;
       max-width: 880px;
       margin: auto; }
-      html body#inquery section.inquery .frame .inquery-form .title {
+      html #inquery section.inquery .frame .inquery-form .title {
         font-size: 35px;
         text-transform: uppercase;
         text-align: center; }
-      html body#inquery section.inquery .frame .inquery-form .seperator {
+      html #inquery section.inquery .frame .inquery-form .seperator {
         position: relative;
         border-bottom: 2px solid #649A9E;
         width: 166px;
         margin: 20px auto 50px; }
-        html body#inquery section.inquery .frame .inquery-form .seperator .square {
+        html #inquery section.inquery .frame .inquery-form .seperator .square {
           width: 16px;
           height: 16px;
           background-color: #649A9E;
@@ -816,23 +816,23 @@ html body#inquery section.inquery {
           margin: auto;
           box-shadow: 0px 0px 0px 5px white;
           margin-bottom: -9px; }
-      html body#inquery section.inquery .frame .inquery-form form {
+      html #inquery section.inquery .frame .inquery-form form {
         margin-top: 70px; }
-        html body#inquery section.inquery .frame .inquery-form form label {
+        html #inquery section.inquery .frame .inquery-form form label {
           font-size: 20px;
           display: block; }
-        html body#inquery section.inquery .frame .inquery-form form .input-dropdown {
+        html #inquery section.inquery .frame .inquery-form form .input-dropdown {
           margin-top: 35px; }
-          html body#inquery section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select {
+          html #inquery section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select {
             width: 100%; }
-            html body#inquery section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .filter-option-inner-inner {
+            html #inquery section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .filter-option-inner-inner {
               font-size: 18px;
               font-family: 'Seravek'; }
-            html body#inquery section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-toggle {
+            html #inquery section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-toggle {
               border: 1px solid #707070;
               border-radius: 0;
               position: relative; }
-              html body#inquery section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-toggle:after {
+              html #inquery section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-toggle:after {
                 width: 15px;
                 height: 15px;
                 border: 0;
@@ -840,7 +840,7 @@ html body#inquery section.inquery {
                 border-bottom: 1px solid black;
                 transform: rotate(-45deg);
                 margin-top: -9px; }
-              html body#inquery section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-toggle:before {
+              html #inquery section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-toggle:before {
                 content: '';
                 height: calc(100% + 2px);
                 width: 40px;
@@ -848,55 +848,55 @@ html body#inquery section.inquery {
                 right: -1px;
                 background-color: #CDE2BC;
                 border: 1px solid #322B2A; }
-            html body#inquery section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu {
+            html #inquery section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu {
               border: 1px solid #322B2A;
               border-radius: 0; }
-              html body#inquery section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu .inner {
+              html #inquery section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu .inner {
                 border: 0; }
-                html body#inquery section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu .inner .selected, html body#inquery section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu .inner .active {
+                html #inquery section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu .inner .selected, html #inquery section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu .inner .active {
                   background-color: #649A9E; }
-              html body#inquery section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu .dropdown-item .text {
+              html #inquery section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu .dropdown-item .text {
                 font-size: 18px;
                 font-family: 'Seravek'; }
-          html body#inquery section.inquery .frame .inquery-form form .input-dropdown .select-ppl {
+          html #inquery section.inquery .frame .inquery-form form .input-dropdown .select-ppl {
             width: 120px; }
-        html body#inquery section.inquery .frame .inquery-form form .input-text .question {
+        html #inquery section.inquery .frame .inquery-form form .input-text .question {
           margin-top: 55px; }
-          html body#inquery section.inquery .frame .inquery-form form .input-text .question input[type='text'] {
+          html #inquery section.inquery .frame .inquery-form form .input-text .question input[type='text'] {
             width: 100%;
             border: 0;
             border-bottom: 1px solid #322B2A;
             outline: none;
             font-family: 'Seravek'; }
-            html body#inquery section.inquery .frame .inquery-form form .input-text .question input[type='text']::placeholder {
+            html #inquery section.inquery .frame .inquery-form form .input-text .question input[type='text']::placeholder {
               font-family: 'Seravek';
               font-style: italic;
               font-weight: lighter;
               color: #a39f9e; }
           @media screen and (min-width: 768px) {
-            html body#inquery section.inquery .frame .inquery-form form .input-text .question {
+            html #inquery section.inquery .frame .inquery-form form .input-text .question {
               width: 50%;
               max-width: 270px; } }
   @media screen and (min-width: 768px) and (min-width: 992px) {
-    html body#inquery section.inquery .frame .inquery-form form .input-text .question {
+    html #inquery section.inquery .frame .inquery-form form .input-text .question {
       max-width: 300px; } }
 
         @media screen and (min-width: 768px) {
-          html body#inquery section.inquery .frame .inquery-form form .input-text {
+          html #inquery section.inquery .frame .inquery-form form .input-text {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap; } }
-        html body#inquery section.inquery .frame .inquery-form form .input-textarea {
+        html #inquery section.inquery .frame .inquery-form form .input-textarea {
           margin-top: 55px; }
-          html body#inquery section.inquery .frame .inquery-form form .input-textarea textarea {
+          html #inquery section.inquery .frame .inquery-form form .input-textarea textarea {
             width: 100%;
             padding: 10px 15px;
             font-family: 'Seravek'; }
-            html body#inquery section.inquery .frame .inquery-form form .input-textarea textarea::placeholder {
+            html #inquery section.inquery .frame .inquery-form form .input-textarea textarea::placeholder {
               font-family: 'Seravek';
               font-weight: lighter;
               font-style: italic; }
-        html body#inquery section.inquery .frame .inquery-form form .button {
+        html #inquery section.inquery .frame .inquery-form form .button {
           display: block;
           width: 100%;
           background-color: #CDE2BC;
@@ -914,64 +914,64 @@ html body#inquery section.inquery {
           border: none;
           outline: none;
           cursor: pointer; }
-          html body#inquery section.inquery .frame .inquery-form form .button:hover {
+          html #inquery section.inquery .frame .inquery-form form .button:hover {
             filter: brightness(0.9); }
-          html body#inquery section.inquery .frame .inquery-form form .button:active {
+          html #inquery section.inquery .frame .inquery-form form .button:active {
             transform: translateY(4px);
             box-shadow: none; }
-      html body#inquery section.inquery .frame .inquery-form .message {
+      html #inquery section.inquery .frame .inquery-form .message {
         text-align: center;
         padding: 50px 0; }
-        html body#inquery section.inquery .frame .inquery-form .message img {
+        html #inquery section.inquery .frame .inquery-form .message img {
           width: 60px;
           margin: auto; }
           @media screen and (min-width: 768px) {
-            html body#inquery section.inquery .frame .inquery-form .message img {
+            html #inquery section.inquery .frame .inquery-form .message img {
               width: 84px; } }
-        html body#inquery section.inquery .frame .inquery-form .message p {
+        html #inquery section.inquery .frame .inquery-form .message p {
           font-size: 20px;
           margin-top: 30px; }
           @media screen and (min-width: 768px) {
-            html body#inquery section.inquery .frame .inquery-form .message p {
+            html #inquery section.inquery .frame .inquery-form .message p {
               font-size: 30px; } }
         @media screen and (min-width: 768px) {
-          html body#inquery section.inquery .frame .inquery-form .message {
+          html #inquery section.inquery .frame .inquery-form .message {
             padding: 10% 0 30% 0; } }
       @media screen and (min-width: 1400px) {
-        html body#inquery section.inquery .frame .inquery-form {
+        html #inquery section.inquery .frame .inquery-form {
           padding: 60px 102px; } }
-      html body#inquery section.inquery .frame .inquery-form .seperator {
+      html #inquery section.inquery .frame .inquery-form .seperator {
         width: 142px; }
-html body#inquery section.map {
+html #inquery section.map {
   height: 500px;
   background-image: url(../img/map.png);
   background-size: cover; }
   @media screen and (min-width: 992px) {
-    html body#inquery section.map {
+    html #inquery section.map {
       height: 40vw; } }
-html body#shoppingCart {
+html #shoppingCart {
   background-color: #e6eded; }
-  html body#shoppingCart section.main {
+  html #shoppingCart section.main {
     padding: 20px 0 75px 0; }
-    html body#shoppingCart section.main .frame {
+    html #shoppingCart section.main .frame {
       width: 90%;
       margin: auto;
       max-width: 1255px; }
-      html body#shoppingCart section.main .frame .information {
+      html #shoppingCart section.main .frame .information {
         background-color: white;
         padding: 40px;
         max-width: 820px; }
-        html body#shoppingCart section.main .frame .information .title {
+        html #shoppingCart section.main .frame .information .title {
           font-size: 35px;
           text-transform: uppercase;
           text-align: center; }
-        html body#shoppingCart section.main .frame .information .seperator {
+        html #shoppingCart section.main .frame .information .seperator {
           position: relative;
           border-bottom: 2px solid #649A9E;
           width: 166px;
           margin: 20px auto 50px;
           margin-top: 10px; }
-          html body#shoppingCart section.main .frame .information .seperator .square {
+          html #shoppingCart section.main .frame .information .seperator .square {
             width: 16px;
             height: 16px;
             background-color: #649A9E;
@@ -979,32 +979,32 @@ html body#shoppingCart {
             margin: auto;
             box-shadow: 0px 0px 0px 5px white;
             margin-bottom: -9px; }
-        html body#shoppingCart section.main .frame .information .form {
+        html #shoppingCart section.main .frame .information .form {
           padding: 17px;
           padding-top: 7px;
           position: relative; }
-          html body#shoppingCart section.main .frame .information .form .title {
+          html #shoppingCart section.main .frame .information .form .title {
             font-size: 20px;
             text-align: left;
             text-transform: none;
             font-weight: bolder;
             line-height: 1.3em; }
-          html body#shoppingCart section.main .frame .information .form .quiz {
+          html #shoppingCart section.main .frame .information .form .quiz {
             margin-bottom: 50px; }
-            html body#shoppingCart section.main .frame .information .form .quiz .content {
+            html #shoppingCart section.main .frame .information .form .quiz .content {
               margin-top: 15px; }
-              html body#shoppingCart section.main .frame .information .form .quiz .content .option {
+              html #shoppingCart section.main .frame .information .form .quiz .content .option {
                 border-radius: 7px;
                 border: 1px solid #322B2A;
                 box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2); }
-              html body#shoppingCart section.main .frame .information .form .quiz .content .selected {
+              html #shoppingCart section.main .frame .information .form .quiz .content .selected {
                 background-color: #CDE2BC; }
               @media screen and (min-width: 768px) {
-                html body#shoppingCart section.main .frame .information .form .quiz .content {
+                html #shoppingCart section.main .frame .information .form .quiz .content {
                   padding-left: 30px; } }
-            html body#shoppingCart section.main .frame .information .form .quiz > .title {
+            html #shoppingCart section.main .frame .information .form .quiz > .title {
               position: relative; }
-              html body#shoppingCart section.main .frame .information .form .quiz > .title:before {
+              html #shoppingCart section.main .frame .information .form .quiz > .title:before {
                 position: absolute;
                 width: 36px;
                 height: 36px;
@@ -1015,44 +1015,44 @@ html body#shoppingCart {
                 left: -47px;
                 top: -5px;
                 content: '1'; }
-          html body#shoppingCart section.main .frame .information .form .q1 .content .option {
+          html #shoppingCart section.main .frame .information .form .q1 .content .option {
             width: 153px;
             height: 146px;
             text-align: center;
             margin: auto;
             margin-bottom: 10px;
             cursor: pointer; }
-            html body#shoppingCart section.main .frame .information .form .q1 .content .option .room {
+            html #shoppingCart section.main .frame .information .form .q1 .content .option .room {
               height: 62px;
               border-bottom: 1px solid #322B2A;
               display: flex;
               align-items: center;
               justify-content: center; }
-            html body#shoppingCart section.main .frame .information .form .q1 .content .option .price {
+            html #shoppingCart section.main .frame .information .form .q1 .content .option .price {
               padding: 8px; }
-              html body#shoppingCart section.main .frame .information .form .q1 .content .option .price p {
+              html #shoppingCart section.main .frame .information .form .q1 .content .option .price p {
                 margin: 0;
                 font-family: Seravek;
                 font-size: 15px; }
             @media screen and (min-width: 768px) {
-              html body#shoppingCart section.main .frame .information .form .q1 .content .option {
+              html #shoppingCart section.main .frame .information .form .q1 .content .option {
                 margin: 10px; } }
           @media screen and (min-width: 768px) {
-            html body#shoppingCart section.main .frame .information .form .q1 .content {
+            html #shoppingCart section.main .frame .information .form .q1 .content {
               display: flex;
               flex-wrap: wrap;
               justify-content: flex-start;
               padding-left: 20px; } }
-          html body#shoppingCart section.main .frame .information .form .q2 > .title:before {
+          html #shoppingCart section.main .frame .information .form .q2 > .title:before {
             content: '2'; }
-          html body#shoppingCart section.main .frame .information .form .q2 .content .date {
+          html #shoppingCart section.main .frame .information .form .q2 .content .date {
             position: relative; }
-            html body#shoppingCart section.main .frame .information .form .q2 .content .date .date-option {
+            html #shoppingCart section.main .frame .information .form .q2 .content .date .date-option {
               margin-bottom: 20px; }
-              html body#shoppingCart section.main .frame .information .form .q2 .content .date .date-option .text {
+              html #shoppingCart section.main .frame .information .form .q2 .content .date .date-option .text {
                 font-family: 'Seravek';
                 font-size: 18px; }
-              html body#shoppingCart section.main .frame .information .form .q2 .content .date .date-option .date-select {
+              html #shoppingCart section.main .frame .information .form .q2 .content .date .date-option .date-select {
                 border: 1px solid #322B2A;
                 border-radius: 7px;
                 text-align: center;
@@ -1064,27 +1064,27 @@ html body#shoppingCart {
                 line-height: 34px;
                 vertical-align: middle;
                 cursor: pointer; }
-              html body#shoppingCart section.main .frame .information .form .q2 .content .date .date-option .default {
+              html #shoppingCart section.main .frame .information .form .q2 .content .date .date-option .default {
                 color: #a39f9e;
                 font-weight: lighter;
                 font-style: italic; }
             @media screen and (min-width: 768px) {
-              html body#shoppingCart section.main .frame .information .form .q2 .content .date .check-out {
+              html #shoppingCart section.main .frame .information .form .q2 .content .date .check-out {
                 margin-left: 10px; } }
             @media screen and (min-width: 768px) {
-              html body#shoppingCart section.main .frame .information .form .q2 .content .date {
+              html #shoppingCart section.main .frame .information .form .q2 .content .date {
                 display: flex; }
-                html body#shoppingCart section.main .frame .information .form .q2 .content .date:before {
+                html #shoppingCart section.main .frame .information .form .q2 .content .date:before {
                   content: url(../img/shoppingcart/detail_1.png);
                   position: absolute;
                   left: -33px;
                   top: 26px; } }
-          html body#shoppingCart section.main .frame .information .form .q2 .content .number {
+          html #shoppingCart section.main .frame .information .form .q2 .content .number {
             position: relative; }
-            html body#shoppingCart section.main .frame .information .form .q2 .content .number .text {
+            html #shoppingCart section.main .frame .information .form .q2 .content .number .text {
               font-family: 'Seravek';
               font-size: 18px; }
-            html body#shoppingCart section.main .frame .information .form .q2 .content .number input {
+            html #shoppingCart section.main .frame .information .form .q2 .content .number input {
               border: 1px solid #322B2A;
               border-radius: 7px;
               text-align: center;
@@ -1093,127 +1093,127 @@ html body#shoppingCart {
               width: 116px;
               height: 34px;
               box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2); }
-              html body#shoppingCart section.main .frame .information .form .q2 .content .number input:focus {
+              html #shoppingCart section.main .frame .information .form .q2 .content .number input:focus {
                 background-color: #CDE2BC; }
-              html body#shoppingCart section.main .frame .information .form .q2 .content .number input::placeholder {
+              html #shoppingCart section.main .frame .information .form .q2 .content .number input::placeholder {
                 font-family: 'Seravek';
                 font-size: 15px;
                 font-style: italic;
                 text-align: center;
                 color: #a39f9e; }
             @media screen and (min-width: 768px) {
-              html body#shoppingCart section.main .frame .information .form .q2 .content .number:before {
+              html #shoppingCart section.main .frame .information .form .q2 .content .number:before {
                 content: url(../img/shoppingcart/detail_2.png);
                 position: absolute;
                 left: -29px;
                 top: 20px; } }
-          html body#shoppingCart section.main .frame .information .form .q3 > .title:before {
+          html #shoppingCart section.main .frame .information .form .q3 > .title:before {
             content: '3'; }
-          html body#shoppingCart section.main .frame .information .form .q3 .content .extra-type {
+          html #shoppingCart section.main .frame .information .form .q3 .content .extra-type {
             margin-bottom: 15px; }
-            html body#shoppingCart section.main .frame .information .form .q3 .content .extra-type .type-name {
+            html #shoppingCart section.main .frame .information .form .q3 .content .extra-type .type-name {
               font-family: 'Seravek'; }
-            html body#shoppingCart section.main .frame .information .form .q3 .content .extra-type .type-options {
+            html #shoppingCart section.main .frame .information .form .q3 .content .extra-type .type-options {
               display: inline-block; }
-              html body#shoppingCart section.main .frame .information .form .q3 .content .extra-type .type-options .option {
+              html #shoppingCart section.main .frame .information .form .q3 .content .extra-type .type-options .option {
                 width: 180px;
                 height: 55px;
                 margin: 5px;
                 cursor: pointer;
                 display: flex; }
-                html body#shoppingCart section.main .frame .information .form .q3 .content .extra-type .type-options .option .img {
+                html #shoppingCart section.main .frame .information .form .q3 .content .extra-type .type-options .option .img {
                   width: 45px;
                   height: 100%;
                   display: flex;
                   justify-content: center;
                   align-items: center; }
-                html body#shoppingCart section.main .frame .information .form .q3 .content .extra-type .type-options .option .service {
+                html #shoppingCart section.main .frame .information .form .q3 .content .extra-type .type-options .option .service {
                   padding-top: 5px; }
-                  html body#shoppingCart section.main .frame .information .form .q3 .content .extra-type .type-options .option .service * {
+                  html #shoppingCart section.main .frame .information .form .q3 .content .extra-type .type-options .option .service * {
                     font-family: 'Seravek';
                     font-size: 15px; }
-              html body#shoppingCart section.main .frame .information .form .q3 .content .extra-type .type-options .selected {
+              html #shoppingCart section.main .frame .information .form .q3 .content .extra-type .type-options .selected {
                 background-color: #CDE2BC; }
               @media screen and (min-width: 768px) {
-                html body#shoppingCart section.main .frame .information .form .q3 .content .extra-type .type-options {
+                html #shoppingCart section.main .frame .information .form .q3 .content .extra-type .type-options {
                   display: flex;
                   flex-wrap: wrap;
                   margin-left: -5px; } }
-          html body#shoppingCart section.main .frame .information .form .q4 > .title:before {
+          html #shoppingCart section.main .frame .information .form .q4 > .title:before {
             content: '4'; }
-          html body#shoppingCart section.main .frame .information .form .q4 .content .contact-info {
+          html #shoppingCart section.main .frame .information .form .q4 .content .contact-info {
             margin-bottom: 15px; }
-            html body#shoppingCart section.main .frame .information .form .q4 .content .contact-info .info-name {
+            html #shoppingCart section.main .frame .information .form .q4 .content .contact-info .info-name {
               font-family: 'Seravek'; }
-            html body#shoppingCart section.main .frame .information .form .q4 .content .contact-info input {
+            html #shoppingCart section.main .frame .information .form .q4 .content .contact-info input {
               border: none;
               border-bottom: 1px solid #322B2A;
               outline: none;
               width: 175px; }
-              html body#shoppingCart section.main .frame .information .form .q4 .content .contact-info input::placeholder {
+              html #shoppingCart section.main .frame .information .form .q4 .content .contact-info input::placeholder {
                 font-family: 'Seravek';
                 font-style: italic;
                 font-weight: lighter;
                 color: #a39f9e; }
               @media screen and (min-width: 768px) {
-                html body#shoppingCart section.main .frame .information .form .q4 .content .contact-info input {
+                html #shoppingCart section.main .frame .information .form .q4 .content .contact-info input {
                   width: 100%; } }
             @media screen and (min-width: 768px) {
-              html body#shoppingCart section.main .frame .information .form .q4 .content .contact-info {
+              html #shoppingCart section.main .frame .information .form .q4 .content .contact-info {
                 margin-right: 0px; }
-                html body#shoppingCart section.main .frame .information .form .q4 .content .contact-info:nth-child(1), html body#shoppingCart section.main .frame .information .form .q4 .content .contact-info:nth-child(2) {
+                html #shoppingCart section.main .frame .information .form .q4 .content .contact-info:nth-child(1), html #shoppingCart section.main .frame .information .form .q4 .content .contact-info:nth-child(2) {
                   width: 48%; }
-                html body#shoppingCart section.main .frame .information .form .q4 .content .contact-info:nth-child(3), html body#shoppingCart section.main .frame .information .form .q4 .content .contact-info:nth-child(4) {
+                html #shoppingCart section.main .frame .information .form .q4 .content .contact-info:nth-child(3), html #shoppingCart section.main .frame .information .form .q4 .content .contact-info:nth-child(4) {
                   width: 100%; } }
           @media screen and (min-width: 768px) {
-            html body#shoppingCart section.main .frame .information .form .q4 .content {
+            html #shoppingCart section.main .frame .information .form .q4 .content {
               display: flex;
               flex-wrap: wrap;
               justify-content: space-between; } }
-          html body#shoppingCart section.main .frame .information .form .q5 > .title:before {
+          html #shoppingCart section.main .frame .information .form .q5 > .title:before {
             content: '5'; }
-          html body#shoppingCart section.main .frame .information .form .q5 .content .invoice-info {
+          html #shoppingCart section.main .frame .information .form .q5 .content .invoice-info {
             width: 100%;
             margin-bottom: 15px; }
-            html body#shoppingCart section.main .frame .information .form .q5 .content .invoice-info .info-name {
+            html #shoppingCart section.main .frame .information .form .q5 .content .invoice-info .info-name {
               font-family: 'Seravek'; }
-            html body#shoppingCart section.main .frame .information .form .q5 .content .invoice-info input {
+            html #shoppingCart section.main .frame .information .form .q5 .content .invoice-info input {
               border: none;
               border-bottom: 1px solid #322B2A;
               outline: none;
               width: 100%; }
-              html body#shoppingCart section.main .frame .information .form .q5 .content .invoice-info input::placeholder {
+              html #shoppingCart section.main .frame .information .form .q5 .content .invoice-info input::placeholder {
                 font-family: 'Seravek';
                 font-style: italic;
                 font-weight: lighter;
                 color: #a39f9e; }
             @media screen and (min-width: 768px) {
-              html body#shoppingCart section.main .frame .information .form .q5 .content .invoice-info:nth-child(1), html body#shoppingCart section.main .frame .information .form .q5 .content .invoice-info:nth-child(2) {
+              html #shoppingCart section.main .frame .information .form .q5 .content .invoice-info:nth-child(1), html #shoppingCart section.main .frame .information .form .q5 .content .invoice-info:nth-child(2) {
                 width: 48%; } }
           @media screen and (min-width: 768px) {
-            html body#shoppingCart section.main .frame .information .form .q5 .content {
+            html #shoppingCart section.main .frame .information .form .q5 .content {
               display: flex;
               flex-wrap: wrap;
               justify-content: space-between; } }
-          html body#shoppingCart section.main .frame .information .form .q6 > .title:before {
+          html #shoppingCart section.main .frame .information .form .q6 > .title:before {
             content: '6'; }
-          html body#shoppingCart section.main .frame .information .form .q6 .content input {
+          html #shoppingCart section.main .frame .information .form .q6 .content input {
             width: 100%;
             border: none;
             border-bottom: 1px solid #322B2A;
             outline: none;
             width: 100%; }
-            html body#shoppingCart section.main .frame .information .form .q6 .content input::placeholder {
+            html #shoppingCart section.main .frame .information .form .q6 .content input::placeholder {
               font-family: 'Seravek';
               font-style: italic;
               font-weight: lighter;
               color: #a39f9e; }
-          html body#shoppingCart section.main .frame .information .form .agree {
+          html #shoppingCart section.main .frame .information .form .agree {
             font-size: 15px;
             font-family: 'Seravek';
             display: flex;
             justify-content: center; }
-            html body#shoppingCart section.main .frame .information .form .agree input[type="checkbox"] {
+            html #shoppingCart section.main .frame .information .form .agree input[type="checkbox"] {
               appearance: none;
               -webkit-appearance: none;
               -moz-appearance: none;
@@ -1228,30 +1228,30 @@ html body#shoppingCart {
               cursor: pointer;
               position: relative;
               flex: none; }
-              html body#shoppingCart section.main .frame .information .form .agree input[type="checkbox"]:hover {
+              html #shoppingCart section.main .frame .information .form .agree input[type="checkbox"]:hover {
                 background-color: #dddddd; }
-              html body#shoppingCart section.main .frame .information .form .agree input[type="checkbox"]:checked {
+              html #shoppingCart section.main .frame .information .form .agree input[type="checkbox"]:checked {
                 background-color: #CDE2BC; }
-                html body#shoppingCart section.main .frame .information .form .agree input[type="checkbox"]:checked:after {
+                html #shoppingCart section.main .frame .information .form .agree input[type="checkbox"]:checked:after {
                   content: '\f00c';
                   font-family: 'FontAwesome';
                   position: absolute;
                   top: -2px;
                   left: 2px; }
             @media screen and (min-width: 768px) {
-              html body#shoppingCart section.main .frame .information .form .agree {
+              html #shoppingCart section.main .frame .information .form .agree {
                 position: absolute;
                 width: 360px;
                 left: 50%;
                 margin-left: -162px;
                 margin-top: -17px; } }
   @media screen and (min-width: 768px) and (min-width: 992px) {
-    html body#shoppingCart section.main .frame .information .form .agree {
+    html #shoppingCart section.main .frame .information .form .agree {
       width: 425px;
       margin-left: -210px;
       margin-top: -5px; } }
 
-          html body#shoppingCart section.main .frame .information .form .button {
+          html #shoppingCart section.main .frame .information .form .button {
             display: block;
             width: 100%;
             background-color: #CDE2BC;
@@ -1267,24 +1267,24 @@ html body#shoppingCart {
             margin-top: 50px;
             font-size: 22px;
             z-index: 10; }
-            html body#shoppingCart section.main .frame .information .form .button:hover {
+            html #shoppingCart section.main .frame .information .form .button:hover {
               filter: brightness(0.9); }
-            html body#shoppingCart section.main .frame .information .form .button:active {
+            html #shoppingCart section.main .frame .information .form .button:active {
               transform: translateY(4px);
               box-shadow: none; }
             @media screen and (min-width: 768px) {
-              html body#shoppingCart section.main .frame .information .form .button {
+              html #shoppingCart section.main .frame .information .form .button {
                 position: absolute;
                 width: 280px;
                 left: 50%;
                 margin-left: -140px; } }
           @media screen and (min-width: 768px) {
-            html body#shoppingCart section.main .frame .information .form {
+            html #shoppingCart section.main .frame .information .form {
               padding-left: 27px;
               padding-top: 0;
               padding-bottom: 75px;
               border-left: 1px dashed #649A9E; }
-              html body#shoppingCart section.main .frame .information .form:after {
+              html #shoppingCart section.main .frame .information .form:after {
                 content: ' ';
                 width: 50%;
                 border-bottom: 1px dashed #649A9E;
@@ -1292,28 +1292,28 @@ html body#shoppingCart {
                 bottom: 1px;
                 left: 0; } }
         @media screen and (min-width: 768px) {
-          html body#shoppingCart section.main .frame .information {
+          html #shoppingCart section.main .frame .information {
             padding: 60px 40px; } }
   @media screen and (min-width: 768px) and (min-width: 992px) {
-    html body#shoppingCart section.main .frame .information {
+    html #shoppingCart section.main .frame .information {
       padding: 65px 70px; } }
 
-      html body#shoppingCart section.main .frame .recap {
+      html #shoppingCart section.main .frame .recap {
         background-color: white;
         padding: 40px 30px;
         margin-top: 15px; }
-        html body#shoppingCart section.main .frame .recap .title {
+        html #shoppingCart section.main .frame .recap .title {
           font-size: 35px;
           text-transform: uppercase;
           text-align: center; }
-        html body#shoppingCart section.main .frame .recap .seperator {
+        html #shoppingCart section.main .frame .recap .seperator {
           position: relative;
           border-bottom: 2px solid #649A9E;
           width: 166px;
           margin: 20px auto 50px;
           width: 105px;
           margin-top: 10px; }
-          html body#shoppingCart section.main .frame .recap .seperator .square {
+          html #shoppingCart section.main .frame .recap .seperator .square {
             width: 16px;
             height: 16px;
             background-color: #649A9E;
@@ -1321,38 +1321,38 @@ html body#shoppingCart {
             margin: auto;
             box-shadow: 0px 0px 0px 5px white;
             margin-bottom: -9px; }
-        html body#shoppingCart section.main .frame .recap ul.form li.project {
+        html #shoppingCart section.main .frame .recap ul.form li.project {
           font-family: 'Seravek';
           font-size: 15px;
           border-bottom: 1px solid #322B2A;
           display: flex;
           justify-content: space-between;
           padding: 5px 0; }
-          html body#shoppingCart section.main .frame .recap ul.form li.project:last-child {
+          html #shoppingCart section.main .frame .recap ul.form li.project:last-child {
             border: 0; }
-          html body#shoppingCart section.main .frame .recap ul.form li.project .price .number {
+          html #shoppingCart section.main .frame .recap ul.form li.project .price .number {
             margin-left: 5px; }
-        html body#shoppingCart section.main .frame .recap ul.form .total {
+        html #shoppingCart section.main .frame .recap ul.form .total {
           font-family: 'Seravek Medium' !important; }
-          html body#shoppingCart section.main .frame .recap ul.form .total .tax {
+          html #shoppingCart section.main .frame .recap ul.form .total .tax {
             font-family: 'Seravek'; }
-        html body#shoppingCart section.main .frame .recap ul.form li.exclude-tax ul {
+        html #shoppingCart section.main .frame .recap ul.form li.exclude-tax ul {
           width: 100%; }
-          html body#shoppingCart section.main .frame .recap ul.form li.exclude-tax ul li {
+          html #shoppingCart section.main .frame .recap ul.form li.exclude-tax ul li {
             display: flex;
             justify-content: space-between;
             line-height: 27px; }
-        html body#shoppingCart section.main .frame .recap .cancel {
+        html #shoppingCart section.main .frame .recap .cancel {
           margin-top: 65px; }
-          html body#shoppingCart section.main .frame .recap .cancel .cancel-title {
+          html #shoppingCart section.main .frame .recap .cancel .cancel-title {
             color: #91988C;
             font-family: 'Seravek'; }
-          html body#shoppingCart section.main .frame .recap .cancel .rule {
+          html #shoppingCart section.main .frame .recap .cancel .rule {
             min-height: 86px;
             border: 1px solid #322B2A;
             margin-top: 20px; }
         @media screen and (min-width: 768px) {
-          html body#shoppingCart section.main .frame .recap {
+          html #shoppingCart section.main .frame .recap {
             margin-top: 0;
             margin-left: 15px;
             height: fit-content;
@@ -1360,16 +1360,16 @@ html body#shoppingCart {
             min-width: 268px;
             padding-top: 60px; } }
   @media screen and (min-width: 768px) and (min-width: 992px) {
-    html body#shoppingCart section.main .frame .recap {
+    html #shoppingCart section.main .frame .recap {
       width: 420px; } }
 
       @media screen and (min-width: 768px) {
-        html body#shoppingCart section.main .frame {
+        html #shoppingCart section.main .frame {
           display: flex;
           width: 96%; } }
-  html body#shoppingCart section.message {
+  html #shoppingCart section.message {
     background-color: #e6eded; }
-    html body#shoppingCart section.message .frame {
+    html #shoppingCart section.message .frame {
       width: 90%;
       margin: auto;
       max-width: 1255px;
@@ -1379,17 +1379,17 @@ html body#shoppingCart {
       text-align: center;
       position: relative;
       padding-bottom: 0; }
-      html body#shoppingCart section.message .frame .title {
+      html #shoppingCart section.message .frame .title {
         font-size: 35px;
         text-transform: uppercase;
         text-align: center; }
-      html body#shoppingCart section.message .frame .seperator {
+      html #shoppingCart section.message .frame .seperator {
         position: relative;
         border-bottom: 2px solid #649A9E;
         width: 166px;
         margin: 20px auto 50px;
         margin-top: 10px; }
-        html body#shoppingCart section.message .frame .seperator .square {
+        html #shoppingCart section.message .frame .seperator .square {
           width: 16px;
           height: 16px;
           background-color: #649A9E;
@@ -1397,30 +1397,30 @@ html body#shoppingCart {
           margin: auto;
           box-shadow: 0px 0px 0px 5px white;
           margin-bottom: -9px; }
-      html body#shoppingCart section.message .frame img.img-yes {
+      html #shoppingCart section.message .frame img.img-yes {
         width: 60px; }
         @media screen and (min-width: 768px) {
-          html body#shoppingCart section.message .frame img.img-yes {
+          html #shoppingCart section.message .frame img.img-yes {
             width: 84px;
             margin-top: 55px; } }
-      html body#shoppingCart section.message .frame p {
+      html #shoppingCart section.message .frame p {
         font-size: 20px;
         margin: auto;
         margin-top: 30px;
         max-width: 690px; }
         @media screen and (min-width: 768px) {
-          html body#shoppingCart section.message .frame p {
+          html #shoppingCart section.message .frame p {
             font-size: 30px;
             margin-top: 55px; } }
       @media screen and (min-width: 768px) {
-        html body#shoppingCart section.message .frame {
+        html #shoppingCart section.message .frame {
           padding: 65px;
           padding-bottom: 0; } }
   @media screen and (min-width: 768px) and (min-width: 1255px) {
-    html body#shoppingCart section.message .frame {
+    html #shoppingCart section.message .frame {
       padding-bottom: 527px; } }
 
-    html body#shoppingCart section.message .decoration {
+    html #shoppingCart section.message .decoration {
       width: 90%;
       max-width: 1255px;
       margin: auto;
@@ -1431,46 +1431,46 @@ html body#shoppingCart {
       background-repeat: no-repeat;
       background-position-y: 4vw;
       position: relative; }
-      html body#shoppingCart section.message .decoration .logo {
+      html #shoppingCart section.message .decoration .logo {
         width: 34vw;
         position: absolute;
         right: -3vw;
         top: 11vw; }
         @media screen and (min-width: 1255px) {
-          html body#shoppingCart section.message .decoration .logo {
+          html #shoppingCart section.message .decoration .logo {
             width: 426px;
             right: -38px;
             top: 140px; } }
       @media screen and (min-width: 1255px) {
-        html body#shoppingCart section.message .decoration {
+        html #shoppingCart section.message .decoration {
           height: 627px;
           background-color: unset;
           margin-top: -627px; } }
-html body.product-page section.banner {
+html .product-page section.banner {
   background-color: #f1f4f6;
   padding: 40px 0; }
-  html body.product-page section.banner .frame {
+  html .product-page section.banner .frame {
     width: 90%;
     margin: auto;
     max-width: 1435px; }
-    html body.product-page section.banner .frame .gallery {
+    html .product-page section.banner .frame .gallery {
       height: 50vw;
       width: 100%;
       overflow: hidden;
       background-color: #649A9E; }
       @media screen and (min-width: 1200px) {
-        html body.product-page section.banner .frame .gallery {
+        html .product-page section.banner .frame .gallery {
           height: auto; } }
-    html body.product-page section.banner .frame .slider .slide {
+    html .product-page section.banner .frame .slider .slide {
       width: 100%;
       height: 100%; }
-      html body.product-page section.banner .frame .slider .slide img {
+      html .product-page section.banner .frame .slider .slide img {
         width: 100%; }
         @media screen and (min-width: 1200px) {
-          html body.product-page section.banner .frame .slider .slide img {
+          html .product-page section.banner .frame .slider .slide img {
             height: 100%;
             width: auto; } }
-    html body.product-page section.banner .frame .information {
+    html .product-page section.banner .frame .information {
       width: 100%;
       background-color: white;
       box-shadow: 0px 3px 6px #00000029;
@@ -1478,56 +1478,56 @@ html body.product-page section.banner {
       padding: 20px;
       position: relative;
       padding-bottom: 72px; }
-      html body.product-page section.banner .frame .information .name {
+      html .product-page section.banner .frame .information .name {
         font-size: 32px; }
         @media screen and (min-width: 768px) {
-          html body.product-page section.banner .frame .information .name {
+          html .product-page section.banner .frame .information .name {
             font-size: 40px; } }
-      html body.product-page section.banner .frame .information .info {
+      html .product-page section.banner .frame .information .info {
         font-style: italic;
         border-bottom: 1px solid #649A9E;
         padding: 15px 0; }
-        html body.product-page section.banner .frame .information .info .size {
+        html .product-page section.banner .frame .information .info .size {
           font-style: normal;
           font-style: 20px; }
         @media screen and (min-width: 768px) {
-          html body.product-page section.banner .frame .information .info {
+          html .product-page section.banner .frame .information .info {
             font-size: 25px; } }
-      html body.product-page section.banner .frame .information .price {
+      html .product-page section.banner .frame .information .price {
         padding: 15px 0;
         border-bottom: 1px solid #649A9E;
         font-family: 'Seravek'; }
-        html body.product-page section.banner .frame .information .price .price-type {
+        html .product-page section.banner .frame .information .price .price-type {
           padding: 5px 0;
           line-height: 28px; }
-          html body.product-page section.banner .frame .information .price .price-type img {
+          html .product-page section.banner .frame .information .price .price-type img {
             display: inline-block;
             margin-right: 12px; }
-      html body.product-page section.banner .frame .information .date {
+      html .product-page section.banner .frame .information .date {
         padding: 15px 0 15px 40px;
         font-family: 'Seravek'; }
-        html body.product-page section.banner .frame .information .date .check .date-picker {
+        html .product-page section.banner .frame .information .date .check .date-picker {
           width: 100%;
           border: 1px solid #b3b3b3;
           border-radius: 9px;
           height: 40px;
           position: relative;
           cursor: pointer; }
-          html body.product-page section.banner .frame .information .date .check .date-picker:hover {
+          html .product-page section.banner .frame .information .date .check .date-picker:hover {
             background-color: #b3b3b338; }
-          html body.product-page section.banner .frame .information .date .check .date-picker:before {
+          html .product-page section.banner .frame .information .date .check .date-picker:before {
             position: absolute;
             content: url(../img/icon/date.png);
             left: -38px; }
-        html body.product-page section.banner .frame .information .date .check:last-child {
+        html .product-page section.banner .frame .information .date .check:last-child {
           margin: 15px 0; }
-      html body.product-page section.banner .frame .information .button-wrap {
+      html .product-page section.banner .frame .information .button-wrap {
         display: flex;
         height: 72px;
         width: 100%;
         position: absolute;
         left: 0; }
-        html body.product-page section.banner .frame .information .button-wrap .button {
+        html .product-page section.banner .frame .information .button-wrap .button {
           width: 50%;
           display: block;
           font-size: 22px;
@@ -1535,169 +1535,169 @@ html body.product-page section.banner {
           text-align: center;
           line-height: 72px; }
           @media screen and (min-width: 768px) {
-            html body.product-page section.banner .frame .information .button-wrap .button {
+            html .product-page section.banner .frame .information .button-wrap .button {
               font-size: 26px; } }
-        html body.product-page section.banner .frame .information .button-wrap .book {
+        html .product-page section.banner .frame .information .button-wrap .book {
           background-color: #CDE2BC;
           color: #322B2A; }
-        html body.product-page section.banner .frame .information .button-wrap .inquery {
+        html .product-page section.banner .frame .information .button-wrap .inquery {
           background-color: #649A9E;
           color: white; }
         @media screen and (min-width: 1200px) {
-          html body.product-page section.banner .frame .information .button-wrap {
+          html .product-page section.banner .frame .information .button-wrap {
             bottom: 0; } }
       @media screen and (min-width: 1200px) {
-        html body.product-page section.banner .frame .information {
+        html .product-page section.banner .frame .information {
           width: 422px;
           height: 639px;
           flex: none; } }
     @media screen and (min-width: 1200px) {
-      html body.product-page section.banner .frame {
+      html .product-page section.banner .frame {
         display: flex; } }
   @media screen and (min-width: 1200px) {
-    html body.product-page section.banner {
+    html .product-page section.banner {
       padding: 150px 0 205px 0; } }
-html body.product-page section.introduction {
+html .product-page section.introduction {
   padding: 40px 0 30px 0; }
-  html body.product-page section.introduction .frame {
+  html .product-page section.introduction .frame {
     width: 90%;
     margin: auto;
     max-width: 1182px; }
-    html body.product-page section.introduction .frame .overview p.table-name {
+    html .product-page section.introduction .frame .overview p.table-name {
       font-family: 'Seravek';
       font-size: 30px; }
-    html body.product-page section.introduction .frame .overview .table {
+    html .product-page section.introduction .frame .overview .table {
       box-shadow: 0px 3px 6px #00000029; }
-      html body.product-page section.introduction .frame .overview .table .table-row {
+      html .product-page section.introduction .frame .overview .table .table-row {
         padding: 20px; }
-        html body.product-page section.introduction .frame .overview .table .table-row:nth-child(2n-1) {
+        html .product-page section.introduction .frame .overview .table .table-row:nth-child(2n-1) {
           background-color: #627C9724; }
-        html body.product-page section.introduction .frame .overview .table .table-row .title {
+        html .product-page section.introduction .frame .overview .table .table-row .title {
           color: #322b2acf;
           font-size: 25px;
           margin-bottom: 10px; }
           @media screen and (min-width: 992px) {
-            html body.product-page section.introduction .frame .overview .table .table-row .title {
+            html .product-page section.introduction .frame .overview .table .table-row .title {
               width: 197px;
               flex: none;
               margin: 0;
               display: flex;
               align-items: center;
               padding-left: 35px; } }
-        html body.product-page section.introduction .frame .overview .table .table-row .content {
+        html .product-page section.introduction .frame .overview .table .table-row .content {
           color: #322b2acf; }
-          html body.product-page section.introduction .frame .overview .table .table-row .content p {
+          html .product-page section.introduction .frame .overview .table .table-row .content p {
             margin: 0; }
             @media screen and (min-width: 992px) {
-              html body.product-page section.introduction .frame .overview .table .table-row .content p {
+              html .product-page section.introduction .frame .overview .table .table-row .content p {
                 margin: auto;
                 margin-right: 50px; } }
         @media screen and (min-width: 992px) {
-          html body.product-page section.introduction .frame .overview .table .table-row {
+          html .product-page section.introduction .frame .overview .table .table-row {
             display: flex; } }
       @media screen and (min-width: 992px) {
-        html body.product-page section.introduction .frame .overview .table .capacity .content {
+        html .product-page section.introduction .frame .overview .table .capacity .content {
           display: flex; } }
       @media screen and (min-width: 992px) {
-        html body.product-page section.introduction .frame .overview .table .capacity {
+        html .product-page section.introduction .frame .overview .table .capacity {
           padding: 40px 20px; } }
-      html body.product-page section.introduction .frame .overview .table .facility .content .item {
+      html .product-page section.introduction .frame .overview .table .facility .content .item {
         display: flex;
         margin-bottom: 20px;
         align-items: center; }
-        html body.product-page section.introduction .frame .overview .table .facility .content .item .text {
+        html .product-page section.introduction .frame .overview .table .facility .content .item .text {
           margin-left: 15px;
           line-height: 20px; }
           @media screen and (min-width: 768px) {
-            html body.product-page section.introduction .frame .overview .table .facility .content .item .text {
+            html .product-page section.introduction .frame .overview .table .facility .content .item .text {
               margin-left: 25px; } }
-        html body.product-page section.introduction .frame .overview .table .facility .content .item:last-child img {
+        html .product-page section.introduction .frame .overview .table .facility .content .item:last-child img {
           margin: 0 15px; }
         @media screen and (min-width: 992px) {
-          html body.product-page section.introduction .frame .overview .table .facility .content .item {
+          html .product-page section.introduction .frame .overview .table .facility .content .item {
             margin-bottom: 0;
             margin-right: 15px; }
-            html body.product-page section.introduction .frame .overview .table .facility .content .item:first-child {
+            html .product-page section.introduction .frame .overview .table .facility .content .item:first-child {
               width: 260px; }
-            html body.product-page section.introduction .frame .overview .table .facility .content .item:nth-child(2) {
+            html .product-page section.introduction .frame .overview .table .facility .content .item:nth-child(2) {
               width: 335px; }
-              html body.product-page section.introduction .frame .overview .table .facility .content .item:nth-child(2) .text {
+              html .product-page section.introduction .frame .overview .table .facility .content .item:nth-child(2) .text {
                 margin-left: 0; }
-            html body.product-page section.introduction .frame .overview .table .facility .content .item:last-child img {
+            html .product-page section.introduction .frame .overview .table .facility .content .item:last-child img {
               margin-right: 0; } }
       @media screen and (min-width: 992px) {
-        html body.product-page section.introduction .frame .overview .table .facility .content {
+        html .product-page section.introduction .frame .overview .table .facility .content {
           display: flex; } }
-      html body.product-page section.introduction .frame .overview .table .price {
+      html .product-page section.introduction .frame .overview .table .price {
         padding-bottom: 0; }
         @media screen and (min-width: 992px) {
-          html body.product-page section.introduction .frame .overview .table .price .title {
+          html .product-page section.introduction .frame .overview .table .price .title {
             padding-top: 40px; } }
-        html body.product-page section.introduction .frame .overview .table .price .content {
+        html .product-page section.introduction .frame .overview .table .price .content {
           width: 100%; }
-          html body.product-page section.introduction .frame .overview .table .price .content table {
+          html .product-page section.introduction .frame .overview .table .price .content table {
             width: calc(100% + 40px);
             margin-left: -20px;
             font-size: 16px; }
-            html body.product-page section.introduction .frame .overview .table .price .content table tbody tr th {
+            html .product-page section.introduction .frame .overview .table .price .content table tbody tr th {
               color: #322B2A;
               border: 0;
               background-color: #E0E1E3;
               padding-left: 20px;
               width: 192px; }
               @media screen and (min-width: 992px) {
-                html body.product-page section.introduction .frame .overview .table .price .content table tbody tr th {
+                html .product-page section.introduction .frame .overview .table .price .content table tbody tr th {
                   display: block;
                   flex: 2;
                   text-align: center;
                   width: auto;
                   margin-bottom: 15px; } }
-            html body.product-page section.introduction .frame .overview .table .price .content table tbody tr td {
+            html .product-page section.introduction .frame .overview .table .price .content table tbody tr td {
               font-family: 'Seravek';
               border: 0;
               text-align: center; }
               @media screen and (min-width: 992px) {
-                html body.product-page section.introduction .frame .overview .table .price .content table tbody tr td {
+                html .product-page section.introduction .frame .overview .table .price .content table tbody tr td {
                   display: block;
                   height: 35px; } }
             @media screen and (min-width: 992px) {
-              html body.product-page section.introduction .frame .overview .table .price .content table tbody tr {
+              html .product-page section.introduction .frame .overview .table .price .content table tbody tr {
                 flex: 1; }
-                html body.product-page section.introduction .frame .overview .table .price .content table tbody tr:first-child {
+                html .product-page section.introduction .frame .overview .table .price .content table tbody tr:first-child {
                   flex: none; }
-                html body.product-page section.introduction .frame .overview .table .price .content table tbody tr:first-child td, html body.product-page section.introduction .frame .overview .table .price .content table tbody tr:first-child th {
+                html .product-page section.introduction .frame .overview .table .price .content table tbody tr:first-child td, html .product-page section.introduction .frame .overview .table .price .content table tbody tr:first-child th {
                   text-align: left;
                   padding-left: 20px; }
-                html body.product-page section.introduction .frame .overview .table .price .content table tbody tr:nth-child(5) th {
+                html .product-page section.introduction .frame .overview .table .price .content table tbody tr:nth-child(5) th {
                   padding-left: 0;
                   padding-right: 0; } }
             @media screen and (min-width: 992px) {
-              html body.product-page section.introduction .frame .overview .table .price .content table tbody {
+              html .product-page section.introduction .frame .overview .table .price .content table tbody {
                 display: flex; } }
             @media screen and (min-width: 768px) {
-              html body.product-page section.introduction .frame .overview .table .price .content table {
+              html .product-page section.introduction .frame .overview .table .price .content table {
                 font-size: 18px; } }
   @media screen and (min-width: 768px) and (min-width: 992px) {
-    html body.product-page section.introduction .frame .overview .table .price .content table {
+    html .product-page section.introduction .frame .overview .table .price .content table {
       width: calc(100% + 20px);
       margin: 0;
       margin-left: -20px; } }
 
         @media screen and (min-width: 992px) {
-          html body.product-page section.introduction .frame .overview .table .price {
+          html .product-page section.introduction .frame .overview .table .price {
             padding: 0 0 40px 20px; } }
       @media screen and (min-width: 768px) {
-        html body.product-page section.introduction .frame .overview .table .service .title {
+        html .product-page section.introduction .frame .overview .table .service .title {
           width: 192px;
           flex: none; } }
-      html body.product-page section.introduction .frame .overview .table .service .content .left p, html body.product-page section.introduction .frame .overview .table .service .content .right p {
+      html .product-page section.introduction .frame .overview .table .service .content .left p, html .product-page section.introduction .frame .overview .table .service .content .right p {
         font-family: 'Seravek'; }
-      html body.product-page section.introduction .frame .overview .table .service .content .left {
+      html .product-page section.introduction .frame .overview .table .service .content .left {
         padding-bottom: 20px;
         border-bottom: 1px solid #322B2A;
         position: relative; }
         @media screen and (min-width: 992px) {
-          html body.product-page section.introduction .frame .overview .table .service .content .left {
+          html .product-page section.introduction .frame .overview .table .service .content .left {
             padding: 0;
             padding-right: 15px;
             border: 0;
@@ -1706,40 +1706,40 @@ html body.product-page section.introduction {
             display: flex;
             flex-wrap: wrap;
             align-content: center; }
-            html body.product-page section.introduction .frame .overview .table .service .content .left p {
+            html .product-page section.introduction .frame .overview .table .service .content .left p {
               width: 50%;
               margin: 5px 0; } }
-      html body.product-page section.introduction .frame .overview .table .service .content .right {
+      html .product-page section.introduction .frame .overview .table .service .content .right {
         padding-top: 20px; }
         @media screen and (min-width: 992px) {
-          html body.product-page section.introduction .frame .overview .table .service .content .right {
+          html .product-page section.introduction .frame .overview .table .service .content .right {
             padding: 0;
             padding-left: 65px;
             flex: 1;
             display: flex;
             flex-wrap: wrap;
             align-content: center; }
-            html body.product-page section.introduction .frame .overview .table .service .content .right p {
+            html .product-page section.introduction .frame .overview .table .service .content .right p {
               width: 50%;
               margin: 5px 0; } }
       @media screen and (min-width: 992px) {
-        html body.product-page section.introduction .frame .overview .table .service .content {
+        html .product-page section.introduction .frame .overview .table .service .content {
           display: flex;
           flex: 1; } }
       @media screen and (min-width: 768px) {
-        html body.product-page section.introduction .frame .overview .table .service {
+        html .product-page section.introduction .frame .overview .table .service {
           display: flex;
           padding: 40px 20px; } }
-    html body.product-page section.introduction .frame .impression {
+    html .product-page section.introduction .frame .impression {
       margin-top: 50px; }
-      html body.product-page section.introduction .frame .impression .name {
+      html .product-page section.introduction .frame .impression .name {
         font-family: 'Seravek';
         font-size: 30px; }
-      html body.product-page section.introduction .frame .impression .gallery {
+      html .product-page section.introduction .frame .impression .gallery {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between; }
-        html body.product-page section.introduction .frame .impression .gallery .thumbnail {
+        html .product-page section.introduction .frame .impression .gallery .thumbnail {
           width: calc(50% - 7px);
           background-color: #649A9E;
           height: 45vw;
@@ -1747,51 +1747,51 @@ html body.product-page section.introduction {
           background-size: cover;
           background-position: center;
           background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/Gallery_page_11.jpg); }
-          html body.product-page section.introduction .frame .impression .gallery .thumbnail:last-child {
+          html .product-page section.introduction .frame .impression .gallery .thumbnail:last-child {
             background-color: #CDE2BC; }
           @media screen and (min-width: 992px) {
-            html body.product-page section.introduction .frame .impression .gallery .thumbnail {
+            html .product-page section.introduction .frame .impression .gallery .thumbnail {
               width: calc((100% - 32px) / 4);
               height: 24vw; } }
   @media screen and (min-width: 992px) and (min-width: 1200px) {
-    html body.product-page section.introduction .frame .impression .gallery .thumbnail {
+    html .product-page section.introduction .frame .impression .gallery .thumbnail {
       height: 287px; } }
 
-    html body.product-page section.introduction .frame .map-title {
+    html .product-page section.introduction .frame .map-title {
       font-family: 'Seravek';
       font-size: 30px;
       margin: 0;
       margin-top: 50px; }
   @media screen and (min-width: 768px) {
-    html body.product-page section.introduction {
+    html .product-page section.introduction {
       padding-top: 65px; } }
-html body.product-page section.map {
+html .product-page section.map {
   height: 500px;
   background-image: url(../img/map.png);
   background-size: cover; }
   @media screen and (min-width: 992px) {
-    html body.product-page section.map {
+    html .product-page section.map {
       height: 40vw; } }
-html body.product-page section.options {
+html .product-page section.options {
   padding: 40px 0;
   background-color: #f8fafb; }
-  html body.product-page section.options .frame {
+  html .product-page section.options .frame {
     width: 90%;
     margin: auto;
     max-width: 1182px; }
-    html body.product-page section.options .frame .title {
+    html .product-page section.options .frame .title {
       font-size: 35px;
       text-transform: uppercase;
       text-align: center;
       line-height: 1.3em; }
-    html body.product-page section.options .frame .box-wrap {
+    html .product-page section.options .frame .box-wrap {
       margin-top: 30px; }
-      html body.product-page section.options .frame .box-wrap .box {
+      html .product-page section.options .frame .box-wrap .box {
         width: 100%;
         padding: 25px;
         background-color: white;
         margin-bottom: 15px; }
-        html body.product-page section.options .frame .box-wrap .box .img {
+        html .product-page section.options .frame .box-wrap .box .img {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -1803,34 +1803,34 @@ html body.product-page section.options {
           font-size: 32px;
           line-height: 1.1em; }
           @media screen and (min-width: 768px) {
-            html body.product-page section.options .frame .box-wrap .box .img {
+            html .product-page section.options .frame .box-wrap .box .img {
               height: 25vw;
               font-size: 35px; } }
   @media screen and (min-width: 768px) and (min-width: 992px) {
-    html body.product-page section.options .frame .box-wrap .box .img {
+    html .product-page section.options .frame .box-wrap .box .img {
       height: 17vw; } }
 
   @media screen and (min-width: 768px) and (min-width: 992px) and (min-width: 1200px) {
-    html body.product-page section.options .frame .box-wrap .box .img {
+    html .product-page section.options .frame .box-wrap .box .img {
       height: 200px; } }
 
-        html body.product-page section.options .frame .box-wrap .box .info {
+        html .product-page section.options .frame .box-wrap .box .info {
           padding: 20px 0; }
-          html body.product-page section.options .frame .box-wrap .box .info p {
+          html .product-page section.options .frame .box-wrap .box .info p {
             line-height: 1.3em;
             margin: 0;
             font-style: italic;
             font-size: 20px; }
             @media screen and (min-width: 768px) {
-              html body.product-page section.options .frame .box-wrap .box .info p {
+              html .product-page section.options .frame .box-wrap .box .info p {
                 font-size: 25px; } }
-          html body.product-page section.options .frame .box-wrap .box .info p.size {
+          html .product-page section.options .frame .box-wrap .box .info p.size {
             font-style: normal;
             font-size: 22px; }
             @media screen and (min-width: 768px) {
-              html body.product-page section.options .frame .box-wrap .box .info p.size {
+              html .product-page section.options .frame .box-wrap .box .info p.size {
                 font-size: 27px; } }
-        html body.product-page section.options .frame .box-wrap .box .button {
+        html .product-page section.options .frame .box-wrap .box .button {
           display: block;
           width: 100%;
           background-color: #CDE2BC;
@@ -1843,140 +1843,140 @@ html body.product-page section.options {
           box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
           cursor: pointer;
           box-shadow: none; }
-          html body.product-page section.options .frame .box-wrap .box .button:hover {
+          html .product-page section.options .frame .box-wrap .box .button:hover {
             filter: brightness(0.9); }
-          html body.product-page section.options .frame .box-wrap .box .button:active {
+          html .product-page section.options .frame .box-wrap .box .button:active {
             transform: translateY(4px);
             box-shadow: none; }
           @media screen and (min-width: 768px) {
-            html body.product-page section.options .frame .box-wrap .box .button {
+            html .product-page section.options .frame .box-wrap .box .button {
               font-size: 26px;
               margin-top: 15px; } }
-        html body.product-page section.options .frame .box-wrap .box:nth-child(1) .img {
+        html .product-page section.options .frame .box-wrap .box:nth-child(1) .img {
           background-image: url(../img/box_img.png); }
-        html body.product-page section.options .frame .box-wrap .box:nth-child(2) .img {
+        html .product-page section.options .frame .box-wrap .box:nth-child(2) .img {
           background-image: url(../img/box_img2.png); }
-        html body.product-page section.options .frame .box-wrap .box:nth-child(3) .img {
+        html .product-page section.options .frame .box-wrap .box:nth-child(3) .img {
           background-image: url(../img/box_img3.png); }
-        html body.product-page section.options .frame .box-wrap .box:nth-child(4) .img {
+        html .product-page section.options .frame .box-wrap .box:nth-child(4) .img {
           background-image: url(../img/box_img4.png); }
-        html body.product-page section.options .frame .box-wrap .box:nth-child(5) .img {
+        html .product-page section.options .frame .box-wrap .box:nth-child(5) .img {
           background-image: url(../img/box_img5.png); }
-        html body.product-page section.options .frame .box-wrap .box:nth-child(6) .img {
+        html .product-page section.options .frame .box-wrap .box:nth-child(6) .img {
           background-image: url(../img/box_img6.png); }
         @media screen and (min-width: 768px) {
-          html body.product-page section.options .frame .box-wrap .box {
+          html .product-page section.options .frame .box-wrap .box {
             width: calc(50% - 10px); } }
   @media screen and (min-width: 768px) and (min-width: 992px) {
-    html body.product-page section.options .frame .box-wrap .box {
+    html .product-page section.options .frame .box-wrap .box {
       width: calc((100% - 30px) / 3); } }
 
       @media screen and (min-width: 768px) {
-        html body.product-page section.options .frame .box-wrap {
+        html .product-page section.options .frame .box-wrap {
           display: flex;
           flex-wrap: wrap;
           justify-content: space-between; } }
   @media screen and (min-width: 768px) and (min-width: 1200px) {
-    html body.product-page section.options .frame .box-wrap {
+    html .product-page section.options .frame .box-wrap {
       margin-top: 50px; } }
 
   @media screen and (min-width: 768px) {
-    html body.product-page section.options {
+    html .product-page section.options {
       padding: 65px 0; } }
   @media screen and (min-width: 768px) and (min-width: 1200px) {
-    html body.product-page section.options {
+    html .product-page section.options {
       padding: 150px 0; } }
 
-html body#lobby section.introduction .frame .overview .table .facility .item:first-child {
+html #lobby section.introduction .frame .overview .table .facility .item:first-child {
   width: 230px; }
-html body#lobby section.introduction .frame .overview .table .facility .item:nth-child(2) {
+html #lobby section.introduction .frame .overview .table .facility .item:nth-child(2) {
   width: 200px; }
-  html body#lobby section.introduction .frame .overview .table .facility .item:nth-child(2) img {
+  html #lobby section.introduction .frame .overview .table .facility .item:nth-child(2) img {
     margin: 0 15px; }
-html body#lobby section.options .frame .box-wrap .box:nth-child(3) .img {
+html #lobby section.options .frame .box-wrap .box:nth-child(3) .img {
   background-image: url(../img/box_img5.png); }
-html body#lobby section.options .frame .box-wrap .box:nth-child(4) .img {
+html #lobby section.options .frame .box-wrap .box:nth-child(4) .img {
   background-image: url(../img/box_img.png); }
-html body#lobby section.options .frame .box-wrap .box:nth-child(5) .img {
+html #lobby section.options .frame .box-wrap .box:nth-child(5) .img {
   background-image: url(../img/box_img4.png); }
-html body#meeting section.options .frame .box-wrap .box:nth-child(1) .img {
+html #meeting section.options .frame .box-wrap .box:nth-child(1) .img {
   background-image: url(../img/box_img4.png); }
-html body#meeting section.options .frame .box-wrap .box:nth-child(2) .img {
+html #meeting section.options .frame .box-wrap .box:nth-child(2) .img {
   background-image: url(../img/box_img3.png); }
-html body#meeting section.options .frame .box-wrap .box:nth-child(3) .img {
+html #meeting section.options .frame .box-wrap .box:nth-child(3) .img {
   background-image: url(../img/box_img.png); }
-html body#meeting section.options .frame .box-wrap .box:nth-child(4) .img {
+html #meeting section.options .frame .box-wrap .box:nth-child(4) .img {
   background-image: url(../img/box_img.png); }
-html body#kitchen section.introduction .frame .overview .table .facility .content .item:first-child {
+html #kitchen section.introduction .frame .overview .table .facility .content .item:first-child {
   width: 370px; }
-html body#kitchen section.introduction .frame .overview .table .facility .content .item:last-child {
+html #kitchen section.introduction .frame .overview .table .facility .content .item:last-child {
   width: 390px; }
-  html body#kitchen section.introduction .frame .overview .table .facility .content .item:last-child .text {
+  html #kitchen section.introduction .frame .overview .table .facility .content .item:last-child .text {
     margin-left: 15px; }
-html body#kitchen section.introduction .frame .overview .table .cooking-equipment {
+html #kitchen section.introduction .frame .overview .table .cooking-equipment {
   padding-left: 30px;
   padding-bottom: 20px; }
-  html body#kitchen section.introduction .frame .overview .table .cooking-equipment .item {
+  html #kitchen section.introduction .frame .overview .table .cooking-equipment .item {
     display: flex;
     align-items: center;
     color: #322b2acf;
     margin-bottom: 20px; }
-    html body#kitchen section.introduction .frame .overview .table .cooking-equipment .item .text {
+    html #kitchen section.introduction .frame .overview .table .cooking-equipment .item .text {
       margin-left: 15px; }
-    html body#kitchen section.introduction .frame .overview .table .cooking-equipment .item:last-child {
+    html #kitchen section.introduction .frame .overview .table .cooking-equipment .item:last-child {
       width: 305px; }
     @media screen and (min-width: 992px) {
-      html body#kitchen section.introduction .frame .overview .table .cooking-equipment .item {
+      html #kitchen section.introduction .frame .overview .table .cooking-equipment .item {
         margin-left: 65px; } }
   @media screen and (min-width: 992px) {
-    html body#kitchen section.introduction .frame .overview .table .cooking-equipment {
+    html #kitchen section.introduction .frame .overview .table .cooking-equipment {
       display: flex;
       padding: 30px 20px 60px 0px; } }
   @media screen and (min-width: 992px) and (min-width: 1200px) {
-    html body#kitchen section.introduction .frame .overview .table .cooking-equipment {
+    html #kitchen section.introduction .frame .overview .table .cooking-equipment {
       padding: 30px 80px 60px 75px; } }
 
-html body#kitchen section.introduction .frame .overview .table .food-operation {
+html #kitchen section.introduction .frame .overview .table .food-operation {
   width: 90%;
   margin: auto;
   border-top: 1px solid #322B2A;
   padding: 15px 0; }
-  html body#kitchen section.introduction .frame .overview .table .food-operation .title {
+  html #kitchen section.introduction .frame .overview .table .food-operation .title {
     color: #322b2acf;
     font-size: 25px;
     margin-bottom: 10px; }
     @media screen and (min-width: 992px) {
-      html body#kitchen section.introduction .frame .overview .table .food-operation .title {
+      html #kitchen section.introduction .frame .overview .table .food-operation .title {
         width: 190px; } }
-  html body#kitchen section.introduction .frame .overview .table .food-operation p {
+  html #kitchen section.introduction .frame .overview .table .food-operation p {
     color: #322b2acf;
     margin: 0; }
     @media screen and (min-width: 992px) {
-      html body#kitchen section.introduction .frame .overview .table .food-operation p {
+      html #kitchen section.introduction .frame .overview .table .food-operation p {
         margin-left: 20px; } }
   @media screen and (min-width: 992px) {
-    html body#kitchen section.introduction .frame .overview .table .food-operation {
+    html #kitchen section.introduction .frame .overview .table .food-operation {
       display: flex;
       align-items: center; } }
-html body#kitchen section.introduction .frame .overview .table .washing-equipment {
+html #kitchen section.introduction .frame .overview .table .washing-equipment {
   width: 90%;
   margin: auto;
   border-top: 1px solid #322B2A;
   padding: 15px 0; }
-  html body#kitchen section.introduction .frame .overview .table .washing-equipment .title {
+  html #kitchen section.introduction .frame .overview .table .washing-equipment .title {
     color: #322b2acf;
     font-size: 25px;
     margin-bottom: 10px; }
     @media screen and (min-width: 992px) {
-      html body#kitchen section.introduction .frame .overview .table .washing-equipment .title {
+      html #kitchen section.introduction .frame .overview .table .washing-equipment .title {
         width: 190px; } }
-  html body#kitchen section.introduction .frame .overview .table .washing-equipment .content {
+  html #kitchen section.introduction .frame .overview .table .washing-equipment .content {
     width: 100%; }
-    html body#kitchen section.introduction .frame .overview .table .washing-equipment .content p {
+    html #kitchen section.introduction .frame .overview .table .washing-equipment .content p {
       margin: 0;
       color: #322b2acf; }
     @media screen and (min-width: 992px) {
-      html body#kitchen section.introduction .frame .overview .table .washing-equipment .content {
+      html #kitchen section.introduction .frame .overview .table .washing-equipment .content {
         margin-left: 20px;
         display: flex;
         justify-content: space-between;
@@ -1984,19 +1984,19 @@ html body#kitchen section.introduction .frame .overview .table .washing-equipmen
         align-items: center;
         padding-left: 30px; } }
   @media screen and (min-width: 992px) {
-    html body#kitchen section.introduction .frame .overview .table .washing-equipment {
+    html #kitchen section.introduction .frame .overview .table .washing-equipment {
       display: flex; } }
-html body#kitchen section.introduction .frame .overview .table .price {
+html #kitchen section.introduction .frame .overview .table .price {
   background-color: #627C9724; }
-html body#kitchen section.introduction .frame .overview .table .service {
+html #kitchen section.introduction .frame .overview .table .service {
   background-color: white; }
-html body#kitchen section.options .frame .box-wrap .box:nth-child(2) .img {
+html #kitchen section.options .frame .box-wrap .box:nth-child(2) .img {
   background-image: url(../img/box_img4.png); }
-html body#kitchen section.options .frame .box-wrap .box:nth-child(3) .img {
+html #kitchen section.options .frame .box-wrap .box:nth-child(3) .img {
   background-image: url(../img/box_img3.png); }
-html body#kitchen section.options .frame .box-wrap .box:nth-child(4) .img {
+html #kitchen section.options .frame .box-wrap .box:nth-child(4) .img {
   background-image: url(../img/box_img.png); }
-html body#kitchen section.options .frame .box-wrap .box:nth-child(5) .img {
+html #kitchen section.options .frame .box-wrap .box:nth-child(5) .img {
   background-image: url(../img/box_img4.png); }
 html #meeting-room-lobby .banner .frame .information .name, html #conference-room-lobby .banner .frame .information .name, html #venue .banner .frame .information .name {
   line-height: 1em; }
@@ -2056,5 +2056,64 @@ html #venue section.options .frame .box-wrap .box:nth-child(5) .img {
   background-image: url(../img/box_img3.png); }
 html #venue section.options .frame .box-wrap .box:nth-child(6) .img {
   background-image: url(../img/box_img5.png); }
+html #gallery section.banner {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(295deg, #EFD7E6 0%, #BBDEB6 74%, #E7E9BF 100%); }
+  html #gallery section.banner img {
+    width: 320px; }
+    @media screen and (min-width: 992px) {
+      html #gallery section.banner img {
+        width: 420px; } }
+html #gallery section.gallery {
+  padding: 40px 0; }
+  html #gallery section.gallery .frame {
+    width: 300px;
+    margin: auto; }
+    html #gallery section.gallery .frame .grid-item {
+      width: 100%;
+      margin: 5px;
+      cursor: pointer;
+      position: relative; }
+      html #gallery section.gallery .frame .grid-item .text {
+        position: absolute;
+        top: 0;
+        color: white;
+        z-index: 10;
+        padding: 5% 5% 15% 5%; }
+        html #gallery section.gallery .frame .grid-item .text p {
+          margin: 0; }
+        html #gallery section.gallery .frame .grid-item .text .title {
+          font-size: 20px; }
+        html #gallery section.gallery .frame .grid-item .text .intro {
+          font-family: Arsenal, Helvetica, Arial;
+          font-size: 14px;
+          line-height: 1.3em; }
+      html #gallery section.gallery .frame .grid-item img {
+        width: 100%;
+        filter: brightness(0.5);
+        transition: all 0.3s ease; }
+      html #gallery section.gallery .frame .grid-item:hover img {
+        filter: brightness(1); }
+      html #gallery section.gallery .frame .grid-item:hover .text {
+        background: linear-gradient(#000000 0%, rgba(0, 0, 0, 0) 100%); }
+      @media screen and (min-width: 768px) {
+        html #gallery section.gallery .frame .grid-item {
+          width: calc(50% - 10px); } }
+    @media screen and (min-width: 768px) {
+      html #gallery section.gallery .frame {
+        width: 600px; } }
+  @media screen and (min-width: 768px) and (min-width: 992px) {
+    html #gallery section.gallery .frame {
+      width: 900px; } }
+
+  @media screen and (min-width: 768px) {
+    html #gallery section.gallery {
+      padding: 65px 0; } }
+  @media screen and (min-width: 768px) and (min-width: 992px) {
+    html #gallery section.gallery {
+      padding: 110px 0; } }
 
 /*# sourceMappingURL=style.css.map */

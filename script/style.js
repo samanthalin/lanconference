@@ -30,6 +30,12 @@ $(document).ready(function(){
 		return false;
 	});
 
+	//gallery
+	var $grid = $('.grid').masonry();
+	$grid.imagesLoaded().progress( function() {
+	  $grid.masonry('layout');
+	});
+
 	//footer
 	var currentYear = (new Date).getFullYear();
 	$(".current-year").text( (new Date).getFullYear() );

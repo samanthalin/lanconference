@@ -374,7 +374,7 @@ html{
 }//html
 
 html{
-	body#index{
+	#index{
 		section.banner{
 			width: 100%;
 			height: 42vw;
@@ -659,7 +659,7 @@ html{
 		}
 	}//#index
 
-	body#product{
+	#product{
 		section:nth-child(2n+1){
 			background-color: #f7f8f8;
 		}
@@ -1063,7 +1063,7 @@ html{
 		}//section.catering
 	}//#produc
 
-	body#inquery{
+	#inquery{
 		section.inquery{
 			padding: 20px 0 75px 0;
 			background-color: #e6eded;
@@ -1083,7 +1083,7 @@ html{
 		}
 	}//#inquery
 
-	body#shoppingCart{
+	#shoppingCart{
 		background-color: #e6eded;
 		section.main{
 			padding: 20px 0 75px 0;
@@ -1632,7 +1632,7 @@ html{
 		}//section.message
 	}//shoppingCart
 
-	body.product-page{
+	.product-page{
 		section.banner{
 			background-color: #f1f4f6;
 			padding: 40px 0;
@@ -2159,7 +2159,7 @@ html{
 		}//section.options
 	}//.product-page
 	
-	body#lobby{
+	#lobby{
 		section.introduction{
 			.frame{
 				.overview{
@@ -2206,7 +2206,7 @@ html{
 		}
 	}//#lobby
 
-	body#meeting{
+	#meeting{
 		section.options{
 			.frame{
 				.box-wrap{
@@ -2237,7 +2237,7 @@ html{
 		}
 	}//#meeting
 
-	body#kitchen{
+	#kitchen{
 		section.introduction{
 			.frame{
 				.overview{
@@ -2562,5 +2562,78 @@ html{
 				}
 			}
 		}//options
+	}//#venue
+	#gallery{
+		section.banner{
+			height: 400px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: linear-gradient(295deg, #EFD7E6 0%, #BBDEB6 74%, #E7E9BF 100%);
+			img{
+				width: 320px;
+				@media screen and (min-width: 992px){
+					width: 420px;
+				}
+			}
+		}//seciton.banner
+		section.gallery{
+			padding: 40px 0;
+			.frame{
+				width: 300px;
+				margin: auto;
+				.grid-item{
+					width: 100%;
+					margin: 5px;
+					cursor: pointer;
+					position: relative;
+					.text{
+						position: absolute;
+						top: 0;
+						color: white;
+						z-index: 10;
+						padding: 5% 5% 15% 5%;
+
+						p{
+							margin: 0;
+						}
+						.title{
+							font-size: 20px;
+						}
+						.intro{
+							font-family: Arsenal, Helvetica, Arial;
+							font-size: 14px;
+							line-height: 1.3em;
+						}
+					}
+					img{
+						width: 100%;
+						filter: brightness(0.5);
+						transition: all 0.3s ease;
+					}
+					&:hover img{
+						filter: brightness(1);
+					}
+					&:hover .text{
+						background: linear-gradient(#000000 0%, rgba(0,0,0,0) 100%);
+					}
+					@media screen and (min-width: 768px){
+						width: calc(50% - 10px);
+					}
+				}
+				@media screen and (min-width: 768px) {
+					width: 600px;
+					@media screen and (min-width: 992px){
+						width: 900px;
+					}
+				}
+			}//frame
+			@media screen and (min-width: 768px) {
+				padding: 65px 0;
+				@media screen and (min-width: 992px){
+					padding: 110px 0;
+				}
+			}
+		}//section.gallery
 	}
 }
