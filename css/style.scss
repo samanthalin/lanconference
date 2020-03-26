@@ -2712,8 +2712,18 @@ html{
 							font-size: 20px;
 							font-family: Georgia;
 							text-align: center;
-						}	
+						}
+						@media screen and (min-width: 992px){
+							width: 32%;
+							padding: 5% 20px;
+							height: auto;
+							min-height: 520px;
+						}
 					}//.box
+					@media screen and (min-width: 992px) {
+						display: flex;
+						justify-content: space-between;
+					}
 				}//box-wrap
 				.story{
 					width: 100%;

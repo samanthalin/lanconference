@@ -2903,6 +2903,20 @@ html #about section.main .frame .box-wrap .box .intro {
   font-family: Georgia;
   text-align: center;
 }
+@media screen and (min-width: 992px) {
+  html #about section.main .frame .box-wrap .box {
+    width: 32%;
+    padding: 5% 20px;
+    height: auto;
+    min-height: 520px;
+  }
+}
+@media screen and (min-width: 992px) {
+  html #about section.main .frame .box-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 html #about section.main .frame .story {
   width: 100%;
   margin-top: 50px;
