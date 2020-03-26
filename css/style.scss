@@ -2657,5 +2657,45 @@ html{
 				}
 			}
 		}//section.banner
+		section.main{
+			.frame{
+				width: 90%;
+				margin: auto;
+				max-width: 1312px;
+				.box-wrap{
+					width: 100%;
+					.box{
+						width: 100%;
+						background-color: #649A9E26;
+						text-align: center;
+						color: #649A9E;
+						padding: 5%;
+						margin: 10px 0;
+						height: 520px;
+						padding: 12% 5%;
+						.img{
+							width: 145px;
+							height: 145px;
+							border-radius: 50%;
+							background-color: white;
+							margin: auto;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+						}
+						.name{
+							margin: 0;
+    						margin: 30px 0 25px 0;
+						}
+						.intro{
+							font-style: italic;
+							font-size: 20px;
+							font-family: Georgia;
+							text-align: center;
+						}	
+					}
+				}
+			}
+		}
 	}//#about
 }
