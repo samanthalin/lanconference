@@ -147,6 +147,10 @@ html body footer .frame .copyright .text {
     text-align: left;
   }
 }
+html body .customize-support {
+  text-align: center;
+  background-color: #e6eded;
+}
 
 html #index section.banner {
   width: 100%;
@@ -2839,7 +2843,28 @@ html #about section.banner .frame .left .title, html #about section.banner .fram
 html #about section.banner .frame .left .content .thin, html #about section.banner .frame .right .content .thin {
   font-family: Arsenal, Helvetica, Arial;
 }
+@media screen and (min-width: 992px) {
+  html #about section.banner .frame .left, html #about section.banner .frame .right {
+    width: 47%;
+  }
+}
+@media screen and (min-width: 992px) {
+  html #about section.banner .frame .right {
+    text-align: right;
+  }
+}
+@media screen and (min-width: 992px) {
+  html #about section.banner .frame {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+html #about section.main {
+  padding: 65px 0;
+}
 html #about section.main .frame {
+  position: relative;
   width: 90%;
   margin: auto;
   max-width: 1312px;
@@ -2856,6 +2881,7 @@ html #about section.main .frame .box-wrap .box {
   margin: 10px 0;
   height: 520px;
   padding: 12% 5%;
+  cursor: pointer;
 }
 html #about section.main .frame .box-wrap .box .img {
   width: 145px;
@@ -2876,6 +2902,22 @@ html #about section.main .frame .box-wrap .box .intro {
   font-size: 20px;
   font-family: Georgia;
   text-align: center;
+}
+html #about section.main .frame .story {
+  width: 100%;
+  margin-top: 50px;
+}
+html #about section.main .frame .story .img {
+  width: 100%;
+  height: 60vw;
+  background-color: #f2f9fe;
+}
+html #about section.main .frame .story .text .title {
+  font-size: 68px;
+  font-style: italic;
+}
+html #about section.main .frame .story .text .content {
+  font-family: Arsenal, Helvetica, Arial;
 }
 
 /*# sourceMappingURL=style.css.map */
