@@ -2644,6 +2644,8 @@ html{
 		section.banner{
 			background: linear-gradient(295deg, #649A9E 0%, #AFDBDA 30%, #EDEBDB 100%);
 			padding: 20px 0;
+			position: relative;
+			overflow: hidden;
 			.frame{
 				width: 90%;
 				margin: auto;
@@ -2671,8 +2673,18 @@ html{
 					display: flex;
 					justify-content: space-between;
 					align-items: center;
+					&:after{
+						content: url(../img/about_banner_bg.png);
+						position: absolute;
+						top: 0;
+						right: 50%;
+						margin-right: -1622px;
+					}
 				}
 			}//frame
+			@media screen and (min-width: 1200px) {
+				padding: 90px 0;
+			}
 		}//section.banner
 		section.main{
 			padding: 65px 0;
@@ -2718,6 +2730,12 @@ html{
 							padding: 5% 20px;
 							height: auto;
 							min-height: 520px;
+							transition: all 0.3s ease;
+							&:hover{
+								transform: scale(1.1);
+								background-color: $theme-green;
+								color: white;
+							}
 						}
 					}//.box
 					@media screen and (min-width: 992px) {
@@ -2732,6 +2750,15 @@ html{
 						width: 100%;
 						height: 60vw;
 						background-color: #f2f9fe;
+						@media screen and (min-width: 992px){
+							flex: 1;
+							@media screen and (min-width: 1200px){
+								height: 45vw;
+								flex: 3;
+								max-height: 530px;
+							}
+						}
+
 					}
 					.text{
 						.title{
@@ -2741,6 +2768,17 @@ html{
 						.content{
 							font-family: Arsenal, Helvetica, Arial;
 						}
+						@media screen and (min-width: 992px){
+							flex:1;
+							padding: 5% 3%;
+							@media screen and (min-width: 1200px){
+								flex: 2;
+							}
+						}
+					}
+					@media screen and (min-width: 992px){
+						display: flex;
+						align-items: center;
 					}
 				}//story
 			}//frame
