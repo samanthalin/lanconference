@@ -2635,5 +2635,27 @@ html{
 				}
 			}
 		}//section.gallery
-	}
+	}//#gallery
+	#about{
+		section.banner{
+			background: linear-gradient(295deg, #649A9E 0%, #AFDBDA 30%, #EDEBDB 100%);
+			padding: 20px 0;
+			.frame{
+				width: 90%;
+				margin: auto;
+				max-width: 1128px;
+				.left, .right{
+					.title{
+						font-size: 78px;
+						font-style: italic;
+					}
+					.content{
+						.thin{
+							font-family: Arsenal, Helvetica, Arial;
+						}
+					}
+				}
+			}
+		}//section.banner
+	}//#about
 }

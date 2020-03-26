@@ -2116,4 +2116,17 @@ html #gallery section.gallery {
     html #gallery section.gallery {
       padding: 110px 0; } }
 
+html #about section.banner {
+  background: linear-gradient(295deg, #649A9E 0%, #AFDBDA 30%, #EDEBDB 100%);
+  padding: 20px 0; }
+  html #about section.banner .frame {
+    width: 90%;
+    margin: auto;
+    max-width: 1128px; }
+    html #about section.banner .frame .left .title, html #about section.banner .frame .right .title {
+      font-size: 78px;
+      font-style: italic; }
+    html #about section.banner .frame .left .content .thin, html #about section.banner .frame .right .content .thin {
+      font-family: Arsenal, Helvetica, Arial; }
+
 /*# sourceMappingURL=style.css.map */
