@@ -221,6 +221,36 @@ $theme-light-green: #CDE2BC;
 	top: -5px;
 }
 
+@mixin checkbox{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	border-radius: 0;
+	border: 1px solid $theme-black;
+	width: 21px;
+	height: 21px;
+	display: block;
+	margin-right: 10px;
+	outline: none;
+	cursor: pointer;
+	position: relative;
+	flex: none;
+	&:hover{
+		background-color: #dddddd;
+	}
+	&:checked{
+		background-color: $theme-light-green;
+		&:after{
+			content: '\f00c';
+			font-family: 'FontAwesome';
+			position: absolute;
+			top: -2px;
+			left: 2px;
+		}
+	}
+}
+
 //public
 html{
 	body{
@@ -1404,33 +1434,7 @@ html{
 							display: flex;
 							justify-content: center;
 							input[type="checkbox"]{
-								appearance: none;
-								-webkit-appearance: none;
-								-moz-appearance: none;
-								-ms-appearance: none;
-								border-radius: 0;
-								border: 1px solid $theme-black;
-								width: 21px;
-								height: 21px;
-								display: block;
-								margin-right: 10px;
-								outline: none;
-								cursor: pointer;
-								position: relative;
-								flex: none;
-								&:hover{
-									background-color: #dddddd;
-								}
-								&:checked{
-									background-color: $theme-light-green;
-									&:after{
-										content: '\f00c';
-										font-family: 'FontAwesome';
-										position: absolute;
-										top: -2px;
-    									left: 2px;
-									}
-								}
+								@include checkbox;
 							}
 							@media screen and (min-width: 768px){
 								position: absolute;
@@ -2784,4 +2788,136 @@ html{
 			}//frame
 		}//section.main
 	}//#about
+	#login{
+		.main{
+			background-color: #e6eded;
+			min-height: 100vh;
+			padding: 40px 0;
+			.box{
+				width: 90%;
+				margin: auto;
+				background-color: white;
+				padding: 40px 30px;
+				box-shadow: 3px 6px 12px #00000029;
+				.login, .signup{
+					padding-bottom: 40px;
+					border-bottom: 1px solid $theme-black;
+					.title{
+						font-size: 35px;
+						text-transform: uppercase;
+						text-align: center;
+						margin: 0;
+					}//title
+					.seperator{
+						@include seperator;
+						width: 95px;
+						margin-top: 0;
+					}//seperator
+					.form{
+						.query-wrap{
+							.query{
+								margin-bottom: 40px;
+								label{
+									font-family: 'Seravek';
+									display: block;
+								}//label
+								input{
+									width: 100%;
+									outline: none;
+									appearence: none;
+									-webkit-appearence: none;
+									-moz-appearence: none;
+									-o-appearence: none;
+									-ms-appearence: none;
+									border: 0;
+									border-bottom: 1px solid #707070;
+								}
+								@media screen and (min-width: 992px){
+									width: 48%;
+								}
+							}//query
+							@media screen and (min-width: 992px) {
+								display: flex;
+								justify-content: space-between;
+								flex-wrap: wrap;
+							}
+						}//query-wrap
+						.check{
+							display: flex;
+							align-items: center;
+							input[type="checkbox"]{
+								@include checkbox;
+							}
+							input[type="checkbox"]:checked:after{
+								top: -4px;
+								left: 1px;
+							}
+							span{
+								font-family: 'Seravek';
+							}
+						}//remember
+						.forget{
+							font-family: 'Seravek';
+							color: $theme-black;
+							text-decoration: underline;
+						}
+						.button{
+							@include green-button;
+							max-width: 270px;
+							margin: auto;
+							margin-top: 40px;
+						}
+					}//form
+				}//login + signup
+				.login{
+					.form{
+						.query-wrap{
+							@media screen and (min-width: 992px){
+								display: block;
+							}
+							.query{
+								@media screen and (min-width: 992px){
+									width: 100%;
+								}
+							}
+						}
+					}
+					@media screen and (min-width: 992px){
+						flex: 1;
+						padding: 0 5%;
+						border: 0;
+						border-right: 1px solid $theme-black;
+					}
+				}//login
+				.signup{
+					padding: 40px 0;
+					border: 0;
+					.seperator{
+						width: 137px;
+					}
+					.form{
+						.button{
+							@media screen and (min-width: 992px){
+								margin-top: 60px;
+							}	
+						}
+					}
+					@media screen and (min-width: 992px){
+						flex: 2;
+						padding: 0 5%;
+					}
+				}//sugnup
+				@media screen and (min-width: 992px){
+					display: flex;
+					max-width: 1256px;
+					padding: 80px 0;
+				}
+			}//box
+			@media screen and (min-width: 992px){
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}//main
+	}//#login
 }

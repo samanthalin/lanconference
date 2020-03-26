@@ -2238,5 +2238,152 @@ html #about section.main {
         html #about section.main .frame .story {
           display: flex;
           align-items: center; } }
+html #login .main {
+  background-color: #e6eded;
+  min-height: 100vh;
+  padding: 40px 0; }
+  html #login .main .box {
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    padding: 40px 30px;
+    box-shadow: 3px 6px 12px #00000029; }
+    html #login .main .box .login, html #login .main .box .signup {
+      padding-bottom: 40px;
+      border-bottom: 1px solid #322B2A; }
+      html #login .main .box .login .title, html #login .main .box .signup .title {
+        font-size: 35px;
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0; }
+      html #login .main .box .login .seperator, html #login .main .box .signup .seperator {
+        position: relative;
+        border-bottom: 2px solid #649A9E;
+        width: 166px;
+        margin: 20px auto 50px;
+        width: 95px;
+        margin-top: 0; }
+        html #login .main .box .login .seperator .square, html #login .main .box .signup .seperator .square {
+          width: 16px;
+          height: 16px;
+          background-color: #649A9E;
+          transform: rotate(45deg);
+          margin: auto;
+          box-shadow: 0px 0px 0px 5px white;
+          margin-bottom: -9px; }
+      html #login .main .box .login .form .query-wrap .query, html #login .main .box .signup .form .query-wrap .query {
+        margin-bottom: 40px; }
+        html #login .main .box .login .form .query-wrap .query label, html #login .main .box .signup .form .query-wrap .query label {
+          font-family: 'Seravek';
+          display: block; }
+        html #login .main .box .login .form .query-wrap .query input, html #login .main .box .signup .form .query-wrap .query input {
+          width: 100%;
+          outline: none;
+          appearence: none;
+          -webkit-appearence: none;
+          -moz-appearence: none;
+          -o-appearence: none;
+          -ms-appearence: none;
+          border: 0;
+          border-bottom: 1px solid #707070; }
+        @media screen and (min-width: 992px) {
+          html #login .main .box .login .form .query-wrap .query, html #login .main .box .signup .form .query-wrap .query {
+            width: 48%; } }
+      @media screen and (min-width: 992px) {
+        html #login .main .box .login .form .query-wrap, html #login .main .box .signup .form .query-wrap {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap; } }
+      html #login .main .box .login .form .check, html #login .main .box .signup .form .check {
+        display: flex;
+        align-items: center; }
+        html #login .main .box .login .form .check input[type="checkbox"], html #login .main .box .signup .form .check input[type="checkbox"] {
+          appearance: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          -ms-appearance: none;
+          border-radius: 0;
+          border: 1px solid #322B2A;
+          width: 21px;
+          height: 21px;
+          display: block;
+          margin-right: 10px;
+          outline: none;
+          cursor: pointer;
+          position: relative;
+          flex: none; }
+          html #login .main .box .login .form .check input[type="checkbox"]:hover, html #login .main .box .signup .form .check input[type="checkbox"]:hover {
+            background-color: #dddddd; }
+          html #login .main .box .login .form .check input[type="checkbox"]:checked, html #login .main .box .signup .form .check input[type="checkbox"]:checked {
+            background-color: #CDE2BC; }
+            html #login .main .box .login .form .check input[type="checkbox"]:checked:after, html #login .main .box .signup .form .check input[type="checkbox"]:checked:after {
+              content: '\f00c';
+              font-family: 'FontAwesome';
+              position: absolute;
+              top: -2px;
+              left: 2px; }
+        html #login .main .box .login .form .check input[type="checkbox"]:checked:after, html #login .main .box .signup .form .check input[type="checkbox"]:checked:after {
+          top: -4px;
+          left: 1px; }
+        html #login .main .box .login .form .check span, html #login .main .box .signup .form .check span {
+          font-family: 'Seravek'; }
+      html #login .main .box .login .form .forget, html #login .main .box .signup .form .forget {
+        font-family: 'Seravek';
+        color: #322B2A;
+        text-decoration: underline; }
+      html #login .main .box .login .form .button, html #login .main .box .signup .form .button {
+        display: block;
+        width: 100%;
+        background-color: #CDE2BC;
+        text-align: center;
+        color: #322B2A;
+        font-family: Quicksand;
+        font-size: 22px;
+        border-radius: 17px;
+        padding: 8px 0;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        max-width: 270px;
+        margin: auto;
+        margin-top: 40px; }
+        html #login .main .box .login .form .button:hover, html #login .main .box .signup .form .button:hover {
+          filter: brightness(0.9); }
+        html #login .main .box .login .form .button:active, html #login .main .box .signup .form .button:active {
+          transform: translateY(4px);
+          box-shadow: none; }
+    @media screen and (min-width: 992px) {
+      html #login .main .box .login .form .query-wrap {
+        display: block; } }
+    @media screen and (min-width: 992px) {
+      html #login .main .box .login .form .query-wrap .query {
+        width: 100%; } }
+    @media screen and (min-width: 992px) {
+      html #login .main .box .login {
+        flex: 1;
+        padding: 0 5%;
+        border: 0;
+        border-right: 1px solid #322B2A; } }
+    html #login .main .box .signup {
+      padding: 40px 0;
+      border: 0; }
+      html #login .main .box .signup .seperator {
+        width: 137px; }
+      @media screen and (min-width: 992px) {
+        html #login .main .box .signup .form .button {
+          margin-top: 60px; } }
+      @media screen and (min-width: 992px) {
+        html #login .main .box .signup {
+          flex: 2;
+          padding: 0 5%; } }
+    @media screen and (min-width: 992px) {
+      html #login .main .box {
+        display: flex;
+        max-width: 1256px;
+        padding: 80px 0; } }
+  @media screen and (min-width: 992px) {
+    html #login .main {
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
 
 /*# sourceMappingURL=style.css.map */
