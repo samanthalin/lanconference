@@ -2380,6 +2380,53 @@ html #login .main {
         display: flex;
         max-width: 1256px;
         padding: 80px 0; } }
+  html #login .main .message {
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    max-width: 1254px;
+    padding: 15% 20px; }
+    html #login .main .message .title {
+      font-size: 28px;
+      text-transform: uppercase;
+      text-align: center; }
+      @media screen and (min-width: 768px) {
+        html #login .main .message .title {
+          font-size: 35px; } }
+    html #login .main .message .seperator {
+      position: relative;
+      border-bottom: 2px solid #649A9E;
+      width: 166px;
+      margin: 20px auto 50px; }
+      html #login .main .message .seperator .square {
+        width: 16px;
+        height: 16px;
+        background-color: #649A9E;
+        transform: rotate(45deg);
+        margin: auto;
+        box-shadow: 0px 0px 0px 5px white;
+        margin-bottom: -9px; }
+    html #login .main .message img.img-yes {
+      width: 60px;
+      margin: auto; }
+      @media screen and (min-width: 768px) {
+        html #login .main .message img.img-yes {
+          width: 84px;
+          margin-top: 55px; } }
+    html #login .main .message .content {
+      text-align: center;
+      margin: auto;
+      margin-top: 50px;
+      max-width: 375px; }
+      html #login .main .message .content p {
+        line-height: 1.3em; }
+      @media screen and (min-width: 768px) {
+        html #login .main .message .content {
+          font-size: 26px;
+          max-width: 500px; } }
+    @media screen and (min-width: 768px) {
+      html #login .main .message {
+        padding: 5% 20px 20% 20px; } }
   @media screen and (min-width: 992px) {
     html #login .main {
       display: flex;
