@@ -404,6 +404,152 @@ html{
 			text-align: center;
 			background-color: #e6eded;
 		}
+		form.cart{
+			width: 90%;
+			margin: auto;
+			max-width: 1182px;
+			padding: 110px 0;
+			*{
+				float: none;
+			}
+			.booking-wraper{
+				padding: 20px;
+    			border: 2px solid $theme-light-green;
+			}
+			#book-now-title{
+				text-align: center;
+				margin-bottom: 30px;
+			}
+			.wcpa_form_outer{
+				margin: 0;
+				margin-top: -2px;
+				padding: 15px 20px;
+				border: 2px solid $theme-light-green;
+				border-bottom: 0;
+			}
+			.time-picker-box-container{
+				display: flex !important;
+				.inner-element{
+					border: 0 !important;
+					float: none !important;
+					input{
+						border: 1px solid black;
+					}
+				}
+				.left-element{
+					width: 100%;
+					max-width: 385px;
+				}
+				.center-element{
+					display: none;
+				}
+				.right-element{
+					width: 100%;
+					max-width: 770px;
+					margin-left: 10px;
+					margin-top: 0;
+				}
+			}//time-picker
+			.participant_section{
+				.participant_inner_section{
+					display: flex;
+					.persons-title{
+						width: auto;
+					}
+					.person-value{
+						margin-left: 40px;
+						.input-person-minus, .input-person-plus {
+						    color: black !important;
+						    border: 1px solid black !important;
+						    padding: 0px 6px;
+						}
+						input[type="number"] {
+						   border: 1px solid black !important;
+						   padding: 0 10px !important;
+						   width: 50px !important;
+						}
+					}
+				}
+			}
+			.room-detail-selector{
+				position: relative;
+				width: auto;
+			    &:after{
+			    	font-family: 'FontAwesome';
+			    	content: '\f078';
+			    	position: absolute;
+			    	border: 1px solid black;
+				    right: 0;
+				    padding: 5px 8px;
+				}
+				select.phive_book_resources{
+				    -o-appearance: none;
+				    -webkit-appearance: none;
+				    -ms-appearance: none;
+				    appearance: none;
+				    border: 1px solid black;
+				    border-radius: 0;
+				    padding: 5px 50px 5px 25px;
+				}
+			}
+			.booking-info-wraper {
+			    background-color: $theme-light-green !important;
+			    p{
+			    	font-family: Arsenal, Helvetica;
+			    	color: #322b2a !important;
+			    }
+			}
+			#wcpa-header-1585481416805 h2{
+				font-size: 24px;
+			}
+			.wcpa_checkbox {
+			    width: 230px;
+			}
+			.wcpa_clearSelection {
+			    text-align: left;
+			    margin-left: 28px;
+			    margin-top: 15px;
+			}
+			.wcpa_price {
+			    text-align: left !important;
+			}
+			#wcpa-checkbox-group-1585481566115 {
+			    padding-left: 5%;
+			    border-left: 2px solid $theme-light-green;
+			}
+			#wcpa-header-1585481688043 h2 {
+			    font-size: 24px;
+			}
+			#text-1585079793079, #text-1585079825498, #text-1585481718216, #text-1585481728609{
+				border: 1px solid black !important;
+				border-radius: 0;
+			}
+			.wcpa_price_summary{
+				display: none;
+			}
+			.book-btn-wrap{
+				display: flex;
+				button.single_add_to_cart_button{
+					width: 50%;
+					font-family: 'Quicksand';
+					margin: 0 !important;
+					border: 0;
+					cursor: pointer;
+					padding: 10px;
+					@media screen and (min-width: 768px) {
+						font-size: 26px;
+					}
+				}
+				#btnAddtoOrder{
+					background-color: $theme-light-green !important;
+					color: $theme-black !important;
+				}
+				#btnProductInqery{
+					background-color: $theme-green !important;
+					color: white;
+				}
+			}
+		}
 	}//body
 }//html
 
@@ -1698,7 +1844,6 @@ html{
 					}//info
 					.price{
 						padding: 15px 0;
-						border-bottom: 1px solid $theme-green;
 						font-family: 'Seravek';
 						.price-type{
 							padding: 5px 0;
@@ -1709,31 +1854,6 @@ html{
 							}
 						}//proce-type
 					}//price
-					.date{
-						padding: 15px 0 15px 40px;
-						font-family: 'Seravek';
-						.check{
-							.date-picker{
-								width: 100%;
-								border: 1px solid #b3b3b3;
-								border-radius: 9px;
-								height: 40px;
-								position: relative;
-								cursor: pointer;
-								&:hover{
-									background-color: #b3b3b338;
-								}
-								&:before{
-									position: absolute;
-									content: url(../img/icon/date.png);
-									left: -38px;
-								}
-							}
-							&:last-child{
-								margin: 15px 0;
-							}
-						}
-					}//date
 					.button-wrap{
 						display: flex;
 						height: 72px;
@@ -1767,6 +1887,7 @@ html{
 						width: 422px;
 						height: 639px;
 						flex: none;
+						padding: 5% 3%;
 					}
 				}//information
 				@media screen and (min-width: 1200px) {

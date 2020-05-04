@@ -1,4 +1,4 @@
-* {
+map* {
   box-sizing: border-box; }
 
 a:hover, a:focus, a:active {
@@ -112,117 +112,6 @@ html body {
   html body .customize-support {
     text-align: center;
     background-color: #e6eded; }
-  html body form.cart {
-    width: 90%;
-    margin: auto;
-    max-width: 1182px;
-    padding: 110px 0; }
-    html body form.cart * {
-      float: none; }
-    html body form.cart .booking-wraper {
-      padding: 20px;
-      border: 2px solid #CDE2BC; }
-    html body form.cart #book-now-title {
-      text-align: center;
-      margin-bottom: 30px; }
-    html body form.cart .wcpa_form_outer {
-      margin: 0;
-      margin-top: -2px;
-      padding: 15px 20px;
-      border: 2px solid #CDE2BC;
-      border-bottom: 0; }
-    html body form.cart .time-picker-box-container {
-      display: flex !important; }
-      html body form.cart .time-picker-box-container .inner-element {
-        border: 0 !important;
-        float: none !important; }
-        html body form.cart .time-picker-box-container .inner-element input {
-          border: 1px solid black; }
-      html body form.cart .time-picker-box-container .left-element {
-        width: 100%;
-        max-width: 385px; }
-      html body form.cart .time-picker-box-container .center-element {
-        display: none; }
-      html body form.cart .time-picker-box-container .right-element {
-        width: 100%;
-        max-width: 770px;
-        margin-left: 10px;
-        margin-top: 0; }
-    html body form.cart .participant_section .participant_inner_section {
-      display: flex; }
-      html body form.cart .participant_section .participant_inner_section .persons-title {
-        width: auto; }
-      html body form.cart .participant_section .participant_inner_section .person-value {
-        margin-left: 40px; }
-        html body form.cart .participant_section .participant_inner_section .person-value .input-person-minus, html body form.cart .participant_section .participant_inner_section .person-value .input-person-plus {
-          color: black !important;
-          border: 1px solid black !important;
-          padding: 0px 6px; }
-        html body form.cart .participant_section .participant_inner_section .person-value input[type="number"] {
-          border: 1px solid black !important;
-          padding: 0 10px !important;
-          width: 50px !important; }
-    html body form.cart .room-detail-selector {
-      position: relative;
-      width: auto; }
-      html body form.cart .room-detail-selector:after {
-        font-family: 'FontAwesome';
-        content: '\f078';
-        position: absolute;
-        border: 1px solid black;
-        right: 0;
-        padding: 5px 8px; }
-      html body form.cart .room-detail-selector select.phive_book_resources {
-        -o-appearance: none;
-        -webkit-appearance: none;
-        -ms-appearance: none;
-        appearance: none;
-        border: 1px solid black;
-        border-radius: 0;
-        padding: 5px 50px 5px 25px; }
-    html body form.cart .booking-info-wraper {
-      background-color: #CDE2BC !important; }
-      html body form.cart .booking-info-wraper p {
-        font-family: Arsenal, Helvetica;
-        color: #322b2a !important; }
-    html body form.cart #wcpa-header-1585481416805 h2 {
-      font-size: 24px; }
-    html body form.cart .wcpa_checkbox {
-      width: 230px; }
-    html body form.cart .wcpa_clearSelection {
-      text-align: left;
-      margin-left: 28px;
-      margin-top: 15px; }
-    html body form.cart .wcpa_price {
-      text-align: left !important; }
-    html body form.cart #wcpa-checkbox-group-1585481566115 {
-      padding-left: 5%;
-      border-left: 2px solid #CDE2BC; }
-    html body form.cart #wcpa-header-1585481688043 h2 {
-      font-size: 24px; }
-    html body form.cart #text-1585079793079, html body form.cart #text-1585079825498, html body form.cart #text-1585481718216, html body form.cart #text-1585481728609 {
-      border: 1px solid black !important;
-      border-radius: 0; }
-    html body form.cart .wcpa_price_summary {
-      display: none; }
-    html body form.cart .book-btn-wrap {
-      display: flex; }
-      html body form.cart .book-btn-wrap button.single_add_to_cart_button {
-        width: 50%;
-        font-family: 'Quicksand';
-        margin: 0 !important;
-        border: 0;
-        cursor: pointer;
-        padding: 10px; }
-        @media screen and (min-width: 768px) {
-          html body form.cart .book-btn-wrap button.single_add_to_cart_button {
-            font-size: 26px; } }
-      html body form.cart .book-btn-wrap #btnAddtoOrder {
-        background-color: #CDE2BC !important;
-        color: #322B2A !important; }
-      html body form.cart .book-btn-wrap #btnProductInqery {
-        background-color: #649A9E !important;
-        color: white; }
 
 html #index section.banner {
   width: 100%;
@@ -410,8 +299,9 @@ html #index section.workspace {
           justify-content: space-between;
           flex-wrap: wrap; } }
 html #index section.map {
-  height: 500px;
-  background-image: url(../img/map.png);
+  height: 800px;
+  
+  /*background-image: url(../img/map.png);*/
   background-size: cover; }
   @media screen and (min-width: 992px) {
     html #index section.map {
@@ -1610,6 +1500,7 @@ html .product-page section.banner {
             font-size: 25px; } }
       html .product-page section.banner .frame .information .price {
         padding: 15px 0;
+        border-bottom: 1px solid #649A9E;
         font-family: 'Seravek'; }
         html .product-page section.banner .frame .information .price .price-type {
           padding: 5px 0;
@@ -1617,6 +1508,24 @@ html .product-page section.banner {
           html .product-page section.banner .frame .information .price .price-type img {
             display: inline-block;
             margin-right: 12px; }
+      html .product-page section.banner .frame .information .date {
+        padding: 15px 0 15px 40px;
+        font-family: 'Seravek'; }
+        html .product-page section.banner .frame .information .date .check .date-picker {
+          width: 100%;
+          border: 1px solid #b3b3b3;
+          border-radius: 9px;
+          height: 40px;
+          position: relative;
+          cursor: pointer; }
+          html .product-page section.banner .frame .information .date .check .date-picker:hover {
+            background-color: #b3b3b338; }
+          html .product-page section.banner .frame .information .date .check .date-picker:before {
+            position: absolute;
+            content: url(../img/icon/date.png);
+            left: -38px; }
+        html .product-page section.banner .frame .information .date .check:last-child {
+          margin: 15px 0; }
       html .product-page section.banner .frame .information .button-wrap {
         display: flex;
         height: 72px;
@@ -1646,8 +1555,7 @@ html .product-page section.banner {
         html .product-page section.banner .frame .information {
           width: 422px;
           height: 639px;
-          flex: none;
-          padding: 5% 3%; } }
+          flex: none; } }
     @media screen and (min-width: 1200px) {
       html .product-page section.banner .frame {
         display: flex; } }
@@ -2473,53 +2381,6 @@ html #login .main {
         display: flex;
         max-width: 1256px;
         padding: 80px 0; } }
-  html #login .main .message {
-    width: 90%;
-    margin: auto;
-    background-color: white;
-    max-width: 1254px;
-    padding: 15% 20px; }
-    html #login .main .message .title {
-      font-size: 28px;
-      text-transform: uppercase;
-      text-align: center; }
-      @media screen and (min-width: 768px) {
-        html #login .main .message .title {
-          font-size: 35px; } }
-    html #login .main .message .seperator {
-      position: relative;
-      border-bottom: 2px solid #649A9E;
-      width: 166px;
-      margin: 20px auto 50px; }
-      html #login .main .message .seperator .square {
-        width: 16px;
-        height: 16px;
-        background-color: #649A9E;
-        transform: rotate(45deg);
-        margin: auto;
-        box-shadow: 0px 0px 0px 5px white;
-        margin-bottom: -9px; }
-    html #login .main .message img.img-yes {
-      width: 60px;
-      margin: auto; }
-      @media screen and (min-width: 768px) {
-        html #login .main .message img.img-yes {
-          width: 84px;
-          margin-top: 55px; } }
-    html #login .main .message .content {
-      text-align: center;
-      margin: auto;
-      margin-top: 50px;
-      max-width: 375px; }
-      html #login .main .message .content p {
-        line-height: 1.3em; }
-      @media screen and (min-width: 768px) {
-        html #login .main .message .content {
-          font-size: 26px;
-          max-width: 500px; } }
-    @media screen and (min-width: 768px) {
-      html #login .main .message {
-        padding: 5% 20px 20% 20px; } }
   @media screen and (min-width: 992px) {
     html #login .main {
       display: flex;

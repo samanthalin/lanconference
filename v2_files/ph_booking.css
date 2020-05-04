@@ -1,0 +1,98 @@
+/*******************************************
+****** BOOKING SELECTION (CART PAGE)********
+********************************************/
+
+/*To avoid selection of text on double click*/
+.ph-calendar-date {
+	-webkit-user-select: none; /* webkit (safari, chrome) browsers */
+	-moz-user-select: none; /* mozilla browsers */
+	-khtml-user-select: none; /* webkit (konqueror) browsers */
+	-ms-user-select: none; /* IE10+ */
+}
+
+.persons-title {
+	width: 40%;
+	float: left;
+	/*margin: 3px 0px;*/
+}
+.person-value {
+	display: inline-block;
+	width: 40%;
+}
+.extra-resources {
+	margin: 10px 0px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.input-person{
+	width: 70px;
+	/* margin: 5px; */
+	border: 1px solid #dcdcdc;
+	margin: 0;
+	box-shadow: none !important;
+}
+
+.input-disabled{
+	opacity: 0.3!important;
+	filter: alpha(opacity=0.3)!important;
+}
+.rtl .persons-title {
+    float: right !important;
+}
+
+
+/* for plus minus with participants */
+
+.input-person::-webkit-outer-spin-button,
+.input-person::-webkit-inner-spin-button 
+{
+  	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[name=phive_book_persons]
+{
+  	-webkit-appearance: none;
+  	margin: 0;
+}
+
+.input-person-minus, .input-person-plus
+{
+	padding: 0.3em 0.6em;
+	outline: none !important;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+	font-weight: normal;
+	font-weight: bolder !important;
+	text-decoration: none !important;
+	color: #539bbe !important;
+	border: 1px solid #539bbe !important;
+}
+
+.button-group-container {
+	width: max-content;
+    padding: 0%;
+	margin: 10px;
+}
+
+input.input-person
+{
+	background : none !important;
+	text-align: center !important;
+	width: 30px !important;
+	outline: none !important;
+	border: none !important;
+	color: #777 !important;
+	padding:0 !important;
+	display: inline !important; 
+}
+
+.theme-rosewood select.booking_month
+{
+	visibility:visible !important;
+	width: max-content;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	-webkit-appearance: button;
+}

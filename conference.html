@@ -58,16 +58,6 @@
 						<img src="img/icon/time_full.png" alt="">660 Euro/Day
 					</div>
 				</div>
-				<div class="date">
-					<div class="check">
-						<div class="lable">Check in:</div>
-						<div class="date-picker"></div>
-					</div>
-					<div class="check">
-						<div class="lable">Check out:</div>
-						<div class="date-picker"></div>
-					</div>
-				</div>
 				<div class="button-wrap">
 					<a href="shoppingcart.html" class="button book">Book now</a>
 					<a href="inquery.html" class="button inquery">Inquery <i class="fa fa-exclamation-circle"></i></a>
@@ -273,6 +263,484 @@
 		</div>
 	</section>
 	
+	<form class="cart" action="https://mooo.work/bookingcalendar/product/conference-room/" method="post" enctype="multipart/form-data">
+		<div class="booking-wraper">
+			<div>
+				<input type="hidden" class="phive_booked_price" name="phive_booked_price" id="phive_booked_price" value="">
+				<input type="hidden" id="phive_product_id" value="181">
+				
+				<input type="hidden" name="phive_book_from_date" class="ph-date-from ph-datepicker" value="">
+				<input type="hidden" name="phive_book_to_date" class="ph-datepicker ph-date-to" value="">
+
+				<input type="hidden" id="plugin_dir_url" value="https://mooo.work/bookingcalendar/wp-content/plugins/ph-bookings-appointments-woocommerce-premium">
+				<!-- for addon -->
+				<input type="hidden" class="display_time_to" name="phive_display_time_to" value="">
+				<input type="hidden" class="display_time_from" name="phive_display_time_from" value="">
+				<input type="hidden" class="time_offset" value="0">
+				<input type="hidden" class="from_text" value="">
+				<input type="hidden" class="to_text" value="">
+				<input type="hidden" class="book_interval_period" value="hour">
+				<input type="hidden" class="book_interval" value="1">
+				<input type="hidden" id="ph_booking_wp_date_format" value="F j, Y">
+				<input type="hidden" id="ph_booking_wp_time_format" value="g:i a">
+				<input type="hidden" id="phive_booking_maximum_number_of_allowed_participant" value="30">
+				<input type="hidden" id="phive_booking_minimum_number_of_required_participant" value="1">
+				<input type="hidden" class="shop_opening_time" value="09:00">
+				<input type="hidden" class="shop_closing_time" value="22:00">
+				<input type="hidden" class="across_the_day_booking" value="no">
+				<input type="hidden" name="ph_booking_addon_data" class="ph_booking_addon_data" value="">
+				<input type="hidden" name="ph_booking_product_addon_data" class="ph_booking_product_addon_data" value="">
+				<input type="hidden" id="auto_select_min_block" name="auto_select_min_block" class="auto_select_min_block" value="yes">
+				<input type="hidden" id="end_time_display" name="end_time_display" class="end_time_display" value="no">
+				<input type="hidden" id="calendar_design" name="calendar_design" class="calendar_design" value="3">
+				<input type="hidden" id="reset_action" name="reset_action" class="reset_action" value="1">
+			</div>
+			<div>
+				<div class="time-picker-wraper">
+    				<style type="text/css">
+					/*new design*/
+
+						/*.ph-calendar-month{
+							background: black !important;
+						}*/
+						
+						.ph-calendar-box-container .inner-element input:focus{
+						  background: #3f9dbc !important;
+						}
+						.ph-calendar-weekdays{
+							background: white !important;
+						}
+						.ph-calendar-days{
+							background: white !important;
+						}
+						li.ph-calendar-date.mouse_hover,li.ph-calendar-date:hover {
+							background: #1d3268 !important;
+						}
+						li.ph-calendar-date.de-active:hover{
+							background: none !important;
+						}
+												.button.alt
+						{
+							background-color: #1d3268 !important;
+							color: #ffffff !important;
+						}
+						.booking-info-wraper, .booking-info-wraper p 
+						{
+							color: #ffffff !important;
+						}
+						.ph-calendar-days li,.time-picker-wraper #ph-calendar-time li.ph-calendar-date
+						{
+							color: #1d3268;
+						}
+						.ph-calendar-weekdays li
+						{
+							color: #1d3268;
+						}
+						.span-month, .span-year,.ph-prev,.ph-next
+						{
+							color: #1d3268 !important;
+						}
+						.time-picker{
+							margin-top:1em !important;
+						}
+						.time-picker-wraper #ph-calendar-time li.ph-calendar-date
+						{
+							background: white;
+						}
+						.time-picker-wraper #ph-calendar-time li.ph-calendar-date:hover,.time-picker-wraper #ph-calendar-time li.ph-calendar-date.mouse_hover {
+						    background: #1d3268;
+						    color: white; 
+						}
+
+						.ph-calendar-container {
+						   border: 1px solid #cccccc;
+						   background: white;
+						}
+
+						.ph-calendar-month {
+						    border-bottom: 1px solid #cccccc;
+						}
+
+						.ph-calendar-month {
+						     background: #ffffff !important; 
+						}
+
+						ul.ph-calendar-weekdays {
+						    border-bottom: 1px solid #cccccc;
+						    background: #fff !important;
+						}
+
+						.ph-calendar-days {
+						    background: #fff !important;
+						}
+
+						.time-picker {
+						     margin-top: 0px !important; 
+						    /*border-top: 1px solid #cccccc;*/
+						}
+						.booking-info-wraper {
+							background: #1d3268 !important;
+							/*background: #3f9dbc !important;*/
+						}
+						li.ph-calendar-date.mouse_hover, li.ph-calendar-date:hover {
+						    background: #1d3268 !important;
+						    color: white;
+						    /*background: #3f9dbc !important;*/
+						}
+						li.ph-calendar-date.booking-full.de-active:hover{
+							background: #dadada !important;
+						}
+						.booking-full{
+							background: #dadada !important;
+						}
+						.timepicker-selected-date, .selected-date{
+							background: #1d3268 !important;
+							border:  0px solid #1d3268 !important;
+						}
+
+			            .single-product div.product form.cart
+						{
+							border: 1px solid #cccccc;
+							padding: 10px;
+							border-radius: 5px;
+						}
+					</style>
+					<input type="hidden" id="calender_type" value="time">
+					<input type="hidden" id="ph_display_booking_capacity" value="no">
+					<input type="hidden" id="book_interval_type" value="customer_choosen">
+					<input type="hidden" id="book_interval" value="1">
+					<input type="hidden" id="book_min_allowed_slot" value="">
+					<input type="hidden" id="book_max_allowed_slot" value="">
+					<input type="hidden" name="persons_as_booking" id="persons_as_booking" value="no">
+					<div class="extra-resources asset-section">
+						<label>Equipment:</label>
+						<select class="input-assets phive_book_assets" name="phive_book_assets">
+							<option value="extra-t5e7a521b99e99">Entire Venue</option>
+							<option value="extra-c5e7a521b99ea1">Meeting Room</option>
+							<option value="pens-an5e7a521b99ea7">Lobby</option>
+							<option value="flipcha5e7a521b99eac">Conference Room</option>
+							<option value="project5e7a521b99eb1">Kitchen</option>
+						</select>
+					</div>
+					<input type="hidden" id="min_avail_date" value="">
+					<input type="hidden" id="max_avail_date" value="">
+					<div class="ph-calendar-box-container time-picker-box-container enable-range">
+						<div class="left-element inner-element across-day-disabled">
+							<input class="element_from_date" type="text" name="" placeholder="Start Date" value="" readonly="readonly">
+							<img class="date_image element_from_date_image" src="./v2_files/calendar.png">
+							
+						</div>
+						<div class="center-element ">
+							<!-- <span class="dashicons dashicons-arrow-down-alt"></span> -->
+						</div>
+						<div class="right-element inner-element across-day-disabled">
+							<input class="element_from_time" type="text" name="" placeholder="Start Time" value="" readonly="readonly">
+							<img class="time_image element_from_time_image" src="./v2_files/clock.png">
+							<span class="to-arrow dashicons dashicons-arrow-right-alt2"></span>
+							<!-- <input class="element_to_date" type="text" name="" placeholder="End Date" readonly="readonly" style="display:none;" /> -->
+							<input class="element_to_time" type="text" name="" placeholder="End Time" value="" readonly="readonly">
+							<img class="time_image element_to_time_image" src="./v2_files/clock.png">		
+						</div>
+					</div>
+					<div class="ph-calendar-container" style="display: none;">
+						<div class="time-calendar-date-section">
+							<div class="ph-calendar-month">			
+								<ul>
+									<li class="ph-prev">❮</li>
+									<li class="ph-next">❯</li>
+									<li class="ph-month">
+										<div class="month-year-wraper">
+											<span class="span-month">April</span>
+											<span class="span-year">2020</span>
+
+											<input type="text" readonly="" size="12" class="callender-month" value="April" style="opacity: 0 !important; filter: alpha(opacity=0)!important;">
+											<input type="text" readonly="" size="5" class="callender-year" value="2020" style="opacity: 0 !important; filter: alpha(opacity=0)!important;">
+										</div>
+									</li>
+								</ul>
+							</div>
+							<ul class="ph-calendar-weekdays ">
+								<li>Mo</li><li>Tu</li><li>We</li><li>Th</li><li>Fr</li><li>Sa</li><li>Su</li>
+							</ul>
+							<ul class="ph-calendar-days ph-ul-date ph_booking_no_place_left" id="ph-calendar-days">
+								<div class="ph-calendar-overlay" id="ph-calendar-overlay" style="display:none"></div>
+								<li class="ph-calendar-date" style="min-height: 0px;"></li>
+								<li class="ph-calendar-date" style="min-height: 0px;"></li>
+								<li class="ph-calendar-date booking-disabled de-active" style="min-height: 0px;">  <input type="hidden" class="callender-full-date" value="2020-04-01"><span class="ph_calendar_day">01</span></li>
+								<li class="ph-calendar-date booking-disabled de-active" style="min-height: 0px;">  <input type="hidden" class="callender-full-date" value="2020-04-02"><span class="ph_calendar_day">02</span></li>
+								<li class="ph-calendar-date booking-disabled de-active" style="min-height: 0px;">  <input type="hidden" class="callender-full-date" value="2020-04-03"><span class="ph_calendar_day">03</span></li>
+								<li class="ph-calendar-date booking-disabled de-active" style="min-height: 0px;">  <input type="hidden" class="callender-full-date" value="2020-04-04"><span class="ph_calendar_day">04</span></li>
+								<li class="ph-calendar-date booking-disabled de-active" style="min-height: 0px;">  <input type="hidden" class="callender-full-date" value="2020-04-05"><span class="ph_calendar_day">05</span></li>
+								<li class="ph-calendar-date booking-disabled de-active" style="min-height: 0px;">  <input type="hidden" class="callender-full-date" value="2020-04-06"><span class="ph_calendar_day">06</span></li>
+								<li class="ph-calendar-date booking-disabled de-active" style="min-height: 0px;">  <input type="hidden" class="callender-full-date" value="2020-04-07"><span class="ph_calendar_day">07</span></li>
+								<li class="ph-calendar-date booking-disabled de-active" style="min-height: 0px;">  <input type="hidden" class="callender-full-date" value="2020-04-08"><span class="ph_calendar_day">08</span></li>
+								<li class="ph-calendar-date booking-disabled de-active" style="min-height: 0px;">  <input type="hidden" class="callender-full-date" value="2020-04-09"><span class="ph_calendar_day">09</span></li>
+								<li class="ph-calendar-date booking-disabled de-active" style="min-height: 0px;">  <input type="hidden" class="callender-full-date" value="2020-04-10"><span class="ph_calendar_day">10</span></li>
+								<li class="ph-calendar-date today" style="min-height: 0px;">  <input type="hidden" class="callender-full-date" value="2020-04-11"><span class="ph_calendar_day">11</span></li>
+								<li class="ph-calendar-date" style="min-height: 0px;">  <input type="hidden" class="callender-full-date" value="2020-04-12"><span class="ph_calendar_day">12</span></li>
+								<li class="ph-calendar-date" style="min-height: 0px;">  <input type="hidden" class="callender-full-date" value="2020-04-13"><span class="ph_calendar_day">13</span></li>
+								<li class="ph-calendar-date" style="min-height: 0px;">  <input type="hidden" class="callender-full-date" value="2020-04-14"><span class="ph_calendar_day">14</span></li>
+								<li class="ph-calendar-date" style="min-height: 0px;">  <input type="hidden" class="callender-full-date" value="2020-04-15"><span class="ph_calendar_day">15</span></li>
+								<li class="ph-calendar-date" style="min-height: 0px;">  <input type="hidden" class="callender-full-date" value="2020-04-16"><span class="ph_calendar_day">16</span></li>
+								<li class="ph-calendar-date" style="min-height: 0px;">  <input type="hidden" class="callender-full-date" value="2020-04-17"><span class="ph_calendar_day">17</span></li>
+								<li class="ph-calendar-date" style="min-height: 0px;">  <input type="hidden" class="callender-full-date" value="2020-04-18"><span class="ph_calendar_day">18</span></li>
+								<li class="ph-calendar-date" style="min-height: 0px;">  <input type="hidden" class="callender-full-date" value="2020-04-19"><span class="ph_calendar_day">19</span></li>
+								<li class="ph-calendar-date" style="min-height: 0px;">  <input type="hidden" class="callender-full-date" value="2020-04-20"><span class="ph_calendar_day">20</span></li>
+								<li class="ph-calendar-date" style="min-height: 0px;">  <input type="hidden" class="callender-full-date" value="2020-04-21"><span class="ph_calendar_day">21</span></li>
+								<li class="ph-calendar-date" style="min-height: 0px;"><input type="hidden" class="callender-full-date" value="2020-04-22"><span class="ph_calendar_day">22</span></li><li class="ph-calendar-date" style="min-height: 0px;"><input type="hidden" class="callender-full-date" value="2020-04-23"><span class="ph_calendar_day">23</span></li>
+								<li class="ph-calendar-date" style="min-height: 0px;">  <input type="hidden" class="callender-full-date" value="2020-04-24"><span class="ph_calendar_day">24</span></li>
+								<li class="ph-calendar-date" style="min-height: 0px;">  <input type="hidden" class="callender-full-date" value="2020-04-25"><span class="ph_calendar_day">25</span></li>
+								<li class="ph-calendar-date" style="min-height: 0px;">  <input type="hidden" class="callender-full-date" value="2020-04-26"><span class="ph_calendar_day">26</span></li>
+								<li class="ph-calendar-date" style="min-height: 0px;">  <input type="hidden" class="callender-full-date" value="2020-04-27"><span class="ph_calendar_day">27</span></li>
+								<li class="ph-calendar-date" style="min-height: 0px;">  <input type="hidden" class="callender-full-date" value="2020-04-28"><span class="ph_calendar_day">28</span></li>
+								<li class="ph-calendar-date" style="min-height: 0px;">  <input type="hidden" class="callender-full-date" value="2020-04-29"><span class="ph_calendar_day">29</span></li>
+								<li class="ph-calendar-date" style="min-height: 0px;">  <input type="hidden" class="callender-full-date" value="2020-04-30"><span class="ph_calendar_day">30</span></li>
+							</ul>
+						</div>
+						<div class="time-picker" style="margin-top: 1em !important; display: none;">
+							<ul class="ph-calendar-days ph-ul-time ph_booking_no_place_left" id="ph-calendar-time" style="display:none;">
+							</ul>
+						</div>
+					</div>
+					<div class="extra-resources participant_section">
+						<div class="participant_inner_section">
+							<div class="persons-title">
+								<label class="label-person">Participant(s)</label>
+							</div>
+							<div class="person-value button-group-container">
+								<a href="https://mooo.work/bookingcalendar/product/conference-room/?fbclid=IwAR3xngxRW4ri7-jrB8qwKBHgGLFBaxfp--VlKEW_6-ZY8s2LCUYzqxa5gxw#" class="input-person-minus">−</a>
+								<input type="number" name="phive_book_persons[]" class="input-person shipping-price-related" rule-key="persons-0" value="1" min="1" max="30" last-val="1" required="" data-name="Participant(s)">
+								<a href="https://mooo.work/bookingcalendar/product/conference-room/?fbclid=IwAR3xngxRW4ri7-jrB8qwKBHgGLFBaxfp--VlKEW_6-ZY8s2LCUYzqxa5gxw#" class="input-person-plus">+</a>
+							</div>
+						</div>
+						<div class="participant_count_error participant_count_error_persons-0"></div>
+					</div>		
+					<div class="extra-resources">
+						<div style="overflow:hidden">
+							<div class="resources-wraper">
+								<div>
+									<input type="hidden" value="single" class="resources_type">
+									<div class="persons-title">
+										<label class="label-resources">Room details</label>
+									</div>
+									<div class="person-value">
+										<select class="phive_book_resources shipping-price-related" name="phive_book_resources">
+											<option selected="" value="Conference room 1/4">Conference room 1/4</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div> 
+					</div>
+				</div>
+				<div class="booking-info-wraper">
+					<p id="booking_info_text" style="text-align:center;"> 
+								Please Pick a Date	</p>
+					<p id="booking_price_text"> </p>
+				</div>
+			</div>
+		</div>
+        <style type="text/css">
+            .booking_month
+            {
+                                            background: #539bbe;
+                color: #ffffff !important;
+                border: none;
+            }
+            .callender-month,.callender-year{
+				width: 0px;
+			}
+        </style>    
+        <div class="wcpa_form_outer" data-product="{&quot;wc_product_price&quot;:0,&quot;wc_product_regular_price&quot;:0,&quot;wc_product_price_default&quot;:0,&quot;product_title&quot;:&quot;&quot;,&quot;con_unit&quot;:1,&quot;product_id&quot;:181,&quot;is_variable&quot;:false,&quot;stock_status&quot;:&quot;instock&quot;,&quot;stock_quantity&quot;:null,&quot;product_attributes&quot;:[],&quot;product_cfs&quot;:[]}" data-rules="{&quot;pric_overide_base_price&quot;:false,&quot;pric_overide_base_price_if_gt_zero&quot;:false,&quot;pric_cal_option_once&quot;:false,&quot;pric_use_as_fee&quot;:false,&quot;bind_quantity&quot;:false,&quot;quantity_bind_formula&quot;:false}">
+        	<input type="hidden" name="wcpa_field_key_checker" value="wcpa">
+        	<div class="wcpa_row">
+        		<div class="wcpa_form_item wcpa_type_header wcpa_form_id_208 " id="wcpa-header-1585481416805" data-type="header">
+        			<h2>Extras</h2>
+        		</div>
+        	</div>
+        	<div class="wcpa_row">
+        		<div class="wcpa_form_item wcpa_type_checkbox-group wcpa_form_id_208 wcpa-col-3 " id="wcpa-checkbox-group-1585079682971" data-type="checkbox-group">
+        			<label for="checkbox-group-1585079682971">Catering</label>
+        			<div class="checkbox-group checkbox-inline ">
+        				<div class="wcpa_checkbox">
+                			<input name="checkbox-group-1585079682971[0]" class="wcpa_has_price " id="checkbox-group-1585079682971_1_0" value="water" type="checkbox" data-price="{&quot;priceoptions&quot;:&quot;different_for_all&quot;,&quot;type&quot;:&quot;checkbox-group&quot;,&quot;value&quot;:0,&quot;pricingType&quot;:&quot;fixed&quot;,&quot;excl_chars_frm_length&quot;:&quot;&quot;,&quot;excl_chars_frm_length_is_regex&quot;:false,&quot;taxpu&quot;:1,&quot;con_unit&quot;:1,&quot;is_fee&quot;:false,&quot;is_show_price&quot;:false}">
+                       		<label for="checkbox-group-1585079682971_1_0"><span class="wcpa_check"></span>Water (€0.00)</label>
+                    	</div>
+	                    <div class="wcpa_checkbox">
+	                		<input name="checkbox-group-1585079682971[1]" class="wcpa_has_price " id="checkbox-group-1585079682971_1_1" value="Kafee and tea" type="checkbox" data-price="{&quot;priceoptions&quot;:&quot;different_for_all&quot;,&quot;type&quot;:&quot;checkbox-group&quot;,&quot;value&quot;:3,&quot;pricingType&quot;:&quot;fixed&quot;,&quot;excl_chars_frm_length&quot;:&quot;&quot;,&quot;excl_chars_frm_length_is_regex&quot;:false,&quot;taxpu&quot;:1,&quot;con_unit&quot;:1,&quot;is_fee&quot;:false,&quot;is_show_price&quot;:false}">
+							<label for="checkbox-group-1585079682971_1_1"><span class="wcpa_check"></span>Kafee and tea (€3.00)</label>
+						</div>
+						<div class="wcpa_checkbox">
+	               			<input name="checkbox-group-1585079682971[2]" class="wcpa_has_price " id="checkbox-group-1585079682971_1_2" value="Drink package" type="checkbox" data-price="{&quot;priceoptions&quot;:&quot;different_for_all&quot;,&quot;type&quot;:&quot;checkbox-group&quot;,&quot;value&quot;:6,&quot;pricingType&quot;:&quot;fixed&quot;,&quot;excl_chars_frm_length&quot;:&quot;&quot;,&quot;excl_chars_frm_length_is_regex&quot;:false,&quot;taxpu&quot;:1,&quot;con_unit&quot;:1,&quot;is_fee&quot;:false,&quot;is_show_price&quot;:false}">
+							<label for="checkbox-group-1585079682971_1_2"><span class="wcpa_check"></span>Drink package (€6.00)</label></div><div class="wcpa_checkbox">
+	                		<input name="checkbox-group-1585079682971[3]" class="wcpa_has_price " id="checkbox-group-1585079682971_1_3" value=" Breakfast" type="checkbox" data-price="{&quot;priceoptions&quot;:&quot;different_for_all&quot;,&quot;type&quot;:&quot;checkbox-group&quot;,&quot;value&quot;:5,&quot;pricingType&quot;:&quot;fixed&quot;,&quot;excl_chars_frm_length&quot;:&quot;&quot;,&quot;excl_chars_frm_length_is_regex&quot;:false,&quot;taxpu&quot;:1,&quot;con_unit&quot;:1,&quot;is_fee&quot;:false,&quot;is_show_price&quot;:false}">
+							<label for="checkbox-group-1585079682971_1_3"><span class="wcpa_check"></span> Breakfast (€5.00)</label>
+						</div>
+						<div class="wcpa_checkbox">
+	                		<input name="checkbox-group-1585079682971[4]" class="wcpa_has_price " id="checkbox-group-1585079682971_1_4" value="Lunch budget" type="checkbox" data-price="{&quot;priceoptions&quot;:&quot;different_for_all&quot;,&quot;type&quot;:&quot;checkbox-group&quot;,&quot;value&quot;:12,&quot;pricingType&quot;:&quot;fixed&quot;,&quot;excl_chars_frm_length&quot;:&quot;&quot;,&quot;excl_chars_frm_length_is_regex&quot;:false,&quot;taxpu&quot;:1,&quot;con_unit&quot;:1,&quot;is_fee&quot;:false,&quot;is_show_price&quot;:false}" "="">
+							<label for="checkbox-group-1585079682971_1_4"><span class="wcpa_check"></span>Lunch budget (€12.00)</label>
+						</div>
+						<div class="wcpa_checkbox">
+	                		<input name="checkbox-group-1585079682971[5]" class="wcpa_has_price " id="checkbox-group-1585079682971_1_5" value="Lunch standard" type="checkbox" data-price="{&quot;priceoptions&quot;:&quot;different_for_all&quot;,&quot;type&quot;:&quot;checkbox-group&quot;,&quot;value&quot;:18,&quot;pricingType&quot;:&quot;fixed&quot;,&quot;excl_chars_frm_length&quot;:&quot;&quot;,&quot;excl_chars_frm_length_is_regex&quot;:false,&quot;taxpu&quot;:1,&quot;con_unit&quot;:1,&quot;is_fee&quot;:false,&quot;is_show_price&quot;:false}" "="">
+	                        <label for="checkbox-group-1585079682971_1_5"><span class="wcpa_check"></span>Lunch standard (€18.00)</label>
+	                    </div>
+	                    <div class="wcpa_checkbox">
+	                		<input name="checkbox-group-1585079682971[6]" class="wcpa_has_price " id="checkbox-group-1585079682971_1_6" value="Afternoon snack" type="checkbox" data-price="{&quot;priceoptions&quot;:&quot;different_for_all&quot;,&quot;type&quot;:&quot;checkbox-group&quot;,&quot;value&quot;:6,&quot;pricingType&quot;:&quot;fixed&quot;,&quot;excl_chars_frm_length&quot;:&quot;&quot;,&quot;excl_chars_frm_length_is_regex&quot;:false,&quot;taxpu&quot;:1,&quot;con_unit&quot;:1,&quot;is_fee&quot;:false,&quot;is_show_price&quot;:false}" "="">
+	                        <label for="checkbox-group-1585079682971_1_6"><span class="wcpa_check"></span>Afternoon snack (€6.00)</label></div><div class="wcpa_checkbox">
+	                		<input name="checkbox-group-1585079682971[7]" class="wcpa_has_price " id="checkbox-group-1585079682971_1_7" value="Dinner" type="checkbox" data-price="{&quot;priceoptions&quot;:&quot;different_for_all&quot;,&quot;type&quot;:&quot;checkbox-group&quot;,&quot;value&quot;:35,&quot;pricingType&quot;:&quot;fixed&quot;,&quot;excl_chars_frm_length&quot;:&quot;&quot;,&quot;excl_chars_frm_length_is_regex&quot;:false,&quot;taxpu&quot;:1,&quot;con_unit&quot;:1,&quot;is_fee&quot;:false,&quot;is_show_price&quot;:false}" "="">
+							<label for="checkbox-group-1585079682971_1_7"><span class="wcpa_check"></span>Dinner (€35.00)</label>
+						</div>
+						<a href="https://mooo.work/bookingcalendar/product/conference-room/?fbclid=IwAR3xngxRW4ri7-jrB8qwKBHgGLFBaxfp--VlKEW_6-ZY8s2LCUYzqxa5gxw#" class="wcpa_clearSelection" data-element="wcpa-checkbox-group-1585079682971">Clear selection</a>
+					</div>
+					<span class="wcpa_priceouter">
+						<span class="wcpa_price">
+							<span class="woocommerce-Price-currencySymbol">€</span>
+							<span class="price_value">0.00</span>
+						</span>
+					</span>
+				</div>
+				<div class="wcpa_form_item wcpa_type_checkbox-group wcpa_form_id_208 wcpa-col-3 " id="wcpa-checkbox-group-1585481566115" data-type="checkbox-group">
+					<label for="checkbox-group-1585481566115">Equipment</label>
+					<div class="checkbox-group checkbox-inline ">
+						<div class="wcpa_checkbox">
+	                		<input name="checkbox-group-1585481566115[0]" class="wcpa_has_price " id="checkbox-group-1585481566115_2_0" value="Extra table" type="checkbox" data-price="{&quot;priceoptions&quot;:&quot;different_for_all&quot;,&quot;type&quot;:&quot;checkbox-group&quot;,&quot;value&quot;:0,&quot;pricingType&quot;:&quot;fixed&quot;,&quot;excl_chars_frm_length&quot;:&quot;&quot;,&quot;excl_chars_frm_length_is_regex&quot;:false,&quot;taxpu&quot;:1,&quot;con_unit&quot;:1,&quot;is_fee&quot;:false,&quot;is_show_price&quot;:false}" "="">
+	                    	<label for="checkbox-group-1585481566115_2_0"><span class="wcpa_check"></span>Extra table (€0.00)</label>
+	                	</div>
+	                	<div class="wcpa_checkbox">
+	               			<input name="checkbox-group-1585481566115[1]" class="wcpa_has_price " id="checkbox-group-1585481566115_2_1" value="Extra chair" type="checkbox" data-price="{&quot;priceoptions&quot;:&quot;different_for_all&quot;,&quot;type&quot;:&quot;checkbox-group&quot;,&quot;value&quot;:0,&quot;pricingType&quot;:&quot;fixed&quot;,&quot;excl_chars_frm_length&quot;:&quot;&quot;,&quot;excl_chars_frm_length_is_regex&quot;:false,&quot;taxpu&quot;:1,&quot;con_unit&quot;:1,&quot;is_fee&quot;:false,&quot;is_show_price&quot;:false}" "="">
+	                    	<label for="checkbox-group-1585481566115_2_1"><span class="wcpa_check"></span>Extra chair (€0.00)</label>
+	                	</div>
+	                	<div class="wcpa_checkbox">
+	                		<input name="checkbox-group-1585481566115[2]" class="wcpa_has_price " id="checkbox-group-1585481566115_2_2" value="Pens and papers" type="checkbox" data-price="{&quot;priceoptions&quot;:&quot;different_for_all&quot;,&quot;type&quot;:&quot;checkbox-group&quot;,&quot;value&quot;:0,&quot;pricingType&quot;:&quot;fixed&quot;,&quot;excl_chars_frm_length&quot;:&quot;&quot;,&quot;excl_chars_frm_length_is_regex&quot;:false,&quot;taxpu&quot;:1,&quot;con_unit&quot;:1,&quot;is_fee&quot;:false,&quot;is_show_price&quot;:false}" "="">
+							<label for="checkbox-group-1585481566115_2_2"><span class="wcpa_check"></span>Pens and papers (€0.00)</label>
+						</div>
+						<div class="wcpa_checkbox">
+			            	<input name="checkbox-group-1585481566115[3]" class="wcpa_has_price " id="checkbox-group-1585481566115_2_3" value="Flipchart" type="checkbox" data-price="{&quot;priceoptions&quot;:&quot;different_for_all&quot;,&quot;type&quot;:&quot;checkbox-group&quot;,&quot;value&quot;:6,&quot;pricingType&quot;:&quot;fixed&quot;,&quot;excl_chars_frm_length&quot;:&quot;&quot;,&quot;excl_chars_frm_length_is_regex&quot;:false,&quot;taxpu&quot;:1,&quot;con_unit&quot;:1,&quot;is_fee&quot;:false,&quot;is_show_price&quot;:false}" "="">
+			                    <label for="checkbox-group-1585481566115_2_3"><span class="wcpa_check"></span>Flipchart (€6.00)</label>
+			            </div>
+			            <div class="wcpa_checkbox">
+			                <input name="checkbox-group-1585481566115[4]" class="wcpa_has_price " id="checkbox-group-1585481566115_2_4" value="Projector and screen" type="checkbox" data-price="{&quot;priceoptions&quot;:&quot;different_for_all&quot;,&quot;type&quot;:&quot;checkbox-group&quot;,&quot;value&quot;:6,&quot;pricingType&quot;:&quot;fixed&quot;,&quot;excl_chars_frm_length&quot;:&quot;&quot;,&quot;excl_chars_frm_length_is_regex&quot;:false,&quot;taxpu&quot;:1,&quot;con_unit&quot;:1,&quot;is_fee&quot;:false,&quot;is_show_price&quot;:false}" "="">
+			                <label for="checkbox-group-1585481566115_2_4"><span class="wcpa_check"></span>Projector and screen (€6.00)</label>
+			            </div>
+	           			<a href="https://mooo.work/bookingcalendar/product/conference-room/?fbclid=IwAR3xngxRW4ri7-jrB8qwKBHgGLFBaxfp--VlKEW_6-ZY8s2LCUYzqxa5gxw#" class="wcpa_clearSelection" data-element="wcpa-checkbox-group-1585481566115">Clear selection</a>
+	        		</div>
+			        <span class="wcpa_priceouter">
+			        	<span class="wcpa_price">
+			        		<span class="woocommerce-Price-currencySymbol">€</span>
+			        		<span class="price_value">0.00</span>
+			        	</span>
+			        </span>
+			    </div>
+			</div>
+			<div class="wcpa_row">
+				<div class="wcpa_form_item wcpa_type_separator wcpa_form_id_208 " id="wcpa-separator-1585485768425" data-type="separator">
+					<div>&nbsp;</div>
+				</div>
+			</div>
+			<div class="wcpa_row">
+				<div class="wcpa_form_item wcpa_type_header wcpa_form_id_208 " id="wcpa-header-1585481688043" data-type="header">
+					<h2>Contact detail</h2>
+				</div>
+			</div>
+			<div class="wcpa_row">
+				<div class="wcpa_form_item wcpa_type_text wcpa_form_id_208  form-control_parent wcpa-col-3 " id="wcpa-text-1585079793079" data-type="text"><label for="text-1585079793079">First Name<span class="required_ast">*</span></label><input type="text" id="text-1585079793079" placeholder="type your first name" class="form-control " name="text-1585079793079" value="" required="required">
+				</div>
+				<div class="wcpa_form_item wcpa_type_text wcpa_form_id_208  form-control_parent wcpa-col-3 " id="wcpa-text-1585079825498" data-type="text"><label for="text-1585079825498">Last Name<span class="required_ast">*</span></label><input type="text" id="text-1585079825498" placeholder="Type your last name" class="form-control " name="text-1585079825498" value="" required="required">
+				</div>
+			</div>
+			<div class="wcpa_row">
+				<div class="wcpa_form_item wcpa_type_text wcpa_form_id_208 wcpa-col-3 " id="wcpa-text-1585481718216" data-type="text"><label for="text-1585481718216">Email address<span class="required_ast">*</span></label><input type="text" id="text-1585481718216" placeholder="Type your email address" name="text-1585481718216" value="" required="required">
+				</div>
+				<div class="wcpa_form_item wcpa_type_text wcpa_form_id_208 wcpa-col-3 " id="wcpa-text-1585481728609" data-type="text"><label for="text-1585481728609">Phone number<span class="required_ast">*</span></label><input type="text" id="text-1585481728609" placeholder="Type your phone number" name="text-1585481728609" value="" required="required">
+				</div>
+			</div>
+		</div>
+		<div class="wcpa_price_summary">
+			<ul>
+			 	<li class="wcpa_total">
+			        <span>Total: </span>
+			        <span class="wcpa_price_outer ">
+			        	<span class="wcpa_price">
+			        		<span class="woocommerce-Price-currencySymbol">€</span>
+			        		<span class="price_value">NaN</span>
+			        	</span>
+			        </span>
+			    </li>
+			</ul>
+		</div>
+		<input type="hidden" name="add-to-cart" value="181">
+		<button type="submit" name="add-to-cart" value="181" class="single_add_to_cart_button button alt disabled ph_book_now_button">Add to order</button>
+	</form>
+	
+	<form name="checkout" method="post" class="checkout woocommerce-checkout" action="https://mooo.work/bookingcalendar/product/conference-room/" enctype="multipart/form-data" novalidate="novalidate">
+		<div class="col2-set" id="customer_details">
+			<div class="col-1">
+				<div class="woocommerce-billing-fields">
+					<h3>Billing details</h3>
+					<div class="woocommerce-billing-fields__field-wrapper">
+						<p class="form-row form-row-first validate-required validate-required" id="billing_company_field" data-priority=""><label for="billing_company" class="">Company name&nbsp;<abbr class="required" title="required">*</abbr></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_company" id="billing_company" placeholder="" value="" autocomplete="organization"></span></p>
+						<p class="form-row form-row-last validate-required validate-required" id="billing_contact_field" data-priority="10"><label for="billing_contact" class="">Contact Person&nbsp;<abbr class="required" title="required">*</abbr></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_contact" id="billing_contact" placeholder="" value=""></span></p>
+						<p class="form-row address-field form-row-wide validate-required" id="billing_address_1_field" data-priority="20"><label for="billing_address_1" class="">Street address&nbsp;<abbr class="required" title="required">*</abbr></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_address_1" id="billing_address_1" placeholder="House number and street name" value="" autocomplete="address-line1"></span></p>
+						<p class="form-row form-row-wide" id="billing_vat_field" data-priority="30"><label for="billing_vat" class="">VAT Identification Number (required for payment with invoice):&nbsp;<span class="optional">(optional)</span></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_vat" id="billing_vat" placeholder="Type your identification number" value=""></span></p>
+						<p class="form-row form-row-wide" id="billing_note_field" data-priority="40"><label for="billing_note" class="">Special notes on invoice (e.g. PO) :&nbsp;<span class="optional">(optional)</span></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text " name="billing_note" id="billing_note" placeholder="Type special note" value=""></span></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-2">
+				<div class="woocommerce-shipping-fields"></div>
+				<div class="woocommerce-additional-fields">
+					<h3>Additional information</h3>
+					<div class="woocommerce-additional-fields__field-wrapper">
+						<p class="form-row notes" id="order_comments_field" data-priority=""><label for="order_comments" class="">Order notes&nbsp;<span class="optional">(optional)</span></label><span class="woocommerce-input-wrapper"><textarea name="order_comments" class="input-text " id="order_comments" placeholder="Notes about your order, e.g. special notes for delivery." rows="2" cols="5"></textarea></span></p>					</div>
+					</div>
+				</div>
+			</div>
+			<h3 id="order_review_heading">Your order</h3>
+			<div id="order_review" class="woocommerce-checkout-review-order">
+				<div class="opc_order_review">
+					<input type="hidden" name="is_opc" value="1">
+					<table class="shop_table woocommerce-checkout-review-order-table">
+						<thead>
+							<tr>
+								<th class="product-name">
+									Product					<div class="product-quantity">Quantity</div>
+								</th>
+								<th class="product-total">Total</th>
+							</tr>
+						</thead>
+						<tbody></tbody>
+						<tfoot>
+							<tr class="cart-subtotal">
+								<th>Cart Subtotal</th>
+								<td><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>0.00</span></td>
+							</tr>
+							<tr class="tax-total">
+								<th>VAT</th>
+								<td><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>0.00</span></td>
+							</tr>
+							<tr class="order-total">
+								<th>Order Total</th>
+								<td><strong><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">€</span>0.00</span></strong> </td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+				<div id="payment" class="woocommerce-checkout-payment">
+					<div class="form-row place-order">
+					<noscript>
+						Since your browser does not support JavaScript, or it is disabled, please ensure you click the <em>Update Totals</em> button before placing your order. You may be charged more than the amount stated above if you fail to do so.			<br/><button type="submit" class="button alt" name="woocommerce_checkout_update_totals" value="Update totals">Update totals</button>
+					</noscript>
+					<div class="woocommerce-terms-and-conditions-wrapper">
+						<div class="woocommerce-privacy-policy-text"></div>
+					</div>
+					<button type="submit" class="button alt" name="woocommerce_checkout_place_order" id="place_order" value="Place order" data-value="Place order" style="display: none;">Place order</button>
+					<input type="hidden" id="woocommerce-process-checkout-nonce" name="woocommerce-process-checkout-nonce" value="f40e0ec965">
+					<input type="hidden" name="_wp_http_referer" value="/bookingcalendar/?wc-ajax=update_order_review">
+				</div>
+			</div>
+		</div>
+	</form>
+
 	<footer>
 		<div class="frame">
 			<div class="columns">
