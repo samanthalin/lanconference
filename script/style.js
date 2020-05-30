@@ -1,4 +1,13 @@
 $(document).ready(function(){
+	//menu
+	$('.hamburger').click(function(){
+		$(this).toggleClass('open');
+		//$('#mobile-menu-content').toggleClass('show');
+	});
+	$('#mobile-menu-content a[href="#mobile-submenu-product"]').click(function(){
+		$(this).find('.fa-angle-down').toggleClass('up');	
+	});
+
 	//homepage
 	$('#index form .submit').click(function(){
 		$('#index form').hide();

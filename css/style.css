@@ -12,38 +12,153 @@ html body {
   font-family: 'Seravek Medium', Helvetica, sans-serif, Arial; }
   html body header {
     width: 100%;
-    height: 85px;
     background-color: #322b2a;
-    padding: 10px 20px; }
-    html body header .frame {
+    padding-top: 50px; }
+    html body header nav {
+      position: fixed;
+      top: 0;
+      height: 50px;
+      background-color: #322B2A;
       width: 100%;
-      max-width: 1620px;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-      align-itmems: center;
-      height: 100%; }
-      html body header .frame .logo {
+      z-index: 1234; }
+      html body header nav .frame {
+        width: 90%;
+        max-width: 1620px;
+        margin: auto;
         display: flex;
-        align-items: center;
-        height: 100%; }
-        html body header .frame .logo img {
-          display: block;
-          flex: none;
-          height: 53px; }
-        html body header .frame .logo .text {
-          color: white; }
-      html body header .frame .menu {
-        display: flex;
-        align-items: center;
-        width: 500px;
         justify-content: space-between;
-        margin: 0; }
-        html body header .frame .menu li a {
-          color: white;
-          font-size: 15px; }
-          html body header .frame .menu li a i {
-            margin-left: 10px; }
+        align-itmems: center;
+        height: 100%; }
+        html body header nav .frame .logo {
+          display: flex;
+          align-items: center;
+          height: 100%; }
+          html body header nav .frame .logo img {
+            display: block;
+            flex: none;
+            height: 35px; }
+            @media screen and (min-width: 992px) {
+              html body header nav .frame .logo img {
+                height: 53px; } }
+          html body header nav .frame .logo .text {
+            color: white; }
+        html body header nav .frame .menu {
+          align-items: center;
+          width: 500px;
+          justify-content: space-between;
+          margin: 0;
+          display: none; }
+          html body header nav .frame .menu li {
+            position: relative; }
+            html body header nav .frame .menu li a {
+              color: white; }
+              html body header nav .frame .menu li a:hover {
+                color: #649A9E; }
+              html body header nav .frame .menu li a i {
+                margin-left: 10px; }
+            html body header nav .frame .menu li ul.submenu {
+              position: absolute;
+              background-color: #322B2A;
+              padding: 20px;
+              display: none; }
+              html body header nav .frame .menu li ul.submenu--product {
+                width: 260px; }
+              html body header nav .frame .menu li ul.submenu li {
+                padding: 10px 0; }
+            html body header nav .frame .menu li:hover .submenu {
+              display: block; }
+          @media screen and (min-width: 992px) {
+            html body header nav .frame .menu {
+              display: flex; } }
+        html body header nav .frame .mobile-menu {
+          display: flex;
+          align-items: center; }
+          html body header nav .frame .mobile-menu .hamburger {
+            width: 30px;
+            height: 21px;
+            position: relative;
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+            -webkit-transition: .5s ease-in-out;
+            -moz-transition: .5s ease-in-out;
+            -o-transition: .5s ease-in-out;
+            transition: .5s ease-in-out;
+            cursor: pointer;
+            display: block; }
+            html body header nav .frame .mobile-menu .hamburger span {
+              display: block;
+              position: absolute;
+              height: 3px;
+              width: 100%;
+              background: #ffffff;
+              opacity: 1;
+              left: 0;
+              -webkit-transform: rotate(0deg);
+              -moz-transform: rotate(0deg);
+              -o-transform: rotate(0deg);
+              transform: rotate(0deg);
+              -webkit-transition: .25s ease-in-out;
+              -moz-transition: .25s ease-in-out;
+              -o-transition: .25s ease-in-out;
+              transition: .25s ease-in-out; }
+            html body header nav .frame .mobile-menu .hamburger span:nth-child(1) {
+              top: 0px; }
+            html body header nav .frame .mobile-menu .hamburger span:nth-child(2), html body header nav .frame .mobile-menu .hamburger span:nth-child(3) {
+              top: 9px; }
+            html body header nav .frame .mobile-menu .hamburger span:nth-child(4) {
+              top: 18px; }
+            html body header nav .frame .mobile-menu .hamburger.open span:nth-child(1) {
+              top: 18px;
+              width: 0%;
+              left: 50%; }
+            html body header nav .frame .mobile-menu .hamburger.open span:nth-child(2) {
+              -webkit-transform: rotate(45deg);
+              -moz-transform: rotate(45deg);
+              -o-transform: rotate(45deg);
+              transform: rotate(45deg); }
+            html body header nav .frame .mobile-menu .hamburger.open span:nth-child(3) {
+              -webkit-transform: rotate(-45deg);
+              -moz-transform: rotate(-45deg);
+              -o-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
+            html body header nav .frame .mobile-menu .hamburger.open span:nth-child(4) {
+              top: 18px;
+              width: 0%;
+              left: 50%; }
+          html body header nav .frame .mobile-menu #mobile-menu-content {
+            position: fixed;
+            background-color: #322B2A;
+            top: 50px;
+            left: 0;
+            width: 100%; }
+            html body header nav .frame .mobile-menu #mobile-menu-content ul.card-body {
+              background-color: #322B2A;
+              margin: 0;
+              padding: 1.25rem 5%; }
+              html body header nav .frame .mobile-menu #mobile-menu-content ul.card-body li {
+                padding: 10px 0; }
+                html body header nav .frame .mobile-menu #mobile-menu-content ul.card-body li a {
+                  color: white; }
+                  html body header nav .frame .mobile-menu #mobile-menu-content ul.card-body li a:hover {
+                    color: #649A9E; }
+                  html body header nav .frame .mobile-menu #mobile-menu-content ul.card-body li a i {
+                    margin-left: 5px;
+                    transition: all 0.2s linear; }
+                  html body header nav .frame .mobile-menu #mobile-menu-content ul.card-body li a .up {
+                    transform: rotate(-180deg); }
+                html body header nav .frame .mobile-menu #mobile-menu-content ul.card-body li #mobile-submenu-product .card {
+                  border: 0; }
+          @media screen and (min-width: 992px) {
+            html body header nav .frame .mobile-menu {
+              display: none; } }
+      @media screen and (min-width: 992px) {
+        html body header nav {
+          height: 95px; } }
+    @media screen and (min-width: 992px) {
+      html body header {
+        padding-top: 95px; } }
   html body footer {
     background-color: #322B2A;
     color: white;
@@ -582,7 +697,8 @@ html #index section.inquery {
           width: 150px;
           border: none;
           outline: none;
-          cursor: pointer; }
+          cursor: pointer;
+          font-size: 26px; }
           html #index section.inquery .frame .inquery-form form .button:hover {
             filter: brightness(0.9); }
           html #index section.inquery .frame .inquery-form form .button:active {
@@ -611,26 +727,25 @@ html #index section.inquery {
           padding: 60px 102px; } }
       html #index section.inquery .frame .inquery-form .seperator {
         width: 142px; }
-html #product section:nth-child(2n+1) {
-  background-color: #f7f8f8; }
 html #product section.banner {
   height: 40vw;
   background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/ps_page_banner01.png);
   background-size: contain;
   background-repeat: no-repeat; }
 html #product section.section-room {
-  padding: 50px 0; }
+  padding-top: 50px; }
   html #product section.section-room .frame {
     width: 90%;
     margin: auto;
-    max-width: 1480px; }
+    max-width: 1480px;
+    background-color: #f7f8f8; }
     html #product section.section-room .frame .right {
       position: relative; }
       html #product section.section-room .frame .right .title {
         color: white;
-        font-size: 45px;
-        height: 125px;
-        background: linear-gradient(102deg, #DDECFC 0%, #627C97 44%, #313E4C 100%);
+        font-size: 31px;
+        height: 72px;
+        background: #8A9FB4;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -640,14 +755,10 @@ html #product section.section-room {
         padding: 5%;
         padding-bottom: 0; }
         html #product section.section-room .frame .right .info .text {
-          border-bottom: 1px solid #649A9E;
           padding-bottom: 20px; }
           html #product section.section-room .frame .right .info .text li {
-            font-size: 25px;
+            font-size: 18px;
             font-style: italic; }
-            html #product section.section-room .frame .right .info .text li:first-child {
-              font-size: 27px;
-              font-style: normal; }
           @media screen and (min-width: 1200px) {
             html #product section.section-room .frame .right .info .text {
               margin-bottom: 40px; } }
@@ -703,14 +814,14 @@ html #product section.section-room {
       @media screen and (min-width: 1200px) {
         html #product section.section-room .frame .left {
           width: 68%;
-          margin-top: 125px; } }
+          margin-top: 0; } }
     @media screen and (min-width: 1200px) {
       html #product section.section-room .frame {
         display: flex;
         flex-direction: row-reverse; } }
   @media screen and (min-width: 1200px) {
     html #product section.section-room {
-      padding: 110px 0; } }
+      padding-top: 110px; } }
 html #product section.conference .frame .right .info img {
   max-width: 255px; }
 html #product section.conference .frame .left .slider .slide:nth-child(1) {
@@ -720,7 +831,7 @@ html #product section.conference .frame .left .slider .slide:nth-child(2) {
 html #product section.conference .frame .left .slider .slide:nth-child(3) {
   background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_07.jpg); }
 html #product section.meeting .frame .right .title {
-  background: linear-gradient(103deg, #FFFFFF 0%, #649A9E 44%, #28575A 100%); }
+  background: #9AB5A9; }
 html #product section.meeting .frame .right .info img {
   max-width: 320px; }
 html #product section.meeting .frame .left .slider .slide:nth-child(1) {
@@ -730,7 +841,7 @@ html #product section.meeting .frame .left .slider .slide:nth-child(2) {
 html #product section.meeting .frame .left .slider .slide:nth-child(3) {
   background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_03.jpg); }
 html #product section.lobby .frame .right .title {
-  background: linear-gradient(103deg, #F2F2F2 0%, #AFDBDA 45%, #1BA29F 100%); }
+  background: #81B9B8; }
 html #product section.lobby .frame .right .info img {
   max-width: 310px; }
 html #product section.lobby .frame .left .slider .slide:nth-child(1) {
@@ -744,83 +855,96 @@ html #product section.section-two-room {
   html #product section.section-two-room .frame {
     width: 90%;
     margin: auto;
-    max-width: 1325px; }
-    html #product section.section-two-room .frame .room img.title {
-      width: 100%; }
-      @media screen and (min-width: 1200px) {
-        html #product section.section-two-room .frame .room img.title {
-          margin-bottom: 20px; } }
-    html #product section.section-two-room .frame .room .number {
-      padding: 20px;
-      border-bottom: 1px solid #649A9E; }
-      html #product section.section-two-room .frame .room .number .size {
-        font-size: 27px; }
-      html #product section.section-two-room .frame .room .number .ppl {
-        font-size: 25px;
-        font-style: italic; }
-      @media screen and (min-width: 1200px) {
-        html #product section.section-two-room .frame .room .number {
-          padding: 20px 50px; } }
-    html #product section.section-two-room .frame .room .intro {
-      font-size: 25px;
-      font-style: italic;
-      padding: 10px;
-      border-bottom: 1px solid #649A9E; }
-      @media screen and (min-width: 1200px) {
-        html #product section.section-two-room .frame .room .intro {
-          padding: 20px; } }
-    html #product section.section-two-room .frame .room .blueprint img {
-      display: block;
-      width: 100%;
-      height: auto;
-      padding: 20px 0; }
-    @media screen and (min-width: 768px) {
-      html #product section.section-two-room .frame .room .blueprint {
-        height: 400px;
+    max-width: 1480px; }
+    html #product section.section-two-room .frame .room {
+      background-color: #f7f8f8; }
+      html #product section.section-two-room .frame .room .title {
+        width: 100%;
+        height: 72px;
+        color: white;
         display: flex;
-        align-items: center; } }
+        font-size: 31px;
+        text-align: center;
+        line-height: 1em; }
+        html #product section.section-two-room .frame .room .title .left {
+          width: 56%;
+          background-color: #9AB5A9;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+        html #product section.section-two-room .frame .room .title .right {
+          width: 44%;
+          background-color: #81B9B8;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+        @media screen and (min-width: 1200px) {
+          html #product section.section-two-room .frame .room .title {
+            margin-bottom: 20px; } }
+      html #product section.section-two-room .frame .room .content-wrap {
+        width: 100%;
+        margin: auto;
+        max-width: 390px; }
+        html #product section.section-two-room .frame .room .content-wrap .number {
+          padding: 20px;
+          font-size: 18px;
+          font-style: italic; }
+        html #product section.section-two-room .frame .room .content-wrap .intro {
+          font-size: 18px;
+          font-style: italic;
+          padding: 20px;
+          padding-top: 0; }
+        html #product section.section-two-room .frame .room .content-wrap .blueprint img {
+          display: block;
+          width: 100%;
+          height: auto;
+          padding: 20px 0; }
+        @media screen and (min-width: 768px) {
+          html #product section.section-two-room .frame .room .content-wrap .blueprint {
+            height: 400px;
+            display: flex;
+            align-items: center; } }
   @media screen and (min-width: 768px) and (min-width: 1200px) {
-    html #product section.section-two-room .frame .room .blueprint {
+    html #product section.section-two-room .frame .room .content-wrap .blueprint {
       height: 600px; } }
 
-    html #product section.section-two-room .frame .room .button {
-      display: block;
-      width: 100%;
-      background-color: #CDE2BC;
-      text-align: center;
-      color: #322B2A;
-      font-family: Quicksand;
-      font-size: 22px;
-      border-radius: 17px;
-      padding: 8px 0;
-      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-      cursor: pointer;
-      max-width: 375px;
-      margin: auto; }
-      html #product section.section-two-room .frame .room .button:hover {
-        filter: brightness(0.9); }
-      html #product section.section-two-room .frame .room .button:active {
-        transform: translateY(4px);
-        box-shadow: none; }
-    @media screen and (min-width: 768px) {
-      html #product section.section-two-room .frame .room:first-child .blue-print img {
-        width: 458px;
-        height: auto; } }
-    @media screen and (min-width: 768px) {
-      html #product section.section-two-room .frame .room:first-child {
-        width: 46%;
-        max-width: 545px; } }
-    html #product section.section-two-room .frame .room:nth-child(2) {
-      margin-top: 50px; }
+      html #product section.section-two-room .frame .room .button {
+        display: block;
+        width: 100%;
+        background-color: #CDE2BC;
+        text-align: center;
+        color: #322B2A;
+        font-family: Quicksand;
+        font-size: 22px;
+        border-radius: 17px;
+        padding: 8px 0;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        max-width: 375px;
+        margin: auto;
+        font-size: 26px; }
+        html #product section.section-two-room .frame .room .button:hover {
+          filter: brightness(0.9); }
+        html #product section.section-two-room .frame .room .button:active {
+          transform: translateY(4px);
+          box-shadow: none; }
       @media screen and (min-width: 768px) {
-        html #product section.section-two-room .frame .room:nth-child(2) .blue-print img {
-          width: 534px;
+        html #product section.section-two-room .frame .room:first-child .blue-print img {
+          width: 458px;
           height: auto; } }
       @media screen and (min-width: 768px) {
-        html #product section.section-two-room .frame .room:nth-child(2) {
-          margin-top: 0;
-          width: 51%;
-          max-width: 600px; } }
+        html #product section.section-two-room .frame .room:first-child {
+          width: 48%; } }
+      html #product section.section-two-room .frame .room:nth-child(2) {
+        margin-top: 50px; }
+        @media screen and (min-width: 768px) {
+          html #product section.section-two-room .frame .room:nth-child(2) .blue-print img {
+            width: 534px;
+            height: auto; } }
+        @media screen and (min-width: 768px) {
+          html #product section.section-two-room .frame .room:nth-child(2) {
+            margin-top: 0;
+            width: 48%; } }
     @media screen and (min-width: 768px) {
       html #product section.section-two-room .frame {
         display: flex;
@@ -829,7 +953,7 @@ html #product section.section-two-room {
     html #product section.section-two-room {
       padding: 110px 0; } }
 html #product section.kitchen .frame .right .title {
-  background: linear-gradient(105deg, #FFFFFF 0%, #91988C 92%, #91988C 100%); }
+  background: #9EA29C; }
 html #product section.kitchen .frame .right .info img {
   max-width: 242px; }
 html #product section.kitchen .frame .left .slider .slide:nth-child(1) {
@@ -839,7 +963,7 @@ html #product section.kitchen .frame .left .slider .slide:nth-child(2) {
 html #product section.kitchen .frame .left .slider .slide:nth-child(3) {
   background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/kitchen.png); }
 html #product section.venue .frame .right .title {
-  background: linear-gradient(103deg, #FFFFFF 0%, #649A9E 44%, #28575A 100%); }
+  background: #649A9E; }
 @media screen and (min-width: 1200px) {
   html #product section.venue .frame .right .info {
     padding-right: 0; }
@@ -1028,7 +1152,8 @@ html #inquery section.inquery {
           width: 150px;
           border: none;
           outline: none;
-          cursor: pointer; }
+          cursor: pointer;
+          font-size: 26px; }
           html #inquery section.inquery .frame .inquery-form form .button:hover {
             filter: brightness(0.9); }
           html #inquery section.inquery .frame .inquery-form form .button:active {
@@ -1626,7 +1751,7 @@ html .product-page section.banner {
         html .product-page section.banner .frame .information .button-wrap .button {
           width: 50%;
           display: block;
-          font-size: 22px;
+          font-size: 26px;
           font-family: 'Quicksand';
           text-align: center;
           line-height: 72px; }
@@ -1897,7 +2022,7 @@ html .product-page section.options {
           background-color: #649A9E;
           background-size: cover;
           height: 48vw;
-          font-size: 32px;
+          font-size: 42px;
           line-height: 1.1em; }
           @media screen and (min-width: 768px) {
             html .product-page section.options .frame .box-wrap .box .img {
@@ -2461,9 +2586,11 @@ html #login .main {
       border: 0; }
       html #login .main .box .signup .seperator {
         width: 137px; }
-      @media screen and (min-width: 992px) {
-        html #login .main .box .signup .form .button {
-          margin-top: 60px; } }
+      html #login .main .box .signup .form .button {
+        font-size: 26px; }
+        @media screen and (min-width: 992px) {
+          html #login .main .box .signup .form .button {
+            margin-top: 60px; } }
       @media screen and (min-width: 992px) {
         html #login .main .box .signup {
           flex: 2;
