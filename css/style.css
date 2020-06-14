@@ -148,7 +148,7 @@ html body {
                     transition: all 0.2s linear; }
                   html body header nav .frame .mobile-menu #mobile-menu-content ul.card-body li a .up {
                     transform: rotate(-180deg); }
-                html body header nav .frame .mobile-menu #mobile-menu-content ul.card-body li #mobile-submenu-product .card {
+                html body header nav .frame .mobile-menu #mobile-menu-content ul.card-body li #mobile-submenu-product .card, html body header nav .frame .mobile-menu #mobile-menu-content ul.card-body li #mobile-submenu-language .card {
                   border: 0; }
           @media screen and (min-width: 992px) {
             html body header nav .frame .mobile-menu {
@@ -338,6 +338,20 @@ html body {
       html body form.cart .book-btn-wrap #btnProductInqery {
         background-color: #649A9E !important;
         color: white; }
+html #agb, html #impressum, html #datenschutzerklarung {
+  background-color: #e6eded; }
+  html #agb header, html #impressum header, html #datenschutzerklarung header {
+    margin-bottom: 45px; }
+  html #agb p, html #impressum p, html #datenschutzerklarung p {
+    font-size: 18px !important;
+    width: 90%;
+    margin: auto;
+    max-width: 1180px; }
+  html #agb .has-normal-font-size, html #impressum .has-normal-font-size, html #datenschutzerklarung .has-normal-font-size {
+    font-size: 20px !important;
+    margin-top: 15px; }
+  html #agb footer, html #impressum footer, html #datenschutzerklarung footer {
+    margin-top: 45px; }
 
 html #index section.banner {
   width: 100%;
@@ -525,12 +539,12 @@ html #index section.workspace {
           justify-content: space-between;
           flex-wrap: wrap; } }
 html #index section.map {
-  height: 500px;
-  background-image: url(../img/map.png);
-  background-size: cover; }
-  @media screen and (min-width: 992px) {
-    html #index section.map {
-      height: 40vw; } }
+  display: flex;
+  justify-content: center; }
+  html #index section.map iframe {
+    max-width: 1182px; }
+  html #index section.map iframe {
+    max-width: 1650px; }
 html #index section.location {
   padding: 150px 0; }
   html #index section.location .frame {
@@ -843,7 +857,7 @@ html #product section.meeting .frame .left .slider .slide:nth-child(3) {
 html #product section.lobby .frame .right .title {
   background: #81B9B8; }
 html #product section.lobby .frame .right .info img {
-  max-width: 310px; }
+  max-width: 250px; }
 html #product section.lobby .frame .left .slider .slide:nth-child(1) {
   background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_05.jpg); }
 html #product section.lobby .frame .left .slider .slide:nth-child(2) {
@@ -871,13 +885,33 @@ html #product section.section-two-room {
           background-color: #9AB5A9;
           display: flex;
           justify-content: center;
-          align-items: center; }
+          align-items: center;
+          position: relative; }
+          html #product section.section-two-room .frame .room .title .left:after {
+            content: '';
+            width: 44px;
+            height: 11px;
+            position: absolute;
+            background-color: #CDE2BC;
+            right: 0;
+            transform: translateX(50%);
+            z-index: 100; }
         html #product section.section-two-room .frame .room .title .right {
           width: 44%;
           background-color: #81B9B8;
           display: flex;
           justify-content: center;
-          align-items: center; }
+          align-items: center;
+          position: relative; }
+          html #product section.section-two-room .frame .room .title .right:before {
+            content: '';
+            width: 11px;
+            height: 44px;
+            position: absolute;
+            background-color: #CDE2BC;
+            left: 0;
+            transform: translateX(-50%);
+            z-index: 100; }
         @media screen and (min-width: 1200px) {
           html #product section.section-two-room .frame .room .title {
             margin-bottom: 20px; } }
@@ -928,18 +962,22 @@ html #product section.section-two-room {
         html #product section.section-two-room .frame .room .button:active {
           transform: translateY(4px);
           box-shadow: none; }
-      @media screen and (min-width: 768px) {
-        html #product section.section-two-room .frame .room:first-child .blue-print img {
-          width: 458px;
-          height: auto; } }
+      html #product section.section-two-room .frame .room:first-child .content-wrap .blueprint img {
+        transform: rotate(90deg); }
+        @media screen and (min-width: 768px) {
+          html #product section.section-two-room .frame .room:first-child .content-wrap .blueprint img {
+            width: 458px;
+            height: auto; } }
       @media screen and (min-width: 768px) {
         html #product section.section-two-room .frame .room:first-child {
           width: 48%; } }
       html #product section.section-two-room .frame .room:nth-child(2) {
         margin-top: 50px; }
+        html #product section.section-two-room .frame .room:nth-child(2) .title .left {
+          background-color: #8A9FB4; }
         @media screen and (min-width: 768px) {
-          html #product section.section-two-room .frame .room:nth-child(2) .blue-print img {
-            width: 534px;
+          html #product section.section-two-room .frame .room:nth-child(2) .content-wrap .blueprint img {
+            width: 450spx;
             height: auto; } }
         @media screen and (min-width: 768px) {
           html #product section.section-two-room .frame .room:nth-child(2) {
@@ -1183,12 +1221,10 @@ html #inquery section.inquery {
       html #inquery section.inquery .frame .inquery-form .seperator {
         width: 142px; }
 html #inquery section.map {
-  height: 500px;
-  background-image: url(../img/map.png);
-  background-size: cover; }
-  @media screen and (min-width: 992px) {
-    html #inquery section.map {
-      height: 40vw; } }
+  display: flex;
+  justify-content: center; }
+  html #inquery section.map iframe {
+    max-width: 1182px; }
 html #shoppingCart {
   background-color: #e6eded; }
   html #shoppingCart section.main {
@@ -1912,42 +1948,55 @@ html .product-page section.introduction {
         html .product-page section.introduction .frame .overview .table .service .title {
           width: 192px;
           flex: none; } }
-      html .product-page section.introduction .frame .overview .table .service .content .left p, html .product-page section.introduction .frame .overview .table .service .content .right p {
-        font-family: 'Seravek'; }
-      html .product-page section.introduction .frame .overview .table .service .content .left {
-        padding-bottom: 20px;
-        border-bottom: 1px solid #322B2A;
-        position: relative; }
-        @media screen and (min-width: 992px) {
-          html .product-page section.introduction .frame .overview .table .service .content .left {
-            padding: 0;
-            padding-right: 15px;
-            border: 0;
-            border-right: 1px solid #322B2A;
-            flex: 1;
+      html .product-page section.introduction .frame .overview .table .service .content {
+        width: 100%; }
+        html .product-page section.introduction .frame .overview .table .service .content .left, html .product-page section.introduction .frame .overview .table .service .content .right {
+          flex-wrap: wrap;
+          justify-content: space-between; }
+          html .product-page section.introduction .frame .overview .table .service .content .left .list-item, html .product-page section.introduction .frame .overview .table .service .content .right .list-item {
+            width: 100%;
             display: flex;
-            flex-wrap: wrap;
-            align-content: center; }
-            html .product-page section.introduction .frame .overview .table .service .content .left p {
-              width: 50%;
-              margin: 5px 0; } }
-      html .product-page section.introduction .frame .overview .table .service .content .right {
-        padding-top: 20px; }
+            padding: 5px 0; }
+            html .product-page section.introduction .frame .overview .table .service .content .left .list-item .icon, html .product-page section.introduction .frame .overview .table .service .content .right .list-item .icon {
+              width: 60px;
+              display: flex;
+              justify-content: center;
+              align-items: center; }
+            html .product-page section.introduction .frame .overview .table .service .content .left .list-item p, html .product-page section.introduction .frame .overview .table .service .content .right .list-item p {
+              font-family: 'Seravek';
+              margin: 0; }
+          @media screen and (min-width: 550px) {
+            html .product-page section.introduction .frame .overview .table .service .content .left .list-item, html .product-page section.introduction .frame .overview .table .service .content .right .list-item {
+              width: 49%; }
+              html .product-page section.introduction .frame .overview .table .service .content .left .list-item .icon, html .product-page section.introduction .frame .overview .table .service .content .right .list-item .icon {
+                width: 40px; } }
+        html .product-page section.introduction .frame .overview .table .service .content .left {
+          padding-bottom: 20px;
+          border-bottom: 1px solid #322B2A;
+          position: relative; }
+          @media screen and (min-width: 992px) {
+            html .product-page section.introduction .frame .overview .table .service .content .left {
+              padding: 0;
+              padding-right: 15px;
+              border: 0;
+              border-right: 1px solid #322B2A;
+              flex: 1;
+              display: flex;
+              flex-wrap: wrap; } }
+        html .product-page section.introduction .frame .overview .table .service .content .right {
+          padding-top: 20px; }
+          @media screen and (min-width: 992px) {
+            html .product-page section.introduction .frame .overview .table .service .content .right {
+              padding: 0;
+              padding-left: 15px;
+              flex: 1;
+              display: flex;
+              flex-wrap: wrap; } }
         @media screen and (min-width: 992px) {
-          html .product-page section.introduction .frame .overview .table .service .content .right {
-            padding: 0;
-            padding-left: 65px;
-            flex: 1;
+          html .product-page section.introduction .frame .overview .table .service .content {
             display: flex;
-            flex-wrap: wrap;
-            align-content: center; }
-            html .product-page section.introduction .frame .overview .table .service .content .right p {
-              width: 50%;
-              margin: 5px 0; } }
-      @media screen and (min-width: 992px) {
-        html .product-page section.introduction .frame .overview .table .service .content {
-          display: flex;
-          flex: 1; } }
+            flex: 1;
+            align-items: flex-start; } }
       @media screen and (min-width: 768px) {
         html .product-page section.introduction .frame .overview .table .service {
           display: flex;
@@ -1988,12 +2037,10 @@ html .product-page section.introduction {
     html .product-page section.introduction {
       padding-top: 65px; } }
 html .product-page section.map {
-  height: 500px;
-  background-image: url(../img/map.png);
-  background-size: cover; }
-  @media screen and (min-width: 992px) {
-    html .product-page section.map {
-      height: 40vw; } }
+  display: flex;
+  justify-content: center; }
+  html .product-page section.map iframe {
+    max-width: 1182px; }
 html .product-page section.options {
   padding: 40px 0;
   background-color: #f8fafb; }
@@ -2304,7 +2351,8 @@ html #gallery section.gallery {
         top: 0;
         color: white;
         z-index: 10;
-        padding: 5% 5% 15% 5%; }
+        padding: 5% 5% 15% 5%;
+        width: 100%; }
         html #gallery section.gallery .frame .grid-item .text p {
           margin: 0; }
         html #gallery section.gallery .frame .grid-item .text .title {

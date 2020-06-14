@@ -49,11 +49,10 @@ $theme-light-green: #CDE2BC;
 }
 
 @mixin map{
-	height: 500px;
-	background-image: url(../img/map.png);
-	background-size: cover;
-	@media screen and (min-width: 992px) {
-		height: 40vw;
+	display: flex;
+	justify-content: center;
+	iframe{
+		max-width: 1182px;
 	}
 }
 
@@ -437,7 +436,7 @@ html{
 											transform: rotate(-180deg);
 										}
 									}
-									#mobile-submenu-product{
+									#mobile-submenu-product, #mobile-submenu-language{
 										.card{
 											border: 0;
 										}
@@ -701,6 +700,25 @@ html{
 			}
 		}
 	}//body
+	#agb, #impressum, #datenschutzerklarung{
+		background-color: #e6eded;
+		header{
+			margin-bottom: 45px;
+		}
+		p{
+			font-size: 18px !important;
+			width: 90%;
+    		margin: auto;
+    		max-width: 1180px;
+		}
+		.has-normal-font-size{
+			font-size: 20px !important;
+			margin-top: 15px;
+		}
+		footer{
+			margin-top: 45px;
+		}
+	}
 }//html
 
 html{
@@ -918,6 +936,9 @@ html{
 		}//workspace
 		section.map{
 			@include map;
+			iframe{
+				max-width: 1650px;
+			}
 		}//map
 		section.location{
 			padding: 150px 0;
@@ -1150,7 +1171,7 @@ html{
 					}
 					.info{
 						img{
-							max-width: 310px;
+							max-width: 250px;
 						}
 					}
 				}
@@ -1194,6 +1215,17 @@ html{
 							display: flex;
 							justify-content: center;
 							align-items: center;
+							position: relative;
+							&:after{
+								content: '';
+								width: 44px;
+								height: 11px;
+								position: absolute;
+								background-color: #CDE2BC;
+								right: 0;
+								transform: translateX(50%);
+								z-index: 100;
+							}
 						}
 						.right{
 							width: 44%;
@@ -1201,6 +1233,17 @@ html{
 							display: flex;
 							justify-content: center;
 							align-items: center;
+							position: relative;
+							&:before{
+								content: '';
+								width: 11px;
+								height: 44px;
+								position: absolute;
+								background-color: #CDE2BC;
+								left: 0;
+								transform: translateX(-50%);
+								z-index: 100;
+							}
 						}
 						@media screen and (min-width: 1200px){
 							margin-bottom: 20px;
@@ -1245,11 +1288,19 @@ html{
 						font-size: 26px;
 					}//button
 					&:first-child{
-						.blue-print{
-							img{
-								@media screen and (min-width: 768px){
-									width: 458px;
-									height: auto;
+						.title{
+							.left{
+
+							}
+						}
+						.content-wrap{	
+							.blueprint{
+								img{
+									transform: rotate(90deg);
+									@media screen and (min-width: 768px){
+										width: 458px;
+										height: auto;
+									}
 								}
 							}
 						}
@@ -1259,11 +1310,18 @@ html{
 					}//room:first-child
 					&:nth-child(2){
 						margin-top: 50px;
-						.blue-print{
-							img{
-								@media screen and (min-width: 768px){
-									width: 534px;
-									height: auto;
+						.title{
+							.left{
+								background-color: #8A9FB4;
+							}
+						}
+						.content-wrap{
+							.blueprint{
+								img{
+									@media screen and (min-width: 768px){
+										width: 450spx;
+										height: auto;
+									}
 								}
 							}
 						}
@@ -2231,9 +2289,32 @@ html{
 								}
 							}
 							.content{
+								width: 100%;
 								.left, .right{
-									p{
-										font-family: 'Seravek';
+									flex-wrap: wrap;
+									justify-content: space-between;
+									.list-item{
+										width: 100%;
+										display: flex;
+										padding: 5px 0;
+										.icon{
+											width: 60px;
+											display: flex;
+											justify-content: center;
+											align-items: center;
+										}
+										p{
+											font-family: 'Seravek';
+											margin: 0;
+										}
+									}
+									@media screen and (min-width: 550px) {
+										.list-item{
+											width: 49%;
+											.icon{
+												width: 40px;
+											}
+										}
 									}
 								}
 								.left{
@@ -2248,31 +2329,22 @@ html{
 										flex: 1;
 										display: flex;
 										flex-wrap: wrap;
-										align-content: center;
-										p{
-											width: 50%;
-											margin: 5px 0;
-										}
 									}
 								}//left
 								.right{
 									padding-top: 20px;
 									@media screen and (min-width: 992px){
 										padding: 0;
-										padding-left: 65px;
+										padding-left: 15px;
 										flex: 1;
 										display: flex;
 										flex-wrap: wrap;
-										align-content: center;
-										p{
-											width: 50%;
-											margin: 5px 0;
-										}
 									}
 								}//right
 								@media screen and (min-width: 992px) {
 									display: flex;
 									flex: 1;
+									align-items: flex-start;
 								}
 							}//content
 							@media screen and (min-width: 768px) {
@@ -2878,7 +2950,7 @@ html{
 						color: white;
 						z-index: 10;
 						padding: 5% 5% 15% 5%;
-
+						width: 100%;
 						p{
 							margin: 0;
 						}
