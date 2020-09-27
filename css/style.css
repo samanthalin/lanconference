@@ -1,12 +1,15 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box; }
 
-a:hover, a:focus, a:active {
+a:hover,
+a:focus,
+a:active {
   text-decoration: none !important; }
 
 html body {
   font-size: 18px;
-  color: #322B2A;
+  color: #322b2a;
   zoom: 0.9;
   -moz-zoom: none;
   font-family: 'Seravek Medium', Helvetica, sans-serif, Arial; }
@@ -18,153 +21,157 @@ html body {
       position: fixed;
       top: 0;
       height: 50px;
-      background-color: #322B2A;
+      background-color: #322b2a;
       width: 100%;
-      z-index: 1234; }
+      z-index: 1234;
+      padding: 10px 0; }
       html body header nav .frame {
         width: 90%;
-        max-width: 1620px;
         margin: auto;
         display: flex;
+        align-items: center;
         justify-content: space-between;
-        align-itmems: center;
-        height: 100%; }
-        html body header nav .frame .logo {
-          display: flex;
-          align-items: center;
-          height: 100%; }
-          html body header nav .frame .logo img {
-            display: block;
-            flex: none;
-            height: 35px; }
-            @media screen and (min-width: 992px) {
-              html body header nav .frame .logo img {
-                height: 53px; } }
-          html body header nav .frame .logo .text {
-            color: white; }
-        html body header nav .frame .menu {
-          align-items: center;
-          width: 500px;
-          justify-content: space-between;
-          margin: 0;
-          display: none; }
-          html body header nav .frame .menu li {
-            position: relative; }
-            html body header nav .frame .menu li a {
-              color: white; }
-              html body header nav .frame .menu li a:hover {
-                color: #649A9E; }
-              html body header nav .frame .menu li a i {
-                margin-left: 10px; }
-            html body header nav .frame .menu li ul.submenu {
-              position: absolute;
-              background-color: #322B2A;
-              padding: 20px;
-              display: none; }
-              html body header nav .frame .menu li ul.submenu--product {
-                width: 260px; }
-              html body header nav .frame .menu li ul.submenu li {
-                padding: 10px 0; }
-            html body header nav .frame .menu li:hover .submenu {
-              display: block; }
+        max-width: 1620px; }
+        html body header nav .frame .logo img {
+          height: 35px;
+          width: auto; }
           @media screen and (min-width: 992px) {
-            html body header nav .frame .menu {
-              display: flex; } }
-        html body header nav .frame .mobile-menu {
-          display: flex;
-          align-items: center; }
-          html body header nav .frame .mobile-menu .hamburger {
-            width: 30px;
-            height: 21px;
-            position: relative;
+            html body header nav .frame .logo img {
+              height: 53px; } }
+        html body header nav .frame .hamburger {
+          width: 30px;
+          height: 21px;
+          position: relative;
+          -webkit-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+          -webkit-transition: 0.5s ease-in-out;
+          -moz-transition: 0.5s ease-in-out;
+          -o-transition: 0.5s ease-in-out;
+          transition: 0.5s ease-in-out;
+          cursor: pointer;
+          display: block; }
+          html body header nav .frame .hamburger span {
+            display: block;
+            position: absolute;
+            height: 3px;
+            width: 100%;
+            background: #ffffff;
+            opacity: 1;
+            left: 0;
             -webkit-transform: rotate(0deg);
             -moz-transform: rotate(0deg);
             -o-transform: rotate(0deg);
             transform: rotate(0deg);
-            -webkit-transition: .5s ease-in-out;
-            -moz-transition: .5s ease-in-out;
-            -o-transition: .5s ease-in-out;
-            transition: .5s ease-in-out;
-            cursor: pointer;
-            display: block; }
-            html body header nav .frame .mobile-menu .hamburger span {
+            -webkit-transition: 0.25s ease-in-out;
+            -moz-transition: 0.25s ease-in-out;
+            -o-transition: 0.25s ease-in-out;
+            transition: 0.25s ease-in-out; }
+          html body header nav .frame .hamburger span:nth-child(1) {
+            top: 0px; }
+          html body header nav .frame .hamburger span:nth-child(2),
+          html body header nav .frame .hamburger span:nth-child(3) {
+            top: 9px; }
+          html body header nav .frame .hamburger span:nth-child(4) {
+            top: 18px; }
+          html body header nav .frame .hamburger.open span:nth-child(1) {
+            top: 18px;
+            width: 0%;
+            left: 50%; }
+          html body header nav .frame .hamburger.open span:nth-child(2) {
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg); }
+          html body header nav .frame .hamburger.open span:nth-child(3) {
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+          html body header nav .frame .hamburger.open span:nth-child(4) {
+            top: 18px;
+            width: 0%;
+            left: 50%; }
+          @media screen and (min-width: 992px) {
+            html body header nav .frame .hamburger {
+              display: none; } }
+        html body header nav .frame .menu {
+          display: none; }
+          html body header nav .frame .menu li {
+            padding: 0 15px; }
+            html body header nav .frame .menu li .submenu {
+              padding: 20px;
+              display: none; }
+              html body header nav .frame .menu li .submenu li {
+                padding: 10px 0; }
+            html body header nav .frame .menu li a {
+              color: white;
+              display: block;
+              width: 100%; }
+              html body header nav .frame .menu li a i {
+                margin-left: 10px; }
+            html body header nav .frame .menu li:hover > a {
+              color: #649a9e; }
+            html body header nav .frame .menu li:hover .submenu {
               display: block;
               position: absolute;
-              height: 3px;
-              width: 100%;
-              background: #ffffff;
-              opacity: 1;
-              left: 0;
-              -webkit-transform: rotate(0deg);
-              -moz-transform: rotate(0deg);
-              -o-transform: rotate(0deg);
-              transform: rotate(0deg);
-              -webkit-transition: .25s ease-in-out;
-              -moz-transition: .25s ease-in-out;
-              -o-transition: .25s ease-in-out;
-              transition: .25s ease-in-out; }
-            html body header nav .frame .mobile-menu .hamburger span:nth-child(1) {
-              top: 0px; }
-            html body header nav .frame .mobile-menu .hamburger span:nth-child(2), html body header nav .frame .mobile-menu .hamburger span:nth-child(3) {
-              top: 9px; }
-            html body header nav .frame .mobile-menu .hamburger span:nth-child(4) {
-              top: 18px; }
-            html body header nav .frame .mobile-menu .hamburger.open span:nth-child(1) {
-              top: 18px;
-              width: 0%;
-              left: 50%; }
-            html body header nav .frame .mobile-menu .hamburger.open span:nth-child(2) {
-              -webkit-transform: rotate(45deg);
-              -moz-transform: rotate(45deg);
-              -o-transform: rotate(45deg);
-              transform: rotate(45deg); }
-            html body header nav .frame .mobile-menu .hamburger.open span:nth-child(3) {
-              -webkit-transform: rotate(-45deg);
-              -moz-transform: rotate(-45deg);
-              -o-transform: rotate(-45deg);
-              transform: rotate(-45deg); }
-            html body header nav .frame .mobile-menu .hamburger.open span:nth-child(4) {
-              top: 18px;
-              width: 0%;
-              left: 50%; }
-          html body header nav .frame .mobile-menu #mobile-menu-content {
-            position: fixed;
-            background-color: #322B2A;
-            top: 50px;
-            left: 0;
-            width: 100%; }
-            html body header nav .frame .mobile-menu #mobile-menu-content ul.card-body {
-              background-color: #322B2A;
-              margin: 0;
-              padding: 1.25rem 5%; }
-              html body header nav .frame .mobile-menu #mobile-menu-content ul.card-body li {
-                padding: 10px 0; }
-                html body header nav .frame .mobile-menu #mobile-menu-content ul.card-body li a {
-                  color: white; }
-                  html body header nav .frame .mobile-menu #mobile-menu-content ul.card-body li a:hover {
-                    color: #649A9E; }
-                  html body header nav .frame .mobile-menu #mobile-menu-content ul.card-body li a i {
-                    margin-left: 5px;
-                    transition: all 0.2s linear; }
-                  html body header nav .frame .mobile-menu #mobile-menu-content ul.card-body li a .up {
-                    transform: rotate(-180deg); }
-                html body header nav .frame .mobile-menu #mobile-menu-content ul.card-body li #mobile-submenu-product .card, html body header nav .frame .mobile-menu #mobile-menu-content ul.card-body li #mobile-submenu-language .card {
-                  border: 0; }
+              background-color: #322b2a; }
           @media screen and (min-width: 992px) {
-            html body header nav .frame .mobile-menu {
-              display: none; } }
+            html body header nav .frame .menu {
+              display: flex; } }
       @media screen and (min-width: 992px) {
         html body header nav {
-          height: 95px; } }
+          height: 95px;
+          display: flex;
+          align-items: center; } }
+    html body header .mobile-nav-dropdown {
+      width: 100%;
+      max-height: calc(100% - 50px);
+      position: fixed;
+      top: 50px;
+      left: 0;
+      background-color: #322b2a;
+      z-index: 1233;
+      overflow-y: scroll;
+      transition: all 0.2s ease;
+      transform: translateY(calc(-100% - 50px)); }
+      html body header .mobile-nav-dropdown .mobile-dropdown-menu {
+        padding: 5%; }
+        html body header .mobile-nav-dropdown .mobile-dropdown-menu li {
+          padding: 10px 0; }
+          html body header .mobile-nav-dropdown .mobile-dropdown-menu li a {
+            color: white; }
+            html body header .mobile-nav-dropdown .mobile-dropdown-menu li a:active {
+              color: #649a9e; }
+          html body header .mobile-nav-dropdown .mobile-dropdown-menu li .submenu-open {
+            position: absolute;
+            right: 20px; }
+          html body header .mobile-nav-dropdown .mobile-dropdown-menu li .mobile-dropdown-submenu {
+            padding: 0 20px;
+            height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease; }
+          html body header .mobile-nav-dropdown .mobile-dropdown-menu li .menu-open {
+            padding: 20px;
+            height: 330px; }
+          html body header .mobile-nav-dropdown .mobile-dropdown-menu li .menu-open#submenu-language {
+            height: 55px; }
+      @media screen and (min-width: 992px) {
+        html body header .mobile-nav-dropdown {
+          display: none; } }
+    html body header .active {
+      transform: translateY(0); }
     @media screen and (min-width: 992px) {
       html body header {
         padding-top: 95px; } }
   html body footer {
-    background-color: #322B2A;
+    background-color: #322b2a;
     color: white;
     font-size: 15px;
     padding: 50px 0 10px 0; }
-    html body footer a, html body footer a:hover {
+    html body footer a,
+    html body footer a:hover {
       color: white; }
     html body footer a:hover {
       opacity: 0.5; }
@@ -194,7 +201,8 @@ html body {
     html body footer .frame .columns .brand {
       width: 360px; } }
 
-      html body footer .frame .columns .contact ul li, html body footer .frame .columns .contact ul li > a {
+      html body footer .frame .columns .contact ul li,
+      html body footer .frame .columns .contact ul li > a {
         font-family: Seravek;
         font-weight: lighter;
         font-style: italic; }
@@ -236,7 +244,7 @@ html body {
       float: none; }
     html body form.cart .booking-wraper {
       padding: 20px;
-      border: 2px solid #CDE2BC; }
+      border: 2px solid #cde2bc; }
     html body form.cart #book-now-title {
       text-align: center;
       margin-bottom: 30px; }
@@ -244,7 +252,7 @@ html body {
       margin: 0;
       margin-top: -2px;
       padding: 15px 20px;
-      border: 2px solid #CDE2BC;
+      border: 2px solid #cde2bc;
       border-bottom: 0; }
     html body form.cart .time-picker-box-container {
       display: flex !important; }
@@ -269,11 +277,12 @@ html body {
         width: auto; }
       html body form.cart .participant_section .participant_inner_section .person-value {
         margin-left: 40px; }
-        html body form.cart .participant_section .participant_inner_section .person-value .input-person-minus, html body form.cart .participant_section .participant_inner_section .person-value .input-person-plus {
+        html body form.cart .participant_section .participant_inner_section .person-value .input-person-minus,
+        html body form.cart .participant_section .participant_inner_section .person-value .input-person-plus {
           color: black !important;
           border: 1px solid black !important;
           padding: 0px 6px; }
-        html body form.cart .participant_section .participant_inner_section .person-value input[type="number"] {
+        html body form.cart .participant_section .participant_inner_section .person-value input[type='number'] {
           border: 1px solid black !important;
           padding: 0 10px !important;
           width: 50px !important; }
@@ -296,7 +305,7 @@ html body {
         border-radius: 0;
         padding: 5px 50px 5px 25px; }
     html body form.cart .booking-info-wraper {
-      background-color: #CDE2BC !important; }
+      background-color: #cde2bc !important; }
       html body form.cart .booking-info-wraper p {
         font-family: Arsenal, Helvetica;
         color: #322b2a !important; }
@@ -312,14 +321,18 @@ html body {
       text-align: left !important; }
     html body form.cart #wcpa-checkbox-group-1585481566115 {
       padding-left: 5%;
-      border-left: 2px solid #CDE2BC; }
+      border-left: 2px solid #cde2bc; }
     html body form.cart #wcpa-header-1585481688043 h2 {
       font-size: 24px; }
-    html body form.cart #text-1585079793079, html body form.cart #text-1585079825498, html body form.cart #text-1585481718216, html body form.cart #text-1585481728609 {
+    html body form.cart #text-1585079793079,
+    html body form.cart #text-1585079825498,
+    html body form.cart #text-1585481718216,
+    html body form.cart #text-1585481728609 {
       border: 1px solid black !important;
       border-radius: 0; }
     html body form.cart .wcpa_price_summary {
-      display: none; }
+      display: none;
+      padding: 20px; }
     html body form.cart .book-btn-wrap {
       display: flex; }
       html body form.cart .book-btn-wrap button.single_add_to_cart_button {
@@ -328,30 +341,32 @@ html body {
         margin: 0 !important;
         border: 0;
         cursor: pointer;
-        padding: 10px; }
+        padding: 18px; }
         @media screen and (min-width: 768px) {
           html body form.cart .book-btn-wrap button.single_add_to_cart_button {
-            font-size: 26px; } }
+            font-size: 25px; } }
       html body form.cart .book-btn-wrap #btnAddtoOrder {
-        background-color: #CDE2BC !important;
-        color: #322B2A !important; }
+        background-color: #cde2bc !important;
+        color: #322b2a !important; }
       html body form.cart .book-btn-wrap #btnProductInqery {
-        background-color: #649A9E !important;
+        background-color: #649a9e !important;
         color: white; }
-html #agb, html #impressum, html #datenschutzerklarung {
+html #agb,
+html #impressum,
+html #datenschutzerklarung {
   background-color: #e6eded; }
-  html #agb header, html #impressum header, html #datenschutzerklarung header {
-    margin-bottom: 45px; }
-  html #agb p, html #impressum p, html #datenschutzerklarung p {
+  html #agb p,
+  html #impressum p,
+  html #datenschutzerklarung p {
     font-size: 18px !important;
     width: 90%;
     margin: auto;
     max-width: 1180px; }
-  html #agb .has-normal-font-size, html #impressum .has-normal-font-size, html #datenschutzerklarung .has-normal-font-size {
+  html #agb .has-normal-font-size,
+  html #impressum .has-normal-font-size,
+  html #datenschutzerklarung .has-normal-font-size {
     font-size: 20px !important;
     margin-top: 15px; }
-  html #agb footer, html #impressum footer, html #datenschutzerklarung footer {
-    margin-top: 45px; }
 
 html #index section.banner {
   width: 100%;
@@ -362,7 +377,10 @@ html #index section.banner {
     background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_05.jpg);
     background-size: cover; }
 html #index section.get-your {
-  padding: 65px 0; }
+  padding: 80px 0; }
+  @media screen and (max-width: 768px) {
+    html #index section.get-your {
+      padding: 40px 0; } }
   html #index section.get-your .frame {
     width: 90%;
     max-width: 872px;
@@ -374,33 +392,45 @@ html #index section.get-your {
       margin: auto; }
       html #index section.get-your .frame .title h2 {
         font-size: 35px; }
+        @media screen and (max-width: 768px) {
+          html #index section.get-your .frame .title h2 {
+            font-size: 28px; } }
     html #index section.get-your .frame .seperator {
       position: relative;
-      border-bottom: 2px solid #649A9E;
+      border-bottom: 2px solid #649a9e;
       width: 166px;
       margin: 20px auto 50px; }
       html #index section.get-your .frame .seperator .square {
         width: 16px;
         height: 16px;
-        background-color: #649A9E;
+        background-color: #649a9e;
         transform: rotate(45deg);
         margin: auto;
         box-shadow: 0px 0px 0px 5px white;
         margin-bottom: -9px; }
+    @media screen and (max-width: 768px) {
+      html #index section.get-your .frame .text .hideOnMobile {
+        display: none; } }
     html #index section.get-your .frame .text p {
       font-family: Arsenal, Helvetica;
       margin: 15px 0;
       font-size: 20px;
       line-height: 1.3em; }
+      @media screen and (max-width: 768px) {
+        html #index section.get-your .frame .text p {
+          font-size: 16px; } }
     html #index section.get-your .frame .highlights {
       margin-top: 45px; }
       html #index section.get-your .frame .highlights .title {
-        color: #322B2A;
+        color: #322b2a;
         opacity: 0.75;
         font-size: 25px;
         text-align: left;
         width: 100%;
         max-width: none; }
+        @media screen and (max-width: 768px) {
+          html #index section.get-your .frame .highlights .title {
+            text-align: center; } }
       html #index section.get-your .frame .highlights .box-wrap {
         width: 100%;
         display: flex;
@@ -409,56 +439,93 @@ html #index section.get-your {
           display: flex;
           height: 71px;
           align-items: center;
-          margin: 20px 60px 20px 0; }
+          margin: 20px 30px; }
           html #index section.get-your .frame .highlights .box-wrap .box .text {
-            color: #322B2A;
+            color: #322b2a;
             opacity: 75%;
             margin-left: 15px; }
-          @media screen and (min-width: 768px) {
-            html #index section.get-your .frame .highlights .box-wrap .box:nth-child(4) {
-              margin-left: 35px; } }
-html #index section.event {
-  height: 45vw;
-  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/front_page_middle_banner_1-copy.jpg);
-  background-size: cover;
-  display: flex;
-  align-items: center; }
-  html #index section.event .frame {
-    width: 90%;
-    margin: auto; }
-    html #index section.event .frame p {
-      color: white;
-      font-style: oblique;
-      text-align: center;
-      font-size: 36px; }
-    @media screen and (min-width: 768px) {
-      html #index section.event .frame {
-        width: 750px;
-        margin: auto;
-        line-height: 77px; } }
-    @media screen and (min-width: 768px) {
-      html #index section.event .frame .p1 {
-        font-size: 100px;
-        text-align: left; } }
-    @media screen and (min-width: 768px) {
-      html #index section.event .frame .p2 {
-        font-size: 76px;
-        text-align: right; } }
+          @media screen and (max-width: 768px) {
+            html #index section.get-your .frame .highlights .box-wrap .box {
+              margin: 20px auto;
+                /* &:nth-child(4){
+								margin-left: 35px; 
+							} */ } }
+        html #index section.get-your .frame .highlights .box-wrap .box1 {
+          display: flex;
+          height: 71px;
+          align-items: center;
+          margin: 20px 60px; }
+          html #index section.get-your .frame .highlights .box-wrap .box1 .text {
+            color: #322b2a;
+            opacity: 75%;
+            margin-left: 15px; }
+          @media screen and (max-width: 768px) {
+            html #index section.get-your .frame .highlights .box-wrap .box1 {
+              margin: 20px auto;
+              min-width: 200px;
+                /* &:nth-child(4){
+									//margin-left: 25px; 
+								} */ } }
+html #index section.newevent .containerani {
+  position: relative; }
+html #index section.newevent .textOnImg {
+  position: absolute;
+  color: white;
+  font-size: 4.5vw;
+  font-family: 'Seravek';
+  font-weight: 400;
+  text-shadow: 1px 1px 2px #c7c9c8;
+  opacity: 0%;
+  transform: translate(-50%, -50%);
+  animation-name: textOnImgani;
+  animation-duration: 0.8s;
+  animation-delay: 5s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: forwards; }
+@keyframes textOnImgani {
+  from {
+    top: 60%;
+    left: 50%;
+    opacity: 20%; }
+  to {
+    top: 50%;
+    left: 50%;
+    opacity: 100%; } }
+@media screen and (max-width: 768px) {
+  html #index section.newevent {
+    display: none; } }
 html #index section.workspace {
   padding: 150px 0; }
+  @media screen and (max-width: 768px) {
+    html #index section.workspace {
+      padding: 40px 0; } }
   html #index section.workspace .frame {
     width: 90%;
     margin: auto;
-    max-width: 1650px; }
+    max-width: 1450px; }
     html #index section.workspace .frame .title {
-      font-size: 35px;
+      font-size: 44px;
       text-align: center; }
+      @media screen and (max-width: 768px) {
+        html #index section.workspace .frame .title {
+          display: none; } }
+    html #index section.workspace .frame .title-mobile {
+      display: none; }
+      @media screen and (max-width: 768px) {
+        html #index section.workspace .frame .title-mobile {
+          display: block;
+          font-size: 28px;
+          text-align: center;
+          margin-bottom: -40px; } }
     html #index section.workspace .frame .subtitle {
       text-align: center;
       font-family: 'Seravek';
       font-weight: lighter;
       font-style: italic;
       font-size: 25px; }
+      @media screen and (max-width: 768px) {
+        html #index section.workspace .frame .subtitle {
+          display: none; } }
     html #index section.workspace .frame .card-wrapper {
       margin-top: 30px; }
       html #index section.workspace .frame .card-wrapper .card {
@@ -469,30 +536,39 @@ html #index section.workspace {
         html #index section.workspace .frame .card-wrapper .card .img {
           width: 100%;
           height: 230px;
-          background-color: #CDE2BC;
+          background-color: #cde2bc;
           display: flex;
           align-items: center;
           justify-content: center;
           background-size: cover; }
           html #index section.workspace .frame .card-wrapper .card .img .title {
             color: white;
-            font-size: 44px;
-            text-align: center; }
+            font-size: 35px;
+            text-align: center;
+            line-height: 1; }
+            @media screen and (max-width: 768px) {
+              html #index section.workspace .frame .card-wrapper .card .img .title {
+                display: block; } }
         html #index section.workspace .frame .card-wrapper .card .head {
-          border-bottom: 1px solid #649A9E;
+          border-bottom: 1px solid #649a9e;
           padding: 20px 0; }
           html #index section.workspace .frame .card-wrapper .card .head .item {
-            padding: 5px 0; }
+            padding: 0;
+            font-weight: 900; }
           html #index section.workspace .frame .card-wrapper .card .head .size {
-            font-size: 27px; }
+            font-size: 25px;
+            font-weight: 900; }
             html #index section.workspace .frame .card-wrapper .card .head .size sup {
-              font-size: 12px; }
+              font-size: 15px;
+              font-weight: 900; }
           html #index section.workspace .frame .card-wrapper .card .head .function {
             font-style: italic;
-            font-size: 25px; }
+            font-size: 25px;
+            font-weight: 900; }
           html #index section.workspace .frame .card-wrapper .card .head .capacity {
             font-style: italic;
-            font-size: 25px; }
+            font-size: 25px;
+            font-weight: 900; }
         html #index section.workspace .frame .card-wrapper .card .intro {
           padding-top: 10px;
           padding-bottom: 90px; }
@@ -501,15 +577,17 @@ html #index section.workspace {
             line-height: 1.3em; }
         html #index section.workspace .frame .card-wrapper .card .button {
           display: block;
-          width: 100%;
-          background-color: #CDE2BC;
+          width: 99%;
+          background-color: #cde2bc;
           text-align: center;
-          color: #322B2A;
+          color: #322b2a;
           font-family: Quicksand;
-          font-size: 22px;
-          border-radius: 17px;
-          padding: 8px 0;
+          font-size: 25px;
+          border-radius: 22px;
+          padding: 10px 0;
           box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+          position: relative;
+          bottom: 2px;
           cursor: pointer;
           position: absolute;
           bottom: 0; }
@@ -544,39 +622,54 @@ html #index section.map {
   html #index section.map iframe {
     max-width: 1182px; }
   html #index section.map iframe {
-    max-width: 1650px; }
+    max-width: 100%; }
 html #index section.location {
   padding: 150px 0; }
+  @media screen and (max-width: 768px) {
+    html #index section.location {
+      padding: 50px 0; } }
   html #index section.location .frame {
     width: 90%;
     margin: auto;
-    max-width: 1650px; }
-    html #index section.location .frame .left img.deco {
-      width: 65%;
-      margin: auto;
-      display: block; }
+    max-width: 1250px;
+    display: flex;
+    align-items: center; }
+    @media screen and (max-width: 768px) {
+      html #index section.location .frame {
+        flex-direction: column-reverse; } }
+    html #index section.location .frame .left {
+      /* .hideOnMobile {
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
+      } */ }
+      html #index section.location .frame .left img.deco {
+        width: 90%;
+        margin: auto;
+        display: block; }
+        @media screen and (max-width: 768px) {
+          html #index section.location .frame .left img.deco {
+            display: none; } }
+      html #index section.location .frame .left ul li {
+        display: flex;
+        align-items: start;
+        padding: 20px 0;
+        border-bottom: 1px solid #649a9e; }
+        html #index section.location .frame .left ul li img {
+          width: 70px; }
+        html #index section.location .frame .left ul li p {
+          font-family: Seravek;
+          font-size: 20px;
+          margin: 15px; }
+        html #index section.location .frame .left ul li:last-child {
+          border: 0; }
       @media screen and (min-width: 992px) {
-        html #index section.location .frame .left img.deco {
-          width: 100%; } }
-    html #index section.location .frame .left ul li {
-      display: flex;
-      align-items: center;
-      padding: 20px 0;
-      border-bottom: 1px solid #649A9E; }
-      html #index section.location .frame .left ul li img {
-        width: 77px; }
-      html #index section.location .frame .left ul li p {
-        font-family: Seravek;
-        font-size: 21px;
-        margin-left: 10px; }
-      html #index section.location .frame .left ul li:last-child {
-        border: 0; }
-    @media screen and (min-width: 992px) {
-      html #index section.location .frame .left {
-        flex: 1; } }
+        html #index section.location .frame .left {
+          flex: 1; } }
     html #index section.location .frame .right img {
       width: 100%;
-      margin-top: 40px; }
+      margin-top: 40px;
+      margin-bottom: 40px; }
     @media screen and (min-width: 992px) {
       html #index section.location .frame .right {
         flex: 3;
@@ -603,13 +696,13 @@ html #index section.inquery {
         text-align: center; }
       html #index section.inquery .frame .inquery-form .seperator {
         position: relative;
-        border-bottom: 2px solid #649A9E;
+        border-bottom: 2px solid #649a9e;
         width: 166px;
         margin: 20px auto 50px; }
         html #index section.inquery .frame .inquery-form .seperator .square {
           width: 16px;
           height: 16px;
-          background-color: #649A9E;
+          background-color: #649a9e;
           transform: rotate(45deg);
           margin: auto;
           box-shadow: 0px 0px 0px 5px white;
@@ -631,11 +724,11 @@ html #index section.inquery {
               border-radius: 0;
               position: relative; }
               html #index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-toggle:after {
-                width: 15px;
-                height: 15px;
+                width: 12px;
+                height: 11px;
                 border: 0;
-                border-left: 1px solid black;
-                border-bottom: 1px solid black;
+                border-left: 3px solid #322b2a;
+                border-bottom: 3px solid #322b2a;
                 transform: rotate(-45deg);
                 margin-top: -9px; }
               html #index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-toggle:before {
@@ -643,16 +736,15 @@ html #index section.inquery {
                 height: calc(100% + 2px);
                 width: 40px;
                 position: absolute;
-                right: -1px;
-                background-color: #CDE2BC;
-                border: 1px solid #322B2A; }
+                right: -1px; }
             html #index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu {
-              border: 1px solid #322B2A;
+              border: 1px solid #322b2a;
               border-radius: 0; }
               html #index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu .inner {
                 border: 0; }
-                html #index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu .inner .selected, html #index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu .inner .active {
-                  background-color: #649A9E; }
+                html #index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu .inner .selected,
+                html #index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu .inner .active {
+                  background-color: #649a9e; }
               html #index section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu .dropdown-item .text {
                 font-size: 18px;
                 font-family: 'Seravek'; }
@@ -663,7 +755,7 @@ html #index section.inquery {
           html #index section.inquery .frame .inquery-form form .input-text .question input[type='text'] {
             width: 100%;
             border: 0;
-            border-bottom: 1px solid #322B2A;
+            border-bottom: 1px solid #322b2a;
             outline: none;
             font-family: 'Seravek'; }
             html #index section.inquery .frame .inquery-form form .input-text .question input[type='text']::placeholder {
@@ -696,15 +788,17 @@ html #index section.inquery {
               font-style: italic; }
         html #index section.inquery .frame .inquery-form form .button {
           display: block;
-          width: 100%;
-          background-color: #CDE2BC;
+          width: 99%;
+          background-color: #cde2bc;
           text-align: center;
-          color: #322B2A;
+          color: #322b2a;
           font-family: Quicksand;
-          font-size: 22px;
-          border-radius: 17px;
-          padding: 8px 0;
+          font-size: 25px;
+          border-radius: 22px;
+          padding: 10px 0;
           box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+          position: relative;
+          bottom: 2px;
           cursor: pointer;
           margin: auto;
           margin-top: 55px;
@@ -712,7 +806,7 @@ html #index section.inquery {
           border: none;
           outline: none;
           cursor: pointer;
-          font-size: 26px; }
+          font-size: 22px; }
           html #index section.inquery .frame .inquery-form form .button:hover {
             filter: brightness(0.9); }
           html #index section.inquery .frame .inquery-form form .button:active {
@@ -745,21 +839,25 @@ html #product section.banner {
   height: 40vw;
   background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/ps_page_banner01.png);
   background-size: contain;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: 50% 55px; }
 html #product section.section-room {
-  padding-top: 50px; }
+  padding-bottom: 90px; }
+  @media screen and (max-width: 768px) {
+    html #product section.section-room {
+      margin-top: 50px; } }
   html #product section.section-room .frame {
     width: 90%;
     margin: auto;
-    max-width: 1480px;
+    max-width: 1320px;
     background-color: #f7f8f8; }
     html #product section.section-room .frame .right {
       position: relative; }
       html #product section.section-room .frame .right .title {
         color: white;
         font-size: 31px;
-        height: 72px;
-        background: #8A9FB4;
+        height: 90px;
+        background: #8a9fb4;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -771,26 +869,28 @@ html #product section.section-room {
         html #product section.section-room .frame .right .info .text {
           padding-bottom: 20px; }
           html #product section.section-room .frame .right .info .text li {
-            font-size: 18px;
+            font-size: 20px;
             font-style: italic; }
           @media screen and (min-width: 1200px) {
             html #product section.section-room .frame .right .info .text {
-              margin-bottom: 40px; } }
+              margin-bottom: 25px; } }
         html #product section.section-room .frame .right .info img {
           display: block;
-          margin: auto;
+          margin: 40px auto;
           width: 100%; }
         html #product section.section-room .frame .right .info .button {
           display: block;
-          width: 100%;
-          background-color: #CDE2BC;
+          width: 99%;
+          background-color: #cde2bc;
           text-align: center;
-          color: #322B2A;
+          color: #322b2a;
           font-family: Quicksand;
-          font-size: 22px;
-          border-radius: 17px;
-          padding: 8px 0;
+          font-size: 25px;
+          border-radius: 22px;
+          padding: 10px 0;
           box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+          position: relative;
+          bottom: 2px;
           cursor: pointer;
           margin-top: 25px; }
           html #product section.section-room .frame .right .info .button:hover {
@@ -801,7 +901,7 @@ html #product section.section-room {
           @media screen and (min-width: 1200px) {
             html #product section.section-room .frame .right .info .button {
               position: absolute;
-              bottom: 0;
+              bottom: 2px;
               width: 80%; } }
         @media screen and (min-width: 1200px) {
           html #product section.section-room .frame .right .info {
@@ -815,6 +915,9 @@ html #product section.section-room {
       html #product section.section-room .frame .left .slider {
         width: 100%;
         height: 40vw; }
+        @media screen and (max-width: 768px) {
+          html #product section.section-room .frame .left .slider {
+            height: 60vw; } }
         html #product section.section-room .frame .left .slider .slide {
           display: none;
           height: 100%;
@@ -833,180 +936,187 @@ html #product section.section-room {
       html #product section.section-room .frame {
         display: flex;
         flex-direction: row-reverse; } }
-  @media screen and (min-width: 1200px) {
-    html #product section.section-room {
-      padding-top: 110px; } }
 html #product section.conference .frame .right .info img {
-  max-width: 255px; }
+  max-width: 280px; }
 html #product section.conference .frame .left .slider .slide:nth-child(1) {
-  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_07.jpg); }
+  background-image: url(https://mooo.work/bookingcalendar/wp-content/themes/bookingCalendar/img/conference-room-detail-1.jpg); }
 html #product section.conference .frame .left .slider .slide:nth-child(2) {
-  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_07.jpg); }
+  background-image: url(https://mooo.work/bookingcalendar/wp-content/themes/bookingCalendar/img/conference-room-detail-1.jpg); }
 html #product section.conference .frame .left .slider .slide:nth-child(3) {
-  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_07.jpg); }
+  background-image: url(https://mooo.work/bookingcalendar/wp-content/themes/bookingCalendar/img/conference-room-detail-1.jpg); }
 html #product section.meeting .frame .right .title {
-  background: #9AB5A9; }
+  background: #9ab5a9; }
 html #product section.meeting .frame .right .info img {
-  max-width: 320px; }
+  max-width: 280px; }
 html #product section.meeting .frame .left .slider .slide:nth-child(1) {
-  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_03.jpg); }
+  background-image: url(https://mooo.work/bookingcalendar/wp-content/themes/bookingCalendar/img/meeting-room-detail-1.jpg); }
 html #product section.meeting .frame .left .slider .slide:nth-child(2) {
-  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_03.jpg); }
+  background-image: url(https://mooo.work/bookingcalendar/wp-content/themes/bookingCalendar/img/meeting-room-detail-1.jpg); }
 html #product section.meeting .frame .left .slider .slide:nth-child(3) {
-  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_03.jpg); }
+  background-image: url(https://mooo.work/bookingcalendar/wp-content/themes/bookingCalendar/img/meeting-room-detail-1.jpg); }
 html #product section.lobby .frame .right .title {
-  background: #81B9B8; }
+  background: #81b9b8; }
 html #product section.lobby .frame .right .info img {
-  max-width: 250px; }
+  max-width: 220px; }
 html #product section.lobby .frame .left .slider .slide:nth-child(1) {
-  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_05.jpg); }
+  background-image: url(https://mooo.work/bookingcalendar/wp-content/themes/bookingCalendar/img/lobby-detail-3.jpg); }
 html #product section.lobby .frame .left .slider .slide:nth-child(2) {
-  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_05.jpg); }
+  background-image: url(https://mooo.work/bookingcalendar/wp-content/themes/bookingCalendar/img/lobby-detail-3.jpg); }
 html #product section.lobby .frame .left .slider .slide:nth-child(3) {
-  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_05.jpg); }
-html #product section.section-two-room {
-  padding: 50px 0; }
-  html #product section.section-two-room .frame {
-    width: 90%;
-    margin: auto;
-    max-width: 1480px; }
-    html #product section.section-two-room .frame .room {
-      background-color: #f7f8f8; }
-      html #product section.section-two-room .frame .room .title {
-        width: 100%;
-        height: 72px;
-        color: white;
+  background-image: url(https://mooo.work/bookingcalendar/wp-content/themes/bookingCalendar/img/lobby-detail-3.jpg); }
+html #product section.section-two-room .frame {
+  width: 90%;
+  margin: auto;
+  max-width: 1320px; }
+  html #product section.section-two-room .frame .room {
+    background-color: #f7f8f8; }
+    html #product section.section-two-room .frame .room .title {
+      width: 100%;
+      height: 90px;
+      color: white;
+      display: flex;
+      font-size: 31px;
+      text-align: center;
+      line-height: 1em; }
+      @media screen and (max-width: 768px) {
+        html #product section.section-two-room .frame .room .title {
+          font-size: 26px; } }
+      html #product section.section-two-room .frame .room .title .left {
+        width: 56%;
+        background-color: #9ab5a9;
         display: flex;
-        font-size: 31px;
-        text-align: center;
-        line-height: 1em; }
-        html #product section.section-two-room .frame .room .title .left {
-          width: 56%;
-          background-color: #9AB5A9;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          position: relative; }
-          html #product section.section-two-room .frame .room .title .left:after {
-            content: '';
-            width: 44px;
-            height: 11px;
-            position: absolute;
-            background-color: #CDE2BC;
-            right: 0;
-            transform: translateX(50%);
-            z-index: 100; }
-        html #product section.section-two-room .frame .room .title .right {
-          width: 44%;
-          background-color: #81B9B8;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          position: relative; }
-          html #product section.section-two-room .frame .room .title .right:before {
-            content: '';
-            width: 11px;
-            height: 44px;
-            position: absolute;
-            background-color: #CDE2BC;
-            left: 0;
-            transform: translateX(-50%);
-            z-index: 100; }
-        @media screen and (min-width: 1200px) {
-          html #product section.section-two-room .frame .room .title {
-            margin-bottom: 20px; } }
-      html #product section.section-two-room .frame .room .content-wrap {
-        width: 100%;
-        margin: auto;
-        max-width: 390px; }
-        html #product section.section-two-room .frame .room .content-wrap .number {
-          padding: 20px;
-          font-size: 18px;
-          font-style: italic; }
-        html #product section.section-two-room .frame .room .content-wrap .intro {
-          font-size: 18px;
-          font-style: italic;
-          padding: 20px;
-          padding-top: 0; }
-        html #product section.section-two-room .frame .room .content-wrap .blueprint img {
-          display: block;
-          width: 100%;
-          height: auto;
-          padding: 20px 0; }
-        @media screen and (min-width: 768px) {
-          html #product section.section-two-room .frame .room .content-wrap .blueprint {
-            height: 400px;
-            display: flex;
-            align-items: center; } }
-  @media screen and (min-width: 768px) and (min-width: 1200px) {
-    html #product section.section-two-room .frame .room .content-wrap .blueprint {
-      height: 600px; } }
-
-      html #product section.section-two-room .frame .room .button {
+        justify-content: center;
+        align-items: center;
+        position: relative; }
+        @media screen and (max-width: 768px) {
+          html #product section.section-two-room .frame .room .title .left {
+            padding: 0 18px; } }
+        html #product section.section-two-room .frame .room .title .left:after {
+          content: '';
+          width: 44px;
+          height: 11px;
+          position: absolute;
+          background-color: #cde2bc;
+          right: 0;
+          transform: translateX(50%);
+          z-index: 100; }
+          @media screen and (max-width: 768px) {
+            html #product section.section-two-room .frame .room .title .left:after {
+              width: 38px; } }
+      html #product section.section-two-room .frame .room .title .right {
+        width: 44%;
+        background-color: #81b9b8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative; }
+        html #product section.section-two-room .frame .room .title .right:before {
+          content: '';
+          width: 11px;
+          height: 44px;
+          position: absolute;
+          background-color: #cde2bc;
+          left: 0;
+          transform: translateX(-50%);
+          z-index: 100; }
+          @media screen and (max-width: 768px) {
+            html #product section.section-two-room .frame .room .title .right:before {
+              height: 38px; } }
+      @media screen and (min-width: 1200px) {
+        html #product section.section-two-room .frame .room .title {
+          margin-bottom: 20px; } }
+    html #product section.section-two-room .frame .room .content-wrap {
+      width: 100%;
+      margin: auto;
+      max-width: 420px; }
+      html #product section.section-two-room .frame .room .content-wrap .number {
+        padding: 20px;
+        font-size: 18px;
+        font-style: italic; }
+      html #product section.section-two-room .frame .room .content-wrap .intro {
+        font-size: 20px;
+        font-style: italic;
+        padding: 20px;
+        padding-top: 0; }
+      html #product section.section-two-room .frame .room .content-wrap .blueprint img {
         display: block;
         width: 100%;
-        background-color: #CDE2BC;
-        text-align: center;
-        color: #322B2A;
-        font-family: Quicksand;
-        font-size: 22px;
-        border-radius: 17px;
-        padding: 8px 0;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-        cursor: pointer;
-        max-width: 375px;
-        margin: auto;
-        font-size: 26px; }
-        html #product section.section-two-room .frame .room .button:hover {
-          filter: brightness(0.9); }
-        html #product section.section-two-room .frame .room .button:active {
-          transform: translateY(4px);
-          box-shadow: none; }
-      html #product section.section-two-room .frame .room:first-child .content-wrap .blueprint img {
-        transform: rotate(90deg); }
-        @media screen and (min-width: 768px) {
-          html #product section.section-two-room .frame .room:first-child .content-wrap .blueprint img {
-            width: 458px;
-            height: auto; } }
+        height: auto;
+        padding: 90px 0; }
       @media screen and (min-width: 768px) {
-        html #product section.section-two-room .frame .room:first-child {
-          width: 48%; } }
-      html #product section.section-two-room .frame .room:nth-child(2) {
-        margin-top: 50px; }
-        html #product section.section-two-room .frame .room:nth-child(2) .title .left {
-          background-color: #8A9FB4; }
-        @media screen and (min-width: 768px) {
-          html #product section.section-two-room .frame .room:nth-child(2) .content-wrap .blueprint img {
-            width: 450spx;
-            height: auto; } }
-        @media screen and (min-width: 768px) {
-          html #product section.section-two-room .frame .room:nth-child(2) {
-            margin-top: 0;
-            width: 48%; } }
+        html #product section.section-two-room .frame .room .content-wrap .blueprint {
+          height: 400px;
+          display: flex;
+          align-items: center; } }
+  @media screen and (min-width: 768px) and (min-width: 1200px) {
+    html #product section.section-two-room .frame .room .content-wrap .blueprint {
+      height: 560px; } }
+
+    html #product section.section-two-room .frame .room .button {
+      display: block;
+      width: 99%;
+      background-color: #cde2bc;
+      text-align: center;
+      color: #322b2a;
+      font-family: Quicksand;
+      font-size: 25px;
+      border-radius: 22px;
+      padding: 10px 0;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+      position: relative;
+      bottom: 2px;
+      cursor: pointer;
+      max-width: 375px;
+      margin: auto;
+      font-size: 26px; }
+      html #product section.section-two-room .frame .room .button:hover {
+        filter: brightness(0.9); }
+      html #product section.section-two-room .frame .room .button:active {
+        transform: translateY(4px);
+        box-shadow: none; }
+    html #product section.section-two-room .frame .room:first-child .content-wrap .blueprint img {
+      transform: rotate(90deg); }
+      @media screen and (min-width: 768px) {
+        html #product section.section-two-room .frame .room:first-child .content-wrap .blueprint img {
+          width: 458px;
+          height: auto; } }
     @media screen and (min-width: 768px) {
-      html #product section.section-two-room .frame {
-        display: flex;
-        justify-content: space-between; } }
-  @media screen and (min-width: 1200px) {
-    html #product section.section-two-room {
-      padding: 110px 0; } }
-html #product section.kitchen .frame .right .title {
-  background: #9EA29C; }
-html #product section.kitchen .frame .right .info img {
-  max-width: 242px; }
-html #product section.kitchen .frame .left .slider .slide:nth-child(1) {
-  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/kitchen.png); }
-html #product section.kitchen .frame .left .slider .slide:nth-child(2) {
-  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/kitchen.png); }
-html #product section.kitchen .frame .left .slider .slide:nth-child(3) {
-  background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/kitchen.png); }
-html #product section.venue .frame .right .title {
-  background: #649A9E; }
+      html #product section.section-two-room .frame .room:first-child {
+        width: 48%; } }
+    html #product section.section-two-room .frame .room:nth-child(2) {
+      margin-top: 50px; }
+      html #product section.section-two-room .frame .room:nth-child(2) .title .left {
+        background-color: #8a9fb4; }
+      @media screen and (min-width: 768px) {
+        html #product section.section-two-room .frame .room:nth-child(2) .content-wrap .blueprint img {
+          width: 450spx;
+          height: auto; } }
+      @media screen and (min-width: 768px) {
+        html #product section.section-two-room .frame .room:nth-child(2) {
+          margin-top: 0;
+          width: 48%; } }
+  @media screen and (min-width: 768px) {
+    html #product section.section-two-room .frame {
+      display: flex;
+      justify-content: space-between; } }
 @media screen and (min-width: 1200px) {
-  html #product section.venue .frame .right .info {
-    padding-right: 0; }
-    html #product section.venue .frame .right .info img {
-      width: 323px; } }
+  html #product section.section-two-room {
+    padding-bottom: 90px; } }
+html #product section.kitchen .frame .right .title {
+  background: #9ea29c; }
+html #product section.kitchen .frame .right .info img {
+  max-width: 280px; }
+html #product section.kitchen .frame .left .slider .slide:nth-child(1) {
+  background-image: url(https://mooo.work/bookingcalendar/wp-content/themes/bookingCalendar/img/kitchen-detail-1.jpg); }
+html #product section.kitchen .frame .left .slider .slide:nth-child(2) {
+  background-image: url(https://mooo.work/bookingcalendar/wp-content/themes/bookingCalendar/img/kitchen-detail-1.jpg); }
+html #product section.kitchen .frame .left .slider .slide:nth-child(3) {
+  background-image: url(https://mooo.work/bookingcalendar/wp-content/themes/bookingCalendar/img/kitchen-detail-1.jpg); }
+html #product section.venue .frame .right .title {
+  background: #649a9e; }
+@media screen and (min-width: 1200px) {
+  html #product section.venue .frame .right .info img {
+    width: 300px; } }
 html #product section.venue .frame .left .slider .slide:nth-child(1) {
   background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/conference_room_03.jpg); }
 html #product section.venue .frame .left .slider .slide:nth-child(2) {
@@ -1025,13 +1135,13 @@ html #product section.catering {
       text-align: center; }
     html #product section.catering .frame .seperator {
       position: relative;
-      border-bottom: 2px solid #649A9E;
+      border-bottom: 2px solid #649a9e;
       width: 166px;
       margin: 20px auto 50px; }
       html #product section.catering .frame .seperator .square {
         width: 16px;
         height: 16px;
-        background-color: #649A9E;
+        background-color: #649a9e;
         transform: rotate(45deg);
         margin: auto;
         box-shadow: 0px 0px 0px 5px white;
@@ -1046,6 +1156,10 @@ html #product section.catering {
         margin-top: 50px; }
         html #product section.catering .frame .options .option img {
           margin-bottom: 20px; }
+          @media screen and (max-width: 768px) {
+            html #product section.catering .frame .options .option img {
+              margin: auto;
+              padding-bottom: 15px; } }
         html #product section.catering .frame .options .option .service {
           font-size: 25px;
           font-style: italic; }
@@ -1063,7 +1177,18 @@ html #product section.catering {
           flex-wrap: wrap; } }
   @media screen and (min-width: 1200px) {
     html #product section.catering {
-      padding: 110px 0; } }
+      padding: 110px 0;
+      background-color: #f7f8f8; } }
+html .banner1bg {
+  background-color: #f7f8f8; }
+html .banner1 {
+  display: block;
+  padding: 40px 0px;
+  margin: 0 auto;
+  width: 90vw;
+  max-width: 1220px; }
+html area {
+  outline: none; }
 html #inquery section.inquery {
   padding: 20px 0 75px 0;
   background-color: #e6eded; }
@@ -1082,13 +1207,13 @@ html #inquery section.inquery {
         text-align: center; }
       html #inquery section.inquery .frame .inquery-form .seperator {
         position: relative;
-        border-bottom: 2px solid #649A9E;
+        border-bottom: 2px solid #649a9e;
         width: 166px;
         margin: 20px auto 50px; }
         html #inquery section.inquery .frame .inquery-form .seperator .square {
           width: 16px;
           height: 16px;
-          background-color: #649A9E;
+          background-color: #649a9e;
           transform: rotate(45deg);
           margin: auto;
           box-shadow: 0px 0px 0px 5px white;
@@ -1110,11 +1235,11 @@ html #inquery section.inquery {
               border-radius: 0;
               position: relative; }
               html #inquery section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-toggle:after {
-                width: 15px;
-                height: 15px;
+                width: 12px;
+                height: 11px;
                 border: 0;
-                border-left: 1px solid black;
-                border-bottom: 1px solid black;
+                border-left: 3px solid #322b2a;
+                border-bottom: 3px solid #322b2a;
                 transform: rotate(-45deg);
                 margin-top: -9px; }
               html #inquery section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-toggle:before {
@@ -1122,16 +1247,15 @@ html #inquery section.inquery {
                 height: calc(100% + 2px);
                 width: 40px;
                 position: absolute;
-                right: -1px;
-                background-color: #CDE2BC;
-                border: 1px solid #322B2A; }
+                right: -1px; }
             html #inquery section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu {
-              border: 1px solid #322B2A;
+              border: 1px solid #322b2a;
               border-radius: 0; }
               html #inquery section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu .inner {
                 border: 0; }
-                html #inquery section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu .inner .selected, html #inquery section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu .inner .active {
-                  background-color: #649A9E; }
+                html #inquery section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu .inner .selected,
+                html #inquery section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu .inner .active {
+                  background-color: #649a9e; }
               html #inquery section.inquery .frame .inquery-form form .input-dropdown .bootstrap-select .dropdown-menu .dropdown-item .text {
                 font-size: 18px;
                 font-family: 'Seravek'; }
@@ -1142,7 +1266,7 @@ html #inquery section.inquery {
           html #inquery section.inquery .frame .inquery-form form .input-text .question input[type='text'] {
             width: 100%;
             border: 0;
-            border-bottom: 1px solid #322B2A;
+            border-bottom: 1px solid #322b2a;
             outline: none;
             font-family: 'Seravek'; }
             html #inquery section.inquery .frame .inquery-form form .input-text .question input[type='text']::placeholder {
@@ -1175,15 +1299,17 @@ html #inquery section.inquery {
               font-style: italic; }
         html #inquery section.inquery .frame .inquery-form form .button {
           display: block;
-          width: 100%;
-          background-color: #CDE2BC;
+          width: 99%;
+          background-color: #cde2bc;
           text-align: center;
-          color: #322B2A;
+          color: #322b2a;
           font-family: Quicksand;
-          font-size: 22px;
-          border-radius: 17px;
-          padding: 8px 0;
+          font-size: 25px;
+          border-radius: 22px;
+          padding: 10px 0;
           box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+          position: relative;
+          bottom: 2px;
           cursor: pointer;
           margin: auto;
           margin-top: 55px;
@@ -1191,7 +1317,7 @@ html #inquery section.inquery {
           border: none;
           outline: none;
           cursor: pointer;
-          font-size: 26px; }
+          font-size: 22px; }
           html #inquery section.inquery .frame .inquery-form form .button:hover {
             filter: brightness(0.9); }
           html #inquery section.inquery .frame .inquery-form form .button:active {
@@ -1243,14 +1369,14 @@ html #shoppingCart {
           text-align: center; }
         html #shoppingCart section.main .frame .information .seperator {
           position: relative;
-          border-bottom: 2px solid #649A9E;
+          border-bottom: 2px solid #649a9e;
           width: 166px;
           margin: 20px auto 50px;
           margin-top: 10px; }
           html #shoppingCart section.main .frame .information .seperator .square {
             width: 16px;
             height: 16px;
-            background-color: #649A9E;
+            background-color: #649a9e;
             transform: rotate(45deg);
             margin: auto;
             box-shadow: 0px 0px 0px 5px white;
@@ -1271,10 +1397,10 @@ html #shoppingCart {
               margin-top: 15px; }
               html #shoppingCart section.main .frame .information .form .quiz .content .option {
                 border-radius: 7px;
-                border: 1px solid #322B2A;
+                border: 1px solid #322b2a;
                 box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2); }
               html #shoppingCart section.main .frame .information .form .quiz .content .selected {
-                background-color: #CDE2BC; }
+                background-color: #cde2bc; }
               @media screen and (min-width: 768px) {
                 html #shoppingCart section.main .frame .information .form .quiz .content {
                   padding-left: 30px; } }
@@ -1284,7 +1410,7 @@ html #shoppingCart {
                 position: absolute;
                 width: 36px;
                 height: 36px;
-                background-color: #CDE2BC;
+                background-color: #cde2bc;
                 border-radius: 50%;
                 text-align: center;
                 line-height: 36px;
@@ -1300,7 +1426,7 @@ html #shoppingCart {
             cursor: pointer; }
             html #shoppingCart section.main .frame .information .form .q1 .content .option .room {
               height: 62px;
-              border-bottom: 1px solid #322B2A;
+              border-bottom: 1px solid #322b2a;
               display: flex;
               align-items: center;
               justify-content: center; }
@@ -1329,7 +1455,7 @@ html #shoppingCart {
                 font-family: 'Seravek';
                 font-size: 18px; }
               html #shoppingCart section.main .frame .information .form .q2 .content .date .date-option .date-select {
-                border: 1px solid #322B2A;
+                border: 1px solid #322b2a;
                 border-radius: 7px;
                 text-align: center;
                 font-family: 'Seravek';
@@ -1361,7 +1487,7 @@ html #shoppingCart {
               font-family: 'Seravek';
               font-size: 18px; }
             html #shoppingCart section.main .frame .information .form .q2 .content .number input {
-              border: 1px solid #322B2A;
+              border: 1px solid #322b2a;
               border-radius: 7px;
               text-align: center;
               font-family: 'Seravek';
@@ -1370,7 +1496,7 @@ html #shoppingCart {
               height: 34px;
               box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2); }
               html #shoppingCart section.main .frame .information .form .q2 .content .number input:focus {
-                background-color: #CDE2BC; }
+                background-color: #cde2bc; }
               html #shoppingCart section.main .frame .information .form .q2 .content .number input::placeholder {
                 font-family: 'Seravek';
                 font-size: 15px;
@@ -1409,7 +1535,7 @@ html #shoppingCart {
                     font-family: 'Seravek';
                     font-size: 15px; }
               html #shoppingCart section.main .frame .information .form .q3 .content .extra-type .type-options .selected {
-                background-color: #CDE2BC; }
+                background-color: #cde2bc; }
               @media screen and (min-width: 768px) {
                 html #shoppingCart section.main .frame .information .form .q3 .content .extra-type .type-options {
                   display: flex;
@@ -1423,7 +1549,7 @@ html #shoppingCart {
               font-family: 'Seravek'; }
             html #shoppingCart section.main .frame .information .form .q4 .content .contact-info input {
               border: none;
-              border-bottom: 1px solid #322B2A;
+              border-bottom: 1px solid #322b2a;
               outline: none;
               width: 175px; }
               html #shoppingCart section.main .frame .information .form .q4 .content .contact-info input::placeholder {
@@ -1455,7 +1581,7 @@ html #shoppingCart {
               font-family: 'Seravek'; }
             html #shoppingCart section.main .frame .information .form .q5 .content .invoice-info input {
               border: none;
-              border-bottom: 1px solid #322B2A;
+              border-bottom: 1px solid #322b2a;
               outline: none;
               width: 100%; }
               html #shoppingCart section.main .frame .information .form .q5 .content .invoice-info input::placeholder {
@@ -1476,7 +1602,7 @@ html #shoppingCart {
           html #shoppingCart section.main .frame .information .form .q6 .content input {
             width: 100%;
             border: none;
-            border-bottom: 1px solid #322B2A;
+            border-bottom: 1px solid #322b2a;
             outline: none;
             width: 100%; }
             html #shoppingCart section.main .frame .information .form .q6 .content input::placeholder {
@@ -1489,13 +1615,13 @@ html #shoppingCart {
             font-family: 'Seravek';
             display: flex;
             justify-content: center; }
-            html #shoppingCart section.main .frame .information .form .agree input[type="checkbox"] {
+            html #shoppingCart section.main .frame .information .form .agree input[type='checkbox'] {
               appearance: none;
               -webkit-appearance: none;
               -moz-appearance: none;
               -ms-appearance: none;
               border-radius: 0;
-              border: 1px solid #322B2A;
+              border: 1px solid #322b2a;
               width: 21px;
               height: 21px;
               display: block;
@@ -1504,11 +1630,11 @@ html #shoppingCart {
               cursor: pointer;
               position: relative;
               flex: none; }
-              html #shoppingCart section.main .frame .information .form .agree input[type="checkbox"]:hover {
+              html #shoppingCart section.main .frame .information .form .agree input[type='checkbox']:hover {
                 background-color: #dddddd; }
-              html #shoppingCart section.main .frame .information .form .agree input[type="checkbox"]:checked {
-                background-color: #CDE2BC; }
-                html #shoppingCart section.main .frame .information .form .agree input[type="checkbox"]:checked:after {
+              html #shoppingCart section.main .frame .information .form .agree input[type='checkbox']:checked {
+                background-color: #cde2bc; }
+                html #shoppingCart section.main .frame .information .form .agree input[type='checkbox']:checked:after {
                   content: '\f00c';
                   font-family: 'FontAwesome';
                   position: absolute;
@@ -1529,15 +1655,17 @@ html #shoppingCart {
 
           html #shoppingCart section.main .frame .information .form .button {
             display: block;
-            width: 100%;
-            background-color: #CDE2BC;
+            width: 99%;
+            background-color: #cde2bc;
             text-align: center;
-            color: #322B2A;
+            color: #322b2a;
             font-family: Quicksand;
-            font-size: 22px;
-            border-radius: 17px;
-            padding: 8px 0;
+            font-size: 25px;
+            border-radius: 22px;
+            padding: 10px 0;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            position: relative;
+            bottom: 2px;
             cursor: pointer;
             margin: auto;
             margin-top: 50px;
@@ -1559,11 +1687,11 @@ html #shoppingCart {
               padding-left: 27px;
               padding-top: 0;
               padding-bottom: 75px;
-              border-left: 1px dashed #649A9E; }
+              border-left: 1px dashed #649a9e; }
               html #shoppingCart section.main .frame .information .form:after {
                 content: ' ';
                 width: 50%;
-                border-bottom: 1px dashed #649A9E;
+                border-bottom: 1px dashed #649a9e;
                 position: absolute;
                 bottom: 1px;
                 left: 0; } }
@@ -1584,7 +1712,7 @@ html #shoppingCart {
           text-align: center; }
         html #shoppingCart section.main .frame .recap .seperator {
           position: relative;
-          border-bottom: 2px solid #649A9E;
+          border-bottom: 2px solid #649a9e;
           width: 166px;
           margin: 20px auto 50px;
           width: 105px;
@@ -1592,7 +1720,7 @@ html #shoppingCart {
           html #shoppingCart section.main .frame .recap .seperator .square {
             width: 16px;
             height: 16px;
-            background-color: #649A9E;
+            background-color: #649a9e;
             transform: rotate(45deg);
             margin: auto;
             box-shadow: 0px 0px 0px 5px white;
@@ -1600,7 +1728,7 @@ html #shoppingCart {
         html #shoppingCart section.main .frame .recap ul.form li.project {
           font-family: 'Seravek';
           font-size: 15px;
-          border-bottom: 1px solid #322B2A;
+          border-bottom: 1px solid #322b2a;
           display: flex;
           justify-content: space-between;
           padding: 5px 0; }
@@ -1621,11 +1749,11 @@ html #shoppingCart {
         html #shoppingCart section.main .frame .recap .cancel {
           margin-top: 65px; }
           html #shoppingCart section.main .frame .recap .cancel .cancel-title {
-            color: #91988C;
+            color: #91988c;
             font-family: 'Seravek'; }
           html #shoppingCart section.main .frame .recap .cancel .rule {
             min-height: 86px;
-            border: 1px solid #322B2A;
+            border: 1px solid #322b2a;
             margin-top: 20px; }
         @media screen and (min-width: 768px) {
           html #shoppingCart section.main .frame .recap {
@@ -1661,14 +1789,14 @@ html #shoppingCart {
         text-align: center; }
       html #shoppingCart section.message .frame .seperator {
         position: relative;
-        border-bottom: 2px solid #649A9E;
+        border-bottom: 2px solid #649a9e;
         width: 166px;
         margin: 20px auto 50px;
         margin-top: 10px; }
         html #shoppingCart section.message .frame .seperator .square {
           width: 16px;
           height: 16px;
-          background-color: #649A9E;
+          background-color: #649a9e;
           transform: rotate(45deg);
           margin: auto;
           box-shadow: 0px 0px 0px 5px white;
@@ -1723,17 +1851,17 @@ html #shoppingCart {
           background-color: unset;
           margin-top: -627px; } }
 html .product-page section.banner {
-  background-color: #f1f4f6;
   padding: 40px 0; }
   html .product-page section.banner .frame {
     width: 90%;
     margin: auto;
-    max-width: 1435px; }
+    max-width: 1435px;
+    box-shadow: 0px 5px 6px #2c2c2c4d; }
     html .product-page section.banner .frame .gallery {
       height: 50vw;
       width: 100%;
       overflow: hidden;
-      background-color: #649A9E; }
+      background-color: #649a9e; }
       @media screen and (min-width: 1200px) {
         html .product-page section.banner .frame .gallery {
           height: auto; } }
@@ -1749,7 +1877,6 @@ html .product-page section.banner {
     html .product-page section.banner .frame .information {
       width: 100%;
       background-color: white;
-      box-shadow: 0px 3px 6px #00000029;
       position: relative;
       padding: 20px;
       position: relative;
@@ -1758,10 +1885,10 @@ html .product-page section.banner {
         font-size: 32px; }
         @media screen and (min-width: 768px) {
           html .product-page section.banner .frame .information .name {
-            font-size: 40px; } }
+            font-size: 44px; } }
       html .product-page section.banner .frame .information .info {
         font-style: italic;
-        border-bottom: 1px solid #649A9E;
+        border-bottom: 1px solid #649a9e;
         padding: 15px 0; }
         html .product-page section.banner .frame .information .info .size {
           font-style: normal;
@@ -1793,12 +1920,12 @@ html .product-page section.banner {
           line-height: 72px; }
           @media screen and (min-width: 768px) {
             html .product-page section.banner .frame .information .button-wrap .button {
-              font-size: 26px; } }
+              font-size: 25px; } }
         html .product-page section.banner .frame .information .button-wrap .book {
-          background-color: #CDE2BC;
-          color: #322B2A; }
+          background-color: #cde2bc;
+          color: #322b2a; }
         html .product-page section.banner .frame .information .button-wrap .inquery {
-          background-color: #649A9E;
+          background-color: #649a9e;
           color: white; }
         @media screen and (min-width: 1200px) {
           html .product-page section.banner .frame .information .button-wrap {
@@ -1814,22 +1941,25 @@ html .product-page section.banner {
         display: flex; } }
   @media screen and (min-width: 1200px) {
     html .product-page section.banner {
-      padding: 150px 0 205px 0; } }
+      padding: 70px 0 20px 0; } }
 html .product-page section.introduction {
-  padding: 40px 0 30px 0; }
+  padding: 50px 0 20px 0; }
   html .product-page section.introduction .frame {
     width: 90%;
     margin: auto;
     max-width: 1182px; }
     html .product-page section.introduction .frame .overview p.table-name {
       font-family: 'Seravek';
-      font-size: 30px; }
+      font-size: 31px; }
     html .product-page section.introduction .frame .overview .table {
       box-shadow: 0px 3px 6px #00000029; }
       html .product-page section.introduction .frame .overview .table .table-row {
         padding: 20px; }
+        @media screen and (max-width: 768px) {
+          html .product-page section.introduction .frame .overview .table .table-row {
+            padding-bottom: 0px; } }
         html .product-page section.introduction .frame .overview .table .table-row:nth-child(2n-1) {
-          background-color: #627C9724; }
+          background-color: #f7f8f8; }
         html .product-page section.introduction .frame .overview .table .table-row .title {
           color: #322b2acf;
           font-size: 25px;
@@ -1861,16 +1991,30 @@ html .product-page section.introduction {
           padding: 40px 20px; } }
       html .product-page section.introduction .frame .overview .table .facility .content .item {
         display: flex;
-        margin-bottom: 20px;
         align-items: center; }
+        @media screen and (max-width: 768px) {
+          html .product-page section.introduction .frame .overview .table .facility .content .item {
+            display: flex;
+            padding: 15px 0px;
+            align-items: center; }
+            html .product-page section.introduction .frame .overview .table .facility .content .item img {
+              max-width: 85px;
+              max-height: 100px; } }
         html .product-page section.introduction .frame .overview .table .facility .content .item .text {
           margin-left: 15px;
           line-height: 20px; }
           @media screen and (min-width: 768px) {
             html .product-page section.introduction .frame .overview .table .facility .content .item .text {
-              margin-left: 25px; } }
+              margin-left: 20px; } }
+          @media screen and (max-width: 768px) {
+            html .product-page section.introduction .frame .overview .table .facility .content .item .text {
+              margin: 12px; } }
         html .product-page section.introduction .frame .overview .table .facility .content .item:last-child img {
-          margin: 0 15px; }
+          margin: 0px; }
+          @media screen and (max-width: 768px) {
+            html .product-page section.introduction .frame .overview .table .facility .content .item:last-child img {
+              max-width: 85px;
+              max-height: 100px; } }
         @media screen and (min-width: 992px) {
           html .product-page section.introduction .frame .overview .table .facility .content .item {
             margin-bottom: 0;
@@ -1878,9 +2022,10 @@ html .product-page section.introduction {
             html .product-page section.introduction .frame .overview .table .facility .content .item:first-child {
               width: 260px; }
             html .product-page section.introduction .frame .overview .table .facility .content .item:nth-child(2) {
-              width: 335px; }
-              html .product-page section.introduction .frame .overview .table .facility .content .item:nth-child(2) .text {
-                margin-left: 0; }
+              width: 300px; }
+          @media screen and (max-width: 768px) {
+            html .product-page section.introduction .frame .overview .table .facility .content .item:nth-child(2) img {
+              max-width: 85px; } }
             html .product-page section.introduction .frame .overview .table .facility .content .item:last-child img {
               margin-right: 0; } }
       @media screen and (min-width: 992px) {
@@ -1898,10 +2043,10 @@ html .product-page section.introduction {
             margin-left: -20px;
             font-size: 16px; }
             html .product-page section.introduction .frame .overview .table .price .content table tbody tr th {
-              color: #322B2A;
+              color: #322b2a;
               border: 0;
-              background-color: #E0E1E3;
-              padding-left: 20px;
+              background-color: #e1e3df;
+              padding-left: 15px;
               width: 192px; }
               @media screen and (min-width: 992px) {
                 html .product-page section.introduction .frame .overview .table .price .content table tbody tr th {
@@ -1925,7 +2070,7 @@ html .product-page section.introduction {
                   flex: none; }
                 html .product-page section.introduction .frame .overview .table .price .content table tbody tr:first-child td, html .product-page section.introduction .frame .overview .table .price .content table tbody tr:first-child th {
                   text-align: left;
-                  padding-left: 20px; }
+                  padding-left: 15px; }
                 html .product-page section.introduction .frame .overview .table .price .content table tbody tr:nth-child(5) th {
                   padding-left: 0;
                   padding-right: 0; } }
@@ -1950,36 +2095,42 @@ html .product-page section.introduction {
           flex: none; } }
       html .product-page section.introduction .frame .overview .table .service .content {
         width: 100%; }
-        html .product-page section.introduction .frame .overview .table .service .content .left, html .product-page section.introduction .frame .overview .table .service .content .right {
+        html .product-page section.introduction .frame .overview .table .service .content .left,
+        html .product-page section.introduction .frame .overview .table .service .content .right {
           flex-wrap: wrap;
           justify-content: space-between; }
-          html .product-page section.introduction .frame .overview .table .service .content .left .list-item, html .product-page section.introduction .frame .overview .table .service .content .right .list-item {
+          html .product-page section.introduction .frame .overview .table .service .content .left .list-item,
+          html .product-page section.introduction .frame .overview .table .service .content .right .list-item {
             width: 100%;
             display: flex;
             padding: 5px 0; }
-            html .product-page section.introduction .frame .overview .table .service .content .left .list-item .icon, html .product-page section.introduction .frame .overview .table .service .content .right .list-item .icon {
+            html .product-page section.introduction .frame .overview .table .service .content .left .list-item .icon,
+            html .product-page section.introduction .frame .overview .table .service .content .right .list-item .icon {
               width: 60px;
               display: flex;
               justify-content: center;
               align-items: center; }
-            html .product-page section.introduction .frame .overview .table .service .content .left .list-item p, html .product-page section.introduction .frame .overview .table .service .content .right .list-item p {
+            html .product-page section.introduction .frame .overview .table .service .content .left .list-item p,
+            html .product-page section.introduction .frame .overview .table .service .content .right .list-item p {
               font-family: 'Seravek';
               margin: 0; }
           @media screen and (min-width: 550px) {
-            html .product-page section.introduction .frame .overview .table .service .content .left .list-item, html .product-page section.introduction .frame .overview .table .service .content .right .list-item {
+            html .product-page section.introduction .frame .overview .table .service .content .left .list-item,
+            html .product-page section.introduction .frame .overview .table .service .content .right .list-item {
               width: 49%; }
-              html .product-page section.introduction .frame .overview .table .service .content .left .list-item .icon, html .product-page section.introduction .frame .overview .table .service .content .right .list-item .icon {
+              html .product-page section.introduction .frame .overview .table .service .content .left .list-item .icon,
+              html .product-page section.introduction .frame .overview .table .service .content .right .list-item .icon {
                 width: 40px; } }
         html .product-page section.introduction .frame .overview .table .service .content .left {
           padding-bottom: 20px;
-          border-bottom: 1px solid #322B2A;
+          border-bottom: 1px solid #322b2a;
           position: relative; }
           @media screen and (min-width: 992px) {
             html .product-page section.introduction .frame .overview .table .service .content .left {
               padding: 0;
               padding-right: 15px;
               border: 0;
-              border-right: 1px solid #322B2A;
+              border-right: 1px solid #322b2a;
               flex: 1;
               display: flex;
               flex-wrap: wrap; } }
@@ -2005,32 +2156,19 @@ html .product-page section.introduction {
       margin-top: 50px; }
       html .product-page section.introduction .frame .impression .name {
         font-family: 'Seravek';
-        font-size: 30px; }
+        font-size: 31px; }
       html .product-page section.introduction .frame .impression .gallery {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between; }
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        grid-auto-rows: 240px; }
         html .product-page section.introduction .frame .impression .gallery .thumbnail {
-          width: calc(50% - 7px);
-          background-color: #649A9E;
-          height: 45vw;
           margin: 7px 0;
           background-size: cover;
-          background-position: center;
-          background-image: url(https://mooo.work/bookingcalendar/wp-content/uploads/2020/03/Gallery_page_11.jpg); }
-          html .product-page section.introduction .frame .impression .gallery .thumbnail:last-child {
-            background-color: #CDE2BC; }
-          @media screen and (min-width: 992px) {
-            html .product-page section.introduction .frame .impression .gallery .thumbnail {
-              width: calc((100% - 32px) / 4);
-              height: 24vw; } }
-  @media screen and (min-width: 992px) and (min-width: 1200px) {
-    html .product-page section.introduction .frame .impression .gallery .thumbnail {
-      height: 287px; } }
-
+          background-position: center; }
     html .product-page section.introduction .frame .map-title {
       font-family: 'Seravek';
-      font-size: 30px;
+      font-size: 31px;
       margin: 0;
       margin-top: 50px; }
   @media screen and (min-width: 768px) {
@@ -2043,7 +2181,7 @@ html .product-page section.map {
     max-width: 1182px; }
 html .product-page section.options {
   padding: 40px 0;
-  background-color: #f8fafb; }
+  background-color: #f7f8f8; }
   html .product-page section.options .frame {
     width: 90%;
     margin: auto;
@@ -2057,7 +2195,7 @@ html .product-page section.options {
       margin-top: 30px; }
       html .product-page section.options .frame .box-wrap .box {
         width: 100%;
-        padding: 25px;
+        padding: 20px;
         background-color: white;
         margin-bottom: 15px; }
         html .product-page section.options .frame .box-wrap .box .img {
@@ -2066,7 +2204,7 @@ html .product-page section.options {
           align-items: center;
           text-align: center;
           color: white;
-          background-color: #649A9E;
+          background-color: #649a9e;
           background-size: cover;
           height: 48vw;
           font-size: 42px;
@@ -2084,7 +2222,7 @@ html .product-page section.options {
       height: 200px; } }
 
         html .product-page section.options .frame .box-wrap .box .info {
-          padding: 20px 0; }
+          padding: 20px 5px; }
           html .product-page section.options .frame .box-wrap .box .info p {
             line-height: 1.3em;
             margin: 0;
@@ -2092,24 +2230,26 @@ html .product-page section.options {
             font-size: 20px; }
             @media screen and (min-width: 768px) {
               html .product-page section.options .frame .box-wrap .box .info p {
-                font-size: 25px; } }
+                font-size: 22px; } }
           html .product-page section.options .frame .box-wrap .box .info p.size {
             font-style: normal;
             font-size: 22px; }
             @media screen and (min-width: 768px) {
               html .product-page section.options .frame .box-wrap .box .info p.size {
-                font-size: 27px; } }
+                font-size: 25px; } }
         html .product-page section.options .frame .box-wrap .box .button {
           display: block;
-          width: 100%;
-          background-color: #CDE2BC;
+          width: 99%;
+          background-color: #cde2bc;
           text-align: center;
-          color: #322B2A;
+          color: #322b2a;
           font-family: Quicksand;
-          font-size: 22px;
-          border-radius: 17px;
-          padding: 8px 0;
+          font-size: 25px;
+          border-radius: 22px;
+          padding: 10px 0;
           box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+          position: relative;
+          bottom: 2px;
           cursor: pointer;
           box-shadow: none; }
           html .product-page section.options .frame .box-wrap .box .button:hover {
@@ -2119,7 +2259,7 @@ html .product-page section.options {
             box-shadow: none; }
           @media screen and (min-width: 768px) {
             html .product-page section.options .frame .box-wrap .box .button {
-              font-size: 26px;
+              font-size: 22px;
               margin-top: 15px; } }
         html .product-page section.options .frame .box-wrap .box:nth-child(1) .img {
           background-image: url(../img/box_img.png); }
@@ -2154,7 +2294,8 @@ html .product-page section.options {
       padding: 65px 0; } }
   @media screen and (min-width: 768px) and (min-width: 1200px) {
     html .product-page section.options {
-      padding: 150px 0; } }
+      padding: 90px 0;
+      margin-top: 70px; } }
 
 html #lobby section.introduction .frame .overview .table .facility .item:first-child {
   width: 230px; }
@@ -2163,11 +2304,11 @@ html #lobby section.introduction .frame .overview .table .facility .item:nth-chi
   html #lobby section.introduction .frame .overview .table .facility .item:nth-child(2) img {
     margin: 0 15px; }
 html #lobby section.options .frame .box-wrap .box:nth-child(3) .img {
-  background-image: url(../img/box_img5.png); }
-html #lobby section.options .frame .box-wrap .box:nth-child(4) .img {
   background-image: url(../img/box_img.png); }
+html #lobby section.options .frame .box-wrap .box:nth-child(4) .img {
+  background-image: url(../img/box_img2.png); }
 html #lobby section.options .frame .box-wrap .box:nth-child(5) .img {
-  background-image: url(../img/box_img4.png); }
+  background-image: url(../img/box_img5.png); }
 html #meeting section.options .frame .box-wrap .box:nth-child(1) .img {
   background-image: url(../img/box_img4.png); }
 html #meeting section.options .frame .box-wrap .box:nth-child(2) .img {
@@ -2178,18 +2319,26 @@ html #meeting section.options .frame .box-wrap .box:nth-child(4) .img {
   background-image: url(../img/box_img.png); }
 html #kitchen section.introduction .frame .overview .table .facility .content .item:first-child {
   width: 370px; }
+@media screen and (max-width: 768px) {
+  html #kitchen section.introduction .frame .overview .table .facility .content .item img {
+    max-width: 85px;
+    max-height: 100px; } }
 html #kitchen section.introduction .frame .overview .table .facility .content .item:last-child {
   width: 390px; }
   html #kitchen section.introduction .frame .overview .table .facility .content .item:last-child .text {
     margin-left: 15px; }
 html #kitchen section.introduction .frame .overview .table .cooking-equipment {
-  padding-left: 30px;
-  padding-bottom: 20px; }
+  padding: 20px 15px; }
   html #kitchen section.introduction .frame .overview .table .cooking-equipment .item {
     display: flex;
     align-items: center;
     color: #322b2acf;
-    margin-bottom: 20px; }
+    margin: 20px auto; }
+    @media screen and (max-width: 768px) {
+      html #kitchen section.introduction .frame .overview .table .cooking-equipment .item img {
+        max-width: 85px;
+        max-height: 100px;
+        margin-bottom: 20px; } }
     html #kitchen section.introduction .frame .overview .table .cooking-equipment .item .text {
       margin-left: 15px; }
     html #kitchen section.introduction .frame .overview .table .cooking-equipment .item:last-child {
@@ -2208,7 +2357,7 @@ html #kitchen section.introduction .frame .overview .table .cooking-equipment {
 html #kitchen section.introduction .frame .overview .table .food-operation {
   width: 90%;
   margin: auto;
-  border-top: 1px solid #322B2A;
+  border-top: 1px solid #322b2a;
   padding: 15px 0; }
   html #kitchen section.introduction .frame .overview .table .food-operation .title {
     color: #322b2acf;
@@ -2230,7 +2379,7 @@ html #kitchen section.introduction .frame .overview .table .food-operation {
 html #kitchen section.introduction .frame .overview .table .washing-equipment {
   width: 90%;
   margin: auto;
-  border-top: 1px solid #322B2A;
+  border-top: 1px solid #322b2a;
   padding: 15px 0; }
   html #kitchen section.introduction .frame .overview .table .washing-equipment .title {
     color: #322b2acf;
@@ -2256,7 +2405,7 @@ html #kitchen section.introduction .frame .overview .table .washing-equipment {
     html #kitchen section.introduction .frame .overview .table .washing-equipment {
       display: flex; } }
 html #kitchen section.introduction .frame .overview .table .price {
-  background-color: #627C9724; }
+  background-color: #f7f8f8; }
 html #kitchen section.introduction .frame .overview .table .service {
   background-color: white; }
 html #kitchen section.options .frame .box-wrap .box:nth-child(2) .img {
@@ -2267,43 +2416,70 @@ html #kitchen section.options .frame .box-wrap .box:nth-child(4) .img {
   background-image: url(../img/box_img.png); }
 html #kitchen section.options .frame .box-wrap .box:nth-child(5) .img {
   background-image: url(../img/box_img4.png); }
-html #meeting-room-lobby .banner .frame .information .name, html #conference-room-lobby .banner .frame .information .name, html #venue .banner .frame .information .name {
+html #meeting-room-lobby .banner .frame .information .name,
+html #conference-room-lobby .banner .frame .information .name,
+html #venue .banner .frame .information .name {
   line-height: 1em; }
-html #meeting-room-lobby .banner .frame .information .info, html #conference-room-lobby .banner .frame .information .info, html #venue .banner .frame .information .info {
-  border: 0;
-  padding: 60px 0; }
-html #meeting-room-lobby .banner .frame .information .brief, html #conference-room-lobby .banner .frame .information .brief, html #venue .banner .frame .information .brief {
-  font-family: 'Seravek'; }
-html #meeting-room-lobby .banner .frame .information .button-wrap .button, html #conference-room-lobby .banner .frame .information .button-wrap .button, html #venue .banner .frame .information .button-wrap .button {
-  width: 100%; }
-html #meeting-room-lobby .banner .frame .information .button-wrap:before, html #conference-room-lobby .banner .frame .information .button-wrap:before, html #venue .banner .frame .information .button-wrap:before {
-  content: 'Please contact us for pricing details';
-  position: absolute;
+html #meeting-room-lobby .banner .frame .information .info,
+html #conference-room-lobby .banner .frame .information .info,
+html #venue .banner .frame .information .info {
+  padding: 20px 0;
+  border-bottom: 1px solid  #649A9E; }
+html #meeting-room-lobby .banner .frame .information .brief,
+html #conference-room-lobby .banner .frame .information .brief,
+html #venue .banner .frame .information .brief {
   font-family: 'Seravek';
-  left: 20px;
-  top: -45px; }
+  padding-top: 20px; }
+html #meeting-room-lobby .banner .frame .information .button-wrap .button,
+html #conference-room-lobby .banner .frame .information .button-wrap .button,
+html #venue .banner .frame .information .button-wrap .button {
+  width: 100%; }
 @media screen and (min-width: 992px) {
-  html #meeting-room-lobby .introduction .frame .overview .table .price .content table tbody tr:nth-child(2), html #meeting-room-lobby .introduction .frame .overview .table .price .content table tbody tr:nth-child(3), html #conference-room-lobby .introduction .frame .overview .table .price .content table tbody tr:nth-child(2), html #conference-room-lobby .introduction .frame .overview .table .price .content table tbody tr:nth-child(3), html #venue .introduction .frame .overview .table .price .content table tbody tr:nth-child(2), html #venue .introduction .frame .overview .table .price .content table tbody tr:nth-child(3) {
+  html #meeting-room-lobby .introduction .frame .overview .table .price .content table tbody tr:nth-child(2),
+  html #meeting-room-lobby .introduction .frame .overview .table .price .content table tbody tr:nth-child(3),
+  html #conference-room-lobby .introduction .frame .overview .table .price .content table tbody tr:nth-child(2),
+  html #conference-room-lobby .introduction .frame .overview .table .price .content table tbody tr:nth-child(3),
+  html #venue .introduction .frame .overview .table .price .content table tbody tr:nth-child(2),
+  html #venue .introduction .frame .overview .table .price .content table tbody tr:nth-child(3) {
     width: 95px;
     flex: none; } }
   @media screen and (min-width: 992px) and (min-width: 1200px) {
-    html #meeting-room-lobby .introduction .frame .overview .table .price .content table tbody tr:nth-child(2), html #meeting-room-lobby .introduction .frame .overview .table .price .content table tbody tr:nth-child(3), html #conference-room-lobby .introduction .frame .overview .table .price .content table tbody tr:nth-child(2), html #conference-room-lobby .introduction .frame .overview .table .price .content table tbody tr:nth-child(3), html #venue .introduction .frame .overview .table .price .content table tbody tr:nth-child(2), html #venue .introduction .frame .overview .table .price .content table tbody tr:nth-child(3) {
+    html #meeting-room-lobby .introduction .frame .overview .table .price .content table tbody tr:nth-child(2),
+    html #meeting-room-lobby .introduction .frame .overview .table .price .content table tbody tr:nth-child(3),
+    html #conference-room-lobby .introduction .frame .overview .table .price .content table tbody tr:nth-child(2),
+    html #conference-room-lobby .introduction .frame .overview .table .price .content table tbody tr:nth-child(3),
+    html #venue .introduction .frame .overview .table .price .content table tbody tr:nth-child(2),
+    html #venue .introduction .frame .overview .table .price .content table tbody tr:nth-child(3) {
       width: 150px; } }
 
-html #meeting-room-lobby .introduction .frame .overview .table .facility .content .item:nth-child(3) .text, html #conference-room-lobby .introduction .frame .overview .table .facility .content .item:nth-child(3) .text, html #venue .introduction .frame .overview .table .facility .content .item:nth-child(3) .text {
+html #meeting-room-lobby .introduction .frame .overview .table .facility .content .item:nth-child(3) .text,
+html #conference-room-lobby .introduction .frame .overview .table .facility .content .item:nth-child(3) .text,
+html #venue .introduction .frame .overview .table .facility .content .item:nth-child(3) .text {
   margin-left: 8px; }
-html #meeting-room-lobby .introduction .frame .overview .table .facility .content .item:last-child img, html #conference-room-lobby .introduction .frame .overview .table .facility .content .item:last-child img, html #venue .introduction .frame .overview .table .facility .content .item:last-child img {
+html #meeting-room-lobby .introduction .frame .overview .table .facility .content .item:last-child img,
+html #conference-room-lobby .introduction .frame .overview .table .facility .content .item:last-child img,
+html #venue .introduction .frame .overview .table .facility .content .item:last-child img {
   margin-left: 0; }
-html #meeting-room-lobby .introduction .frame .overview .table .facility .content .item:last-child .text, html #conference-room-lobby .introduction .frame .overview .table .facility .content .item:last-child .text, html #venue .introduction .frame .overview .table .facility .content .item:last-child .text {
+html #meeting-room-lobby .introduction .frame .overview .table .facility .content .item:last-child .text,
+html #conference-room-lobby .introduction .frame .overview .table .facility .content .item:last-child .text,
+html #venue .introduction .frame .overview .table .facility .content .item:last-child .text {
   margin-left: 8px; }
 @media screen and (min-width: 992px) {
-  html #meeting-room-lobby .introduction .frame .overview .table .facility .content, html #conference-room-lobby .introduction .frame .overview .table .facility .content, html #venue .introduction .frame .overview .table .facility .content {
+  html #meeting-room-lobby .introduction .frame .overview .table .facility .content,
+  html #conference-room-lobby .introduction .frame .overview .table .facility .content,
+  html #venue .introduction .frame .overview .table .facility .content {
     margin-left: -20px; } }
-html #meeting-room-lobby section.options .frame .box-wrap .box:nth-child(2) .img, html #conference-room-lobby section.options .frame .box-wrap .box:nth-child(2) .img, html #venue section.options .frame .box-wrap .box:nth-child(2) .img {
+html #meeting-room-lobby section.options .frame .box-wrap .box:nth-child(2) .img,
+html #conference-room-lobby section.options .frame .box-wrap .box:nth-child(2) .img,
+html #venue section.options .frame .box-wrap .box:nth-child(2) .img {
   background-image: url(../img/box_img4.png); }
-html #meeting-room-lobby section.options .frame .box-wrap .box:nth-child(3) .img, html #conference-room-lobby section.options .frame .box-wrap .box:nth-child(3) .img, html #venue section.options .frame .box-wrap .box:nth-child(3) .img {
+html #meeting-room-lobby section.options .frame .box-wrap .box:nth-child(3) .img,
+html #conference-room-lobby section.options .frame .box-wrap .box:nth-child(3) .img,
+html #venue section.options .frame .box-wrap .box:nth-child(3) .img {
   background-image: url(../img/box_img3.png); }
-html #meeting-room-lobby section.options .frame .box-wrap .box:nth-child(4) .img, html #conference-room-lobby section.options .frame .box-wrap .box:nth-child(4) .img, html #venue section.options .frame .box-wrap .box:nth-child(4) .img {
+html #meeting-room-lobby section.options .frame .box-wrap .box:nth-child(4) .img,
+html #conference-room-lobby section.options .frame .box-wrap .box:nth-child(4) .img,
+html #venue section.options .frame .box-wrap .box:nth-child(4) .img {
   background-image: url(../img/box_img.png); }
 html #conference-room-lobby section.options .frame .box-wrap .box:nth-child(1) .img {
   background-image: url(../img/box_img4.png); }
@@ -2330,7 +2506,7 @@ html #gallery section.banner {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(295deg, #EFD7E6 0%, #BBDEB6 74%, #E7E9BF 100%); }
+  background: linear-gradient(295deg, #efd7e6 0%, #bbdeb6 74%, #e7e9bf 100%); }
   html #gallery section.banner img {
     width: 320px; }
     @media screen and (min-width: 992px) {
@@ -2363,10 +2539,10 @@ html #gallery section.gallery {
           line-height: 1.3em; }
       html #gallery section.gallery .frame .grid-item img {
         width: 100%;
-        filter: brightness(0.5);
+        filter: brightness(0.7);
         transition: all 0.3s ease; }
       html #gallery section.gallery .frame .grid-item:hover img {
-        filter: brightness(1); }
+        filter: brightness(0.3); }
       html #gallery section.gallery .frame .grid-item:hover .text {
         background: linear-gradient(#000000 0%, rgba(0, 0, 0, 0) 100%); }
       @media screen and (min-width: 768px) {
@@ -2387,7 +2563,7 @@ html #gallery section.gallery {
       padding: 110px 0; } }
 
 html #about section.banner {
-  background: linear-gradient(295deg, #649A9E 0%, #AFDBDA 30%, #EDEBDB 100%);
+  background: linear-gradient(295deg, #649a9e 0%, #afdbda 30%, #edebdb 100%);
   padding: 20px 0;
   position: relative;
   overflow: hidden; }
@@ -2395,13 +2571,16 @@ html #about section.banner {
     width: 90%;
     margin: auto;
     max-width: 1128px; }
-    html #about section.banner .frame .left .title, html #about section.banner .frame .right .title {
+    html #about section.banner .frame .left .title,
+    html #about section.banner .frame .right .title {
       font-size: 78px;
       font-style: italic; }
-    html #about section.banner .frame .left .content .thin, html #about section.banner .frame .right .content .thin {
+    html #about section.banner .frame .left .content .thin,
+    html #about section.banner .frame .right .content .thin {
       font-family: Arsenal, Helvetica, Arial; }
     @media screen and (min-width: 992px) {
-      html #about section.banner .frame .left, html #about section.banner .frame .right {
+      html #about section.banner .frame .left,
+      html #about section.banner .frame .right {
         width: 47%; } }
     @media screen and (min-width: 992px) {
       html #about section.banner .frame .right {
@@ -2431,9 +2610,9 @@ html #about section.main {
       width: 100%; }
       html #about section.main .frame .box-wrap .box {
         width: 100%;
-        background-color: #649A9E26;
+        background-color: #649a9e26;
         text-align: center;
-        color: #649A9E;
+        color: #649a9e;
         padding: 5%;
         margin: 10px 0;
         height: 520px;
@@ -2450,22 +2629,23 @@ html #about section.main {
           align-items: center; }
         html #about section.main .frame .box-wrap .box .name {
           margin: 0;
-          margin: 30px 0 25px 0; }
+          margin: 30px 0 25px 0;
+          font-size: 38px; }
         html #about section.main .frame .box-wrap .box .intro {
-          font-style: italic;
           font-size: 20px;
-          font-family: Georgia;
+          font-family: Seravek Regular;
           text-align: center; }
         @media screen and (min-width: 992px) {
           html #about section.main .frame .box-wrap .box {
             width: 32%;
             padding: 5% 20px;
+            border-radius: 5px;
             height: auto;
-            min-height: 520px;
+            min-height: 320px;
             transition: all 0.3s ease; }
             html #about section.main .frame .box-wrap .box:hover {
               transform: scale(1.1);
-              background-color: #649A9E;
+              background-color: #649a9e;
               color: white; } }
       @media screen and (min-width: 992px) {
         html #about section.main .frame .box-wrap {
@@ -2483,6 +2663,7 @@ html #about section.main {
             flex: 1; } }
   @media screen and (min-width: 992px) and (min-width: 1200px) {
     html #about section.main .frame .story .img {
+      background-image: url(https://mooo.work/bookingcalendar/wp-content/themes/bookingCalendar/img/about_page_01.jpeg);
       height: 45vw;
       flex: 3;
       max-height: 530px; } }
@@ -2514,35 +2695,42 @@ html #login .main {
     background-color: white;
     padding: 40px 30px;
     box-shadow: 3px 6px 12px #00000029; }
-    html #login .main .box .login, html #login .main .box .signup {
+    html #login .main .box .login,
+    html #login .main .box .signup {
       padding-bottom: 40px;
-      border-bottom: 1px solid #322B2A; }
-      html #login .main .box .login .title, html #login .main .box .signup .title {
+      border-bottom: 1px solid #322b2a; }
+      html #login .main .box .login .title,
+      html #login .main .box .signup .title {
         font-size: 35px;
         text-transform: uppercase;
         text-align: center;
         margin: 0; }
-      html #login .main .box .login .seperator, html #login .main .box .signup .seperator {
+      html #login .main .box .login .seperator,
+      html #login .main .box .signup .seperator {
         position: relative;
-        border-bottom: 2px solid #649A9E;
+        border-bottom: 2px solid #649a9e;
         width: 166px;
         margin: 20px auto 50px;
         width: 95px;
         margin-top: 0; }
-        html #login .main .box .login .seperator .square, html #login .main .box .signup .seperator .square {
+        html #login .main .box .login .seperator .square,
+        html #login .main .box .signup .seperator .square {
           width: 16px;
           height: 16px;
-          background-color: #649A9E;
+          background-color: #649a9e;
           transform: rotate(45deg);
           margin: auto;
           box-shadow: 0px 0px 0px 5px white;
           margin-bottom: -9px; }
-      html #login .main .box .login .form .query-wrap .query, html #login .main .box .signup .form .query-wrap .query {
+      html #login .main .box .login .form .query-wrap .query,
+      html #login .main .box .signup .form .query-wrap .query {
         margin-bottom: 40px; }
-        html #login .main .box .login .form .query-wrap .query label, html #login .main .box .signup .form .query-wrap .query label {
+        html #login .main .box .login .form .query-wrap .query label,
+        html #login .main .box .signup .form .query-wrap .query label {
           font-family: 'Seravek';
           display: block; }
-        html #login .main .box .login .form .query-wrap .query input, html #login .main .box .signup .form .query-wrap .query input {
+        html #login .main .box .login .form .query-wrap .query input,
+        html #login .main .box .signup .form .query-wrap .query input {
           width: 100%;
           outline: none;
           appearence: none;
@@ -2553,23 +2741,27 @@ html #login .main {
           border: 0;
           border-bottom: 1px solid #707070; }
         @media screen and (min-width: 992px) {
-          html #login .main .box .login .form .query-wrap .query, html #login .main .box .signup .form .query-wrap .query {
+          html #login .main .box .login .form .query-wrap .query,
+          html #login .main .box .signup .form .query-wrap .query {
             width: 48%; } }
       @media screen and (min-width: 992px) {
-        html #login .main .box .login .form .query-wrap, html #login .main .box .signup .form .query-wrap {
+        html #login .main .box .login .form .query-wrap,
+        html #login .main .box .signup .form .query-wrap {
           display: flex;
           justify-content: space-between;
           flex-wrap: wrap; } }
-      html #login .main .box .login .form .check, html #login .main .box .signup .form .check {
+      html #login .main .box .login .form .check,
+      html #login .main .box .signup .form .check {
         display: flex;
         align-items: center; }
-        html #login .main .box .login .form .check input[type="checkbox"], html #login .main .box .signup .form .check input[type="checkbox"] {
+        html #login .main .box .login .form .check input[type='checkbox'],
+        html #login .main .box .signup .form .check input[type='checkbox'] {
           appearance: none;
           -webkit-appearance: none;
           -moz-appearance: none;
           -ms-appearance: none;
           border-radius: 0;
-          border: 1px solid #322B2A;
+          border: 1px solid #322b2a;
           width: 21px;
           height: 21px;
           display: block;
@@ -2578,43 +2770,54 @@ html #login .main {
           cursor: pointer;
           position: relative;
           flex: none; }
-          html #login .main .box .login .form .check input[type="checkbox"]:hover, html #login .main .box .signup .form .check input[type="checkbox"]:hover {
+          html #login .main .box .login .form .check input[type='checkbox']:hover,
+          html #login .main .box .signup .form .check input[type='checkbox']:hover {
             background-color: #dddddd; }
-          html #login .main .box .login .form .check input[type="checkbox"]:checked, html #login .main .box .signup .form .check input[type="checkbox"]:checked {
-            background-color: #CDE2BC; }
-            html #login .main .box .login .form .check input[type="checkbox"]:checked:after, html #login .main .box .signup .form .check input[type="checkbox"]:checked:after {
+          html #login .main .box .login .form .check input[type='checkbox']:checked,
+          html #login .main .box .signup .form .check input[type='checkbox']:checked {
+            background-color: #cde2bc; }
+            html #login .main .box .login .form .check input[type='checkbox']:checked:after,
+            html #login .main .box .signup .form .check input[type='checkbox']:checked:after {
               content: '\f00c';
               font-family: 'FontAwesome';
               position: absolute;
               top: -2px;
               left: 2px; }
-        html #login .main .box .login .form .check input[type="checkbox"]:checked:after, html #login .main .box .signup .form .check input[type="checkbox"]:checked:after {
+        html #login .main .box .login .form .check input[type='checkbox']:checked:after,
+        html #login .main .box .signup .form .check input[type='checkbox']:checked:after {
           top: -4px;
           left: 1px; }
-        html #login .main .box .login .form .check span, html #login .main .box .signup .form .check span {
+        html #login .main .box .login .form .check span,
+        html #login .main .box .signup .form .check span {
           font-family: 'Seravek'; }
-      html #login .main .box .login .form .forget, html #login .main .box .signup .form .forget {
+      html #login .main .box .login .form .forget,
+      html #login .main .box .signup .form .forget {
         font-family: 'Seravek';
-        color: #322B2A;
+        color: #322b2a;
         text-decoration: underline; }
-      html #login .main .box .login .form .button, html #login .main .box .signup .form .button {
+      html #login .main .box .login .form .button,
+      html #login .main .box .signup .form .button {
         display: block;
-        width: 100%;
-        background-color: #CDE2BC;
+        width: 99%;
+        background-color: #cde2bc;
         text-align: center;
-        color: #322B2A;
+        color: #322b2a;
         font-family: Quicksand;
-        font-size: 22px;
-        border-radius: 17px;
-        padding: 8px 0;
+        font-size: 25px;
+        border-radius: 22px;
+        padding: 10px 0;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        position: relative;
+        bottom: 2px;
         cursor: pointer;
         max-width: 270px;
         margin: auto;
         margin-top: 40px; }
-        html #login .main .box .login .form .button:hover, html #login .main .box .signup .form .button:hover {
+        html #login .main .box .login .form .button:hover,
+        html #login .main .box .signup .form .button:hover {
           filter: brightness(0.9); }
-        html #login .main .box .login .form .button:active, html #login .main .box .signup .form .button:active {
+        html #login .main .box .login .form .button:active,
+        html #login .main .box .signup .form .button:active {
           transform: translateY(4px);
           box-shadow: none; }
     @media screen and (min-width: 992px) {
@@ -2628,7 +2831,7 @@ html #login .main {
         flex: 1;
         padding: 0 5%;
         border: 0;
-        border-right: 1px solid #322B2A; } }
+        border-right: 1px solid #322b2a; } }
     html #login .main .box .signup {
       padding: 40px 0;
       border: 0; }
@@ -2663,13 +2866,13 @@ html #login .main {
           font-size: 35px; } }
     html #login .main .message .seperator {
       position: relative;
-      border-bottom: 2px solid #649A9E;
+      border-bottom: 2px solid #649a9e;
       width: 166px;
       margin: 20px auto 50px; }
       html #login .main .message .seperator .square {
         width: 16px;
         height: 16px;
-        background-color: #649A9E;
+        background-color: #649a9e;
         transform: rotate(45deg);
         margin: auto;
         box-shadow: 0px 0px 0px 5px white;
